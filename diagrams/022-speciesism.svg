@@ -198,6 +198,7 @@
     <text x="240" y="1120" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">정교한 언어·사고·도덕적 이상 등 인간에게 전형적인 능력을 들지만, 그 능력이 '왜' 도덕적으로 의미 있는지(자의식·자존감)를 별도로 설명해야 한다.</text>
     <line x1="40" y1="1134" x2="1160" y2="1134" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="1150" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">종 중첩 논증</text>
-    <text x="240" y="1150" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">정신 능력 기준에서 동물과 중첩되는 인간(아기·뇌 손상 환자)이 있고 인간에 가까운 동물도 있는데 둘을 다르게 대한다는 비일관성. 이 논증이 해결되지 않으면 종 차별주의는 옹호되기 어렵다.</text>
+    <text x="240" y="1148" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">정신 능력 기준에서 동물과 중첩되는 인간(아기·뇌 손상 환자)이 있고, 인간에 가까운 동물도 있는데</text>
+    <text x="240" y="1166" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">둘을 다르게 대한다는 비일관성. 해결되지 않으면 종 차별주의는 옹호되기 어렵다.</text>
   </g>
 </svg>
