@@ -46,7 +46,7 @@
    * Returns the inserted <svg> element.
    * 오류 시 사용자에게 보이는 메시지를 컨테이너에 표시.
    */
-  async function inject(container, url) {
+  async function inject(container, url, onLoaded) {
     try {
       const txt = await loadSvgText(url);
       container.innerHTML = txt;
@@ -56,6 +56,9 @@
         // 학습 모드에서도 처음부터 완성된 도식을 보여준다 (단계별 reveal 비활성화).
         // 만약을 위해 reveal 그룹에 .on 을 미리 부여 (CSS에서 .on 이 켜지도록).
         svg.querySelectorAll("[data-reveal-step]").forEach(g => g.classList.add("on"));
+      }
+      if (typeof onLoaded === "function") {
+        try { onLoaded(svg); } catch (_) {}
       }
       return svg;
     } catch (err) {
@@ -75,7 +78,7 @@
       if (retry) {
         retry.addEventListener("click", () => {
           cache.delete(url);
-          inject(container, url);
+          inject(container, url, onLoaded);
         });
       }
       throw err;

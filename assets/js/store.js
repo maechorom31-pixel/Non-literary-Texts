@@ -41,9 +41,25 @@
     return data;
   }
 
+  let _quotaWarned = false;
   function save(progress) {
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(progress)); }
-    catch (e) { /* quota or disabled */ }
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+    } catch (e) {
+      // quota 초과 / 디스크 가득 — 한 번만 사용자에게 안내
+      const isQuota = e && (e.name === "QuotaExceededError" || e.code === 22 || e.code === 1014);
+      if (isQuota && !_quotaWarned) {
+        _quotaWarned = true;
+        try {
+          const banner = document.createElement("div");
+          banner.setAttribute("role", "alert");
+          banner.style.cssText = "position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#a83a4a;color:#fff;padding:12px 18px;font:600 13px Pretendard,sans-serif;border-radius:4px;box-shadow:0 4px 18px rgba(0,0,0,0.25);z-index:9999;max-width:90vw;";
+          banner.textContent = "⚠ 저장 공간이 부족해 진도 저장에 실패했어요. 브라우저 데이터를 정리해 주세요.";
+          document.body.appendChild(banner);
+          setTimeout(() => banner.remove(), 6000);
+        } catch (_) {}
+      }
+    }
   }
 
   function getEntry(progress, id) {

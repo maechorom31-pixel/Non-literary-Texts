@@ -316,6 +316,13 @@
 
   // --------- STUDY ---------
   async function openStudy(id) {
+    // 잘못된 id 방어 — index 에 없으면 학습 모드 진입 자체를 차단
+    const idxItem = state.index && state.index.passages.find(p => p.id === id);
+    if (!idxItem) {
+      // 해시 청소 후 허브로 복귀
+      history.replaceState(null, "", location.pathname + location.search);
+      return false;
+    }
     let passage = state.currentPassage;
     if (!passage || passage.id !== id) {
       try {
@@ -323,7 +330,20 @@
         if (!res.ok) throw new Error("지문 데이터 로드 실패: " + id);
         passage = await res.json();
       } catch (err) {
-        alert(err.message); return;
+        // 인라인 에러 표시 + 자동 복귀
+        state.currentPassage = null;
+        const stage = document.getElementById("studyStage");
+        if (stage) {
+          stage.innerHTML = `
+            <div style="padding:48px 24px;text-align:center;color:var(--ink-2);">
+              <div style="font-family:'Noto Serif KR',serif;font-size:18px;color:var(--accent);margin-bottom:10px;">⚠ 지문을 불러오지 못했습니다</div>
+              <div style="font-size:13px;line-height:1.7;color:var(--ink-3);margin-bottom:18px;">${escapeHtml(err.message || "")}</div>
+              <button class="btn" type="button" id="errBackBtn">← 목록으로 돌아가기</button>
+            </div>`;
+          const btn = document.getElementById("errBackBtn");
+          if (btn) btn.addEventListener("click", closeStudy, { once: true });
+        }
+        return false;
       }
     }
     state.currentId = id;
@@ -343,9 +363,12 @@
     $("#studyTitle").textContent = passage.title;
     $("#studySource").textContent = fmtSource(passage.source);
 
-    location.hash = `#/p/${id}/0`;
+    if (location.hash !== `#/p/${id}/0`) {
+      history.replaceState(null, "", `#/p/${id}/0`);
+    }
     renderStudy();
     bindStudyFooter();
+    return true;
   }
 
   function closeStudy() {
@@ -356,7 +379,8 @@
     state.currentPassage = null;
     state.currentSvg = null;
     state.revealHigh = 0;
-    location.hash = "";
+    // URL 의 # 잔재 제거
+    history.replaceState(null, "", location.pathname + location.search);
     renderHub();
   }
 
@@ -403,8 +427,12 @@
 
   function goStep(n) {
     if (n < 0 || n > 3) return;
+    if (state.step === n) return; // 중복 호출 방지
     state.step = n;
-    location.hash = `#/p/${state.currentId}/${n}`;
+    // hashchange 재진입 방지를 위해 replaceState 사용
+    if (state.currentId) {
+      history.replaceState(null, "", `#/p/${state.currentId}/${n}`);
+    }
     renderStudy();
   }
 
@@ -468,26 +496,41 @@
 
   function applyVocab(text, vocab) {
     if (!vocab || !vocab.length) return escapeHtml(text);
-    // Sort by term length desc to avoid nested replacements
+    // 긴 용어부터 매칭해 부분 매칭 충돌 회피
     const list = vocab.slice().sort((a,b) => b.term.length - a.term.length);
+    // 토큰 단위로 처리 — 정규식 lookbehind 미사용 (Safari 구버전 호환)
+    // 1) 원문을 escape, 2) 각 용어의 첫 등장만 span 으로 교체, 이미 처리된 영역은 PLACEHOLDER 로 보호
     let safe = escapeHtml(text);
+    const placeholders = [];
     list.forEach(v => {
       const term = escapeHtml(v.term);
       const def  = escapeHtml(v.def);
-      // Replace only first occurrence to keep tooltips manageable
-      const pattern = new RegExp(`(?<!data-vocab="[^"]*?)${escapeRegex(term)}`);
-      safe = safe.replace(pattern, `<span class="vocab" data-def="${def}" tabindex="0">${term}<span class="vocab-tip">${def}</span></span>`);
+      if (!term) return;
+      const idx = safe.indexOf(term);
+      if (idx === -1) return;
+      const ph = `\x00VOCAB${placeholders.length}\x00`;
+      placeholders.push(`<span class="vocab" data-def="${def}" tabindex="0">${term}<span class="vocab-tip">${def}</span></span>`);
+      safe = safe.slice(0, idx) + ph + safe.slice(idx + term.length);
+    });
+    placeholders.forEach((html, i) => {
+      safe = safe.replace(`\x00VOCAB${i}\x00`, html);
     });
     return safe;
   }
-  function escapeRegex(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
 
   async function bindPassageStage(it) {
     // Diagram inject
     const host = $("#diagramHost");
     if (it.diagram && it.diagram.file) {
+      // 재시도 콜백: 다시 시도 성공 시 currentSvg 갱신
+      const onLoaded = (svg) => {
+        if (svg) {
+          state.currentSvg = svg;
+          window.Diagram.bindLightbox(svg, openLightbox);
+        }
+      };
       try {
-        const svg = await window.Diagram.inject(host, it.diagram.file);
+        const svg = await window.Diagram.inject(host, it.diagram.file, onLoaded);
         state.currentSvg = svg;
         window.Diagram.bindLightbox(svg, openLightbox);
         // initial reveal: paragraph 1's reveals
@@ -705,12 +748,26 @@
   }
 
   // --------- Lightbox ---------
+  let _toastTimer = null;
+  function showToast(msg) {
+    let t = document.getElementById("appToast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "appToast";
+      t.style.cssText = "position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:rgba(26,22,18,0.92);color:#f5f1e8;padding:10px 16px;font:600 13px Pretendard,sans-serif;border-radius:4px;z-index:9999;pointer-events:none;transition:opacity 0.2s;";
+      document.body.appendChild(t);
+    }
+    t.textContent = msg;
+    t.style.opacity = "1";
+    if (_toastTimer) clearTimeout(_toastTimer);
+    _toastTimer = setTimeout(() => { t.style.opacity = "0"; }, 1800);
+  }
   function openLightbox() {
     // 가능한 한 최신 DOM에서 SVG를 찾고, 없으면 캐시된 참조를 사용
     const liveSvg = document.querySelector("#diagramHost svg");
     const svg = liveSvg || state.currentSvg;
     if (!svg) {
-      console.warn("[lightbox] 도식이 아직 준비되지 않았습니다.");
+      showToast("도식이 아직 로딩 중입니다…");
       return;
     }
     const inner = $("#lightboxInner");
@@ -1030,11 +1087,15 @@
     const m = h.match(/^#\/p\/([\w-]+)(?:\/(\d))?$/);
     if (m) {
       const id = m[1];
-      const step = m[2] ? parseInt(m[2], 10) : 0;
+      let step = m[2] ? parseInt(m[2], 10) : 0;
+      // step 범위 검증
+      if (!(step >= 0 && step <= 3)) step = 0;
       if (state.currentId !== id) {
-        openStudy(id).then(() => { state.step = step; renderStudy(); });
+        openStudy(id).then((ok) => {
+          if (ok) { state.step = step; renderStudy(); }
+        });
       } else {
-        state.step = step; renderStudy();
+        if (state.step !== step) { state.step = step; renderStudy(); }
       }
     } else {
       if ($("#study").classList.contains("active")) closeStudy();
