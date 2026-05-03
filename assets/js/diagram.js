@@ -53,8 +53,9 @@
       const svg = container.querySelector("svg");
       if (svg) {
         svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
-        // 앱이 단계별 reveal을 제어한다는 표시. SVG 단독 보기에서는 이 속성이 없으므로 모두 보임.
-        svg.setAttribute("data-app", "1");
+        // 학습 모드에서도 처음부터 완성된 도식을 보여준다 (단계별 reveal 비활성화).
+        // 만약을 위해 reveal 그룹에 .on 을 미리 부여 (CSS에서 .on 이 켜지도록).
+        svg.querySelectorAll("[data-reveal-step]").forEach(g => g.classList.add("on"));
       }
       return svg;
     } catch (err) {
@@ -82,20 +83,16 @@
   }
 
   /**
-   * Show all reveal groups whose data-reveal-step <= step.
-   * Other reveal groups are hidden by .reveal { opacity:0 } via SVG inline style.
+   * 단계별 reveal 비활성화 정책 → 모든 reveal 그룹을 항상 켜둔다.
+   * 호출은 호환성을 위해 유지.
    */
-  function setRevealStep(svgRoot, step) {
+  function setRevealStep(svgRoot, _step) {
     if (!svgRoot) return;
-    const groups = svgRoot.querySelectorAll("[data-reveal-step]");
-    groups.forEach(g => {
-      const s = parseInt(g.getAttribute("data-reveal-step"), 10) || 0;
-      if (s <= step) g.classList.add("on");
-      else g.classList.remove("on");
-    });
+    svgRoot.querySelectorAll("[data-reveal-step]").forEach(g => g.classList.add("on"));
   }
 
   function reset(svgRoot) {
+    // 처음부터 완성된 도식을 보여주는 정책이므로 reset 도 모두 켠 상태로.
     setRevealStep(svgRoot, 0);
   }
 
