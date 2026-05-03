@@ -245,6 +245,7 @@
     state.currentId = id;
     state.currentPassage = passage;
     state.currentSvg = null;
+    state.revealHigh = 0;
     state.step = 0;
 
     $("#hub").style.display = "none";
@@ -270,6 +271,7 @@
     state.currentId = null;
     state.currentPassage = null;
     state.currentSvg = null;
+    state.revealHigh = 0;
     location.hash = "";
     renderHub();
   }
@@ -457,7 +459,9 @@
     steps.forEach((s, i) => {
       if (stepIds.has(s.id)) maxStep = Math.max(maxStep, i + 1);
     });
-    window.Diagram.setRevealStep(state.currentSvg, maxStep);
+    // 한 번 켜진 step은 사용자가 위로 스크롤해도 다시 끄지 않음 (누적 보존)
+    state.revealHigh = Math.max(state.revealHigh || 0, maxStep);
+    window.Diagram.setRevealStep(state.currentSvg, state.revealHigh);
   }
 
   function vocabClickHandler(e) {
