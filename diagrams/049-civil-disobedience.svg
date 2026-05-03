@@ -4,8 +4,6 @@
 
   <style><![CDATA[
     .reveal { transition: opacity .35s ease, transform .35s ease; }
-    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
-    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
     .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
     .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
     .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }

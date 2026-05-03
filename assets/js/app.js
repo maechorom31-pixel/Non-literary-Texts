@@ -951,7 +951,7 @@
             </div>
             <div class="gallery-item-title">${escapeHtml(it.title)}</div>
             <div class="gallery-item-svg">
-              <img src="diagrams/${escapeHtml(it.id)}.svg?v=3" alt="${escapeHtml(it.title)} 도식" loading="lazy" />
+              <img src="diagrams/${escapeHtml(it.id)}.svg?v=4" alt="${escapeHtml(it.title)} 도식" loading="lazy" />
             </div>
           </div>`;
         }).join('')}</div>`;
@@ -1001,7 +1001,7 @@
     $("#gvTitle").textContent = it.title;
     $("#gvCount").textContent = `${idx + 1} / ${list.length}`;
     $("#gvStage").innerHTML =
-      `<img src="diagrams/${escapeHtml(it.id)}.svg?v=3" alt="${escapeHtml(it.title)} 도식" />`;
+      `<img src="diagrams/${escapeHtml(it.id)}.svg?v=4" alt="${escapeHtml(it.title)} 도식" />`;
   }
 
   // --------- 키보드 / 해시 ---------

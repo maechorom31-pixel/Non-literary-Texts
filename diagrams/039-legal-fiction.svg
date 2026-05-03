@@ -4,8 +4,6 @@
   <defs>
     <style>
       .reveal{transition:opacity .35s ease, transform .35s ease}
-      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
-      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
       .bg{fill:#f5f1e8}
       .panel{fill:#fff;stroke:#c9bfa8;stroke-width:1.2}
       .ti{font:700 26px 'Noto Serif KR',serif;fill:#1a1612}

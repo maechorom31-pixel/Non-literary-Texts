@@ -17,9 +17,7 @@
       .accent{fill:#a83a4a}
       .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#7d9994;letter-spacing:.04em}
       .reveal{transition:opacity .35s ease, transform .35s ease}
-      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
-      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
-    </style>
+      </style>
     <marker id="ar71" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
       <path d="M0,0 L10,5 L0,10 z" fill="#2a6f6f"/>
     </marker>

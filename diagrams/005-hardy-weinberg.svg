@@ -16,9 +16,7 @@
       .mono{font:600 18px ui-monospace,'SF Mono',monospace;fill:#10243a}
       .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#7d97b6;letter-spacing:.04em}
       .reveal{transition:opacity .35s ease, transform .35s ease}
-      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
-      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
-    </style>
+      </style>
   </defs>
 
   <rect class="bg" width="1200" height="1080"/>
