@@ -790,11 +790,92 @@ body {
   overflow: hidden; pointer-events: none;
   display: flex; align-items: center; justify-content: center;
 }
+.gallery-item-svg img,
 .gallery-item-svg object {
   width: 100%; height: 100%;
   object-fit: contain;
+  display: block;
 }
 [data-theme="dark"] .gallery-item-svg { background: #f8f5ec; }
+
+/* ===== 도식 갤러리 라이트박스 (큰 보기) ===== */
+.gallery-viewer {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.78);
+  display: none;
+  align-items: center; justify-content: center;
+  z-index: 200; padding: 20px;
+}
+.gallery-viewer.active { display: flex; }
+.gv-card {
+  width: min(96vw, 1500px);
+  max-height: calc(100vh - 40px);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+[data-theme="dark"] .gv-card { background: var(--paper-2); }
+.gv-head {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 13px;
+  background: var(--paper-2);
+}
+.gv-cat { font-weight: 700; letter-spacing: 0.04em; }
+.gv-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700; font-size: 16px; color: var(--ink);
+  flex: 1; min-width: 0;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.gv-count { color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.gv-stage {
+  flex: 1; overflow: auto;
+  background: white;
+  display: flex; align-items: center; justify-content: center;
+  padding: 16px;
+  min-height: 200px;
+}
+.gv-stage img {
+  max-width: 100%;
+  max-height: calc(100vh - 200px);
+  width: auto; height: auto;
+  display: block;
+}
+[data-theme="dark"] .gv-stage { background: #f8f5ec; }
+.gv-controls {
+  display: flex; gap: 8px; align-items: center;
+  padding: 12px 16px;
+  border-top: 1px solid var(--rule);
+  background: var(--paper-2);
+}
+.gv-spacer { flex: 1; }
+.gv-btn {
+  background: var(--paper); border: 1px solid var(--rule);
+  color: var(--ink); padding: 9px 14px;
+  font-size: 13px; font-weight: 600;
+  cursor: pointer; transition: all 0.15s;
+  font-family: inherit;
+}
+.gv-btn:hover { background: var(--paper-2); border-color: var(--ink-3); }
+.gv-btn-primary {
+  background: var(--ink); color: var(--paper);
+  border-color: var(--ink);
+}
+.gv-btn-primary:hover { background: var(--ink-2); border-color: var(--ink-2); }
+.gv-btn-close { color: var(--ink-3); }
+
+@media (max-width: 720px) {
+  .gallery-viewer { padding: 8px; }
+  .gv-card { width: 100%; max-height: 100vh; }
+  .gv-head { padding: 10px 12px; font-size: 12px; gap: 8px; }
+  .gv-title { font-size: 14px; }
+  .gv-controls { padding: 10px 12px; flex-wrap: wrap; }
+  .gv-btn { padding: 8px 10px; font-size: 12px; }
+  .gv-stage img { max-height: calc(100vh - 230px); }
+}
 
 @media (max-width: 720px) {
   .dash-grid { grid-template-columns: 1fr; }

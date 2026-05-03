@@ -170,6 +170,24 @@
       <div class="lightbox" id="lightbox" aria-hidden="true">
         <div class="lightbox-inner" id="lightboxInner"></div>
       </div>
+
+      <div class="gallery-viewer" id="galleryViewer" aria-hidden="true">
+        <div class="gv-card">
+          <div class="gv-head">
+            <span class="gv-cat" id="gvCat"></span>
+            <span class="gv-title" id="gvTitle"></span>
+            <span class="gv-count" id="gvCount"></span>
+          </div>
+          <div class="gv-stage" id="gvStage"></div>
+          <div class="gv-controls">
+            <button class="gv-btn" id="gvPrev" type="button">← 이전</button>
+            <button class="gv-btn gv-btn-primary" id="gvStudy" type="button">📖 이 글 학습하기</button>
+            <button class="gv-btn" id="gvNext" type="button">다음 →</button>
+            <span class="gv-spacer"></span>
+            <button class="gv-btn gv-btn-close" id="gvClose" type="button">✕ 닫기 (Esc)</button>
+          </div>
+        </div>
+      </div>
     `;
   }
 
@@ -247,8 +265,28 @@
       if (e.target.closest("#btnGallery"))      { openGallery();    return; }
       if (e.target.closest("#btnGalleryBack"))  { closeGallery();   return; }
       if (e.target.closest("#btnTheme"))        { toggleTheme();    return; }
+      // 갤러리 도식 클릭 → 도식 라이트박스 (학습 페이지로는 가지 않음)
+      const galleryItem = e.target.closest(".gallery-item");
+      if (galleryItem && galleryItem.dataset.id) {
+        openGalleryViewer(galleryItem.dataset.id);
+        return;
+      }
+      // 갤러리 라이트박스 컨트롤
+      if (e.target.closest("#gvNext"))      { gvNav(1);             return; }
+      if (e.target.closest("#gvPrev"))      { gvNav(-1);            return; }
+      if (e.target.closest("#gvClose"))     { closeGalleryViewer(); return; }
+      if (e.target.closest("#gvStudy"))     {
+        const id = state.galleryViewerId;
+        closeGalleryViewer(); closeGallery();
+        if (id) openStudy(id);
+        return;
+      }
+      if (e.target.closest("#galleryViewer") && !e.target.closest(".gv-card")) {
+        closeGalleryViewer();
+        return;
+      }
       // 대시보드 안의 항목 클릭
-      const dueItem = e.target.closest(".due-item, .note-item, .wrong-item, .gallery-item");
+      const dueItem = e.target.closest(".due-item, .note-item, .wrong-item");
       if (dueItem && dueItem.dataset.id) {
         closeDashboard(); closeGallery();
         openStudy(dueItem.dataset.id);
@@ -913,15 +951,69 @@
             </div>
             <div class="gallery-item-title">${escapeHtml(it.title)}</div>
             <div class="gallery-item-svg">
-              <object type="image/svg+xml" data="diagrams/${escapeHtml(it.id)}.svg" aria-label="${escapeHtml(it.title)} 도식"></object>
+              <img src="diagrams/${escapeHtml(it.id)}.svg?v=3" alt="${escapeHtml(it.title)} 도식" loading="lazy" />
             </div>
           </div>`;
         }).join('')}</div>`;
   }
 
+  // --------- 도식 갤러리 라이트박스 (큰 보기) ---------
+  function getGalleryFilteredItems() {
+    const items = state.index.passages || [];
+    const f = state.galleryFilter || "all";
+    return f === "all" ? items : items.filter(it => it.category === f);
+  }
+  function openGalleryViewer(id) {
+    state.galleryViewerId = id;
+    renderGalleryViewer();
+    const gv = $("#galleryViewer");
+    gv.classList.add("active");
+    gv.setAttribute("aria-hidden", "false");
+  }
+  function closeGalleryViewer() {
+    const gv = $("#galleryViewer");
+    gv.classList.remove("active");
+    gv.setAttribute("aria-hidden", "true");
+    state.galleryViewerId = null;
+    const stage = $("#gvStage");
+    if (stage) stage.innerHTML = "";
+  }
+  function gvNav(direction) {
+    const list = getGalleryFilteredItems();
+    if (!list.length || !state.galleryViewerId) return;
+    const idx = list.findIndex(it => it.id === state.galleryViewerId);
+    if (idx === -1) return;
+    const nextIdx = (idx + direction + list.length) % list.length;
+    state.galleryViewerId = list[nextIdx].id;
+    renderGalleryViewer();
+  }
+  function renderGalleryViewer() {
+    const id = state.galleryViewerId;
+    if (!id) return;
+    const list = getGalleryFilteredItems();
+    const idx = list.findIndex(it => it.id === id);
+    const it = list[idx];
+    if (!it) return;
+    const cats = state.index.categories || {};
+    const cat = cats[it.category] || {};
+    $("#gvCat").textContent = cat.label || it.category;
+    $("#gvCat").style.color = cat.color || "var(--ink-2)";
+    $("#gvTitle").textContent = it.title;
+    $("#gvCount").textContent = `${idx + 1} / ${list.length}`;
+    $("#gvStage").innerHTML =
+      `<img src="diagrams/${escapeHtml(it.id)}.svg?v=3" alt="${escapeHtml(it.title)} 도식" />`;
+  }
+
   // --------- 키보드 / 해시 ---------
   function bindGlobalKeys() {
     document.addEventListener("keydown", (e) => {
+      // 갤러리 라이트박스 우선 처리
+      if ($("#galleryViewer").classList.contains("active")) {
+        if (e.key === "Escape")     { e.preventDefault(); closeGalleryViewer(); return; }
+        if (e.key === "ArrowRight") { e.preventDefault(); gvNav(1);  return; }
+        if (e.key === "ArrowLeft")  { e.preventDefault(); gvNav(-1); return; }
+        return;
+      }
       if (!$("#study").classList.contains("active")) return;
       if (e.key === "Escape") {
         if ($("#lightbox").classList.contains("active")) { closeLightbox(); return; }
