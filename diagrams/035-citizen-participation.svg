@@ -31,7 +31,7 @@
 
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
   <text x="64" y="80" class="ti" fill="#ffffff">시민 참여 — 루소·밀에서 바버까지</text>
-  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회·문화 · 시간 순서</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">사회·문화 · 시간 순서</text>
 
   <!-- Scene 1: 도입 + 시간축 -->
   <g class="reveal" data-reveal-step="1">
@@ -148,7 +148,7 @@
 
       <rect x="318" y="6" width="220" height="56" rx="8" fill="#2a6f6f"/>
       <text x="428" y="30" class="pill" text-anchor="middle">도덕적·지적 능력 ↑</text>
-      <text x="428" y="50" class="small" fill="#cfe5e1" text-anchor="middle">공적 사고 + 책임감 함양</text>
+      <text x="428" y="50" class="small" fill="#ffffff" text-anchor="middle">공적 사고 + 책임감 함양</text>
     </g>
 
     <text x="84" y="772" class="it" fill="#2a6f6f">→ 참여 자체가 ‘교육적 효과’를 갖는다는 점을 강조</text>

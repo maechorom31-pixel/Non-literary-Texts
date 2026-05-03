@@ -38,7 +38,7 @@
 
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
   <text x="64" y="80" class="ti" fill="#ffffff">정보 비대칭과 역선택 — 악순환과 세 해결 방안</text>
-  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회·문화 · 인과</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">사회·문화 · 인과</text>
 
   <!-- Scene 1: 정보 비대칭 -->
   <g class="reveal" data-reveal-step="1">

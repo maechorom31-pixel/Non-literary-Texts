@@ -29,7 +29,7 @@
 
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#1f5582"/>
   <text x="64" y="80" class="ti" fill="#ffffff">CFC와 오존층 파괴 — 촉매 사슬과 오존 구멍의 발견</text>
-  <text x="1136" y="80" class="sub" fill="#cfdcec" text-anchor="end">과학·기술 · 인과</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">과학·기술 · 인과</text>
 
   <!-- Scene 1: 오존층 형성 -->
   <g class="reveal" data-reveal-step="1">
@@ -228,8 +228,8 @@
 
       <rect x="958" y="918" width="178" height="116" rx="10" fill="#1f5582"/>
       <text x="1047" y="956" class="lab" fill="#ffffff" text-anchor="middle">현재</text>
-      <text x="1047" y="982" class="small" fill="#cfdcec" text-anchor="middle">CFC 사용 격감</text>
-      <text x="1047" y="1004" class="small" fill="#cfdcec" text-anchor="middle">오존층 서서히 회복</text>
+      <text x="1047" y="982" class="small" fill="#ffffff" text-anchor="middle">CFC 사용 격감</text>
+      <text x="1047" y="1004" class="small" fill="#ffffff" text-anchor="middle">오존층 서서히 회복</text>
     </g>
   </g>
 

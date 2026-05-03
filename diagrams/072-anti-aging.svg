@@ -29,7 +29,7 @@
   <!-- Header -->
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#1f5582"/>
   <text x="64" y="80" class="ti" fill="#ffffff">역노화 기술 — 노화 시계를 되돌리려는 생명 과학</text>
-  <text x="1136" y="80" class="sub" fill="#cfdcec" text-anchor="end">과학·기술 · 시간 순서</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">과학·기술 · 시간 순서</text>
 
   <!-- Scene 1: 도입 - 노화의 두 원인 -->
   <g class="reveal" data-reveal-step="1">
@@ -89,7 +89,7 @@
 
       <rect x="746" y="438" width="240" height="62" rx="10" fill="#1f5582"/>
       <text x="866" y="464" class="lab" fill="#ffffff" text-anchor="middle">유도 만능 줄기세포</text>
-      <text x="866" y="486" class="small" fill="#cfdcec" text-anchor="middle">iPSC — 다시 줄기세포로 회귀</text>
+      <text x="866" y="486" class="small" fill="#ffffff" text-anchor="middle">iPSC — 다시 줄기세포로 회귀</text>
 
       <text x="1004" y="464" class="small">· 노화 징후</text>
       <text x="1004" y="484" class="small">  모두 사라짐</text>
@@ -165,7 +165,7 @@
     <rect x="40" y="1080" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#1f5582"/>
     <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">5개 항목</text>
     <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#1f5582">노화의 분자적 이해</text>
     <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">시간 경과의 결과가 아니라 분자·세포 차원의 누적된 변화로 이해된다.</text>

@@ -177,7 +177,7 @@
     <rect x="40" y="1080" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#8b6f47"/>
     <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">6개 항목</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">6개 항목</text>
     <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">허구의 모순</text>
     <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">소설·영화가 가짜인 줄 알면서도 슬퍼하거나 기뻐하는 우리의 이중적 태도.</text>

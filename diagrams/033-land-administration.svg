@@ -45,7 +45,7 @@
 
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
   <text x="64" y="80" class="ti" fill="#ffffff">토지 행정의 두 수단 — 거래 허가제와 가격 공시제</text>
-  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회·문화 · 분류</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">사회·문화 · 분류</text>
 
   <!-- Scene 1: 토지 행정 -->
   <g class="reveal" data-reveal-step="1">
@@ -174,8 +174,8 @@
       <rect x="756" y="910" width="370" height="80" rx="10" fill="#2a6f6f"/>
       <use href="#house33" x="772" y="922" width="32" height="32"/>
       <text x="958" y="938" class="lab" fill="#ffffff" text-anchor="middle">개별 공시 지가</text>
-      <text x="958" y="962" class="small" fill="#cfe5e1" text-anchor="middle">개별 토지의 공시 지가</text>
-      <text x="958" y="980" class="small" fill="#cfe5e1" text-anchor="middle">표준지 공시 지가에서 산정</text>
+      <text x="958" y="962" class="small" fill="#ffffff" text-anchor="middle">개별 토지의 공시 지가</text>
+      <text x="958" y="980" class="small" fill="#ffffff" text-anchor="middle">표준지 공시 지가에서 산정</text>
     </g>
   </g>
 

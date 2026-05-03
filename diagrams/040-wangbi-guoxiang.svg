@@ -42,7 +42,7 @@
     <g transform="translate(310, 280)">
       <circle r="62" class="hum"/>
       <text x="0" y="10" text-anchor="middle" class="han">無</text>
-      <text x="0" y="34" text-anchor="middle" font-size="10" fill="#f5f1e8" opacity="0.85">만물의 근원</text>
+      <text x="0" y="34" text-anchor="middle" font-size="10" fill="#f5f1e8">만물의 근원</text>
     </g>
 
     <!-- 무에서 비롯되는 유(有)들 -->
@@ -180,7 +180,7 @@
     <rect x="40" y="940" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="940" width="1120" height="32" rx="6" fill="#5e548e"/>
     <text x="60" y="962" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="962" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <text x="1140" y="962" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">5개 항목</text>
     <line x1="40" y1="974" x2="1160" y2="974" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="990" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">왕필의 무</text>
     <text x="240" y="990" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">단순한 없음이 아니라 만물의 근원이 되는 비어 있음. 모든 유는 무에서 비롯된다.</text>

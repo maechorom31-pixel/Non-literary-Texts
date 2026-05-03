@@ -29,7 +29,7 @@
   <!-- Header -->
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#1f5582"/>
   <text x="64" y="80" class="ti" fill="#ffffff">수생 동물의 호흡 — 아가미 분류와 환수 방식</text>
-  <text x="1136" y="80" class="sub" fill="#cfdcec" text-anchor="end">과학·기술 · 분류</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">과학·기술 · 분류</text>
 
   <!-- Scene 1: 환경의 차이 -->
   <g class="reveal" data-reveal-step="1">

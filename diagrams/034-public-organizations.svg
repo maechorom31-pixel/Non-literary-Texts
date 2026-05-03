@@ -25,7 +25,7 @@
 
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
   <text x="64" y="80" class="ti" fill="#ffffff">특별 공공 행정 조직 — 다층 분류</text>
-  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회·문화 · 분류</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">사회·문화 · 분류</text>
 
   <!-- Scene 1: 개념 -->
   <g class="reveal" data-reveal-step="1">
@@ -160,7 +160,7 @@
     <rect x="40" y="1200" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="1200" width="1120" height="32" rx="6" fill="#2a6f6f"/>
     <text x="60" y="1222" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="1222" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <text x="1140" y="1222" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">5개 항목</text>
     <line x1="40" y1="1234" x2="1160" y2="1234" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="1250" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">특별 공공 행정 조직</text>
     <text x="240" y="1250" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">특정 행정 영역에서 자율성·전문성을 갖고 운영되는 공공 조직.</text>

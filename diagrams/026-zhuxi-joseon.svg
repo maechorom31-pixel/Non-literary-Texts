@@ -25,7 +25,7 @@
 
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#5e548e"/>
   <text x="64" y="80" class="ti" fill="#ffffff">주희 추종의 두 갈래 — 모사 vs 구곡 경영</text>
-  <text x="1136" y="80" class="sub" fill="#ddd5ec" text-anchor="end">인문·예술 · 분류</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">인문·예술 · 분류</text>
 
   <!-- Scene 1: 주희와 무이도가 -->
   <g class="reveal" data-reveal-step="1">
@@ -53,8 +53,8 @@
 
       <rect x="532" width="220" height="78" rx="8" fill="#5e548e"/>
       <text x="642" y="26" class="lab" fill="#ffffff" text-anchor="middle">「무이도가」</text>
-      <text x="642" y="50" class="small" fill="#ddd5ec" text-anchor="middle">아홉 굽이 실경 묘사</text>
-      <text x="642" y="68" class="small" fill="#ddd5ec" text-anchor="middle">성리학적 자연관</text>
+      <text x="642" y="50" class="small" fill="#ffffff" text-anchor="middle">아홉 굽이 실경 묘사</text>
+      <text x="642" y="68" class="small" fill="#ffffff" text-anchor="middle">성리학적 자연관</text>
 
       <line x1="764" y1="40" x2="794" y2="40" stroke="#5e548e" stroke-width="2" marker-end="url(#ar26)"/>
 
@@ -75,7 +75,7 @@
     <rect class="panel" x="64" y="390" width="528" height="296" rx="12" stroke="#5e548e" stroke-width="1.6" fill="#f1ecf8"/>
     <rect x="64" y="390" width="528" height="40" rx="12" fill="#5e548e"/>
     <text x="84" y="416" class="lab" fill="#ffffff">이황 학통 — 모사와 존경</text>
-    <text x="572" y="416" class="small" fill="#ddd5ec" text-anchor="end">「무이도가」 = 흥의 발현·성정 도야</text>
+    <text x="572" y="416" class="small" fill="#ffffff" text-anchor="end">「무이도가」 = 흥의 발현·성정 도야</text>
 
     <text x="84" y="456" class="bd">핵심 행위</text>
     <text x="84" y="482" class="small">· 「무이도가」를 차운한 시를 짓다</text>
@@ -95,7 +95,7 @@
     <rect class="panel" x="608" y="390" width="528" height="296" rx="12" stroke="#5e548e" stroke-width="1.6" fill="#f1ecf8"/>
     <rect x="608" y="390" width="528" height="40" rx="12" fill="#5e548e"/>
     <text x="628" y="416" class="lab" fill="#ffffff">이이 학통 — 조선식 구곡 경영</text>
-    <text x="1116" y="416" class="small" fill="#ddd5ec" text-anchor="end">「무이도가」 = 학문 진전의 순서</text>
+    <text x="1116" y="416" class="small" fill="#ffffff" text-anchor="end">「무이도가」 = 학문 진전의 순서</text>
 
     <text x="628" y="456" class="bd">핵심 행위</text>
     <text x="628" y="482" class="small">· 이이가 황해도 고산에 정사 + 「고산구곡가」 작</text>
@@ -123,19 +123,19 @@
       <g transform="translate(120,820)">
         <rect width="180" height="60" rx="10" fill="#5e548e"/>
         <text x="90" y="32" class="lab" fill="#ffffff" text-anchor="middle">주희</text>
-        <text x="90" y="52" class="small" fill="#ddd5ec" text-anchor="middle">성리학 집대성</text>
+        <text x="90" y="52" class="small" fill="#ffffff" text-anchor="middle">성리학 집대성</text>
 
         <line x1="190" y1="30" x2="230" y2="30" stroke="#5e548e" stroke-width="2.4" marker-end="url(#ar26)"/>
 
         <rect x="234" width="180" height="60" rx="10" fill="#5e548e"/>
         <text x="324" y="32" class="lab" fill="#ffffff" text-anchor="middle">이이</text>
-        <text x="324" y="52" class="small" fill="#ddd5ec" text-anchor="middle">조선 성리학</text>
+        <text x="324" y="52" class="small" fill="#ffffff" text-anchor="middle">조선 성리학</text>
 
         <line x1="424" y1="30" x2="464" y2="30" stroke="#5e548e" stroke-width="2.4" marker-end="url(#ar26)"/>
 
         <rect x="468" width="180" height="60" rx="10" fill="#5e548e"/>
         <text x="558" y="32" class="lab" fill="#ffffff" text-anchor="middle">송시열</text>
-        <text x="558" y="52" class="small" fill="#ddd5ec" text-anchor="middle">노론의 종조(宗祖)</text>
+        <text x="558" y="52" class="small" fill="#ffffff" text-anchor="middle">노론의 종조(宗祖)</text>
 
         <line x1="658" y1="30" x2="698" y2="30" stroke="#5e548e" stroke-width="2.4" marker-end="url(#ar26)"/>
 
@@ -156,7 +156,7 @@
     <rect x="40" y="1080" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#5e548e"/>
     <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">5개 항목</text>
     <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">주희와 「무이도가」</text>
     <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">성리학을 집대성한 주희가 무이산 아홉 굽이의 실경을 묘사한 시. 조선 사대부들의 차운시와 「무이구곡도」의 출발점이 되었다.</text>

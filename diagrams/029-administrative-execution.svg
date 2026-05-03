@@ -79,7 +79,7 @@
       <text x="120" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">① 계고</text>
       <text x="120" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">상당 기간 내 의무 불이행 시</text>
       <text x="120" y="58" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">대집행 의사 사전 통지</text>
-      <text x="120" y="80" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">비상시는 생략 가능</text>
+      <text x="120" y="80" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">비상시는 생략 가능</text>
 
       <line x1="244" y1="50" x2="276" y2="50" class="soc-st" stroke-width="1.6" marker-end="url(#ar29-soc)"/>
 

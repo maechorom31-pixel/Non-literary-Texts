@@ -62,7 +62,7 @@
       <rect x="640" y="0" width="280" height="80" rx="4" class="hum"/>
       <text x="780" y="22" text-anchor="middle" class="lbl-strong" fill="#f5f1e8">기호 (Sign)</text>
       <text x="780" y="44" text-anchor="middle" font-size="11" fill="#f5f1e8">기표 + 기의의 결합</text>
-      <text x="780" y="62" text-anchor="middle" font-size="10" fill="#f5f1e8" opacity="0.85">결합은 자의적 (사회적 약속)</text>
+      <text x="780" y="62" text-anchor="middle" font-size="10" fill="#f5f1e8">결합은 자의적 (사회적 약속)</text>
     </g>
   </g>
 
@@ -88,7 +88,7 @@
 
       <rect x="480" y="14" width="280" height="46" rx="3" class="hum"/>
       <text x="620" y="32" text-anchor="middle" class="lbl-xs" font-weight="700" fill="#f5f1e8">1차 기호 (단순한 의미)</text>
-      <text x="620" y="50" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">예: 흑인 군인의 거수경례 사진</text>
+      <text x="620" y="50" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">예: 흑인 군인의 거수경례 사진</text>
     </g>
 
     <!-- 화살표: 1차 기호 전체 → 2차 기표 -->
@@ -102,7 +102,7 @@
       <text x="0" y="0" class="lbl-strong" fill="#5e548e">2차 기호 체계 — 신화의 형성</text>
       <rect x="0" y="14" width="280" height="46" rx="3" class="hum"/>
       <text x="140" y="32" text-anchor="middle" class="lbl-xs" font-weight="700" fill="#f5f1e8">2차 기표 = 1차 기호 전체</text>
-      <text x="140" y="50" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">사진 자체가 새 기표</text>
+      <text x="140" y="50" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">사진 자체가 새 기표</text>
 
       <text x="300" y="42" text-anchor="middle" font-size="18" fill="#5e548e" font-weight="700">+</text>
 
@@ -114,7 +114,7 @@
 
       <rect x="640" y="14" width="380" height="46" rx="3" fill="#a83a4a"/>
       <text x="830" y="32" text-anchor="middle" class="lbl-xs" font-weight="700" fill="#f5f1e8">현대의 신화 (자연화된 이념)</text>
-      <text x="830" y="50" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">사람들에게 자연스러운 사실처럼 받아들여짐</text>
+      <text x="830" y="50" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">사람들에게 자연스러운 사실처럼 받아들여짐</text>
     </g>
   </g>
 
@@ -180,7 +180,7 @@
     <rect x="40" y="1000" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="1000" width="1120" height="32" rx="6" fill="#5e548e"/>
     <text x="60" y="1022" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="1022" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">6개 항목</text>
+    <text x="1140" y="1022" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">6개 항목</text>
     <line x1="40" y1="1034" x2="1160" y2="1034" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="1050" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">현대의 신화</text>
     <text x="240" y="1050" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">대중 매체의 이미지·텍스트가 특정 이념을 자연스럽게 받아들이게 만드는 현상.</text>

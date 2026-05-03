@@ -25,7 +25,7 @@
 
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
   <text x="64" y="80" class="ti" fill="#ffffff">법적 관점에서 본 혼인 — 두 요건과 정리 방식</text>
-  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회·문화 · 분류</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">사회·문화 · 분류</text>
 
   <!-- Scene 1: 법률혼주의 -->
   <g class="reveal" data-reveal-step="1">
@@ -99,7 +99,7 @@
 
       <rect x="832" y="584" width="304" height="56" rx="10" fill="#2a6f6f"/>
       <text x="984" y="612" class="lab" fill="#ffffff" text-anchor="middle">법적 효력 발생</text>
-      <text x="984" y="630" class="small" fill="#cfe5e1" text-anchor="middle">법적 배우자 지위 + 4촌 인척 관계</text>
+      <text x="984" y="630" class="small" fill="#ffffff" text-anchor="middle">법적 배우자 지위 + 4촌 인척 관계</text>
     </g>
 
     <text x="84" y="668" class="it">→ 부부 간 권리·의무 발생, 4촌 이내 혈족 및 그 배우자와 인척 관계 형성</text>
@@ -175,7 +175,7 @@
     <rect x="40" y="1200" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="1200" width="1120" height="32" rx="6" fill="#2a6f6f"/>
     <text x="60" y="1222" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="1222" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <text x="1140" y="1222" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">5개 항목</text>
     <line x1="40" y1="1234" x2="1160" y2="1234" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="1250" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">법률혼주의</text>
     <text x="240" y="1250" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">법에서 규정한 절차에 따라 혼인 성립을 인정하는 제도. 법적 안정성과 사회적 신뢰가 목적이다.</text>

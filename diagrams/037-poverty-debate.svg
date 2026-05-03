@@ -39,7 +39,7 @@
 
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
   <text x="64" y="80" class="ti" fill="#ffffff">중세의 청빈 논쟁 — 사용·소유 분리에서 근원적 자유까지</text>
-  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회·문화 · 시간 순서</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">사회·문화 · 시간 순서</text>
 
   <!-- Scene 1: 프란체스코 청빈 + 시간축 -->
   <g class="reveal" data-reveal-step="1">
@@ -226,8 +226,8 @@
       <line x1="14" y1="38" x2="686" y2="38" stroke="#cfe5e1"/>
       <use href="#dove" x="20" y="46" width="36" height="26"/>
       <use href="#monk" x="64" y="46" width="28" height="40"/>
-      <text x="110" y="64" class="small" fill="#cfe5e1">청빈 = 자유로운 결단</text>
-      <text x="14" y="98" class="small" fill="#cfe5e1">윤리는 자유 위에 세워진다 — 외부 강제 ✗</text>
+      <text x="110" y="64" class="small" fill="#ffffff">청빈 = 자유로운 결단</text>
+      <text x="14" y="98" class="small" fill="#ffffff">윤리는 자유 위에 세워진다 — 외부 강제 ✗</text>
     </g>
   </g>
 

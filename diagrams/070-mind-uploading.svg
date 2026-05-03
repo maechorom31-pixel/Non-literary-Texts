@@ -26,7 +26,7 @@
   <!-- Header -->
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#5e548e"/>
   <text x="64" y="80" class="ti" fill="#ffffff">마음 업로딩 — 정체성·연속성·의식의 쟁점</text>
-  <text x="1136" y="80" class="sub" fill="#ddd5ec" text-anchor="end">인문 · 주장과 근거</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">인문 · 주장과 근거</text>
 
   <!-- Scene 1: 도입 -->
   <g class="reveal" data-reveal-step="1">
@@ -90,7 +90,7 @@
 
       <rect x="904" y="544" width="232" height="62" rx="10" fill="#5e548e"/>
       <text x="1020" y="570" class="lab" fill="#ffffff" text-anchor="middle">디지털 자아</text>
-      <text x="1020" y="592" class="small" fill="#e3dcf3" text-anchor="middle">재현된 정신 패턴</text>
+      <text x="1020" y="592" class="small" fill="#ffffff" text-anchor="middle">재현된 정신 패턴</text>
     </g>
   </g>
 
@@ -165,7 +165,7 @@
     <rect x="40" y="1280" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="1280" width="1120" height="32" rx="6" fill="#5e548e"/>
     <text x="60" y="1302" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="1302" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <text x="1140" y="1302" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">5개 항목</text>
     <line x1="40" y1="1314" x2="1160" y2="1314" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="1330" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">마음 업로딩의 시나리오</text>
     <text x="240" y="1330" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">뇌 스캐닝과 신경 시뮬레이션을 통해 정보 패턴을 디지털 시스템으로 옮긴다.</text>

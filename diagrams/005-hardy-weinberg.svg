@@ -24,7 +24,7 @@
   <!-- Header -->
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#1f5582"/>
   <text x="64" y="80" class="ti" fill="#ffffff">하디-바인베르크 평형 — 다섯 조건과 (p+q)² 전개</text>
-  <text x="1136" y="80" class="sub" fill="#cfdcec" text-anchor="end">과학·기술 · 인과</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">과학·기술 · 인과</text>
 
   <!-- Scene 1: 도입 -->
   <g class="reveal" data-reveal-step="1">
@@ -164,7 +164,7 @@
     <rect x="40" y="1080" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#1f5582"/>
     <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">5개 항목</text>
     <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#1f5582">하디-바인베르크 평형</text>
     <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">일정 조건이 모두 충족되면 한 집단의 유전자 빈도와 유전자형 빈도가 세대가 지나도 변하지 않는다는 법칙.</text>

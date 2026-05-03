@@ -41,7 +41,7 @@
 
   <rect x="40" y="36" width="1120" height="62" rx="10" fill="#2a6f6f"/>
   <text x="64" y="76" class="ti" fill="#fff">조세 법률주의와 상속·증여세</text>
-  <text x="1136" y="76" class="lab-sm" fill="#cfe5e1" text-anchor="end">주제 통합 · 분류</text>
+  <text x="1136" y="76" class="lab-sm" fill="#ffffff" text-anchor="end">주제 통합 · 분류</text>
 
   <!-- (가) 헤더 -->
   <g class="reveal" data-reveal-step="1">

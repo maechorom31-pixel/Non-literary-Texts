@@ -177,7 +177,7 @@
     <rect x="40" y="1020" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="1020" width="1120" height="32" rx="6" fill="#2a6f6f"/>
     <text x="60" y="1042" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="1042" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <text x="1140" y="1042" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">5개 항목</text>
     <line x1="40" y1="1054" x2="1160" y2="1054" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="1070" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">전통적 유추 이해</text>
     <text x="240" y="1070" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">법 흠결을 메우는 보조 수단으로 유추를 인식하는 전통적 입장.</text>

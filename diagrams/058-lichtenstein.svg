@@ -155,9 +155,9 @@
       <text x="14" y="22" class="lbl-strong" fill="#f5f1e8">예술적 의의</text>
       <text x="14" y="44" class="lbl-sm" fill="#f5f1e8">대중 매체의 이미지를</text>
       <text x="14" y="62" class="lbl-sm" fill="#f5f1e8">차용하고 재해석</text>
-      <text x="14" y="84" class="lbl-xs" fill="#f5f1e8" opacity="0.85">단순 복제 X</text>
-      <text x="14" y="100" class="lbl-xs" fill="#f5f1e8" opacity="0.85">→ 만화 형식 요소를 미적</text>
-      <text x="14" y="116" class="lbl-xs" fill="#f5f1e8" opacity="0.85">  재해석의 도구로 사용</text>
+      <text x="14" y="84" class="lbl-xs" fill="#f5f1e8">단순 복제 X</text>
+      <text x="14" y="100" class="lbl-xs" fill="#f5f1e8">→ 만화 형식 요소를 미적</text>
+      <text x="14" y="116" class="lbl-xs" fill="#f5f1e8">  재해석의 도구로 사용</text>
       <text x="14" y="138" class="lbl-xs" fill="#f5f1e8" font-weight="700">새로운 회화 양식의 선구</text>
     </g>
   </g>
@@ -168,7 +168,7 @@
     <rect x="40" y="940" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="940" width="1120" height="32" rx="6" fill="#8b6f47"/>
     <text x="60" y="962" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="962" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <text x="1140" y="962" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">5개 항목</text>
     <line x1="40" y1="974" x2="1160" y2="974" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="990" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">팝 아트의 등장</text>
     <text x="240" y="990" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">1960년대 대중 매체 발달과 함께 일상의 대중 이미지를 미술 소재로 활용하는 사조.</text>

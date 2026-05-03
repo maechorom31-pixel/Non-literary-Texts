@@ -57,7 +57,7 @@
 
       <rect x="0" y="80" width="500" height="50" rx="4" class="sci"/>
       <text x="250" y="100" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">정하중 + 활하중을 지탱할 내력 필요</text>
-      <text x="250" y="118" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">건축물의 기본 요건</text>
+      <text x="250" y="118" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">건축물의 기본 요건</text>
     </g>
   </g>
 
@@ -163,7 +163,7 @@
     <rect x="40" y="1080" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#5e548e"/>
     <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">5개 항목</text>
     <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">하중과 내력</text>
     <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">정하중(영구)과 활하중(가변)을 모두 지탱할 내력이 건축물의 기본 요건이다.</text>

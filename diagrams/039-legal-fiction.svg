@@ -50,7 +50,7 @@
 
   <rect x="40" y="36" width="1120" height="62" rx="10" fill="#2a6f6f"/>
   <text x="64" y="76" class="ti" fill="#fff">법적 의제 — 사실 아닌 것을 사실로 취급</text>
-  <text x="1136" y="76" class="lab-sm" fill="#cfe5e1" text-anchor="end">사회·문화 · 비교</text>
+  <text x="1136" y="76" class="lab-sm" fill="#ffffff" text-anchor="end">사회·문화 · 비교</text>
 
   <!-- Scene 1: 정의 + 실종선고 시각화 -->
   <g class="reveal" data-reveal-step="1">
@@ -175,8 +175,8 @@
 
       <rect x="522" y="0" width="448" height="80" rx="8" fill="#2a6f6f"/>
       <text x="746" y="26" class="pill" text-anchor="middle">법적 의제 — 거리를 메우는 장치</text>
-      <text x="746" y="50" class="lab-xs" fill="#cfe5e1" text-anchor="middle">→ 진보하는 사회의 표지</text>
-      <text x="746" y="68" class="lab-xs" fill="#cfe5e1" text-anchor="middle">법체계가 변화에 유연하게 대처</text>
+      <text x="746" y="50" class="lab-xs" fill="#ffffff" text-anchor="middle">→ 진보하는 사회의 표지</text>
+      <text x="746" y="68" class="lab-xs" fill="#ffffff" text-anchor="middle">법체계가 변화에 유연하게 대처</text>
     </g>
   </g>
 

@@ -62,7 +62,7 @@
 
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#5e548e"/>
   <text x="64" y="80" class="ti" fill="#ffffff">예술 형식과 매체 — 레싱의 매체 구분과 페히의 유동성</text>
-  <text x="1136" y="80" class="sub" fill="#ddd5ec" text-anchor="end">주제 통합 · 비교</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">주제 통합 · 비교</text>
 
   <!-- (가) 헤더 -->
   <rect x="40" y="124" width="1120" height="34" rx="6" fill="#ede8f6"/>

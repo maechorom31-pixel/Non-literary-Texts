@@ -50,9 +50,9 @@
       <rect x="0" y="0" width="200" height="120" rx="4" class="met"/>
       <text x="100" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">① Survey</text>
       <text x="100" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">훑어보기</text>
-      <text x="100" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">제목·소제목·도표·</text>
-      <text x="100" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">목차로 핵심 내용</text>
-      <text x="100" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">개관·예측</text>
+      <text x="100" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">제목·소제목·도표·</text>
+      <text x="100" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">목차로 핵심 내용</text>
+      <text x="100" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">개관·예측</text>
 
       <line x1="204" y1="60" x2="220" y2="60" class="met-st" stroke-width="1.6" marker-end="url(#ar52-met)"/>
 
@@ -60,9 +60,9 @@
       <rect x="224" y="0" width="200" height="120" rx="4" class="met"/>
       <text x="324" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">② Question</text>
       <text x="324" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">질문하기</text>
-      <text x="324" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">전 단계 정보를</text>
-      <text x="324" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">토대로 질문</text>
-      <text x="324" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">만들기</text>
+      <text x="324" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">전 단계 정보를</text>
+      <text x="324" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">토대로 질문</text>
+      <text x="324" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">만들기</text>
 
       <line x1="428" y1="60" x2="444" y2="60" class="met-st" stroke-width="1.6" marker-end="url(#ar52-met)"/>
 
@@ -70,9 +70,9 @@
       <rect x="448" y="0" width="200" height="120" rx="4" class="met"/>
       <text x="548" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">③ Read</text>
       <text x="548" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">읽기</text>
-      <text x="548" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">내용 파악 +</text>
-      <text x="548" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">전 단계 질문에</text>
-      <text x="548" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">답을 찾으며</text>
+      <text x="548" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">내용 파악 +</text>
+      <text x="548" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">전 단계 질문에</text>
+      <text x="548" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">답을 찾으며</text>
 
       <line x1="652" y1="60" x2="668" y2="60" class="met-st" stroke-width="1.6" marker-end="url(#ar52-met)"/>
 
@@ -80,9 +80,9 @@
       <rect x="672" y="0" width="200" height="120" rx="4" class="met"/>
       <text x="772" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">④ Recite</text>
       <text x="772" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">확인하기</text>
-      <text x="772" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">중요한 부분</text>
-      <text x="772" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">확인 + 명확히</text>
-      <text x="772" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">기억</text>
+      <text x="772" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">중요한 부분</text>
+      <text x="772" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">확인 + 명확히</text>
+      <text x="772" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">기억</text>
 
       <line x1="876" y1="60" x2="892" y2="60" class="met-st" stroke-width="1.6" marker-end="url(#ar52-met)"/>
 
@@ -90,9 +90,9 @@
       <rect x="896" y="0" width="200" height="120" rx="4" class="met"/>
       <text x="996" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">⑤ Review</text>
       <text x="996" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">재검토하기</text>
-      <text x="996" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">전체 내용을</text>
-      <text x="996" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">다시 훑고</text>
-      <text x="996" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">정리</text>
+      <text x="996" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">전체 내용을</text>
+      <text x="996" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">다시 훑고</text>
+      <text x="996" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">정리</text>
     </g>
   </g>
 
@@ -184,7 +184,7 @@
     <rect x="40" y="940" width="1120" height="140" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="940" width="1120" height="32" rx="6" fill="#8b6f47"/>
     <text x="60" y="962" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="962" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">3개 항목</text>
+    <text x="1140" y="962" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">3개 항목</text>
     <line x1="40" y1="974" x2="1160" y2="974" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="990" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">SQ3R</text>
     <text x="240" y="990" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">훑어보기-질문하기-읽기-확인하기-재검토하기의 다섯 단계 독서 전략.</text>

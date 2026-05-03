@@ -96,7 +96,7 @@
       <text x="-220" y="-12" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">가설 ①</text>
       <text x="-220" y="6" text-anchor="middle" font-size="10" fill="#f5f1e8">증언자의</text>
       <text x="-220" y="22" text-anchor="middle" font-size="10" fill="#f5f1e8">거짓·착각·속임</text>
-      <text x="-220" y="44" text-anchor="middle" font-size="9" fill="#f5f1e8" opacity="0.85">→ 매우 흔한 일</text>
+      <text x="-220" y="44" text-anchor="middle" font-size="9" fill="#f5f1e8">→ 매우 흔한 일</text>
 
       <!-- 오른쪽: 기적 가설 (높은 위치 = 증거 약함 = 가벼움) -->
       <line x1="220" y1="-100" x2="220" y2="-130" class="ink" stroke-width="1"/>
@@ -175,7 +175,7 @@
     <rect x="40" y="940" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
     <rect x="40" y="940" width="1120" height="32" rx="6" fill="#5e548e"/>
     <text x="60" y="962" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
-    <text x="1140" y="962" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <text x="1140" y="962" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#ffffff">5개 항목</text>
     <line x1="40" y1="974" x2="1160" y2="974" stroke="#c9bfa8" stroke-width="0.5"/>
     <text x="60" y="990" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">기적의 정의</text>
     <text x="240" y="990" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">단지 일어나기 힘든 사건이 아니라, 자연법칙으로는 실제로 일어날 수 없는 초자연적 사건이다.</text>

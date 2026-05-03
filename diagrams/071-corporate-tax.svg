@@ -44,7 +44,7 @@
   <!-- Header -->
   <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
   <text x="64" y="80" class="ti" fill="#ffffff">법인세 — 이중 과세 문제와 해결 방식의 분류</text>
-  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회 · 분류</text>
+  <text x="1136" y="80" class="sub" fill="#ffffff" text-anchor="end">사회 · 분류</text>
 
   <!-- Scene 1: 법인세 정의 -->
   <g class="reveal" data-reveal-step="1">

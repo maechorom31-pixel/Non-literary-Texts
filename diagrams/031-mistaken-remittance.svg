@@ -55,7 +55,7 @@
 
   <rect x="40" y="36" width="1120" height="62" rx="10" fill="#2a6f6f"/>
   <text x="64" y="76" class="ti" fill="#fff">착오 송금 — 발견·반환·법적 보호의 흐름</text>
-  <text x="1136" y="76" class="lab-sm" fill="#cfe5e1" text-anchor="end">사회·문화 · 절차</text>
+  <text x="1136" y="76" class="lab-sm" fill="#ffffff" text-anchor="end">사회·문화 · 절차</text>
 
   <!-- Scene 1: 정의 + 시각 도식 -->
   <g class="reveal" data-reveal-step="1">
@@ -95,21 +95,21 @@
       <rect width="180" height="60" rx="8" fill="#2a6f6f"/>
       <use href="#person31" x="14" y="14" width="22" height="32"/>
       <text x="110" y="32" class="pill" text-anchor="middle">송금인</text>
-      <text x="110" y="52" class="lab-xs" fill="#cfe5e1" text-anchor="middle">즉시 신고</text>
+      <text x="110" y="52" class="lab-xs" fill="#ffffff" text-anchor="middle">즉시 신고</text>
 
       <line x1="188" y1="30" x2="226" y2="30" stroke="#2a6f6f" stroke-width="2" marker-end="url(#ar31)"/>
 
       <rect x="234" y="0" width="180" height="60" rx="8" fill="#2a6f6f"/>
       <use href="#bank31" x="244" y="12" width="40" height="36"/>
       <text x="334" y="32" class="pill" text-anchor="middle">은행 (중개)</text>
-      <text x="334" y="52" class="lab-xs" fill="#cfe5e1" text-anchor="middle">수취인에 연락</text>
+      <text x="334" y="52" class="lab-xs" fill="#ffffff" text-anchor="middle">수취인에 연락</text>
 
       <line x1="422" y1="30" x2="460" y2="30" stroke="#2a6f6f" stroke-width="2" marker-end="url(#ar31)"/>
 
       <rect x="468" y="0" width="180" height="60" rx="8" fill="#2a6f6f"/>
       <use href="#person31" x="482" y="14" width="22" height="32"/>
       <text x="558" y="32" class="pill" text-anchor="middle">수취인</text>
-      <text x="558" y="52" class="lab-xs" fill="#cfe5e1" text-anchor="middle">반환 요청</text>
+      <text x="558" y="52" class="lab-xs" fill="#ffffff" text-anchor="middle">반환 요청</text>
 
       <!-- 분기 -->
       <line x1="656" y1="30" x2="694" y2="30" stroke="#7a6f5f" stroke-width="2" stroke-dasharray="4 3"/>
