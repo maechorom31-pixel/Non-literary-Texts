@@ -718,8 +718,8 @@
   }
   function initTheme() {
     const saved = localStorage.getItem(THEME_KEY);
-    const sysDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    applyTheme(saved || (sysDark ? "dark" : "light"));
+    // 기본은 항상 라이트. 사용자가 토글했을 때만 다크로 저장됨.
+    applyTheme(saved === "dark" ? "dark" : "light");
   }
 
   // --------- 학습 대시보드 ---------

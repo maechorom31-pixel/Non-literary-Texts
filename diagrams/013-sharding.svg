@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1300" data-app role="img" aria-labelledby="t13 d13">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1300" data-app="" role="img" aria-labelledby="t13 d13">
   <title id="t13">샤딩 — 데이터를 잘게 나눠 저장하는 분산 파일 관리</title>
   <desc id="d13">한 서버에 데이터가 몰린 구조를 사용자 ID 범위별 샤드로 분할하고, 약점을 복제로 보완하지만 시간 지연으로 인한 일관성 문제를 동기화로 해결한다.</desc>
   <defs>
