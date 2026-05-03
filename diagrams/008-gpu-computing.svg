@@ -1,0 +1,273 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1020" role="img" aria-labelledby="t8 d8">
+  <title id="t8">CPU와 GPU의 비교 — 단일 명령 다중 데이터(SIMD)</title>
+  <desc id="d8">CPU 중심 환경에서 인공지능·빅데이터 시대로 변하면서 GPU가 부상한 흐름을 도입으로 두고, 소수의 강력한 코어로 복잡 처리에 강한 CPU와 수많은 단순 코어로 같은 명령을 다른 데이터에 동시 적용하는 GPU의 구조 차이, 한 연산 유닛에서 동일 명령이 여러 코어에 분배되어 서로 다른 데이터에 대해 같은 연산을 동시에 수행하는 SIMD 핵심 시각화, 코어와의 거리에 따른 계층 메모리(레지스터→공유→글로벌), 분기·조건 발생 시 일부 코어가 노는 효율 저하, 그리고 CPU와 GPU의 역할 분담 협력 구조까지 차근차근 보여 준다.</desc>
+
+  <defs>
+    <marker id="ar8-sci" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f5582"/>
+    </marker>
+    <marker id="ar8-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .mono { font-family: ui-monospace, monospace; font-size: 12px; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .sci { fill: #1f5582; }
+    .sci-st { stroke: #1f5582; }
+    .sci-bg { fill: rgba(31,85,130,0.08); }
+    .sci-bg2 { fill: rgba(31,85,130,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+    .acc-bg2 { fill: rgba(168,58,74,0.18); }
+  ]]></style>
+
+  <!-- ===========================================================
+       Step 1 · 도입
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="90" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">연산 환경의 변화 — CPU에서 GPU로</text>
+    <text x="60" y="86" class="lbl">CPU 중심 (문서·웹·OS) → 인공지능·빅데이터·고해상도 그래픽 시대 → 같은 연산을 동시에 많이 처리해야 하는 작업 폭증</text>
+    <text x="60" y="108" class="lbl-sm">→ <tspan font-weight="700">GPU 부상</tspan>: 그래픽 처리에서 출발해 인공지능 학습·과학 시뮬레이션까지 활용 확대</text>
+  </g>
+
+  <!-- ===========================================================
+       Step 2 · CPU vs GPU 좌우 비교
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="600" y="148" text-anchor="middle" class="lbl-head">CPU vs GPU — 코어 수와 코어 능력의 트레이드오프</text>
+
+    <!-- CPU 카드 -->
+    <rect x="40" y="170" width="540" height="270" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <rect x="40" y="170" width="540" height="34" rx="6" class="acc"/>
+    <text x="60" y="194" class="lbl-strong" fill="#f5f1e8">CPU · 소수의 강력한 코어</text>
+
+    <!-- 4개 큰 코어 -->
+    <g transform="translate(80, 230)">
+      <rect x="0" y="0" width="100" height="90" rx="6" class="acc"/>
+      <text x="50" y="42" text-anchor="middle" font-size="12" fill="#f5f1e8" font-weight="600">코어 1</text>
+      <text x="50" y="62" text-anchor="middle" font-size="9" fill="#f5f1e8">강력</text>
+
+      <rect x="116" y="0" width="100" height="90" rx="6" class="acc"/>
+      <text x="166" y="42" text-anchor="middle" font-size="12" fill="#f5f1e8" font-weight="600">코어 2</text>
+
+      <rect x="0" y="106" width="100" height="90" rx="6" class="acc"/>
+      <text x="50" y="148" text-anchor="middle" font-size="12" fill="#f5f1e8" font-weight="600">코어 3</text>
+
+      <rect x="116" y="106" width="100" height="90" rx="6" class="acc"/>
+      <text x="166" y="148" text-anchor="middle" font-size="12" fill="#f5f1e8" font-weight="600">코어 4</text>
+    </g>
+
+    <!-- CPU 설명 -->
+    <g transform="translate(330, 250)">
+      <text x="0" y="0" class="lbl-strong">강점</text>
+      <text x="0" y="22" class="lbl-sm">· 분기·조건 판단 많은 작업</text>
+      <text x="0" y="40" class="lbl-sm">· 운영 체제 제어</text>
+      <text x="0" y="58" class="lbl-sm">· 사용자 입력 처리</text>
+
+      <text x="0" y="92" class="lbl-strong">설계 철학</text>
+      <text x="0" y="114" class="lbl-sm">"복잡한 일을</text>
+      <text x="0" y="132" class="lbl-sm">한 번씩 빠르게"</text>
+      <text x="0" y="158" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 코어 수보다 능력 우선</text>
+    </g>
+
+    <!-- GPU 카드 -->
+    <rect x="620" y="170" width="540" height="270" rx="6" class="sci-bg sci-st" stroke-width="1.5"/>
+    <rect x="620" y="170" width="540" height="34" rx="6" class="sci"/>
+    <text x="640" y="194" class="lbl-strong" fill="#f5f1e8">GPU · 수많은 단순 코어</text>
+
+    <!-- 코어 그리드 (10x4 = 40개) -->
+    <g transform="translate(660, 230)">
+      <g class="sci">
+        <rect x="0" y="0" width="20" height="20" rx="2"/><rect x="24" y="0" width="20" height="20" rx="2"/>
+        <rect x="48" y="0" width="20" height="20" rx="2"/><rect x="72" y="0" width="20" height="20" rx="2"/>
+        <rect x="96" y="0" width="20" height="20" rx="2"/><rect x="120" y="0" width="20" height="20" rx="2"/>
+        <rect x="144" y="0" width="20" height="20" rx="2"/><rect x="168" y="0" width="20" height="20" rx="2"/>
+        <rect x="192" y="0" width="20" height="20" rx="2"/><rect x="216" y="0" width="20" height="20" rx="2"/>
+        <rect x="0" y="24" width="20" height="20" rx="2"/><rect x="24" y="24" width="20" height="20" rx="2"/>
+        <rect x="48" y="24" width="20" height="20" rx="2"/><rect x="72" y="24" width="20" height="20" rx="2"/>
+        <rect x="96" y="24" width="20" height="20" rx="2"/><rect x="120" y="24" width="20" height="20" rx="2"/>
+        <rect x="144" y="24" width="20" height="20" rx="2"/><rect x="168" y="24" width="20" height="20" rx="2"/>
+        <rect x="192" y="24" width="20" height="20" rx="2"/><rect x="216" y="24" width="20" height="20" rx="2"/>
+        <rect x="0" y="48" width="20" height="20" rx="2"/><rect x="24" y="48" width="20" height="20" rx="2"/>
+        <rect x="48" y="48" width="20" height="20" rx="2"/><rect x="72" y="48" width="20" height="20" rx="2"/>
+        <rect x="96" y="48" width="20" height="20" rx="2"/><rect x="120" y="48" width="20" height="20" rx="2"/>
+        <rect x="144" y="48" width="20" height="20" rx="2"/><rect x="168" y="48" width="20" height="20" rx="2"/>
+        <rect x="192" y="48" width="20" height="20" rx="2"/><rect x="216" y="48" width="20" height="20" rx="2"/>
+        <rect x="0" y="72" width="20" height="20" rx="2"/><rect x="24" y="72" width="20" height="20" rx="2"/>
+        <rect x="48" y="72" width="20" height="20" rx="2"/><rect x="72" y="72" width="20" height="20" rx="2"/>
+        <rect x="96" y="72" width="20" height="20" rx="2"/><rect x="120" y="72" width="20" height="20" rx="2"/>
+        <rect x="144" y="72" width="20" height="20" rx="2"/><rect x="168" y="72" width="20" height="20" rx="2"/>
+        <rect x="192" y="72" width="20" height="20" rx="2"/><rect x="216" y="72" width="20" height="20" rx="2"/>
+      </g>
+      <text x="120" y="124" text-anchor="middle" class="lbl-sm" fill="#1f5582">단순 코어 수십~수천 개 (그림은 40개 예시)</text>
+    </g>
+
+    <!-- GPU 설명 -->
+    <g transform="translate(920, 250)">
+      <text x="0" y="0" class="lbl-strong">강점</text>
+      <text x="0" y="22" class="lbl-sm">· 대량 동일 연산 (그래픽)</text>
+      <text x="0" y="40" class="lbl-sm">· 인공지능 학습</text>
+      <text x="0" y="58" class="lbl-sm">· 과학 시뮬레이션</text>
+
+      <text x="0" y="92" class="lbl-strong">설계 철학</text>
+      <text x="0" y="114" class="lbl-sm">"단순한 일을</text>
+      <text x="0" y="132" class="lbl-sm">동시에 수많이"</text>
+      <text x="0" y="158" class="lbl-xs" fill="#1f5582" font-weight="700">→ 능력보다 코어 수 우선</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 3 · SIMD 핵심 시각화
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="460" width="1120" height="220" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="488" class="lbl-head">단일 명령 다중 데이터 (SIMD) — 같은 명령 / 다른 데이터</text>
+    <text x="60" y="510" class="lbl-sm">한 연산 유닛 안의 모든 코어는 동시에 같은 명령을 받아 서로 다른 데이터에 같은 연산을 적용</text>
+
+    <!-- 명령어 박스 -->
+    <g transform="translate(80, 540)">
+      <text x="80" y="-6" text-anchor="middle" class="lbl-sm" fill="#1f5582" font-weight="700">동일 명령</text>
+      <rect x="0" y="0" width="160" height="44" rx="4" class="sci"/>
+      <text x="80" y="28" text-anchor="middle" class="mono" fill="#f5f1e8" font-weight="700">y = a × x + b</text>
+    </g>
+
+    <!-- 명령 분배 -->
+    <g transform="translate(280, 540)">
+      <line x1="-40" y1="22" x2="-12" y2="22" class="sci-st" stroke-width="1.6" marker-end="url(#ar8-sci)"/>
+      <!-- 분배 점선 -->
+      <line x1="-26" y1="22" x2="60" y2="-2" class="sci-st" stroke-width="1" stroke-dasharray="2 2"/>
+      <line x1="-26" y1="22" x2="60" y2="22" class="sci-st" stroke-width="1" stroke-dasharray="2 2"/>
+      <line x1="-26" y1="22" x2="60" y2="46" class="sci-st" stroke-width="1" stroke-dasharray="2 2"/>
+      <line x1="-26" y1="22" x2="60" y2="70" class="sci-st" stroke-width="1" stroke-dasharray="2 2"/>
+
+      <!-- 4개 코어 -->
+      <g transform="translate(60, -8)">
+        <rect x="0" y="0" width="200" height="22" rx="3" class="sci"/>
+        <text x="14" y="15" class="mono" fill="#f5f1e8" font-weight="700">C1</text>
+        <text x="190" y="15" text-anchor="end" class="mono" fill="#f5f1e8">x=2 → 5</text>
+      </g>
+      <g transform="translate(60, 16)">
+        <rect x="0" y="0" width="200" height="22" rx="3" class="sci"/>
+        <text x="14" y="15" class="mono" fill="#f5f1e8" font-weight="700">C2</text>
+        <text x="190" y="15" text-anchor="end" class="mono" fill="#f5f1e8">x=4 → 9</text>
+      </g>
+      <g transform="translate(60, 40)">
+        <rect x="0" y="0" width="200" height="22" rx="3" class="sci"/>
+        <text x="14" y="15" class="mono" fill="#f5f1e8" font-weight="700">C3</text>
+        <text x="190" y="15" text-anchor="end" class="mono" fill="#f5f1e8">x=7 → 15</text>
+      </g>
+      <g transform="translate(60, 64)">
+        <rect x="0" y="0" width="200" height="22" rx="3" class="sci"/>
+        <text x="14" y="15" class="mono" fill="#f5f1e8" font-weight="700">C4</text>
+        <text x="190" y="15" text-anchor="end" class="mono" fill="#f5f1e8">x=9 → 19</text>
+      </g>
+    </g>
+
+    <!-- 결과 박스 -->
+    <g transform="translate(620, 530)">
+      <text x="120" y="0" text-anchor="middle" class="lbl-sm" fill="#1f5582" font-weight="700">동시 결과 (4개 데이터 한꺼번에)</text>
+      <rect x="0" y="10" width="240" height="100" rx="4" class="sci-bg sci-st" stroke-width="1.4"/>
+      <text x="120" y="42" text-anchor="middle" class="mono" font-size="13">result = [5, 9, 15, 19]</text>
+      <text x="120" y="68" text-anchor="middle" class="lbl-xs">픽셀·이미지 데이터 한 줄에 같은 셰이더</text>
+      <text x="120" y="86" text-anchor="middle" class="lbl-xs">신경망 한 층의 가중치 곱셈 등</text>
+      <text x="120" y="102" text-anchor="middle" class="lbl-xs" fill="#1f5582" font-weight="700">→ 그래픽·AI 학습의 핵심</text>
+    </g>
+
+    <!-- 연산 유닛 점선 -->
+    <rect x="332" y="528" width="270" height="120" rx="6" fill="none" class="sci-st" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <text x="467" y="668" text-anchor="middle" class="lbl-sm" fill="#1f5582">하나의 연산 유닛 (코어들이 같은 명령을 함께 받음)</text>
+  </g>
+
+  <!-- ===========================================================
+       Step 4 · 계층 메모리
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="700" width="540" height="220" rx="6" class="sci-bg sci-st" stroke-width="1.5"/>
+    <rect x="40" y="700" width="540" height="34" rx="6" class="sci"/>
+    <text x="60" y="724" class="lbl-strong" fill="#f5f1e8">계층화된 메모리 — 코어와의 거리에 따라</text>
+    <text x="60" y="754" class="lbl-xs">코어와 가까울수록 빠르고 작음 / 멀수록 느리고 큼</text>
+
+    <!-- 동심 직사각형 -->
+    <g transform="translate(60, 770)">
+      <!-- 글로벌 메모리 -->
+      <rect x="0" y="0" width="500" height="130" rx="4" fill="#a5b8d4"/>
+      <text x="250" y="120" text-anchor="middle" font-family="Noto Serif KR" font-size="11" fill="#1a1612" font-weight="600">글로벌 메모리 · 모든 유닛 공유 · 큼·느림</text>
+
+      <!-- 공유 메모리 -->
+      <rect x="60" y="20" width="380" height="84" rx="4" fill="#5a8bb5"/>
+      <text x="250" y="96" text-anchor="middle" font-family="Noto Serif KR" font-size="11" fill="#f5f1e8" font-weight="600">공유 메모리 · 한 연산 유닛 안 코어들이 공유</text>
+
+      <!-- 레지스터 + 코어들 -->
+      <rect x="140" y="40" width="220" height="42" rx="4" class="sci"/>
+      <text x="250" y="58" text-anchor="middle" font-family="Noto Serif KR" font-size="11" fill="#f5f1e8" font-weight="700">레지스터 · 코어 옆 · 매우 빠름·매우 작음</text>
+      <circle cx="170" cy="74" r="6" fill="#f5f1e8"/>
+      <text x="170" y="76" text-anchor="middle" font-size="7" fill="#1f5582" font-weight="700">●</text>
+      <circle cx="330" cy="74" r="6" fill="#f5f1e8"/>
+      <text x="330" y="76" text-anchor="middle" font-size="7" fill="#1f5582" font-weight="700">●</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 5 · 분기 한계 (간트)
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="620" y="700" width="540" height="220" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <rect x="620" y="700" width="540" height="34" rx="6" class="acc"/>
+    <text x="640" y="724" class="lbl-strong" fill="#f5f1e8">한계 · 분기·조건이 많을 때 효율 저하</text>
+    <text x="640" y="754" class="lbl-xs">유닛 안 코어가 서로 다른 분기로 나뉘면, 분기를 순차 처리 → 일부 코어가 노는 시간 발생</text>
+
+    <!-- 간트 차트 -->
+    <g transform="translate(680, 776)">
+      <!-- 코어 1 -->
+      <text x="-4" y="6" text-anchor="end" class="lbl-xs">코어 1</text>
+      <rect x="0" y="-4" width="180" height="14" class="acc"/>
+      <text x="90" y="6" text-anchor="middle" font-size="9" fill="#f5f1e8">분기 A 처리</text>
+      <rect x="184" y="-4" width="180" height="14" class="paper2 rule" stroke-width="0.6"/>
+      <text x="274" y="6" text-anchor="middle" font-size="9" fill="#7a6f5f">대기 (놀고 있음)</text>
+
+      <!-- 코어 2 -->
+      <text x="-4" y="32" text-anchor="end" class="lbl-xs">코어 2</text>
+      <rect x="0" y="22" width="180" height="14" class="paper2 rule" stroke-width="0.6"/>
+      <text x="90" y="32" text-anchor="middle" font-size="9" fill="#7a6f5f">대기 (놀고 있음)</text>
+      <rect x="184" y="22" width="180" height="14" class="acc"/>
+      <text x="274" y="32" text-anchor="middle" font-size="9" fill="#f5f1e8">분기 B 처리</text>
+
+      <line x1="0" y1="48" x2="364" y2="48" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="0" y="64" class="lbl-xs">시간 →</text>
+      <text x="184" y="64" class="lbl-xs" text-anchor="middle">분기 → 순차 처리</text>
+
+      <text x="0" y="100" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 분기·조건 많은 복잡 논리는 CPU가 유리</text>
+      <text x="0" y="118" class="lbl-xs">+ 연산 유닛 사이 데이터 공유 ↑ → 통신 비용 ↑</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 6 · CPU + GPU 협력
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="40" y="940" width="1120" height="50" rx="6" class="paper2 ink" stroke-width="1"/>
+    <text x="60" y="960" class="lbl-strong">CPU + GPU 협력 분담</text>
+    <text x="220" y="960" class="lbl"><tspan fill="#a83a4a" font-weight="700">CPU</tspan>: 운영 체제·분기 많은 논리·입력 처리</text>
+    <text x="630" y="960" class="lbl-sm">+</text>
+    <text x="660" y="960" class="lbl"><tspan fill="#1f5582" font-weight="700">GPU</tspan>: 그래픽·AI 학습·과학 시뮬레이션</text>
+    <text x="60" y="980" class="lbl-xs" fill="#7a6f5f">→ 두 장치가 역할을 나누어 협력함으로써 전체 시스템의 효율과 성능이 높아진다</text>
+  </g>
+
+  <text x="1160" y="1010" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 과학·기술 · 203쪽</text>
+</svg>

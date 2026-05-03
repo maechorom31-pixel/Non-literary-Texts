@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1220" role="img" aria-labelledby="t038 d038">
+  <title id="t038">민주정과 공화정 (매디슨)</title>
+  <desc id="d038">대중적 정부 형태에서 나타나는 파벌의 위험에서 출발해, 매디슨이 다수의 지배에 내재한 치명적 약점("자기 송사의 재판관 불가")을 진단한 흐름, 직접·소규모 정부인 순수 민주정의 한계, 선출된 대표가 시민의 정치적 의지를 매개해 공동체 전체의 이익에 부합하는 방향으로 정련·확장하는 공화정의 이상, 매디슨이 본 대표의 조건(지혜·애국심·정의에 대한 사랑), 그리고 시민이 직접 추구할 때보다 대표를 통해 표현될 때 공공선에 더 합치한다는 그의 약속까지를 시각화한다.</desc>
+
+  <defs>
+    <marker id="ar38-soc" viewBox="0 0 1200 1220" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a6f6f"/>
+    </marker>
+    <marker id="ar37-acc" viewBox="0 0 1200 1220" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 12px; font-style: italic; fill: #2a6f6f; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .soc { fill: #2a6f6f; }
+    .soc-st { stroke: #2a6f6f; }
+    .soc-bg { fill: rgba(42,111,111,0.08); }
+    .soc-bg2 { fill: rgba(42,111,111,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1 · 파벌의 위험 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="120" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="60" class="lbl-head" fill="#a83a4a">파벌의 위험 — 대중적 정부 형태의 그림자</text>
+    <text x="60" y="86" class="lbl">파벌 = 공동체 전체의 이익과 일치하지 않는, 일부 구성원만의 이해관계로 결합·행동하는 시민 집단</text>
+    <text x="60" y="108" class="lbl-sm" fill="#a83a4a" font-weight="700">→ 파벌이 다수가 되면 다른 구성원의 이익·권리 침해</text>
+    <text x="60" y="130" class="lbl-xs">시민 사회의 분열과 파벌 형성은 대중적 정부 형태에 항상 내재된 위험</text>
+  </g>
+
+  <!-- Step 2 · 매디슨의 진단 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="170" width="1120" height="120" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="198" class="lbl-head">매디슨의 진단 — 다수 지배의 치명적 약점</text>
+
+    <g transform="translate(60, 220)">
+      <rect x="0" y="0" width="1080" height="50" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="14" y="22" class="quote">"누구도 자기 자신의 송사에서 재판관이 될 수 없다"</text>
+      <text x="14" y="44" class="lbl-sm">→ 다수가 자신의 이익에 직접 관련된 사안에서 공정한 판단을 내리리라 기대하기 어렵다</text>
+    </g>
+  </g>
+
+  <!-- Step 3 · 순수 민주정 한계 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="310" width="540" height="220" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="338" class="lbl-head" fill="#a83a4a">순수 민주정 — 한계</text>
+
+    <g transform="translate(60, 360)">
+      <rect x="0" y="0" width="500" height="80" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">정의</text>
+      <text x="14" y="44" class="lbl-sm">정부를 직접 구성·운영하는</text>
+      <text x="14" y="62" class="lbl-sm">소규모 시민들로 구성된 사회</text>
+
+      <rect x="0" y="92" width="500" height="60" rx="4" class="acc-bg acc-st" stroke-width="1.4"/>
+      <text x="14" y="114" class="lbl-strong" fill="#a83a4a">한계</text>
+      <text x="14" y="136" class="lbl-sm">다수 의사 = 결정 → 파벌이 다수가 되면</text>
+      <text x="14" y="152" class="lbl-xs" fill="#a83a4a" font-weight="700">공동체 전체의 이익을 해친다</text>
+    </g>
+  </g>
+
+  <!-- Step 4 · 공화정 이상 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="620" y="310" width="540" height="220" rx="6" class="soc-bg2 soc-st" stroke-width="1.5"/>
+    <text x="640" y="338" class="lbl-head" fill="#2a6f6f">공화정의 이상 — 대안</text>
+
+    <g transform="translate(640, 360)">
+      <rect x="0" y="0" width="500" height="80" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong" fill="#2a6f6f">정의</text>
+      <text x="14" y="44" class="lbl-sm">선출된 <tspan font-weight="700" fill="#2a6f6f">대표</tspan>를 통해 정치적</text>
+      <text x="14" y="62" class="lbl-sm">권력이 행사되는 정부</text>
+
+      <rect x="0" y="92" width="500" height="60" rx="4" class="soc-bg soc-st" stroke-width="1.4"/>
+      <text x="14" y="114" class="lbl-strong" fill="#2a6f6f">기능</text>
+      <text x="14" y="136" class="lbl-sm">대표가 시민 의지를 매개</text>
+      <text x="14" y="152" class="lbl-xs" fill="#2a6f6f" font-weight="700">→ 공동체 전체 이익에 부합하는 방향으로 정련·확장</text>
+    </g>
+  </g>
+
+  <!-- 두 정부의 시각화 (시민 → 결정 흐름) -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="550" width="1120" height="160" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="578" class="lbl-head">두 정부의 결정 흐름</text>
+
+    <!-- 순수 민주정 -->
+    <g transform="translate(80, 610)">
+      <text x="0" y="-2" class="lbl-strong" fill="#a83a4a">순수 민주정 (직접)</text>
+      <g class="acc">
+        <circle cx="0" cy="20" r="6"/><circle cx="20" cy="20" r="6"/><circle cx="40" cy="20" r="6"/>
+        <circle cx="60" cy="20" r="6"/><circle cx="80" cy="20" r="6"/><circle cx="100" cy="20" r="6"/>
+      </g>
+      <text x="50" y="48" text-anchor="middle" class="lbl-xs">시민 (직접)</text>
+      <line x1="120" y1="20" x2="220" y2="20" class="acc-st" stroke-width="1.6" marker-end="url(#ar37-acc)"/>
+      <text x="170" y="14" text-anchor="middle" class="lbl-xs" fill="#a83a4a">다수 의사 = 결정</text>
+      <rect x="230" y="2" width="100" height="36" rx="3" class="acc"/>
+      <text x="280" y="24" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">결정</text>
+      <text x="280" y="50" text-anchor="middle" class="lbl-xs" fill="#a83a4a">파벌 → 위험</text>
+    </g>
+
+    <!-- 공화정 -->
+    <g transform="translate(680, 610)">
+      <text x="0" y="-2" class="lbl-strong" fill="#2a6f6f">공화정 (대표 매개)</text>
+      <g class="soc">
+        <circle cx="0" cy="20" r="6"/><circle cx="20" cy="20" r="6"/><circle cx="40" cy="20" r="6"/>
+        <circle cx="60" cy="20" r="6"/><circle cx="80" cy="20" r="6"/><circle cx="100" cy="20" r="6"/>
+      </g>
+      <text x="50" y="48" text-anchor="middle" class="lbl-xs">시민</text>
+      <line x1="120" y1="20" x2="180" y2="20" class="soc-st" stroke-width="1.6" marker-end="url(#ar38-soc)"/>
+      <rect x="186" y="2" width="100" height="36" rx="3" class="soc"/>
+      <text x="236" y="24" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">대표 (매개)</text>
+      <line x1="290" y1="20" x2="350" y2="20" class="soc-st" stroke-width="1.6" marker-end="url(#ar38-soc)"/>
+      <rect x="356" y="2" width="100" height="36" rx="3" class="soc"/>
+      <text x="406" y="24" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">결정</text>
+      <text x="370" y="58" text-anchor="middle" class="lbl-xs" fill="#2a6f6f">정련·확장</text>
+    </g>
+  </g>
+
+  <!-- Step 5 · 대표의 조건 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="730" width="1120" height="120" rx="6" class="soc-bg soc-st" stroke-width="1.5"/>
+    <text x="60" y="758" class="lbl-head" fill="#2a6f6f">매디슨이 본 대표의 조건 — "국익의 수호자"</text>
+
+    <g transform="translate(80, 778)">
+      <rect x="0" y="0" width="320" height="60" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="160" y="22" text-anchor="middle" class="lbl-strong" fill="#2a6f6f">지혜</text>
+      <text x="160" y="42" text-anchor="middle" class="lbl-xs">정련된 판단력</text>
+
+      <rect x="340" y="0" width="320" height="60" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="500" y="22" text-anchor="middle" class="lbl-strong" fill="#2a6f6f">애국심</text>
+      <text x="500" y="42" text-anchor="middle" class="lbl-xs">공동체에 대한 헌신</text>
+
+      <rect x="680" y="0" width="320" height="60" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="840" y="22" text-anchor="middle" class="lbl-strong" fill="#2a6f6f">정의에 대한 사랑</text>
+      <text x="840" y="42" text-anchor="middle" class="lbl-xs">공정한 판단의 기초</text>
+    </g>
+  </g>
+
+  <!-- Step 6 · 공화정의 약속 -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="40" y="870" width="1120" height="80" rx="6" class="paper2 ink" stroke-width="1"/>
+    <text x="60" y="898" class="lbl-strong">공화정의 약속</text>
+    <text x="60" y="920" class="quote">"공공의 목소리는 시민들 자신이 모인 곳에서보다 그것을 매개하는 대표들에 의해 표현될 때 더욱 공공선에 합치한다."</text>
+    <text x="60" y="940" class="lbl-xs" fill="#2a6f6f" font-weight="700">→ 시민 직접 추구 &lt; 대표 매개 → 더 나은 공공선 합치</text>
+  </g>
+
+  <text x="1160" y="990" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 사회·문화 · 157쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1000" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1000" width="1120" height="32" rx="6" fill="#2a6f6f"/>
+    <text x="60" y="1022" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1022" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1034" x2="1160" y2="1034" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1050" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">파벌</text>
+    <text x="240" y="1050" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">공동체 전체의 이익과 일치하지 않는 이해관계로 결합·행동하는 시민 집단. 다수가 되면 위험하다.</text>
+    <line x1="40" y1="1064" x2="1160" y2="1064" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1080" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">다수 지배의 약점</text>
+    <text x="240" y="1080" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">다수가 자신들의 이익에 관련된 사안에서 공정한 판단을 내리기 어렵다는 점이 본질적 약점이다.</text>
+    <line x1="40" y1="1094" x2="1160" y2="1094" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1110" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">순수한 민주정의 한계</text>
+    <text x="240" y="1110" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">직접·소규모 정부에서 다수 의사가 그대로 결정으로 이어져 파벌이 다수가 되면 공동체 이익을 해친다.</text>
+    <line x1="40" y1="1124" x2="1160" y2="1124" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1140" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">공화정의 이상</text>
+    <text x="240" y="1140" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">선출된 대표가 시민의 의지를 매개해 공동체 전체의 이익에 부합하는 방향으로 정련·확장한다.</text>
+    <line x1="40" y1="1154" x2="1160" y2="1154" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1170" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">대표의 조건</text>
+    <text x="240" y="1170" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">지혜, 애국심, 정의에 대한 사랑을 두루 갖춘 국익의 수호자.</text>
+  </g>
+</svg>

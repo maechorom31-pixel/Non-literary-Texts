@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" role="img" aria-labelledby="t17 d17">
+  <title id="t17">예술과 표현의 관계 · 세 견해</title>
+  <desc id="d17">"음악이 슬프게 들린다"는 현상을 어디에 두고 설명하는지를 기준으로 세 견해를 시각적으로 대비한다. 견해 1은 표현을 예술가 내면(직관)에, 견해 2는 예술가→관객의 감정 전달에, 견해 3은 작품 자체의 내재적 성질(랭어의 상징·키비의 유사성)에 둔다.</desc>
+
+  <defs>
+    <marker id="ar17-hum" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+    <marker id="ar17-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 12px; font-style: italic; fill: #5e548e; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1: 표현이라는 말 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="98" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">"음악이 슬프게 들린다" — 그 슬픔은 어디에 있는가?</text>
+    <text x="60" y="86" class="lbl">표현은 마음 상태의 노출 + 자연에 정서를 투영하는 행위 + 예술의 가장 핵심 언어. 그 위치에 따라 세 견해가 갈린다.</text>
+    <text x="60" y="108" class="lbl-sm">예: 축 늘어진 나뭇가지를 보고 "애처롭다"고 말하기 — 표현은 마음 안인가, 만남 안인가, 대상 안인가?</text>
+  </g>
+
+  <!-- Step 2-7: 세 견해를 세 칼럼으로 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="600" y="158" text-anchor="middle" class="lbl-head">세 견해 — 표현의 위치</text>
+  </g>
+
+  <!-- 칼럼 1: 견해 1 (Step 2, 3) -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="180" width="370" height="540" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <rect x="40" y="180" width="370" height="42" rx="6" fill="#5e548e"/>
+    <text x="60" y="208" class="lbl-strong" fill="#f5f1e8">견해 1 · 예술가의 내적 활동</text>
+    <text x="60" y="240" class="lbl-sm" fill="#5e548e">대표: 크로체 · 콜링우드</text>
+
+    <!-- 시각: 예술가의 머릿속에 슬픔이 직관됨 -->
+    <g transform="translate(220, 310)">
+      <!-- 사람 머리 옆모습 -->
+      <path d="M-30,-50 Q-50,-40 -50,0 Q-50,40 -30,50 L20,50 L24,30 Q44,30 44,10 Q44,-10 24,-10 L24,-40 Q14,-50 -10,-50 Z" fill="#ebe5d4" stroke="#5e548e" stroke-width="1.4"/>
+      <!-- 머릿속 직관 (불꽃 모양) -->
+      <g transform="translate(-12, 0)">
+        <circle cx="0" cy="0" r="22" fill="#5e548e" opacity="0.25"/>
+        <path d="M0,-14 Q-8,-4 -6,4 Q-2,12 0,8 Q4,12 6,2 Q8,-4 0,-14 Z" fill="#5e548e"/>
+        <text x="0" y="30" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">직관 = 표현</text>
+      </g>
+      <!-- 눈 -->
+      <circle cx="14" cy="0" r="3" fill="#1a1612"/>
+    </g>
+
+    <text x="60" y="408" class="lbl-strong">핵심</text>
+    <text x="60" y="428" class="lbl">표현 = 예술가의 직관</text>
+    <text x="60" y="446" class="lbl-sm">혼란스러운 인상 → 정신 개입 → 명료한 이미지로 객관화</text>
+
+    <text x="60" y="478" class="lbl-strong">콜링우드의 강조</text>
+    <text x="60" y="498" class="lbl-sm">일상의 정신 활동과 예술은 본질적으로 다르지 않다</text>
+  </g>
+
+  <!-- 견해 1의 한계 (Step 3) — 별도 reveal 그룹으로 분리 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="60" y="528" width="330" height="174" rx="4" class="acc-bg acc-st" stroke-width="1.2"/>
+    <text x="76" y="552" class="lbl-strong" fill="#a83a4a">견해 1의 한계</text>
+    <text x="76" y="574" class="lbl-sm">예술이 예술가의 내면에만 존재한다고 보기 때문에…</text>
+    <text x="76" y="610" class="lbl-sm">크로체 → 그림·조각·음악 같은</text>
+    <text x="76" y="628" class="lbl-sm">물리적 매체는 단지 직관을 기억하고</text>
+    <text x="76" y="646" class="lbl-sm">전달하기 위한 수단일 뿐</text>
+    <text x="76" y="678" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 물리적 작품이 지니는 의미를 포착하지 못한다</text>
+  </g>
+
+  <!-- 칼럼 2: 견해 2 (Step 4) -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="425" y="180" width="350" height="540" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <rect x="425" y="180" width="350" height="42" rx="6" fill="#5e548e"/>
+    <text x="445" y="208" class="lbl-strong" fill="#f5f1e8">견해 2 · 감정 전달 (소통)</text>
+    <text x="445" y="240" class="lbl-sm" fill="#5e548e">대표: 톨스토이</text>
+
+    <!-- 시각: 예술가 → 작품 → 관객 (감정 화살표) -->
+    <g transform="translate(445, 280)">
+      <!-- 예술가 -->
+      <circle cx="30" cy="30" r="22" fill="#5e548e"/>
+      <text x="30" y="34" text-anchor="middle" font-size="10" fill="#f5f1e8" font-weight="700">예술가</text>
+      <text x="30" y="68" text-anchor="middle" class="lbl-xs">감정 ♥</text>
+
+      <!-- 작품 -->
+      <rect x="120" y="14" width="80" height="40" rx="3" class="paper2 ink" stroke-width="1"/>
+      <text x="160" y="38" text-anchor="middle" class="lbl-xs" font-weight="700">작품</text>
+      <text x="160" y="68" text-anchor="middle" class="lbl-xs">선·색·소리</text>
+      <text x="160" y="82" text-anchor="middle" class="lbl-xs">움직임·언어</text>
+
+      <!-- 관객 -->
+      <circle cx="280" cy="30" r="22" fill="#a83a4a" opacity="0.85"/>
+      <text x="280" y="34" text-anchor="middle" font-size="10" fill="#f5f1e8" font-weight="700">관객</text>
+      <text x="280" y="68" text-anchor="middle" class="lbl-xs">동일 감정 ♥</text>
+
+      <!-- 화살표 -->
+      <line x1="58" y1="30" x2="116" y2="30" stroke="#5e548e" stroke-width="1.5" marker-end="url(#ar17-hum)"/>
+      <line x1="204" y1="30" x2="254" y2="30" stroke="#5e548e" stroke-width="1.5" marker-end="url(#ar17-hum)"/>
+    </g>
+
+    <text x="445" y="400" class="lbl-strong">핵심</text>
+    <text x="445" y="420" class="lbl">표현 = 감정 전달</text>
+    <text x="445" y="438" class="lbl-sm">예술가의 감정 → 매체 → 관객 동일 감정</text>
+    <text x="445" y="466" class="quote">"예술은 감정을 공유하는 과정이다"</text>
+
+    <!-- 한계 박스 -->
+    <rect x="445" y="498" width="310" height="204" rx="4" class="acc-bg acc-st" stroke-width="1.2"/>
+    <text x="461" y="522" class="lbl-strong" fill="#a83a4a">한계 — 두 가지 의문</text>
+    <text x="461" y="548" class="lbl-sm" fill="#a83a4a" font-weight="700">① 감정 일치 확인 불가</text>
+    <text x="461" y="568" class="lbl-sm">예술가의 감정 ≟ 관객의 감정?</text>
+    <text x="461" y="586" class="lbl-sm">검증할 방법이 없음</text>
+    <text x="461" y="616" class="lbl-sm" fill="#a83a4a" font-weight="700">② 감상의 자유 무시</text>
+    <text x="461" y="636" class="lbl-sm">관객은 동일한 감정 없이도</text>
+    <text x="461" y="654" class="lbl-sm">작품을 깊이 감상할 수 있음</text>
+    <text x="461" y="684" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 관객의 주체적·다양한 감상 간과</text>
+  </g>
+
+  <!-- 칼럼 3: 견해 3 (Step 5, 6, 7) -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="790" y="180" width="370" height="540" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <rect x="790" y="180" width="370" height="42" rx="6" fill="#5e548e"/>
+    <text x="810" y="208" class="lbl-strong" fill="#f5f1e8">견해 3 · 작품의 내재적 성질</text>
+    <text x="810" y="240" class="lbl-sm" fill="#5e548e">"슬픔은 음악 자체에 있다 — 우리는 알아볼 뿐"</text>
+
+    <!-- 시각: 작품 안에 표현성이 새겨짐 -->
+    <g transform="translate(970, 296)">
+      <rect x="-70" y="-30" width="140" height="60" rx="4" class="paper2 ink" stroke-width="1.2"/>
+      <text x="0" y="-2" text-anchor="middle" class="lbl-xs" font-weight="700">작품 (예: 음악)</text>
+      <!-- 음표 -->
+      <g transform="translate(0, 14)">
+        <circle cx="-32" cy="0" r="3" fill="#5e548e"/>
+        <line x1="-29" y1="0" x2="-29" y2="-12" stroke="#5e548e" stroke-width="1.4"/>
+        <circle cx="-12" cy="-4" r="3" fill="#5e548e"/>
+        <line x1="-9" y1="-4" x2="-9" y2="-16" stroke="#5e548e" stroke-width="1.4"/>
+        <circle cx="8" cy="2" r="3" fill="#5e548e"/>
+        <line x1="11" y1="2" x2="11" y2="-10" stroke="#5e548e" stroke-width="1.4"/>
+        <circle cx="28" cy="-2" r="3" fill="#5e548e"/>
+        <line x1="31" y1="-2" x2="31" y2="-14" stroke="#5e548e" stroke-width="1.4"/>
+      </g>
+      <text x="0" y="50" text-anchor="middle" class="lbl-xs" fill="#5e548e">표현성이 각인됨</text>
+    </g>
+
+    <!-- 랭어 (Step 6) -->
+    <g class="reveal" data-reveal-step="6">
+      <rect x="810" y="370" width="330" height="160" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="826" y="392" class="lbl-strong" fill="#5e548e">랭어 · 상징 이론</text>
+      <text x="826" y="412" class="lbl-sm">예술 = 감정의 시간적 흐름과</text>
+      <text x="826" y="428" class="lbl-sm">육체적 변화의 패턴을 상징</text>
+
+      <!-- 슬픔 곡선 -->
+      <g transform="translate(826, 458)">
+        <path d="M0,0 Q40,-20 80,0 T160,30 T260,40" fill="none" stroke="#5e548e" stroke-width="1.6"/>
+        <text x="20" y="-6" class="lbl-xs">긴장</text>
+        <text x="240" y="34" class="lbl-xs">가라앉음</text>
+      </g>
+      <text x="826" y="514" class="lbl-xs">예: 슬픔 = 울컥 → 점차 힘이 빠짐</text>
+    </g>
+
+    <!-- 키비 (Step 7) -->
+    <g class="reveal" data-reveal-step="7">
+      <rect x="810" y="538" width="330" height="124" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="826" y="560" class="lbl-strong" fill="#5e548e">키비 · 유사성 이론</text>
+      <text x="826" y="580" class="lbl-sm">음악의 형식 ≈ 슬픈 사람의</text>
+      <text x="826" y="596" class="lbl-sm">표정·자세·목소리</text>
+      <!-- 작품 ≈ 행동 -->
+      <g transform="translate(900, 624)">
+        <text x="0" y="0" text-anchor="middle" font-size="11" fill="#5e548e" font-weight="700">작품 형식 ≈ 행동 표현</text>
+        <text x="0" y="20" text-anchor="middle" class="lbl-xs">자연적으로 표현성을 탐지</text>
+      </g>
+    </g>
+
+    <!-- 한계 (Step 6, 7) -->
+    <g class="reveal" data-reveal-step="6">
+      <rect x="810" y="670" width="330" height="32" rx="4" class="acc-bg acc-st" stroke-width="1"/>
+      <text x="826" y="690" class="lbl-xs" fill="#a83a4a"><tspan font-weight="700">랭어 한계:</tspan> 인간 감정의 복잡성을 단순화</text>
+    </g>
+    <g class="reveal" data-reveal-step="7">
+      <rect x="810" y="704" width="330" height="14" rx="4" class="acc-bg" opacity="0.6"/>
+      <text x="826" y="715" class="lbl-xs" fill="#a83a4a"><tspan font-weight="700">키비 한계:</tspan> 표현 가능한 감정 범위가 좁음</text>
+    </g>
+  </g>
+
+  <!-- 비교 요약 표 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="740" width="1120" height="220" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="768" class="lbl-head">한눈에 보기 — 표현의 위치는 어디인가?</text>
+
+    <g transform="translate(60, 786)">
+      <!-- 헤더 -->
+      <rect x="0" y="0" width="1080" height="30" class="paper2"/>
+      <text x="14" y="20" class="lbl-strong">견해</text>
+      <text x="240" y="20" class="lbl-strong">표현이 위치한 곳</text>
+      <text x="540" y="20" class="lbl-strong">대표 인물</text>
+      <text x="780" y="20" class="lbl-strong" fill="#a83a4a">한계</text>
+
+      <line x1="0" y1="30" x2="1080" y2="30" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="14" y="56" class="lbl">견해 1 · 내적 활동</text>
+      <text x="240" y="56" class="lbl">예술가의 마음 (직관)</text>
+      <text x="540" y="56" class="lbl">크로체 · 콜링우드</text>
+      <text x="780" y="56" class="lbl" fill="#a83a4a">물리적 작품의 의미를 못 포착</text>
+
+      <line x1="0" y1="68" x2="1080" y2="68" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="94" class="lbl">견해 2 · 감정 전달</text>
+      <text x="240" y="94" class="lbl">예술가 ↔ 관객 사이</text>
+      <text x="540" y="94" class="lbl">톨스토이</text>
+      <text x="780" y="94" class="lbl" fill="#a83a4a">감정 일치 검증 불가 + 감상 다양성 무시</text>
+
+      <line x1="0" y1="106" x2="1080" y2="106" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="132" class="lbl">견해 3 · 내재적 성질 (랭어)</text>
+      <text x="240" y="132" class="lbl">작품 자체 (감정의 패턴)</text>
+      <text x="540" y="132" class="lbl">랭어</text>
+      <text x="780" y="132" class="lbl" fill="#a83a4a">감정의 복잡성 단순화</text>
+
+      <line x1="0" y1="144" x2="1080" y2="144" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="170" class="lbl">견해 3 · 내재적 성질 (키비)</text>
+      <text x="240" y="170" class="lbl">작품 자체 (행동과의 유사성)</text>
+      <text x="540" y="170" class="lbl">피터 키비</text>
+      <text x="780" y="170" class="lbl" fill="#a83a4a">표현 가능 감정 범위 축소</text>
+    </g>
+  </g>
+
+  <text x="1160" y="990" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 인문·예술 · 66쪽</text>
+</svg>

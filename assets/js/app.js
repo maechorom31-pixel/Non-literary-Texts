@@ -1,0 +1,688 @@
+/* =============================================================
+   app.js - 라우팅과 화면 렌더링
+   ============================================================= */
+
+(function () {
+  "use strict";
+
+  const state = {
+    index: null,
+    progress: {},
+    filter: "all",
+    currentId: null,
+    currentPassage: null,
+    currentSvg: null,
+    step: 0
+  };
+
+  // --------- 유틸 ---------
+  const $ = (sel, root) => (root || document).querySelector(sel);
+  const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
+  const escapeHtml = s => String(s == null ? "" : s)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+
+  function fmtSource(src) {
+    if (!src) return "";
+    const parts = [];
+    if (src.book)    parts.push(src.book);
+    if (src.section) parts.push(src.section);
+    if (src.page)    parts.push(src.page + "쪽");
+    return parts.join(" · ");
+  }
+
+  function categoryColor(cat) {
+    return (state.index && state.index.categories[cat] && state.index.categories[cat].color) || "var(--ink-2)";
+  }
+  function categoryLabel(cat) {
+    return (state.index && state.index.categories[cat] && state.index.categories[cat].label) || cat;
+  }
+
+  // --------- 부트 ---------
+  async function boot() {
+    document.getElementById("app").innerHTML = renderShell();
+
+    state.progress = window.Store.load();
+
+    // file:// 환경에서는 fetch가 막힘 → 로컬 서버 안내
+    if (location.protocol === "file:") {
+      $("#app").innerHTML = renderLocalServerNotice();
+      return;
+    }
+
+    try {
+      const res = await fetch("data/index.json", { cache: "no-cache" });
+      if (!res.ok) throw new Error("매니페스트 로드 실패 (HTTP " + res.status + ")");
+      state.index = await res.json();
+    } catch (err) {
+      $("#app").innerHTML = `
+        <div style="padding:40px;max-width:680px;margin:0 auto;color:var(--ink-2);line-height:1.7;">
+          <h2 style="font-family:'Noto Serif KR',serif;color:var(--accent);margin:0 0 12px;">데이터 매니페스트를 불러오지 못했습니다</h2>
+          <p>오류: <code style="background:var(--paper-2);padding:2px 6px;border-radius:2px;">${escapeHtml(err.message)}</code></p>
+          <p>이 사이트는 정적 호스팅(예: GitHub Pages) 또는 로컬 HTTP 서버를 통해서만 동작합니다. 로컬에서 미리 보려면 폴더에서 다음 중 한 가지를 실행하세요.</p>
+          <pre style="background:var(--paper-2);padding:14px 16px;border-left:3px solid var(--gold);font-size:13px;line-height:1.6;overflow:auto;">python3 -m http.server 8000</pre>
+          <p>그런 다음 브라우저에서 <code>http://localhost:8000/</code> 주소로 접속하시면 됩니다.</p>
+        </div>`;
+      return;
+    }
+
+    renderHub();
+    bindHubInteractions();
+    bindGlobalKeys();
+    handleHash(); // deep link
+    window.addEventListener("hashchange", handleHash);
+  }
+
+  function renderLocalServerNotice() {
+    return `
+      <div style="padding:48px 24px;max-width:720px;margin:0 auto;color:var(--ink-2);line-height:1.75;">
+        <div style="font-family:'Noto Serif KR',serif;font-weight:900;font-size:32px;color:var(--ink);letter-spacing:-0.02em;margin-bottom:6px;">수능특강 독서 도식 자율학습</div>
+        <div style="font-size:13px;color:var(--ink-3);letter-spacing:0.04em;border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:24px;">로컬 실행 안내</div>
+
+        <p>이 페이지를 <strong>파일에서 직접 더블클릭</strong>으로 열 경우, 보안 제약(<code>file://</code> 프로토콜)으로 데이터 파일을 불러올 수 없습니다. 다음 두 가지 중 한 가지 방법을 사용해 주세요.</p>
+
+        <h3 style="font-family:'Noto Serif KR',serif;color:var(--ink);margin:24px 0 8px;font-size:16px;">방법 1 · macOS에서 한 번 실행</h3>
+        <p>저장소 폴더 안의 <code>serve.command</code> 파일을 더블클릭하면 자동으로 로컬 서버가 뜨고 브라우저가 열립니다.</p>
+
+        <h3 style="font-family:'Noto Serif KR',serif;color:var(--ink);margin:24px 0 8px;font-size:16px;">방법 2 · 터미널에서 직접 실행</h3>
+        <p>저장소 폴더에서 다음 명령을 실행한 뒤, 브라우저에서 <code>http://localhost:8000/</code> 으로 접속합니다.</p>
+        <pre style="background:var(--paper-2);padding:14px 18px;border-left:3px solid var(--gold);font-size:13px;line-height:1.6;overflow:auto;">python3 -m http.server 8000</pre>
+
+        <h3 style="font-family:'Noto Serif KR',serif;color:var(--ink);margin:24px 0 8px;font-size:16px;">학생 배포 시</h3>
+        <p>이 사이트를 GitHub Pages에 올리면 학생들은 일반 웹 주소로 바로 접속하므로 별도 절차가 필요 없습니다.</p>
+      </div>
+    `;
+  }
+
+  function renderShell() {
+    return `
+      <header class="masthead">
+        <div class="masthead-top">
+          <span>나주고등학교 · 자율학습</span>
+          <span class="mono-num" id="todayLine"></span>
+        </div>
+        <h1 class="masthead-title">수능특강 독서 도식 자율학습</h1>
+        <div class="masthead-sub">EBS 2027 수능특강 국어영역 독서 · 능동 회상과 분산 반복 원칙</div>
+      </header>
+
+      <div class="hub" id="hub">
+        <div class="hub-stats" id="hubStats"></div>
+        <div class="hub-section-title">영역별 필터</div>
+        <div class="cat-filter" id="catFilter"></div>
+        <div class="hub-section-title">지문 목록</div>
+        <div id="cardArea"></div>
+        <div class="hub-footer">
+          <p><strong>사용 안내</strong> · 카드를 누르면 학습 모드로 들어갑니다. 사전 예측 → 정독과 도식 확인 → 핵심 개념 회상 → 자기평가의 4단계로 진행됩니다. 자기평가 결과에 따라 다음 복습 시점이 결정됩니다.</p>
+          <p><strong>진도 저장</strong> · 모든 학습 기록은 사용 중인 브라우저에 저장됩니다. 브라우저 데이터를 삭제하면 진도가 초기화됩니다.</p>
+        </div>
+      </div>
+
+      <div class="study" id="study" aria-hidden="true">
+        <header class="study-header">
+          <button class="btn-back" id="btnBack">← 목록</button>
+          <div class="study-meta">
+            <div class="study-cat" id="studyCat"></div>
+            <div class="study-title" id="studyTitle"></div>
+            <div class="study-source" id="studySource"></div>
+          </div>
+          <div class="step-indicator">
+            <span id="stepText">1 / 4</span>
+            <span class="step-dots" id="stepDots"></span>
+          </div>
+        </header>
+        <div class="study-body">
+          <div class="study-stage" id="studyStage"></div>
+        </div>
+        <footer class="study-footer">
+          <button class="btn" id="btnPrev">이전</button>
+          <button class="btn btn-primary" id="btnNext">다음 단계</button>
+          <span class="btn-spacer"></span>
+          <span class="kbd-hint"><span class="kbd">←</span> <span class="kbd">→</span> 이동 &nbsp; <span class="kbd">Esc</span> 나가기</span>
+        </footer>
+      </div>
+
+      <div class="lightbox" id="lightbox" aria-hidden="true">
+        <div class="lightbox-inner" id="lightboxInner"></div>
+      </div>
+    `;
+  }
+
+  // --------- HUB ---------
+  function renderHub() {
+    const today = new Date();
+    $("#todayLine").textContent = `${today.getFullYear()}.${String(today.getMonth()+1).padStart(2,"0")}.${String(today.getDate()).padStart(2,"0")}`;
+
+    // 통계
+    const items = state.index.passages;
+    let started = 0, mastered = 0, reviewN = 0;
+    items.forEach(it => {
+      const s = window.Store.getStatus(state.progress, it.id);
+      if (s !== "untouched") started++;
+      if (s === "mastered") mastered++;
+      if (s === "review")   reviewN++;
+    });
+    $("#hubStats").innerHTML = `
+      <div class="hub-stat"><div class="hub-stat-label">전체 지문</div><div><span class="hub-stat-value mono-num">${items.length}</span><span class="hub-stat-suffix"> 편</span></div></div>
+      <div class="hub-stat"><div class="hub-stat-label">학습 시작</div><div><span class="hub-stat-value mono-num">${started}</span><span class="hub-stat-suffix"> 편</span></div></div>
+      <div class="hub-stat"><div class="hub-stat-label">이해 완료</div><div><span class="hub-stat-value mono-num">${mastered}</span><span class="hub-stat-suffix"> 편</span></div></div>
+      <div class="hub-stat"><div class="hub-stat-label">복습 권장</div><div><span class="hub-stat-value mono-num">${reviewN}</span><span class="hub-stat-suffix"> 편</span></div></div>
+    `;
+
+    // 카테고리 핀
+    const cats = state.index.categories;
+    const catKeys = Object.keys(cats).sort((a,b) => (cats[a].order||0) - (cats[b].order||0));
+    const counts = { all: items.length };
+    catKeys.forEach(k => counts[k] = items.filter(it => it.category === k).length);
+    $("#catFilter").innerHTML =
+      `<button class="cat-pill ${state.filter === "all" ? "active" : ""}" data-cat="all">전체 (${counts.all})</button>` +
+      catKeys.map(k => `<button class="cat-pill ${state.filter === k ? "active" : ""}" data-cat="${k}">${escapeHtml(cats[k].label)} (${counts[k]})</button>`).join("");
+
+    // 카드
+    const filtered = state.filter === "all"
+      ? items
+      : items.filter(it => it.category === state.filter);
+    if (!filtered.length) {
+      $("#cardArea").innerHTML = `<div class="hub-empty">선택한 영역에 등록된 지문이 아직 없습니다.</div>`;
+    } else {
+      $("#cardArea").innerHTML = '<div class="card-grid">' +
+        filtered.map(renderCard).join("") + '</div>';
+    }
+  }
+
+  function renderCard(it) {
+    const status = window.Store.getStatus(state.progress, it.id);
+    const cat = state.index.categories[it.category] || {};
+    return `
+      <button class="card" data-id="${escapeHtml(it.id)}">
+        <div class="card-num serif">No. ${String(it.order || "").padStart(2, "0")}</div>
+        <div class="card-cat" style="background:${cat.color || "var(--ink-2)"}">${escapeHtml(cat.label || it.category)}</div>
+        <div class="card-title">${escapeHtml(it.title)}</div>
+        <div class="card-sub">${escapeHtml(it.subtitle || "")}</div>
+        <div class="card-status">
+          <span class="status-dot ${status === "untouched" ? "" : status}"></span>
+          <span>${escapeHtml(window.Store.statusLabel(status))}</span>
+        </div>
+      </button>
+    `;
+  }
+
+  function bindHubInteractions() {
+    document.addEventListener("click", (e) => {
+      // 확대 버튼은 가장 먼저 잡아서 라이트박스 열기
+      const zoom = e.target.closest("#diagramZoom");
+      if (zoom) {
+        e.preventDefault(); e.stopPropagation();
+        openLightbox();
+        return;
+      }
+      const pill = e.target.closest(".cat-pill");
+      if (pill) {
+        state.filter = pill.dataset.cat;
+        renderHub();
+        return;
+      }
+      const card = e.target.closest(".card");
+      if (card) { openStudy(card.dataset.id); return; }
+      const back = e.target.closest("#btnBack");
+      if (back) { closeStudy(); return; }
+      const lb = e.target.closest("#lightbox");
+      if (lb && !e.target.closest("#lightboxInner")) closeLightbox();
+    });
+  }
+
+  // --------- STUDY ---------
+  async function openStudy(id) {
+    let passage = state.currentPassage;
+    if (!passage || passage.id !== id) {
+      try {
+        const res = await fetch(`data/passages/${id}.json`, { cache: "no-cache" });
+        if (!res.ok) throw new Error("지문 데이터 로드 실패: " + id);
+        passage = await res.json();
+      } catch (err) {
+        alert(err.message); return;
+      }
+    }
+    state.currentId = id;
+    state.currentPassage = passage;
+    state.currentSvg = null;
+    state.step = 0;
+
+    $("#hub").style.display = "none";
+    $("#study").classList.add("active");
+    $("#study").setAttribute("aria-hidden", "false");
+
+    const cat = state.index.categories[passage.category] || {};
+    const studyCatEl = $("#studyCat");
+    studyCatEl.textContent = cat.label || passage.category;
+    studyCatEl.style.color = cat.color || "var(--ink-2)";
+    $("#studyTitle").textContent = passage.title;
+    $("#studySource").textContent = fmtSource(passage.source);
+
+    location.hash = `#/p/${id}/0`;
+    renderStudy();
+    bindStudyFooter();
+  }
+
+  function closeStudy() {
+    $("#study").classList.remove("active");
+    $("#study").setAttribute("aria-hidden", "true");
+    $("#hub").style.display = "";
+    state.currentId = null;
+    state.currentPassage = null;
+    state.currentSvg = null;
+    location.hash = "";
+    renderHub();
+  }
+
+  function bindStudyFooter() {
+    $("#btnPrev").onclick = () => goStep(state.step - 1);
+    $("#btnNext").onclick = () => goStep(state.step + 1);
+  }
+
+  function renderStudy() {
+    const it = state.currentPassage;
+
+    // step indicator
+    $("#stepText").textContent = `${state.step + 1} / 4`;
+    $("#stepDots").innerHTML = [0,1,2,3].map(i =>
+      `<span class="step-dot ${i === state.step ? "active" : (i < state.step ? "done" : "")}"></span>`
+    ).join("");
+
+    const stage = $("#studyStage");
+    if (state.step === 0) {
+      stage.innerHTML = renderPredict(it);
+    } else if (state.step === 1) {
+      stage.innerHTML = renderPassageStage(it);
+      bindPassageStage(it);
+    } else if (state.step === 2) {
+      stage.innerHTML = renderRecall(it);
+      bindRecall(it);
+    } else {
+      stage.innerHTML = renderEval(it);
+      bindEval(it);
+    }
+
+    $("#btnPrev").disabled = state.step === 0;
+    const nxt = $("#btnNext");
+    if (state.step < 3) {
+      nxt.style.display = "";
+      nxt.textContent = ["지문 읽기 →", "회상 단계 →", "자기평가 →"][state.step];
+    } else {
+      nxt.style.display = "none";
+    }
+    document.querySelector(".study-body").scrollTop = 0;
+
+    window.Store.recordStep(state.progress, state.currentId, state.step);
+  }
+
+  function goStep(n) {
+    if (n < 0 || n > 3) return;
+    state.step = n;
+    location.hash = `#/p/${state.currentId}/${n}`;
+    renderStudy();
+  }
+
+  // --------- Step 1: 예측 ---------
+  function renderPredict(it) {
+    const pr = it.predict || {};
+    return `
+      <div>
+        <div class="stage-label">Step 1 · 사전 예측</div>
+        <h2 class="predict-question serif">${escapeHtml(pr.question || "")}</h2>
+        <div class="predict-hint">
+          <div class="predict-hint-title">생각해 보기</div>
+          ${escapeHtml(pr.hint || "도식을 보기 전에 잠깐 멈춰서, 위 질문에 대해 머릿속에 가설을 세워 봅시다.")}
+        </div>
+        ${pr.tip ? `<p class="predict-tip">${escapeHtml(pr.tip)}</p>` : ""}
+      </div>
+    `;
+  }
+
+  // --------- Step 2: 정독 + 도식 ---------
+  function renderPassageStage(it) {
+    const paragraphsHtml = (it.passage.paragraphs || []).map((p, i) => {
+      const text = applyVocab(p.text, p.vocab);
+      const sumPrompt = escapeHtml(p.summaryPrompt || "이 문단을 한 줄로 요약해 보세요.");
+      const sumAnswer = escapeHtml(p.summaryAnswer || "");
+      return `
+        <article class="paragraph" data-pi="${i}" data-pid="${escapeHtml(p.id)}">
+          ${p.role ? `<div class="paragraph-role">단락 ${i+1} · ${escapeHtml(p.role)}</div>` : ""}
+          <div class="paragraph-text">${text}</div>
+          ${sumAnswer ? `
+            <div class="summary-block">
+              <div class="summary-prompt">한 줄 요약</div>
+              <div class="summary-text">${sumPrompt}</div>
+              <button class="summary-toggle" type="button">정답 확인</button>
+              <div class="summary-answer">${sumAnswer}</div>
+            </div>
+          ` : ""}
+        </article>
+      `;
+    }).join("");
+
+    return `
+      <div>
+        <div class="stage-label">Step 2 · 정독과 도식</div>
+        <div class="passage-grid">
+          <div>
+            <p style="font-size:13px;color:var(--ink-3);line-height:1.6;margin:0 0 14px;max-width:640px;">단락을 차례로 읽고, 각 단락 끝에서 한 줄로 요약을 떠올려 보세요. 어휘에 점선이 있으면 가볍게 눌러 정의를 확인할 수 있습니다. 단락마다 우측 도식이 한 단계씩 채워집니다.</p>
+            <div id="paragraphs">${paragraphsHtml}</div>
+          </div>
+          <div>
+            <div class="diagram-pane" id="diagramPane">
+              <button class="diagram-zoom" type="button" id="diagramZoom">확대</button>
+              <div id="diagramHost" style="aspect-ratio: 1200/760; background: white;"></div>
+              ${it.diagram && it.diagram.caption ? `<div class="diagram-caption">${escapeHtml(it.diagram.caption)}</div>` : ""}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function applyVocab(text, vocab) {
+    if (!vocab || !vocab.length) return escapeHtml(text);
+    // Sort by term length desc to avoid nested replacements
+    const list = vocab.slice().sort((a,b) => b.term.length - a.term.length);
+    let safe = escapeHtml(text);
+    list.forEach(v => {
+      const term = escapeHtml(v.term);
+      const def  = escapeHtml(v.def);
+      // Replace only first occurrence to keep tooltips manageable
+      const pattern = new RegExp(`(?<!data-vocab="[^"]*?)${escapeRegex(term)}`);
+      safe = safe.replace(pattern, `<span class="vocab" data-def="${def}" tabindex="0">${term}<span class="vocab-tip">${def}</span></span>`);
+    });
+    return safe;
+  }
+  function escapeRegex(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
+
+  async function bindPassageStage(it) {
+    // Diagram inject
+    const host = $("#diagramHost");
+    if (it.diagram && it.diagram.file) {
+      try {
+        const svg = await window.Diagram.inject(host, it.diagram.file);
+        state.currentSvg = svg;
+        window.Diagram.bindLightbox(svg, openLightbox);
+        // initial reveal: paragraph 1's reveals
+        applyParagraphReveal(it, 0);
+        // observe paragraph visibility - reveal as user scrolls/reads
+        const paragraphs = $$("#paragraphs .paragraph");
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(en => {
+            if (en.isIntersecting) {
+              const i = parseInt(en.target.dataset.pi, 10);
+              applyParagraphReveal(it, i);
+            }
+          });
+        }, { threshold: 0.5 });
+        paragraphs.forEach(p => io.observe(p));
+      } catch (err) {
+        host.innerHTML = `<div style="padding:24px;color:var(--accent);font-size:13px;">${escapeHtml(err.message)}</div>`;
+      }
+    }
+
+    // 어휘 hover/tap
+    document.addEventListener("click", vocabClickHandler, { once: false });
+
+    // 한 줄 요약 toggle
+    $$("#paragraphs .summary-toggle").forEach(btn => {
+      btn.addEventListener("click", () => {
+        btn.closest(".summary-block").classList.add("revealed");
+      });
+    });
+
+    // 확대 (버튼 + 다이어그램 호스트 클릭 모두 트리거)
+    const zoomBtn = $("#diagramZoom");
+    if (zoomBtn) {
+      zoomBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        openLightbox();
+      });
+    }
+  }
+
+  function applyParagraphReveal(it, paraIdx) {
+    if (!state.currentSvg) return;
+    const paragraphs = it.passage.paragraphs || [];
+    // 누적 reveal: 0..paraIdx 단락이 켜는 모든 step
+    const stepIds = new Set();
+    for (let i = 0; i <= paraIdx; i++) {
+      (paragraphs[i].revealsDiagram || []).forEach(id => stepIds.add(id));
+    }
+    // step 번호로 변환
+    const steps = (it.diagram.reveal && it.diagram.reveal.steps) || [];
+    let maxStep = 0;
+    steps.forEach((s, i) => {
+      if (stepIds.has(s.id)) maxStep = Math.max(maxStep, i + 1);
+    });
+    window.Diagram.setRevealStep(state.currentSvg, maxStep);
+  }
+
+  function vocabClickHandler(e) {
+    const vc = e.target.closest(".vocab");
+    if (!vc) {
+      // close any open
+      $$(".vocab.show").forEach(v => v.classList.remove("show"));
+      return;
+    }
+    e.preventDefault();
+    $$(".vocab.show").forEach(v => { if (v !== vc) v.classList.remove("show"); });
+    vc.classList.toggle("show");
+  }
+
+  // --------- Step 3: 회상 + 객관식 ---------
+  function renderRecall(it) {
+    const concepts = (it.concepts || []).map((c, i) => `
+      <div class="concept-card" data-idx="${i}">
+        <div class="concept-key">
+          <span class="concept-num">${String(i+1).padStart(2,"0")}</span>
+          <span>${escapeHtml(c.k)}</span>
+          <span class="concept-toggle">눌러서 확인 ▾</span>
+        </div>
+        <div class="concept-val">${escapeHtml(c.v)}</div>
+      </div>
+    `).join("");
+
+    const examHtml = (it.examPoints || [])
+      .filter(q => q.type === "mcq")
+      .map(q => `
+        <div class="exam-block" data-qid="${escapeHtml(q.id)}" data-answer="${q.answer}">
+          <div class="exam-stem">[문제] ${escapeHtml(q.stem)}</div>
+          <div class="exam-choices">
+            ${(q.choices||[]).map((ch, i) => `
+              <button class="exam-choice" type="button" data-idx="${i}">
+                <span class="num">${"①②③④⑤".charAt(i) || (i+1)}</span>
+                <span>${escapeHtml(ch)}</span>
+              </button>
+            `).join("")}
+          </div>
+          ${q.rationale ? `<div class="exam-rationale"><strong>해설</strong> · ${escapeHtml(q.rationale)}</div>` : ""}
+        </div>
+      `).join("");
+
+    // 저장된 회상 메모 불러오기
+    const prog = state.progress[state.currentId] || {};
+    const savedNote = prog.recallNote || "";
+    const savedAt = prog.recallAt || 0;
+    const savedLabel = savedAt ? ` · 마지막 저장 ${new Date(savedAt).toLocaleString("ko-KR", {month:"numeric", day:"numeric", hour:"2-digit", minute:"2-digit"})}` : "";
+
+    return `
+      <div>
+        <div class="stage-label">Step 3 · 핵심 개념 회상</div>
+        <p class="recall-intro">아래 키워드만 보고 머릿속으로 설명을 떠올려 본 다음, 카드를 눌러 정답과 비교해 봅시다.</p>
+        <div class="recall-note-block">
+          <label class="recall-note-label" for="recallNote">내 회상 메모<span class="recall-note-meta">${savedLabel}<span id="recallNoteStatus"></span></span></label>
+          <textarea class="recall-textarea" id="recallNote" placeholder="떠오른 핵심 개념·설명을 자유롭게 써 보세요. 자동 저장됩니다.">${escapeHtml(savedNote)}</textarea>
+        </div>
+        <div class="concept-list">${concepts}</div>
+        ${examHtml}
+      </div>
+    `;
+  }
+
+  function bindRecall(it) {
+    // 회상 메모 자동 저장
+    const noteEl = $("#recallNote");
+    const statusEl = $("#recallNoteStatus");
+    if (noteEl) {
+      let saveTimer = null;
+      noteEl.addEventListener("input", () => {
+        if (statusEl) statusEl.textContent = " · 입력 중…";
+        clearTimeout(saveTimer);
+        saveTimer = setTimeout(() => {
+          window.Store.saveRecallNote(state.progress, state.currentId, noteEl.value);
+          if (statusEl) {
+            statusEl.textContent = " · 저장됨 ✓";
+            setTimeout(() => { if (statusEl && statusEl.textContent.includes("저장됨")) statusEl.textContent = ""; }, 1800);
+          }
+        }, 600);
+      });
+    }
+
+    $$(".concept-card").forEach(c => {
+      c.addEventListener("click", () => {
+        c.classList.toggle("revealed");
+        const t = c.querySelector(".concept-toggle");
+        t.textContent = c.classList.contains("revealed") ? "확인 완료" : "눌러서 확인 ▾";
+      });
+    });
+
+    $$(".exam-block").forEach(block => {
+      const qid = block.dataset.qid;
+      const ans = parseInt(block.dataset.answer, 10);
+      $$(".exam-choice", block).forEach(btn => {
+        btn.addEventListener("click", () => {
+          if (block.classList.contains("answered")) return;
+          const idx = parseInt(btn.dataset.idx, 10);
+          block.classList.add("answered");
+          if (idx === ans) {
+            btn.classList.add("correct");
+            window.Store.recordExam(state.progress, state.currentId, qid, "correct");
+          } else {
+            btn.classList.add("wrong");
+            $$(".exam-choice", block).forEach((b, i) => {
+              if (i === ans) b.classList.add("correct");
+            });
+            window.Store.recordExam(state.progress, state.currentId, qid, "wrong");
+          }
+        });
+      });
+    });
+  }
+
+  // --------- Step 4: 자기평가 ---------
+  function renderEval(it) {
+    const intervals = (it.selfEval && it.selfEval.intervals) || window.Store.DEFAULT_INTERVAL;
+    const dueLabel = (n) => n === 0 ? "즉시 복습" : `${n}일 뒤 복습`;
+    return `
+      <div>
+        <div class="stage-label">Step 4 · 자기평가</div>
+        <h2 class="eval-intro">이 지문, 얼마나 이해했나요?</h2>
+        <p class="eval-sub">선택에 따라 다음 복습 시점이 자동으로 정해집니다. 솔직한 게 가장 효율적이에요.</p>
+        <div class="eval-grid">
+          <button class="eval-card mastered" data-eval="mastered" type="button">
+            <div class="eval-glyph">완전히 이해</div>
+            <div class="eval-desc">설명할 수 있고 핵심 개념도 다 떠올랐습니다.</div>
+            <div class="eval-next">다음 복습 · ${dueLabel(intervals.mastered)}</div>
+          </button>
+          <button class="eval-card studying" data-eval="studying" type="button">
+            <div class="eval-glyph">대체로 이해</div>
+            <div class="eval-desc">큰 흐름은 잡았지만 세부가 흐립니다.</div>
+            <div class="eval-next">다음 복습 · ${dueLabel(intervals.studying)}</div>
+          </button>
+          <button class="eval-card review" data-eval="review" type="button">
+            <div class="eval-glyph">다시 보기</div>
+            <div class="eval-desc">아직 정리가 안 된 부분이 많습니다.</div>
+            <div class="eval-next">다음 복습 · ${dueLabel(intervals.review)}</div>
+          </button>
+        </div>
+        <div class="eval-done" id="evalDone" style="display:none;">
+          평가가 저장되었습니다. <strong>목록</strong>으로 돌아가면 카드 상태가 갱신됩니다.
+        </div>
+      </div>
+    `;
+  }
+
+  function bindEval(it) {
+    $$(".eval-card").forEach(card => {
+      card.addEventListener("click", () => {
+        const evalKey = card.dataset.eval;
+        window.Store.recordEval(state.progress, state.currentId, evalKey);
+        $("#evalDone").style.display = "block";
+        $$(".eval-card").forEach(c => c.disabled = true);
+      });
+    });
+  }
+
+  // --------- Lightbox ---------
+  function openLightbox() {
+    // 가능한 한 최신 DOM에서 SVG를 찾고, 없으면 캐시된 참조를 사용
+    const liveSvg = document.querySelector("#diagramHost svg");
+    const svg = liveSvg || state.currentSvg;
+    if (!svg) {
+      console.warn("[lightbox] 도식이 아직 준비되지 않았습니다.");
+      return;
+    }
+    const inner = $("#lightboxInner");
+    if (!inner) return;
+    // outerHTML 복제 - cloneNode 보다 SVG 네임스페이스에 안전
+    inner.innerHTML = svg.outerHTML;
+    const cloned = inner.querySelector("svg");
+    if (cloned) {
+      // 라이트박스는 전체 도식을 한 번에 보여줌 (단독 보기와 동일)
+      cloned.removeAttribute("data-app");
+      cloned.querySelectorAll("[data-reveal-step]").forEach(g => g.classList.add("on"));
+      cloned.style.maxWidth = "100%";
+      cloned.style.maxHeight = "calc(100vh - 80px)";
+      cloned.style.cursor = "default";
+    }
+    const lb = $("#lightbox");
+    lb.classList.add("active");
+    lb.setAttribute("aria-hidden", "false");
+  }
+  function closeLightbox() {
+    const lb = $("#lightbox");
+    lb.classList.remove("active");
+    lb.setAttribute("aria-hidden", "true");
+    $("#lightboxInner").innerHTML = "";
+  }
+
+  // --------- 키보드 / 해시 ---------
+  function bindGlobalKeys() {
+    document.addEventListener("keydown", (e) => {
+      if (!$("#study").classList.contains("active")) return;
+      if (e.key === "Escape") {
+        if ($("#lightbox").classList.contains("active")) { closeLightbox(); return; }
+        closeStudy(); return;
+      }
+      if (e.target.matches("input, textarea")) return;
+      if (e.key === "ArrowRight") { goStep(state.step + 1); }
+      else if (e.key === "ArrowLeft") { goStep(state.step - 1); }
+    });
+  }
+
+  function handleHash() {
+    const h = location.hash || "";
+    const m = h.match(/^#\/p\/([\w-]+)(?:\/(\d))?$/);
+    if (m) {
+      const id = m[1];
+      const step = m[2] ? parseInt(m[2], 10) : 0;
+      if (state.currentId !== id) {
+        openStudy(id).then(() => { state.step = step; renderStudy(); });
+      } else {
+        state.step = step; renderStudy();
+      }
+    } else {
+      if ($("#study").classList.contains("active")) closeStudy();
+    }
+  }
+
+  // --------- 시작 ---------
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+})();

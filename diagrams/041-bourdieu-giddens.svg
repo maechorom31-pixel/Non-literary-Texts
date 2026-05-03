@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1240" role="img" aria-labelledby="t041 d041">
+  <title id="t041">세계화에 대한 부르디외와 기든스</title>
+  <desc id="d041">세계화 현상에 대한 두 사회학자의 진단을 좌우 대비로 시각화한다. (가) 부르디외는 자본의 네 형태(경제·문화·사회·상징), 상징 폭력과 아비투스라는 비가시적 지배 메커니즘, 그리고 시민 사회의 연대와 공공 서비스 확대를 통한 저항이라는 비판적 입장을, (나) 기든스는 세계화를 근대성(개인 자유·합리성·과학)의 전 지구적 확장으로 정의하고, 외부적 위험과 구분되는 제조된 위험의 등장, 신자유주의도 복지주의도 아닌 사회 투자 국가로의 전환을 제시하는 제3의 길을 다룬다.</desc>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .soc { fill: #2a6f6f; }
+    .soc-st { stroke: #2a6f6f; }
+    .soc-bg { fill: rgba(42,111,111,0.08); }
+    .soc-bg2 { fill: rgba(42,111,111,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1 · 도입 + 좌우 헤더 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="80" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">세계화에 대한 두 진단 — 비판 vs 균형</text>
+    <text x="60" y="86" class="lbl-sm">같은 현상을 두고 부르디외(비판)와 기든스(균형 있는 진단)는 정반대 진단을 내렸다.</text>
+  </g>
+
+  <!-- (가) 부르디외 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="130" width="540" height="36" rx="6" class="acc"/>
+    <text x="60" y="154" class="lbl-strong" fill="#f5f1e8">(가) 부르디외 — 비판적 입장</text>
+  </g>
+
+  <!-- Step 1: 자본 4종 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="170" width="540" height="160" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="194" class="lbl-strong" fill="#a83a4a">자본의 네 형태</text>
+
+    <g transform="translate(60, 210)">
+      <rect x="0" y="0" width="120" height="50" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="60" y="20" text-anchor="middle" class="lbl-sm" font-weight="700">경제 자본</text>
+      <text x="60" y="38" text-anchor="middle" class="lbl-xs">화폐·재산</text>
+
+      <rect x="128" y="0" width="120" height="50" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="188" y="20" text-anchor="middle" class="lbl-sm" font-weight="700">문화 자본</text>
+      <text x="188" y="38" text-anchor="middle" class="lbl-xs">교육·취향</text>
+
+      <rect x="256" y="0" width="120" height="50" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="316" y="20" text-anchor="middle" class="lbl-sm" font-weight="700">사회 자본</text>
+      <text x="316" y="38" text-anchor="middle" class="lbl-xs">관계망</text>
+
+      <rect x="384" y="0" width="120" height="50" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="444" y="20" text-anchor="middle" class="lbl-sm" font-weight="700">상징 자본</text>
+      <text x="444" y="38" text-anchor="middle" class="lbl-xs">명예·인정</text>
+    </g>
+
+    <text x="60" y="296" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 세계화는 기득권의 자본 기반 지배 구조를 더욱 공고히 한다</text>
+    <text x="60" y="316" class="lbl-xs">강대국·다국적 기업이 시장 자유경쟁 조장 → 국가 역할 축소 → 공공 영역 축소</text>
+  </g>
+
+  <!-- Step 2 · 상징 폭력 + 아비투스 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="350" width="540" height="170" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="378" class="lbl-strong" fill="#a83a4a">상징 폭력 + 아비투스 — 비가시적 지배</text>
+
+    <g transform="translate(60, 396)">
+      <rect x="0" y="0" width="500" height="50" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="20" class="lbl-sm" font-weight="700">상징 폭력</text>
+      <text x="14" y="38" class="lbl-xs">지배층의 질서를 피지배층이 자연스레 받아들이게 만드는 비가시적 폭력</text>
+
+      <rect x="0" y="60" width="500" height="50" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="80" class="lbl-sm" font-weight="700">아비투스</text>
+      <text x="14" y="98" class="lbl-xs">사회 구조가 개인에게 내면화된 무의식적 사고·행동 성향 체계</text>
+    </g>
+  </g>
+
+  <!-- Step 3 · 부르디외의 저항 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="540" width="540" height="120" rx="6" class="paper2 acc-st" stroke-width="1.4"/>
+    <text x="60" y="568" class="lbl-strong" fill="#a83a4a">저항 방법</text>
+    <text x="60" y="592" class="lbl-sm">시민 사회의 연대 + 공공 서비스 확대</text>
+    <text x="60" y="612" class="lbl-sm">→ 약화된 국가 권력과 복지 제도 회복</text>
+    <text x="60" y="640" class="lbl-xs" fill="#a83a4a" font-weight="700">사회적 약자 보호의 제도적 회복</text>
+  </g>
+
+  <!-- (나) 기든스 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="620" y="130" width="540" height="36" rx="6" class="soc"/>
+    <text x="640" y="154" class="lbl-strong" fill="#f5f1e8">(나) 기든스 — 균형 있는 진단</text>
+  </g>
+
+  <!-- Step 4 · 근대성 정의 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="620" y="170" width="540" height="160" rx="6" class="soc-bg soc-st" stroke-width="1.5"/>
+    <text x="640" y="194" class="lbl-strong" fill="#2a6f6f">세계화 = 근대성의 전 지구적 확장</text>
+
+    <text x="640" y="222" class="lbl-sm">근대성: 전통적 원리(신·관습)에서 탈피해</text>
+    <text x="640" y="240" class="lbl-sm">→ 개인 자유 + 합리성 + 과학 중심 질서로 변화</text>
+
+    <g transform="translate(640, 254)">
+      <rect x="0" y="0" width="240" height="40" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="120" y="18" text-anchor="middle" class="lbl-xs" font-weight="700">미시 차원</text>
+      <text x="120" y="34" text-anchor="middle" class="lbl-xs">일상적 삶의 영역</text>
+
+      <rect x="260" y="0" width="240" height="40" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="380" y="18" text-anchor="middle" class="lbl-xs" font-weight="700">거시 차원</text>
+      <text x="380" y="34" text-anchor="middle" class="lbl-xs">국제 정치·경제</text>
+    </g>
+
+    <text x="640" y="316" class="lbl-xs" fill="#2a6f6f" font-weight="700">→ 두 차원이 서로 영향을 주고받으며 전 지구로 확장</text>
+  </g>
+
+  <!-- Step 5 · 제조된 위험 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="620" y="350" width="540" height="170" rx="6" class="soc-bg soc-st" stroke-width="1.5"/>
+    <text x="640" y="378" class="lbl-strong" fill="#2a6f6f">제조된 위험 — 근대 사회의 새 위험</text>
+
+    <g transform="translate(640, 396)">
+      <rect x="0" y="0" width="240" height="100" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="120" y="22" text-anchor="middle" class="lbl-sm" font-weight="700">외부적 위험</text>
+      <text x="120" y="44" text-anchor="middle" class="lbl-xs">인간 행위와 무관한</text>
+      <text x="120" y="62" text-anchor="middle" class="lbl-xs">자연재해 등</text>
+      <text x="120" y="86" text-anchor="middle" class="lbl-xs" fill="#7a6f5f">전통적 위험</text>
+
+      <rect x="260" y="0" width="240" height="100" rx="4" class="acc"/>
+      <text x="380" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">제조된 위험</text>
+      <text x="380" y="44" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">인간이 인위적으로</text>
+      <text x="380" y="62" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">만든 새 위험</text>
+      <text x="380" y="86" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">환경 위기·테러 등</text>
+    </g>
+  </g>
+
+  <!-- Step 5 · 제3의 길 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="620" y="540" width="540" height="120" rx="6" class="soc-bg2 soc-st" stroke-width="1.5"/>
+    <text x="640" y="568" class="lbl-strong" fill="#2a6f6f">제3의 길 — 사회 투자 국가</text>
+
+    <g transform="translate(640, 588)">
+      <text x="0" y="0" class="lbl-sm">신자유주의 (시장 자유 극대화)</text>
+      <text x="240" y="0" class="lbl-sm" fill="#7a6f5f">vs</text>
+      <text x="270" y="0" class="lbl-sm">복지주의 (개인 복지 최우선)</text>
+      <text x="0" y="22" class="lbl-sm" fill="#2a6f6f" font-weight="700">→ 둘 다 X, 사회 투자 국가로 변모</text>
+      <text x="0" y="44" class="lbl-xs">물질적 지원보다 인적 자본에 대한 투자를 중시</text>
+    </g>
+  </g>
+
+  <!-- 좌우 비교 요약 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="680" width="1120" height="280" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="708" class="lbl-head">한눈에 보는 비교</text>
+
+    <g transform="translate(60, 730)">
+      <rect x="0" y="0" width="1080" height="30" class="paper2"/>
+      <text x="14" y="20" class="lbl-strong">기준</text>
+      <text x="240" y="20" class="lbl-strong" fill="#a83a4a">부르디외</text>
+      <text x="660" y="20" class="lbl-strong" fill="#2a6f6f">기든스</text>
+
+      <line x1="0" y1="30" x2="1080" y2="30" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="14" y="56" class="lbl">세계화의 본질</text>
+      <text x="240" y="56" class="lbl">기득권의 지배 전략</text>
+      <text x="660" y="56" class="lbl">근대성의 전 지구적 확장</text>
+
+      <line x1="0" y1="68" x2="1080" y2="68" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="94" class="lbl">분석 도구</text>
+      <text x="240" y="94" class="lbl">자본·상징 폭력·아비투스</text>
+      <text x="660" y="94" class="lbl">근대성·제조된 위험</text>
+
+      <line x1="0" y1="106" x2="1080" y2="106" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="132" class="lbl">평가</text>
+      <text x="240" y="132" class="lbl" fill="#a83a4a">부정적 (지배 강화)</text>
+      <text x="660" y="132" class="lbl" fill="#2a6f6f">긍정·부정 양면 인정</text>
+
+      <line x1="0" y1="144" x2="1080" y2="144" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="170" class="lbl">대응 방안</text>
+      <text x="240" y="170" class="lbl">시민 연대 + 공공 서비스 확대</text>
+      <text x="660" y="170" class="lbl">제3의 길 (사회 투자 국가)</text>
+
+      <line x1="0" y1="182" x2="1080" y2="182" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="208" class="lbl">초점</text>
+      <text x="240" y="208" class="lbl">권력 구조 비판</text>
+      <text x="660" y="208" class="lbl">변화에의 적응 전략</text>
+    </g>
+  </g>
+
+  <text x="1160" y="1010" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 주제 통합 · 225쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1020" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1020" width="1120" height="32" rx="6" fill="#2a6f6f"/>
+    <text x="60" y="1042" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1042" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1054" x2="1160" y2="1054" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1070" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">부르디외의 자본</text>
+    <text x="240" y="1070" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">경제·문화·사회·상징 자본의 네 형태. 세계화는 자본 기반 지배 구조를 공고히 한다.</text>
+    <line x1="40" y1="1084" x2="1160" y2="1084" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1100" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">상징 폭력과 아비투스</text>
+    <text x="240" y="1100" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">비가시적 지배(상징 폭력)와 사회 구조의 내면화(아비투스)가 결합해 지배 질서를 자연스럽게 만든다.</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">기든스의 근대성</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">전통에서 탈피해 개인 자유·합리성·과학 중심으로 변화하는 성질. 세계화는 근대성의 전 지구적 확장이다.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">제조된 위험</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">인간이 인위적으로 만든 새로운 위험(환경 위기, 테러 등). 외부적 위험과 구분된다.</text>
+    <line x1="40" y1="1174" x2="1160" y2="1174" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1190" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">제3의 길</text>
+    <text x="240" y="1190" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">신자유주의·복지주의가 아닌 인적 자본 투자를 중시하는 사회 투자 국가로의 변모.</text>
+  </g>
+</svg>

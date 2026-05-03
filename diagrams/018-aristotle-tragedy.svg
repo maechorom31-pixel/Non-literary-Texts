@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" role="img" aria-labelledby="t18 d18">
+  <title id="t18">아리스토텔레스의 비극론</title>
+  <desc id="d18">비극의 6가지 요소 중 플롯의 우위, 반전·인지의 정의와 동시 발생 효과, 비극 주인공의 조건(고귀함+결함+잘못보다 큰 고통)을 인물 곡선으로, 카타르시스의 세 해석을 세 칼럼으로 시각화하고 후대의 비판을 결론으로 정리한다.</desc>
+
+  <defs>
+    <marker id="ar18-hum" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+    <marker id="ar18-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 12px; font-style: italic; fill: #5e548e; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1: 도입 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="100" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">왜 비극인가? — 연민과 공포가 성품을 함양한다</text>
+    <text x="60" y="86" class="lbl">아리스토텔레스: 문학의 본질은 모방. 비극은 완결된 사건을 모방한다.</text>
+    <text x="60" y="108" class="lbl-sm">비극 → 연민 + 공포 → 안정된 성품 → 선한 인격·미덕·진리에 도달</text>
+  </g>
+
+  <!-- Step 2: 6요소 + 반전·인지 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="152" width="700" height="280" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="180" class="lbl-head" fill="#5e548e">비극의 6요소 — 플롯이 1순위</text>
+
+    <!-- 6요소: 막대 차트 (플롯이 가장 큼) -->
+    <g transform="translate(60, 200)">
+      <rect x="0" y="0" width="200" height="34" rx="3" fill="#5e548e"/>
+      <text x="14" y="22" font-size="13" fill="#f5f1e8" font-weight="700">① 플롯</text>
+      <text x="186" y="22" text-anchor="end" font-size="10" fill="#f5f1e8">행위·사건의 구성 (가장 중요)</text>
+
+      <rect x="0" y="40" width="120" height="22" rx="3" fill="#5e548e" opacity="0.55"/>
+      <text x="14" y="56" font-size="11" fill="#f5f1e8">② 인물의 성격</text>
+
+      <rect x="0" y="68" width="100" height="22" rx="3" fill="#5e548e" opacity="0.45"/>
+      <text x="14" y="84" font-size="11" fill="#f5f1e8">③ 사상</text>
+
+      <rect x="0" y="96" width="80" height="22" rx="3" fill="#5e548e" opacity="0.4"/>
+      <text x="14" y="112" font-size="11" fill="#f5f1e8">④ 언어</text>
+
+      <rect x="0" y="124" width="70" height="22" rx="3" fill="#5e548e" opacity="0.35"/>
+      <text x="14" y="140" font-size="11" fill="#f5f1e8">⑤ 음악</text>
+
+      <rect x="0" y="152" width="60" height="22" rx="3" fill="#5e548e" opacity="0.3"/>
+      <text x="14" y="168" font-size="11" fill="#f5f1e8">⑥ 시각적 요소</text>
+    </g>
+
+    <!-- 우측: 반전 인지 -->
+    <g transform="translate(320, 198)">
+      <text x="0" y="0" class="lbl-strong">플롯의 핵심 장치</text>
+      <rect x="0" y="14" width="200" height="56" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="100" y="34" text-anchor="middle" class="lbl-strong" fill="#5e548e">반전 (Peripeteia)</text>
+      <text x="100" y="52" text-anchor="middle" class="lbl-xs">사건이 인물의 의도와</text>
+      <text x="100" y="65" text-anchor="middle" class="lbl-xs">정반대로 급변</text>
+
+      <rect x="0" y="78" width="200" height="56" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="100" y="98" text-anchor="middle" class="lbl-strong" fill="#5e548e">인지 (Anagnorisis)</text>
+      <text x="100" y="116" text-anchor="middle" class="lbl-xs">인물이 모르던 것을</text>
+      <text x="100" y="129" text-anchor="middle" class="lbl-xs">아는 상태로 바뀜</text>
+
+      <rect x="0" y="146" width="200" height="42" rx="4" class="hum-bg2 hum-st" stroke-width="1"/>
+      <text x="100" y="170" text-anchor="middle" class="lbl-strong" fill="#5e548e">반전 + 인지 동시</text>
+      <text x="100" y="184" text-anchor="middle" class="lbl-xs" fill="#5e548e">→ 가장 효과적</text>
+
+      <text x="0" y="216" class="lbl-xs">단순 플롯(반전·인지 없음) &lt; <tspan font-weight="700" fill="#5e548e">복합 플롯</tspan> (포함)</text>
+    </g>
+  </g>
+
+  <!-- Step 3: 주인공의 조건 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="760" y="152" width="400" height="280" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="780" y="180" class="lbl-head" fill="#5e548e">주인공의 조건</text>
+
+    <!-- 인물 운명 곡선 -->
+    <g transform="translate(800, 230)">
+      <line x1="0" y1="80" x2="340" y2="80" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="-4" y="84" text-anchor="end" class="lbl-xs">시간</text>
+
+      <!-- 출발: 고귀한 신분 (높은 위치) -->
+      <circle cx="40" cy="20" r="12" fill="#5e548e"/>
+      <text x="40" y="6" text-anchor="middle" class="lbl-xs" font-weight="700">고귀한 신분</text>
+      <text x="40" y="44" text-anchor="middle" class="lbl-xs">(왕·귀족)</text>
+
+      <!-- 인간적 결함 (작은 표시) -->
+      <circle cx="120" cy="32" r="8" fill="#a83a4a" opacity="0.7"/>
+      <text x="120" y="14" text-anchor="middle" class="lbl-xs">인간적 결함</text>
+
+      <!-- 과오 (실수) -->
+      <circle cx="180" cy="52" r="6" fill="#a83a4a" opacity="0.6"/>
+      <text x="180" y="36" text-anchor="middle" class="lbl-xs">과오·실수</text>
+
+      <!-- 큰 고통 (낮은 위치) -->
+      <circle cx="280" cy="120" r="14" fill="#a83a4a"/>
+      <text x="280" y="148" text-anchor="middle" class="lbl-xs" font-weight="700">잘못보다 큰 고통</text>
+      <text x="280" y="162" text-anchor="middle" class="lbl-xs" fill="#a83a4a">(불행)</text>
+
+      <!-- 곡선 -->
+      <path d="M40,20 Q90,30 120,32 Q150,42 180,52 Q230,90 280,120" fill="none" stroke="#5e548e" stroke-width="2"/>
+    </g>
+
+    <text x="800" y="402" class="lbl-xs">→ 관객 = 잘못 &lt; 고통 차이에서 <tspan font-weight="700" fill="#5e548e">연민</tspan></text>
+    <text x="800" y="420" class="lbl-xs">→ 관객 = 자신과 닮은 결함에서 <tspan font-weight="700" fill="#5e548e">공포</tspan></text>
+  </g>
+
+  <!-- Step 3-supplement: 의로운/악한 비교 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="448" width="1120" height="40" rx="4" class="paper rule" stroke-width="1"/>
+    <text x="60" y="472" class="lbl-sm">의로운 인물 불행 → <tspan fill="#a83a4a" font-weight="700">반감</tspan>   /   악한 인물 불행 → <tspan font-weight="700">마땅함</tspan>   /   <tspan fill="#5e548e" font-weight="700">선하지도 악하지도 않은 인물</tspan>이 자기 잘못보다 큰 고통 → 연민 + 공포</text>
+  </g>
+
+  <!-- Step 4: 카타르시스 세 해석 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="600" y="528" text-anchor="middle" class="lbl-head">카타르시스의 세 해석 — 비극의 궁극적 목적</text>
+
+    <!-- 윤리학적 -->
+    <g transform="translate(40, 548)">
+      <rect x="0" y="0" width="360" height="320" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+      <rect x="0" y="0" width="360" height="42" rx="6" fill="#5e548e"/>
+      <text x="20" y="28" class="lbl-strong" fill="#f5f1e8">① 윤리학적 해석</text>
+
+      <text x="20" y="74" class="lbl-strong">감정의 도덕적 정화</text>
+      <text x="20" y="96" class="lbl-sm">불균형·과잉된 감정을</text>
+      <text x="20" y="114" class="lbl-sm">정제·조절</text>
+
+      <!-- 시각: 균형 잡힌 천칭 -->
+      <g transform="translate(180, 198)">
+        <line x1="-90" y1="0" x2="90" y2="0" class="ink" stroke-width="1.5"/>
+        <line x1="0" y1="0" x2="0" y2="-30" class="ink" stroke-width="1"/>
+        <circle cx="-90" cy="14" r="20" fill="#5e548e" opacity="0.5"/>
+        <text x="-90" y="18" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">감정</text>
+        <circle cx="90" cy="14" r="20" fill="#5e548e" opacity="0.5"/>
+        <text x="90" y="18" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">절제</text>
+        <polygon points="-12,30 12,30 0,52" class="ink" fill="#1a1612"/>
+      </g>
+
+      <text x="180" y="294" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">감정을 잘못 사용 시 문제</text>
+      <text x="180" y="310" text-anchor="middle" class="lbl-xs">→ 도덕적 균형 회복</text>
+    </g>
+
+    <!-- 정신 분석학적 -->
+    <g transform="translate(420, 548)">
+      <rect x="0" y="0" width="360" height="320" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+      <rect x="0" y="0" width="360" height="42" rx="6" fill="#5e548e"/>
+      <text x="20" y="28" class="lbl-strong" fill="#f5f1e8">② 정신 분석학적 해석</text>
+
+      <text x="20" y="74" class="lbl-strong">억눌린 감정의 분출</text>
+      <text x="20" y="96" class="lbl-sm">병적인 감정을</text>
+      <text x="20" y="114" class="lbl-sm">비극 인물에 투사 → 분출</text>
+
+      <!-- 시각: 압력솥에서 김이 나가는 모양 -->
+      <g transform="translate(180, 198)">
+        <rect x="-50" y="-20" width="100" height="60" rx="6" class="paper2 ink" stroke-width="1.4"/>
+        <text x="0" y="14" text-anchor="middle" class="lbl-xs" fill="#1a1612" font-weight="700">억눌린 감정</text>
+        <!-- 김 분출 -->
+        <path d="M-30,-20 Q-30,-50 -20,-60" fill="none" stroke="#5e548e" stroke-width="2"/>
+        <path d="M0,-20 Q0,-58 10,-68" fill="none" stroke="#5e548e" stroke-width="2"/>
+        <path d="M30,-20 Q30,-50 40,-60" fill="none" stroke="#5e548e" stroke-width="2"/>
+        <text x="0" y="-78" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">분출</text>
+      </g>
+
+      <text x="180" y="294" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">울고 나서 후련해지는 효과</text>
+      <text x="180" y="310" text-anchor="middle" class="lbl-xs">→ 정서적·심리적 건강</text>
+    </g>
+
+    <!-- 인지적 -->
+    <g transform="translate(800, 548)">
+      <rect x="0" y="0" width="360" height="320" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+      <rect x="0" y="0" width="360" height="42" rx="6" fill="#5e548e"/>
+      <text x="20" y="28" class="lbl-strong" fill="#f5f1e8">③ 인지적 해석</text>
+
+      <text x="20" y="74" class="lbl-strong">작품 이해의 형성</text>
+      <text x="20" y="96" class="lbl-sm">의미 없어 보이던 플롯들이</text>
+      <text x="20" y="114" class="lbl-sm">어느 순간 연결 → 이해</text>
+
+      <!-- 시각: 흩어진 점들이 연결되는 모양 -->
+      <g transform="translate(180, 198)">
+        <circle cx="-60" cy="-20" r="6" fill="#5e548e" opacity="0.7"/>
+        <circle cx="-20" cy="20" r="6" fill="#5e548e" opacity="0.7"/>
+        <circle cx="20" cy="-10" r="6" fill="#5e548e" opacity="0.7"/>
+        <circle cx="60" cy="20" r="6" fill="#5e548e" opacity="0.7"/>
+        <circle cx="0" cy="-30" r="6" fill="#5e548e" opacity="0.7"/>
+
+        <line x1="-60" y1="-20" x2="-20" y2="20" stroke="#5e548e" stroke-width="1.5"/>
+        <line x1="-20" y1="20" x2="20" y2="-10" stroke="#5e548e" stroke-width="1.5"/>
+        <line x1="20" y1="-10" x2="60" y2="20" stroke="#5e548e" stroke-width="1.5"/>
+        <line x1="0" y1="-30" x2="-20" y2="20" stroke="#5e548e" stroke-width="1.5"/>
+        <line x1="0" y1="-30" x2="60" y2="20" stroke="#5e548e" stroke-width="1.5"/>
+
+        <text x="0" y="50" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">연결 = 이해</text>
+      </g>
+
+      <text x="180" y="294" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">인지적 즐거움</text>
+      <text x="180" y="310" text-anchor="middle" class="lbl-xs">→ 본성적 욕구 충족</text>
+    </g>
+  </g>
+
+  <!-- Step 5: 비판과 의의 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="888" width="1120" height="84" rx="6" class="acc-bg acc-st" stroke-width="1.4"/>
+    <text x="60" y="916" class="lbl-strong" fill="#a83a4a">후대의 비판 vs 지속적 영향</text>
+    <text x="60" y="940" class="lbl-sm"><tspan font-weight="700">자연주의 연극론(19c말):</tspan> 하층 계급 주인공으로 사회적 문제를 드러냄 (고귀한 인물에서 벗어남)</text>
+    <text x="60" y="960" class="lbl-sm"><tspan font-weight="700">니체:</tspan> 비극은 연민·공포가 아닌 인간 실존 인식과 삶에 대한 의지를 갖게 해야 한다 / <tspan fill="#5e548e" font-weight="700">단, 아리스토텔레스의 이론은 지금도 많은 예술 분야에서 사용</tspan></text>
+  </g>
+
+  <text x="1160" y="990" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 인문·예술 · 70쪽</text>
+</svg>

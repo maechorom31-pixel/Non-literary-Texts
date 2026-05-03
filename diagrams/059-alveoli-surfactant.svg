@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1160" role="img" aria-labelledby="t059 d059">
+  <title id="t059">폐포의 표면 장력과 계면 활성제</title>
+  <desc id="d059">포도송이 모양의 작은 폐포 구조와 I형·II형 폐포 세포가 산소·이산화 탄소 교환을 담당하는 모습에서 출발해, 폐포 표면 액체층의 물 분자 간 인력에서 발생하는 표면 장력이 폐포를 수축시켜 신전성을 떨어뜨리고 허탈 위험을 만든다는 점, 라플라스 법칙에 따라 같은 표면 장력일 때 폐포 반지름이 작을수록 필요한 내부 공기압이 높아져 작은 폐포일수록 허탈 위험이 매우 커진다는 인과, 그리고 II형 폐포 세포가 분비하는 계면 활성제가 폐포가 작아질수록 농도가 높아져 표면 장력을 효과적으로 낮추어 작은 폐포의 허탈을 방지한다는 해결까지 차례로 시각화한다.</desc>
+
+  <defs>
+    <marker id="ar59-acc" viewBox="0 0 1200 1160" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+    <marker id="ar59-met" viewBox="0 0 1200 1160" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b6f47"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .formula { font-family: ui-monospace, monospace; font-size: 14px; font-weight: 700; fill: #1a1612; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .met { fill: #8b6f47; }
+    .met-st { stroke: #8b6f47; }
+    .met-bg { fill: rgba(139,111,71,0.08); }
+    .met-bg2 { fill: rgba(139,111,71,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+    .water { fill: rgba(31,85,130,0.55); }
+  ]]></style>
+
+  <!-- Step 1 · 폐포 구조 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="180" rx="6" class="met-bg met-st" stroke-width="1.5"/>
+    <text x="60" y="60" class="lbl-head" fill="#8b6f47">폐포의 구조 — 포도송이 모양</text>
+    <text x="60" y="86" class="lbl-sm">폐 = 수많은 작은 폐포의 집합 (I형 + II형 폐포 세포 얇은 층)</text>
+
+    <!-- 폐포 클러스터 -->
+    <g transform="translate(440, 140)">
+      <circle cx="-40" cy="-30" r="30" fill="#ebe5d4" stroke="#1a1612" stroke-width="1.4"/>
+      <circle cx="20" cy="-40" r="34" fill="#ebe5d4" stroke="#1a1612" stroke-width="1.4"/>
+      <circle cx="80" cy="-30" r="28" fill="#ebe5d4" stroke="#1a1612" stroke-width="1.4"/>
+      <circle cx="-30" cy="20" r="32" fill="#ebe5d4" stroke="#1a1612" stroke-width="1.4"/>
+      <circle cx="40" cy="30" r="36" fill="#ebe5d4" stroke="#1a1612" stroke-width="1.4"/>
+      <circle cx="100" cy="20" r="30" fill="#ebe5d4" stroke="#1a1612" stroke-width="1.4"/>
+    </g>
+
+    <text x="660" y="100" class="lbl-strong">신전성</text>
+    <text x="660" y="122" class="lbl-sm">탄성력으로 부피를 늘렸다 복원하는 정도</text>
+    <text x="660" y="142" class="lbl-xs">신전성 ↑ → 일정량 공기 흡입에 적은 에너지 필요 → 호흡 편함</text>
+
+    <text x="660" y="174" class="lbl-strong" fill="#a83a4a">위험</text>
+    <text x="660" y="196" class="lbl-xs" fill="#a83a4a">표면 장력 → 폐포가 오그라드는 경향 (다음 장면)</text>
+  </g>
+
+  <!-- Step 2 · 표면 장력 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="230" width="540" height="240" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="258" class="lbl-strong" fill="#a83a4a">표면 장력의 위험</text>
+
+    <!-- 폐포 단면 (액체층 + 화살표) -->
+    <g transform="translate(180, 380)">
+      <!-- 폐포 -->
+      <circle r="60" class="paper" stroke="#1a1612" stroke-width="1.6"/>
+      <!-- 액체층 -->
+      <circle r="56" fill="none" class="water" stroke="rgba(31,85,130,0.7)" stroke-width="3"/>
+      <!-- 수축 화살표 -->
+      <line x1="-46" y1="0" x2="-30" y2="0" class="acc-st" stroke-width="2" marker-end="url(#ar59-acc)"/>
+      <line x1="46" y1="0" x2="30" y2="0" class="acc-st" stroke-width="2" marker-end="url(#ar59-acc)"/>
+      <line x1="0" y1="-46" x2="0" y2="-30" class="acc-st" stroke-width="2" marker-end="url(#ar59-acc)"/>
+      <line x1="0" y1="46" x2="0" y2="30" class="acc-st" stroke-width="2" marker-end="url(#ar59-acc)"/>
+      <line x1="-32" y1="-32" x2="-22" y2="-22" class="acc-st" stroke-width="2" marker-end="url(#ar59-acc)"/>
+      <line x1="32" y1="-32" x2="22" y2="-22" class="acc-st" stroke-width="2" marker-end="url(#ar59-acc)"/>
+      <line x1="-32" y1="32" x2="-22" y2="22" class="acc-st" stroke-width="2" marker-end="url(#ar59-acc)"/>
+      <line x1="32" y1="32" x2="22" y2="22" class="acc-st" stroke-width="2" marker-end="url(#ar59-acc)"/>
+    </g>
+
+    <text x="280" y="316" class="lbl-strong">물 분자 간의 인력</text>
+    <text x="280" y="338" class="lbl-sm">분자 간 일반 인력보다 강함</text>
+    <text x="280" y="358" class="lbl-sm">→ 액체 표면이 수축하려는 힘</text>
+
+    <text x="280" y="394" class="lbl-strong" fill="#a83a4a">결과</text>
+    <text x="280" y="416" class="lbl-sm" fill="#a83a4a">폐포가 오그라들려는 경향</text>
+    <text x="280" y="434" class="lbl-xs" fill="#a83a4a">→ 신전성 감소, 허탈 위험</text>
+  </g>
+
+  <!-- Step 3 · 라플라스 법칙 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="620" y="230" width="540" height="240" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="640" y="258" class="lbl-strong" fill="#a83a4a">라플라스 법칙</text>
+
+    <g transform="translate(640, 280)">
+      <rect x="0" y="0" width="500" height="50" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="250" y="32" text-anchor="middle" class="formula">P ∝ T / r</text>
+    </g>
+
+    <text x="640" y="356" class="lbl-sm">P: 폐포 안정 부피에 필요한 내부 공기압</text>
+    <text x="640" y="374" class="lbl-sm">T: 표면 장력 (정비례)</text>
+    <text x="640" y="392" class="lbl-sm">r: 폐포 반지름 (반비례)</text>
+
+    <!-- 두 폐포 비교 -->
+    <g transform="translate(700, 426)">
+      <circle r="22" fill="#ebe5d4" stroke="#1a1612" stroke-width="1.4"/>
+      <text y="3" text-anchor="middle" class="lbl-xs" font-weight="700">큰 폐포</text>
+      <text y="38" text-anchor="middle" class="lbl-xs" fill="#8b6f47">P 낮음</text>
+    </g>
+    <text x="780" y="430" class="lbl-strong" fill="#a83a4a">vs</text>
+    <g transform="translate(880, 426)">
+      <circle r="12" fill="#ebe5d4" stroke="#1a1612" stroke-width="1.4"/>
+      <text y="3" text-anchor="middle" class="lbl-xs" font-weight="700">작은 폐포</text>
+      <text y="34" text-anchor="middle" class="lbl-xs" fill="#a83a4a" font-weight="700">P 높음 (위험)</text>
+    </g>
+  </g>
+
+  <!-- Step 4 · 계면 활성제 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="490" width="1120" height="320" rx="6" class="met-bg2 met-st" stroke-width="1.5"/>
+    <text x="60" y="518" class="lbl-head" fill="#8b6f47">II형 폐포 세포의 계면 활성제 — 작은 폐포의 생존 전략</text>
+    <text x="60" y="540" class="lbl-sm">분비된 계면 활성제가 물 분자 간 인력을 방해 → 표면 장력 ↓</text>
+
+    <!-- 두 폐포 비교 (계면 활성제 농도) -->
+    <g transform="translate(280, 680)">
+      <text x="0" y="-100" text-anchor="middle" class="lbl-strong">큰 폐포</text>
+      <circle r="60" class="paper" stroke="#1a1612" stroke-width="1.6"/>
+      <!-- 계면 활성제 (희박) -->
+      <g fill="#8b6f47">
+        <circle cx="0" cy="-50" r="3"/><circle cx="40" cy="-30" r="3"/>
+        <circle cx="50" cy="0" r="3"/><circle cx="40" cy="30" r="3"/>
+        <circle cx="0" cy="50" r="3"/><circle cx="-40" cy="30" r="3"/>
+        <circle cx="-50" cy="0" r="3"/><circle cx="-40" cy="-30" r="3"/>
+      </g>
+      <text x="0" y="80" text-anchor="middle" class="lbl-sm" fill="#8b6f47">계면 활성제 농도 ↓</text>
+      <text x="0" y="98" text-anchor="middle" class="lbl-xs">표면 장력 자체가 작은 위험 X</text>
+    </g>
+
+    <text x="540" y="680" class="lbl-head" fill="#a83a4a">vs</text>
+
+    <g transform="translate(800, 680)">
+      <text x="0" y="-100" text-anchor="middle" class="lbl-strong">작은 폐포</text>
+      <circle r="34" class="paper" stroke="#1a1612" stroke-width="1.6"/>
+      <!-- 계면 활성제 (밀집) -->
+      <g fill="#8b6f47">
+        <circle cx="0" cy="-28" r="3"/><circle cx="14" cy="-26" r="3"/><circle cx="26" cy="-14" r="3"/>
+        <circle cx="28" cy="0" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="14" cy="26" r="3"/>
+        <circle cx="0" cy="28" r="3"/><circle cx="-14" cy="26" r="3"/><circle cx="-26" cy="14" r="3"/>
+        <circle cx="-28" cy="0" r="3"/><circle cx="-26" cy="-14" r="3"/><circle cx="-14" cy="-26" r="3"/>
+      </g>
+      <text x="0" y="80" text-anchor="middle" class="lbl-sm" fill="#8b6f47" font-weight="700">계면 활성제 농도 ↑↑</text>
+      <text x="0" y="98" text-anchor="middle" class="lbl-xs" fill="#8b6f47" font-weight="700">표면 장력 강하게 감소</text>
+    </g>
+
+    <!-- 핵심 메시지 -->
+    <g transform="translate(40, 740)">
+      <rect x="20" y="0" width="1080" height="60" rx="6" class="paper2 ink" stroke-width="1"/>
+      <text x="34" y="22" class="lbl-strong">자기 조절 메커니즘</text>
+      <text x="200" y="22" class="lbl-sm">폐포가 작아질수록 계면 활성제 농도가 자동으로 높아짐</text>
+      <text x="34" y="48" class="lbl-xs" fill="#8b6f47" font-weight="700">→ 라플라스 법칙으로 위험한 작은 폐포가 오히려 더 강력하게 보호됨</text>
+    </g>
+  </g>
+
+  <!-- 결론 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="830" width="1120" height="80" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="858" class="lbl-strong" fill="#a83a4a">계면 활성제가 부족할 때</text>
+    <text x="60" y="880" class="lbl-sm">작은 폐포의 허탈 촉진 → 호흡 기능 저하 → 미숙아 호흡 곤란 증후군 같은 질환</text>
+    <text x="60" y="900" class="lbl-xs">→ 인공 계면 활성제 투여로 치료</text>
+  </g>
+
+  <text x="1160" y="930" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 독서 방법 · 29쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="940" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="940" width="1120" height="32" rx="6" fill="#8b6f47"/>
+    <text x="60" y="962" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="962" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="974" x2="1160" y2="974" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="990" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">폐포의 신전성</text>
+    <text x="240" y="990" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">신전성이 클수록 호흡이 편하다. 표면 장력은 신전성을 감소시킨다.</text>
+    <line x1="40" y1="1004" x2="1160" y2="1004" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1020" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">표면 장력의 위협</text>
+    <text x="240" y="1020" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">폐포 액체층의 물 분자 간 인력으로 표면 장력이 발생해 폐포를 수축시킨다.</text>
+    <line x1="40" y1="1034" x2="1160" y2="1034" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1050" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">라플라스 법칙</text>
+    <text x="240" y="1050" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">같은 표면 장력일 때 반지름이 작을수록 필요한 내부 공기압이 높아 허탈 위험이 매우 커진다.</text>
+    <line x1="40" y1="1064" x2="1160" y2="1064" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1080" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">계면 활성제의 작용</text>
+    <text x="240" y="1080" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">II형 폐포 세포가 분비. 폐포가 작아질수록 농도가 높아져 작은 폐포의 허탈을 막는다.</text>
+    <line x1="40" y1="1094" x2="1160" y2="1094" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1110" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">미숙아 호흡 곤란</text>
+    <text x="240" y="1110" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">II형 세포 미발달로 계면 활성제가 부족해 작은 폐포가 허탈되는 증후군. 인공 계면 활성제로 치료한다.</text>
+  </g>
+</svg>

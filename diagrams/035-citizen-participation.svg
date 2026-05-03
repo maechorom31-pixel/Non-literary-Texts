@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1240" data-app role="img" aria-labelledby="t35 d35">
+  <title id="t35">시민 참여 — 루소·밀에서 바버까지</title>
+  <desc id="d35">시민 참여론의 통시적 흐름(루소 → 밀 → 1960s 참여 민주주의 → 바버)을 시간축과 인물 도식, 강·약 민주주의 비교로 시각화.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f5f9f8}
+      .panel{fill:#ffffff;stroke:#c4dcd5;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#3e5953}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a6f6f}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#3e5953}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#436963}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .axis{font:600 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a6f6f;letter-spacing:.04em}
+      .figLabel{font:600 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#7d9994;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar35" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a6f6f"/>
+    </marker>
+    <symbol id="cit" viewBox="0 0 28 36">
+      <circle cx="14" cy="9" r="6" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1"/>
+      <path d="M3 34 Q3 19 14 19 Q25 19 25 34 Z" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1"/>
+    </symbol>
+  </defs>
+
+  <rect class="bg" width="1200" height="1240"/>
+
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">시민 참여 — 루소·밀에서 바버까지</text>
+  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회·문화 · 시간 순서</text>
+
+  <!-- Scene 1: 도입 + 시간축 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">참여 민주주의의 핵심 가정 + 통시적 흐름</text>
+    <text x="64" y="166" class="small">민주적 사회가 제대로 기능하려면 시민에게 ‘시민적 능력’이 필요하고, 시민 참여가 그 능력을 함양한다.</text>
+
+    <rect class="panel" x="64" y="184" width="1072" height="200" rx="10"/>
+    <rect x="64" y="184" width="6" height="200" fill="#2a6f6f"/>
+
+    <!-- 시간축 -->
+    <line x1="120" y1="296" x2="1100" y2="296" stroke="#2a6f6f" stroke-width="2.4"/>
+    <polygon points="1100,290 1116,296 1100,302" fill="#2a6f6f"/>
+    <text x="1130" y="300" class="axis">시간</text>
+
+    <!-- 시간축 마커들 -->
+    <g>
+      <!-- 18C 루소 -->
+      <line x1="200" y1="284" x2="200" y2="308" stroke="#2a6f6f" stroke-width="1.4"/>
+      <circle cx="200" cy="296" r="6" fill="#2a6f6f"/>
+      <text x="200" y="226" class="lab" text-anchor="middle">18C 루소</text>
+      <text x="200" y="248" class="small" text-anchor="middle">의사 결정 참여</text>
+      <text x="200" y="266" class="small" text-anchor="middle">→ 자유의 조건</text>
+      <text x="200" y="328" class="axis" text-anchor="middle">1762</text>
+      <text x="200" y="346" class="small" text-anchor="middle">『사회 계약론』</text>
+
+      <!-- 19C 밀 -->
+      <line x1="430" y1="284" x2="430" y2="308" stroke="#2a6f6f" stroke-width="1.4"/>
+      <circle cx="430" cy="296" r="6" fill="#2a6f6f"/>
+      <text x="430" y="226" class="lab" text-anchor="middle">19C 밀</text>
+      <text x="430" y="248" class="small" text-anchor="middle">공적 기능 담당</text>
+      <text x="430" y="266" class="small" text-anchor="middle">→ 교육적 효과</text>
+      <text x="430" y="328" class="axis" text-anchor="middle">1861</text>
+      <text x="430" y="346" class="small" text-anchor="middle">『대의 정부론』</text>
+
+      <!-- 1960s 참여 민주주의 -->
+      <line x1="700" y1="284" x2="700" y2="308" stroke="#2a6f6f" stroke-width="1.4"/>
+      <circle cx="700" cy="296" r="7" fill="#a83a4a"/>
+      <text x="700" y="226" class="lab" text-anchor="middle" fill="#a83a4a">1960s 참여 민주주의</text>
+      <text x="700" y="248" class="small" text-anchor="middle">광범한 영역의 참여</text>
+      <text x="700" y="266" class="small" text-anchor="middle">→ 본격 이론화</text>
+      <text x="700" y="328" class="axis" text-anchor="middle">1960~70</text>
+      <text x="700" y="346" class="small" text-anchor="middle">신좌파 운동</text>
+
+      <!-- 1984 바버 -->
+      <line x1="980" y1="284" x2="980" y2="308" stroke="#2a6f6f" stroke-width="1.4"/>
+      <circle cx="980" cy="296" r="6" fill="#2a6f6f"/>
+      <text x="980" y="226" class="lab" text-anchor="middle">바버</text>
+      <text x="980" y="248" class="small" text-anchor="middle">강한 민주주의</text>
+      <text x="980" y="266" class="small" text-anchor="middle">→ 자유와 평등 동시 실현</text>
+      <text x="980" y="328" class="axis" text-anchor="middle">1984</text>
+      <text x="980" y="346" class="small" text-anchor="middle">『강한 민주주의』</text>
+    </g>
+
+    <text x="84" y="378" class="it" fill="#2a6f6f">참여 = 시민적 능력의 함양 + 민주주의 질의 향상 (통시적 발전)</text>
+  </g>
+
+  <!-- Scene 2: 루소 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="424" class="num">2</text>
+    <text x="92" y="424" class="bd">루소 — 의사 결정 참여 = 자유의 조건</text>
+
+    <rect class="panel" x="64" y="442" width="1072" height="156" rx="10"/>
+
+    <!-- 좌: 인물 + 일반의지 도식 -->
+    <g transform="translate(84,460)">
+      <rect x="0" y="0" width="240" height="120" rx="10" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1.2"/>
+      <text x="120" y="22" class="lab" text-anchor="middle" fill="#2a6f6f">일반 의지의 형성</text>
+      <use href="#cit" x="48" y="42" width="22" height="28"/>
+      <use href="#cit" x="78" y="42" width="22" height="28"/>
+      <use href="#cit" x="108" y="42" width="22" height="28"/>
+      <use href="#cit" x="138" y="42" width="22" height="28"/>
+      <use href="#cit" x="168" y="42" width="22" height="28"/>
+      <line x1="60" y1="80" x2="118" y2="92" stroke="#2a6f6f" stroke-width="1"/>
+      <line x1="90" y1="80" x2="118" y2="92" stroke="#2a6f6f" stroke-width="1"/>
+      <line x1="120" y1="80" x2="118" y2="92" stroke="#2a6f6f" stroke-width="1"/>
+      <line x1="150" y1="80" x2="118" y2="92" stroke="#2a6f6f" stroke-width="1"/>
+      <line x1="180" y1="80" x2="118" y2="92" stroke="#2a6f6f" stroke-width="1"/>
+      <rect x="74" y="92" width="92" height="22" rx="6" fill="#2a6f6f"/>
+      <text x="120" y="108" class="pill" text-anchor="middle">일반 의지</text>
+    </g>
+
+    <!-- 우: 설명 -->
+    <g transform="translate(360,476)">
+      <text x="0" y="20" class="lab">핵심</text>
+      <line x1="0" y1="32" x2="772" y2="32" stroke="#dfeae7" stroke-width="1"/>
+      <text x="0" y="56" class="small">· 인간은 공동의 이익을 추구하는 ‘일반 의지’를 형성하는 존재</text>
+      <text x="0" y="78" class="small">· 시민 참여 = 일반 의지를 발견하고 실현하는 과정</text>
+      <text x="0" y="100" class="it" fill="#2a6f6f">시민이 직접 입법에 참여해야 진정한 자유가 보장된다</text>
+    </g>
+  </g>
+
+  <!-- Scene 3: 밀 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="638" class="num">3</text>
+    <text x="92" y="638" class="bd">밀 — 공적 기능 담당으로 길러지는 능력</text>
+
+    <rect class="panel" x="64" y="656" width="1072" height="146" rx="10"/>
+
+    <!-- 좌: 시민 → 공적 기능 화살표 -->
+    <g transform="translate(84,672)">
+      <rect x="0" y="6" width="92" height="56" rx="8" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1"/>
+      <text x="46" y="26" class="small" text-anchor="middle">시민</text>
+      <use href="#cit" x="34" y="28" width="24" height="32"/>
+
+      <line x1="100" y1="34" x2="138" y2="34" stroke="#2a6f6f" stroke-width="2" marker-end="url(#ar35)"/>
+      <text x="119" y="22" class="small" text-anchor="middle">참여</text>
+
+      <rect x="146" y="6" width="120" height="56" rx="8" fill="#fff5e6" stroke="#a8884a" stroke-width="1.2"/>
+      <text x="206" y="32" class="lab" text-anchor="middle" fill="#a8884a">공적 기능</text>
+      <text x="206" y="50" class="small" text-anchor="middle">배심·지방의회 등</text>
+
+      <line x1="272" y1="34" x2="310" y2="34" stroke="#2a6f6f" stroke-width="2" marker-end="url(#ar35)"/>
+
+      <rect x="318" y="6" width="220" height="56" rx="8" fill="#2a6f6f"/>
+      <text x="428" y="30" class="pill" text-anchor="middle">도덕적·지적 능력 ↑</text>
+      <text x="428" y="50" class="small" fill="#cfe5e1" text-anchor="middle">공적 사고 + 책임감 함양</text>
+    </g>
+
+    <text x="84" y="772" class="it" fill="#2a6f6f">→ 참여 자체가 ‘교육적 효과’를 갖는다는 점을 강조</text>
+  </g>
+
+  <!-- Scene 4: 1960s 참여 민주주의 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="846" class="num">4</text>
+    <text x="92" y="846" class="bd">1960년대 참여 민주주의 — 본격적 이론화</text>
+
+    <g>
+      <rect class="panel" x="64" y="864" width="528" height="148" rx="10"/>
+      <text x="84" y="892" class="lab">시민 참여의 확장</text>
+      <line x1="84" y1="904" x2="572" y2="904" stroke="#dfeae7" stroke-width="1"/>
+
+      <!-- 영역 아이콘 4개 -->
+      <g transform="translate(84,920)">
+        <rect x="0" y="0" width="100" height="36" rx="6" fill="#dff0ec" stroke="#bfd9d3"/>
+        <text x="50" y="22" class="small" text-anchor="middle">국가</text>
+        <rect x="120" y="0" width="100" height="36" rx="6" fill="#dff0ec" stroke="#bfd9d3"/>
+        <text x="170" y="22" class="small" text-anchor="middle">지방자치</text>
+        <rect x="240" y="0" width="100" height="36" rx="6" fill="#dff0ec" stroke="#bfd9d3"/>
+        <text x="290" y="22" class="small" text-anchor="middle">시민단체</text>
+        <rect x="360" y="0" width="120" height="36" rx="6" fill="#dff0ec" stroke="#bfd9d3"/>
+        <text x="420" y="22" class="small" text-anchor="middle">일터·학교</text>
+      </g>
+      <text x="84" y="990" class="it" fill="#2a6f6f">광범한 시민적 행위 = 결정·운영에 직접 참여</text>
+
+      <rect class="panel" x="608" y="864" width="528" height="148" rx="10" stroke="#2a6f6f" stroke-width="1.4" fill="#dff0ec"/>
+      <text x="628" y="892" class="lab" fill="#2a6f6f">세 가지 효과</text>
+      <line x1="628" y1="904" x2="1116" y2="904" stroke="#bfd9d3" stroke-width="1"/>
+      <text x="628" y="930" class="small">① 정책 결정의 정당성 ↑</text>
+      <text x="628" y="956" class="small">② 실행 단계의 시민 협력 ↑</text>
+      <text x="628" y="982" class="small">③ 민주주의의 질적 발전</text>
+      <text x="628" y="1004" class="it" fill="#2a6f6f">참여 → 결정 → 실행의 선순환</text>
+    </g>
+  </g>
+
+  <!-- Scene 5: 바버 — 강·약 비교 -->
+  <g class="reveal" data-reveal-step="5">
+    <text x="64" y="1056" class="num">5</text>
+    <text x="92" y="1056" class="bd">바버 — 약한 민주주의 vs 강한 민주주의 (비교 매트릭스)</text>
+
+    <g>
+      <rect class="panel" x="64" y="1074" width="1072" height="148" rx="10"/>
+
+      <!-- 헤더 -->
+      <rect x="64" y="1074" width="280" height="34" fill="#f5f9f8"/>
+      <rect x="344" y="1074" width="396" height="34" fill="#fbf2f4"/>
+      <rect x="740" y="1074" width="396" height="34" fill="#dff0ec"/>
+      <text x="204" y="1096" class="lab" text-anchor="middle">기준</text>
+      <text x="542" y="1096" class="lab" text-anchor="middle" fill="#a83a4a">약한 민주주의 (대의제)</text>
+      <text x="938" y="1096" class="lab" text-anchor="middle" fill="#2a6f6f">강한 민주주의</text>
+
+      <!-- 행 1 -->
+      <line x1="64" y1="1108" x2="1136" y2="1108" stroke="#dfeae7"/>
+      <text x="84" y="1130" class="small">시민 의지</text>
+      <text x="354" y="1130" class="small">‘위임’ 중심</text>
+      <text x="750" y="1130" class="small">‘직접 참여 + 자기 결정’</text>
+
+      <!-- 행 2 -->
+      <line x1="64" y1="1140" x2="1136" y2="1140" stroke="#dfeae7"/>
+      <text x="84" y="1162" class="small">자유와의 양립</text>
+      <text x="354" y="1162" class="small" fill="#a83a4a">개인의 자유와 양립 ✗</text>
+      <text x="750" y="1162" class="small" fill="#2a6f6f">자유와 평등 동시 실현</text>
+
+      <!-- 행 3 -->
+      <line x1="64" y1="1172" x2="1136" y2="1172" stroke="#dfeae7"/>
+      <text x="84" y="1194" class="small">정치적 영향력</text>
+      <text x="354" y="1194" class="small">선거권 평등 ≠ 영향력 평등 → 격차 발생</text>
+      <text x="750" y="1194" class="small">시민 간 영향력 격차 완화</text>
+
+      <line x1="344" y1="1108" x2="344" y2="1216" stroke="#dfeae7"/>
+      <line x1="740" y1="1108" x2="740" y2="1216" stroke="#dfeae7"/>
+    </g>
+  </g>
+
+  <text x="1140" y="1232" class="wm" text-anchor="end">EBS 2027 · 사회·문화 · 144쪽</text>
+</svg>

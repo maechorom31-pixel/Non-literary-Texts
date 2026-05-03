@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1210" data-app role="img" aria-labelledby="t69 d69">
+  <title id="t69">담화 공동체 안의 독자</title>
+  <desc id="d69">독자를 개인적 존재로 보던 전통적 분류와 담화 공동체의 일원으로 보는 새로운 관점, 그리고 상호 텍스트성을 통한 공동체의 영향을 시각화한다.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbf7ee}
+      .panel{fill:#ffffff;stroke:#d8cdb6;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e544a}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#8b6f47}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#4f463d}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e544a}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#9c8e7a;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar69" viewBox="0 0 1200 1210" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b6f47"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="1020"/>
+
+  <!-- Header -->
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#8b6f47"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">담화 공동체 안의 독자라는 새로운 시각</text>
+  <text x="1136" y="80" class="sub" fill="#f4ead6" text-anchor="end">독서 방법 · 주장과 근거</text>
+
+  <!-- Scene 1: 전통적 독자 분류 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">전통적 독자관 — 텍스트와 마주하는 개인</text>
+    <text x="64" y="166" class="small">필자와의 관계 측면에서 자아 독자/타자 독자, 다시 수신자 독자/허구적 독자로 분화되어 왔다.</text>
+
+    <rect class="panel" x="64" y="184" width="1072" height="156" rx="10"/>
+    <text x="84" y="212" class="lab">독자의 분류</text>
+    <line x1="84" y1="224" x2="1116" y2="224" stroke="#e3d6b8" stroke-width="1"/>
+
+    <g>
+      <rect x="84" y="240" width="200" height="76" rx="8" fill="#f0e3cb" stroke="#d8c595" stroke-width="1"/>
+      <text x="184" y="266" class="lab" text-anchor="middle">자아 독자</text>
+      <text x="184" y="288" class="small" text-anchor="middle">필자 자신을 독자로</text>
+      <text x="184" y="306" class="small" text-anchor="middle">상정</text>
+
+      <rect x="304" y="240" width="200" height="76" rx="8" fill="#f0e3cb" stroke="#d8c595" stroke-width="1"/>
+      <text x="404" y="266" class="lab" text-anchor="middle">타자 독자</text>
+      <text x="404" y="288" class="small" text-anchor="middle">필자 외부의 타인</text>
+      <text x="404" y="306" class="small" text-anchor="middle">⇣ 다시 둘로 분화</text>
+
+      <rect x="524" y="240" width="200" height="76" rx="8" fill="#fff5dd" stroke="#d8c595" stroke-width="1"/>
+      <text x="624" y="266" class="lab" text-anchor="middle">수신자 독자</text>
+      <text x="624" y="288" class="small" text-anchor="middle">실제 외부에 존재해</text>
+      <text x="624" y="306" class="small" text-anchor="middle">필자에게 영향</text>
+
+      <rect x="744" y="240" width="200" height="76" rx="8" fill="#fff5dd" stroke="#d8c595" stroke-width="1"/>
+      <text x="844" y="266" class="lab" text-anchor="middle">허구적 독자</text>
+      <text x="844" y="288" class="small" text-anchor="middle">필자의 머릿속에서</text>
+      <text x="844" y="306" class="small" text-anchor="middle">상상으로 구성된 존재</text>
+
+      <rect x="964" y="240" width="152" height="76" rx="8" fill="#fbeed3" stroke="#8b6f47" stroke-width="1.4"/>
+      <text x="1040" y="266" class="lab" fill="#8b6f47" text-anchor="middle">공통점</text>
+      <text x="1040" y="288" class="small" text-anchor="middle">독자 = 텍스트와</text>
+      <text x="1040" y="306" class="small" text-anchor="middle">일대일로 마주하는 개인</text>
+    </g>
+  </g>
+
+  <!-- Scene 2: 담화 공동체 독자 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="386" class="num">2</text>
+    <text x="92" y="386" class="bd">담화 공동체로서의 독자</text>
+    <text x="64" y="412" class="small">담화 공동체 — 관습·규약을 공유하며 특정한 쓰기·읽기 방식을 공유하는 집단. 필자와 대등한 위상의 공동 담화 생산자.</text>
+
+    <rect class="panel" x="64" y="430" width="528" height="160" rx="10"/>
+    <text x="84" y="458" class="lab">담화 공동체의 특성</text>
+    <line x1="84" y1="470" x2="572" y2="470" stroke="#e3d6b8" stroke-width="1"/>
+    <text x="84" y="494" class="small">· 공유 지식 · 자주 다루는 내용 · 표현 방식 · 어조</text>
+    <text x="84" y="516" class="small">· 한 사람이 여러 공동체에 동시 소속</text>
+    <text x="84" y="538" class="small">· 논의 전개·주장 정당화에서 동일한 특성을 보임</text>
+    <text x="84" y="566" class="it" fill="#8b6f47">학문 공동체, 직업 공동체, 취미 공동체 …</text>
+
+    <rect class="panel" x="608" y="430" width="528" height="160" rx="10" stroke="#8b6f47" stroke-width="1.6" fill="#fff8ec"/>
+    <text x="628" y="458" class="lab" fill="#8b6f47">새로운 독자관</text>
+    <line x1="628" y1="470" x2="1116" y2="470" stroke="#e3d6b8" stroke-width="1"/>
+    <text x="628" y="494" class="small">· 의미를 ‘생산하는 필자/수용하는 독자’의 구별 약화</text>
+    <text x="628" y="516" class="small">· 필자와 독자 모두 공동의 담화 생산자</text>
+    <text x="628" y="538" class="small">· 독자 = 담화 형성에 참여하는 주체로서 필자와 대등한 위상</text>
+    <text x="628" y="566" class="it" fill="#8b6f47">독자관의 범주에 변화를 초래</text>
+  </g>
+
+  <!-- Scene 3: 상호 텍스트성 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="638" class="num">3</text>
+    <text x="92" y="638" class="bd">공동체의 영향 — 상호 텍스트성</text>
+    <text x="64" y="664" class="small">포터(Porter)의 분류로 본 텍스트 간 연결: 모든 텍스트는 다른 텍스트와 직간접적으로 연결돼 의미를 갖는다.</text>
+
+    <g>
+      <rect x="64" y="682" width="334" height="118" rx="10" fill="#f0e3cb" stroke="#d8c595" stroke-width="1"/>
+      <text x="84" y="710" class="lab">반복 (Iteration)</text>
+      <line x1="84" y1="722" x2="378" y2="722" stroke="#d8c595" stroke-width="1"/>
+      <text x="84" y="746" class="small">다른 텍스트의 내용을 반복하여</text>
+      <text x="84" y="766" class="small">의미를 그 텍스트에 의존시킨다</text>
+      <text x="84" y="788" class="it" fill="#8b6f47">예) 학술 논문의 인용·재진술</text>
+
+      <rect x="418" y="682" width="334" height="118" rx="10" fill="#f0e3cb" stroke="#d8c595" stroke-width="1"/>
+      <text x="438" y="710" class="lab">전제 (Presupposition)</text>
+      <line x1="438" y1="722" x2="732" y2="722" stroke="#d8c595" stroke-width="1"/>
+      <text x="438" y="746" class="small">텍스트 이면에 독자·맥락·신념의</text>
+      <text x="438" y="766" class="small">정보가 전제되어 있다</text>
+      <text x="438" y="788" class="it" fill="#8b6f47">공동체가 공유하는 사고 체계</text>
+
+      <line x1="772" y1="741" x2="810" y2="741" stroke="#8b6f47" stroke-width="2.2" marker-end="url(#ar69)"/>
+
+      <rect x="816" y="682" width="320" height="118" rx="10" fill="#fff8ec" stroke="#8b6f47" stroke-width="1.4"/>
+      <text x="976" y="710" class="lab" text-anchor="middle">담화 공동체</text>
+      <text x="976" y="734" class="small" text-anchor="middle">반복·전제로 상호</text>
+      <text x="976" y="754" class="small" text-anchor="middle">텍스트적으로 연결되는</text>
+      <text x="976" y="774" class="small" text-anchor="middle">집단</text>
+      <text x="976" y="794" class="it" fill="#8b6f47" text-anchor="middle">독자=공동 참여자</text>
+    </g>
+  </g>
+
+  <!-- Scene 4: 교육적 함의 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="846" class="num">4</text>
+    <text x="92" y="846" class="bd">교육적 함의 — 두 가지 한계와 확장</text>
+    <text x="64" y="872" class="small">담화 공동체 독자관은 학문적 글쓰기 설명에 강점이 있으나 두 가지 한계가 지적된다.</text>
+
+    <g>
+      <rect x="64" y="888" width="528" height="92" rx="10" fill="#ffffff" stroke="#d8cdb6" stroke-width="1.2"/>
+      <text x="84" y="916" class="lab">한계 ① 동질화의 위험</text>
+      <text x="84" y="940" class="small">공동체를 강조하다 독자를 단일·동질 집단으로</text>
+      <text x="84" y="960" class="small">단순화 → 실제 독자의 다양성을 설명하기 어렵다</text>
+
+      <rect x="608" y="888" width="528" height="92" rx="10" fill="#ffffff" stroke="#d8cdb6" stroke-width="1.2"/>
+      <text x="628" y="916" class="lab">한계 ② 적용 범위의 제약</text>
+      <text x="628" y="940" class="small">관습·규약이 명료한 학문 공동체에는 적합</text>
+      <text x="628" y="960" class="small">관습이 약한 공동체에는 적용이 어려워진다</text>
+    </g>
+  </g>
+
+  <text x="1140" y="1004" class="wm" text-anchor="end">EBS 2027 · 독서 방법 · 296쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1020" width="1120" height="170" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1020" width="1120" height="32" rx="6" fill="#8b6f47"/>
+    <text x="60" y="1042" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1042" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">4개 항목</text>
+    <line x1="40" y1="1054" x2="1160" y2="1054" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1070" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">전통적 독자관</text>
+    <text x="240" y="1070" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">독자를 텍스트와 일대일로 마주하는 개인적 존재로 보는 관점.</text>
+    <line x1="40" y1="1084" x2="1160" y2="1084" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1100" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">담화 공동체</text>
+    <text x="240" y="1100" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">특정한 가치·규범·관습을 공유하며 의사소통하는 사회적 집단.</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">공동체의 영향</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">같은 텍스트라도 어떤 담화 공동체에 속하는가에 따라 이해와 평가가 달라진다.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">교육적 함의</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">읽기 교육은 학생이 다양한 담화 공동체에 참여하고 그 규범을 이해하도록 돕는 방향으로 확장되어야 한다.</text>
+  </g>
+</svg>

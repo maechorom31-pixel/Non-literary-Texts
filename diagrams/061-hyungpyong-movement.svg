@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1280" data-app role="img" aria-labelledby="t61 d61">
+  <title id="t61">형평 운동 — 백정 차별의 역사와 인권 운동의 전개</title>
+  <desc id="d61">조선의 양천제 신분 구조 → 백정의 처지 → 갑오개혁의 한계 → 1923 형평사 출범 → 평등권의 세 요구 → 약자 간 갈등을 시간축과 신분 트리, 인물 도식으로 시각화.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbf7ee}
+      .panel{fill:#ffffff;stroke:#d8cdb6;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e544a}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#8b6f47}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#4f463d}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e544a}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .axis{font:600 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#8b6f47}
+      .figLab{font:600 11px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#9c8e7a;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar61" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b6f47"/>
+    </marker>
+    <symbol id="figureBJ" viewBox="0 0 28 36">
+      <circle cx="14" cy="9" r="6" fill="#fbeed3" stroke="#8b6f47"/>
+      <path d="M3 34 Q3 19 14 19 Q25 19 25 34 Z" fill="#fbeed3" stroke="#8b6f47"/>
+    </symbol>
+    <symbol id="chain" viewBox="0 0 60 16">
+      <circle cx="6" cy="8" r="4" fill="none" stroke="#a83a4a" stroke-width="1.4"/>
+      <circle cx="16" cy="8" r="4" fill="none" stroke="#a83a4a" stroke-width="1.4"/>
+      <circle cx="26" cy="8" r="4" fill="none" stroke="#a83a4a" stroke-width="1.4"/>
+      <circle cx="36" cy="8" r="4" fill="none" stroke="#a83a4a" stroke-width="1.4"/>
+      <circle cx="46" cy="8" r="4" fill="none" stroke="#a83a4a" stroke-width="1.4"/>
+      <line x1="50" y1="8" x2="58" y2="2" stroke="#a83a4a" stroke-width="1.4"/>
+    </symbol>
+    <symbol id="banner" viewBox="0 0 40 40">
+      <rect x="6" y="2" width="28" height="34" fill="#fff" stroke="#8b6f47" stroke-width="1.2"/>
+      <line x1="20" y1="2" x2="20" y2="36" stroke="#8b6f47" stroke-width="0.6"/>
+      <text x="20" y="22" font-size="9" font-weight="700" fill="#a83a4a" text-anchor="middle">衡平</text>
+    </symbol>
+  </defs>
+
+  <rect class="bg" width="1200" height="1280"/>
+
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#8b6f47"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">형평 운동 — 백정 차별의 역사와 인권 운동의 전개</text>
+  <text x="1136" y="80" class="sub" fill="#f4ead6" text-anchor="end">독서 방법 · 시간 순서</text>
+
+  <!-- 시간축 (헤더 아래) -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">조선의 신분 질서 + 통시적 흐름</text>
+
+    <rect class="panel" x="64" y="160" width="1072" height="220" rx="10"/>
+    <rect x="64" y="160" width="6" height="220" fill="#8b6f47"/>
+
+    <!-- 시간축 -->
+    <line x1="120" y1="358" x2="1100" y2="358" stroke="#8b6f47" stroke-width="2"/>
+    <polygon points="1100,352 1116,358 1100,364" fill="#8b6f47"/>
+    <text x="1130" y="362" class="axis">시간</text>
+
+    <!-- 조선시대 -->
+    <line x1="200" y1="346" x2="200" y2="370" stroke="#8b6f47" stroke-width="1.4"/>
+    <circle cx="200" cy="358" r="6" fill="#8b6f47"/>
+    <text x="200" y="332" class="figLab" text-anchor="middle">조선 (양천제)</text>
+    <text x="200" y="378" class="axis" text-anchor="middle">~1894</text>
+
+    <!-- 1894 갑오개혁 -->
+    <line x1="500" y1="346" x2="500" y2="370" stroke="#8b6f47" stroke-width="1.4"/>
+    <circle cx="500" cy="358" r="6" fill="#8b6f47"/>
+    <text x="500" y="332" class="figLab" text-anchor="middle">갑오개혁 (명목 폐지)</text>
+    <text x="500" y="378" class="axis" text-anchor="middle">1894</text>
+
+    <!-- 1923 형평사 -->
+    <line x1="780" y1="346" x2="780" y2="370" stroke="#8b6f47" stroke-width="1.4"/>
+    <circle cx="780" cy="358" r="7" fill="#a83a4a"/>
+    <text x="780" y="332" class="figLab" text-anchor="middle" fill="#a83a4a">형평사 출범 (진주)</text>
+    <text x="780" y="378" class="axis" text-anchor="middle" fill="#a83a4a">1923</text>
+
+    <!-- 1925 전국대회 -->
+    <line x1="980" y1="346" x2="980" y2="370" stroke="#8b6f47" stroke-width="1.4"/>
+    <circle cx="980" cy="358" r="6" fill="#8b6f47"/>
+    <text x="980" y="332" class="figLab" text-anchor="middle">제3회 전국 대회</text>
+    <text x="980" y="378" class="axis" text-anchor="middle">1925</text>
+
+    <!-- 신분 트리 (위) -->
+    <g>
+      <rect x="464" y="180" width="280" height="36" rx="6" fill="#8b6f47"/>
+      <text x="604" y="204" class="pill" text-anchor="middle">조선 백성</text>
+
+      <line x1="544" y1="216" x2="384" y2="234" stroke="#8b6f47" stroke-width="1.4"/>
+      <line x1="664" y1="216" x2="824" y2="234" stroke="#8b6f47" stroke-width="1.4"/>
+
+      <rect x="244" y="234" width="280" height="36" rx="6" fill="#fbeed3" stroke="#8b6f47"/>
+      <text x="384" y="258" class="lab" text-anchor="middle">양민(良民) — 양반·중인·상민</text>
+
+      <rect x="684" y="234" width="280" height="36" rx="6" fill="#fbf2f4" stroke="#a83a4a"/>
+      <text x="824" y="258" class="lab" text-anchor="middle" fill="#a83a4a">천민(賤民) — 칠반·팔반</text>
+
+      <text x="384" y="294" class="small" text-anchor="middle">자유민</text>
+      <text x="824" y="294" class="small" text-anchor="middle" fill="#a83a4a">차별·격리</text>
+    </g>
+
+    <text x="84" y="320" class="small">칠반공천(공노비) — 비교적 나은 대우 / 팔반사천(사노비) — 멸시·국가 관리 ✗</text>
+  </g>
+
+  <!-- Scene 2: 백정의 처지 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="430" class="num">2</text>
+    <text x="92" y="430" class="bd">백정의 처지 — 천민 중에서도 가장 극심한 차별</text>
+
+    <rect class="panel" x="64" y="448" width="1072" height="160" rx="10" stroke="#a83a4a" stroke-width="1.4" fill="#fbf2f4"/>
+
+    <!-- 백정 인물 + 사슬 -->
+    <g transform="translate(84,468)">
+      <use href="#figureBJ" x="0" y="0" width="32" height="40"/>
+      <use href="#chain" x="38" y="14" width="60" height="16"/>
+      <text x="16" y="56" class="figLab" text-anchor="middle" fill="#a83a4a">백정</text>
+    </g>
+
+    <text x="200" y="486" class="lab" fill="#a83a4a">생업 — 가축 도살·고기 판매(세습)</text>
+    <line x1="200" y1="498" x2="1116" y2="498" stroke="#fbe6e9"/>
+    <text x="200" y="522" class="small">· 일반인과 격리된 거주 — 사회적·문화적 소외</text>
+    <text x="200" y="544" class="small">· 누구나 백정에게 반말 / 기와 가옥 ✗ / 명주 의복 ✗ / 교육 기회 ✗</text>
+    <text x="200" y="582" class="it" fill="#a83a4a">신분 자체가 일상 전반의 차별로 작동</text>
+  </g>
+
+  <!-- Scene 3: 갑오개혁 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="660" class="num">3</text>
+    <text x="92" y="660" class="bd">1894 갑오개혁 — 형식적 폐지의 한계</text>
+
+    <g>
+      <rect class="panel" x="64" y="678" width="528" height="120" rx="10" stroke="#8b6f47" stroke-width="1.4" fill="#fff8ec"/>
+      <text x="84" y="706" class="lab" fill="#8b6f47">법적 변화</text>
+      <line x1="84" y1="718" x2="572" y2="718" stroke="#e3d6b8"/>
+      <rect x="84" y="730" width="488" height="22" rx="4" fill="#fff" stroke="#8b6f47"/>
+      <text x="98" y="746" class="small">📜 모든 신분제 ‘명목상’ 폐지</text>
+      <text x="84" y="780" class="it" fill="#8b6f47">법문의 변화 (formal change)</text>
+
+      <line x1="600" y1="738" x2="640" y2="738" stroke="#a83a4a" stroke-width="2.4" stroke-dasharray="4 3"/>
+      <text x="620" y="730" class="small" fill="#a83a4a" text-anchor="middle">≠</text>
+
+      <rect class="panel" x="648" y="678" width="488" height="120" rx="10" stroke="#a83a4a" stroke-width="1.4" fill="#fbf2f4"/>
+      <text x="668" y="706" class="lab" fill="#a83a4a">사회적 현실</text>
+      <line x1="668" y1="718" x2="1116" y2="718" stroke="#fbe6e9"/>
+      <text x="668" y="742" class="small">사회적 인습은 그대로 — 차별 지속</text>
+      <text x="668" y="762" class="small">일제: 소가죽 확보를 위해 백정 신분 유지를 ‘이용’</text>
+      <text x="668" y="784" class="it" fill="#a83a4a">실질의 변화 ✗</text>
+    </g>
+  </g>
+
+  <!-- Scene 4: 형평사 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="848" class="num">4</text>
+    <text x="92" y="848" class="bd">1923 형평사 출범 — 자발적 인권 조직</text>
+
+    <rect class="panel" x="64" y="866" width="1072" height="156" rx="10" stroke="#8b6f47" stroke-width="1.6" fill="#fff8ec"/>
+
+    <use href="#banner" x="84" y="884" width="50" height="50"/>
+
+    <text x="160" y="894" class="lab" fill="#8b6f47">진주에서 회원 80여 명의 발기회로 시작</text>
+    <line x1="160" y1="906" x2="1116" y2="906" stroke="#e3d6b8"/>
+
+    <text x="160" y="930" class="small">· 일제 강점기 대표적 인권 운동 — 3·1운동 이후의 대중 운동에 영향 받음</text>
+    <text x="160" y="952" class="small">· 사회 운동 단체와 합세하여 평등권 운동을 발전 — 형평 청년회 + 형평 학우회 조직</text>
+    <text x="160" y="974" class="it" fill="#8b6f47">→ 1925년 제3회 전국 대회로 확산</text>
+
+    <!-- 작은 사람들이 모이는 도식 -->
+    <g transform="translate(160,994)">
+      <use href="#figureBJ" x="0" y="0" width="20" height="26"/>
+      <use href="#figureBJ" x="22" y="0" width="20" height="26"/>
+      <use href="#figureBJ" x="44" y="0" width="20" height="26"/>
+      <use href="#figureBJ" x="66" y="0" width="20" height="26"/>
+      <use href="#figureBJ" x="88" y="0" width="20" height="26"/>
+      <text x="120" y="20" class="small">→ 단결</text>
+    </g>
+  </g>
+
+  <!-- Scene 5: 평등권 세 요구 -->
+  <g class="reveal" data-reveal-step="5">
+    <text x="64" y="1066" class="num">5</text>
+    <text x="92" y="1066" class="bd">평등권을 향한 세 가지 구체적 요구</text>
+
+    <g>
+      <rect x="64" y="1084" width="346" height="100" rx="10" fill="#fff8ec" stroke="#8b6f47" stroke-width="1.4"/>
+      <circle cx="100" cy="1116" r="22" fill="#8b6f47"/>
+      <text x="100" y="1122" class="pill" text-anchor="middle">①</text>
+      <text x="138" y="1122" class="lab">박해 중단</text>
+      <text x="84" y="1154" class="small">일반인의 차별·박해를</text>
+      <text x="84" y="1174" class="small">멈출 것 (사회적 차별)</text>
+
+      <rect x="424" y="1084" width="346" height="100" rx="10" fill="#fff8ec" stroke="#8b6f47" stroke-width="1.4"/>
+      <circle cx="460" cy="1116" r="22" fill="#8b6f47"/>
+      <text x="460" y="1122" class="pill" text-anchor="middle">②</text>
+      <text x="498" y="1122" class="lab">관공서·학교 차별 철폐</text>
+      <text x="444" y="1154" class="small">공식 기관에서의</text>
+      <text x="444" y="1174" class="small">차별 대우 폐지</text>
+
+      <rect x="784" y="1084" width="352" height="100" rx="10" fill="#fff8ec" stroke="#8b6f47" stroke-width="1.4"/>
+      <circle cx="820" cy="1116" r="22" fill="#8b6f47"/>
+      <text x="820" y="1122" class="pill" text-anchor="middle">③</text>
+      <text x="858" y="1122" class="lab">공공장소 출입 자유화</text>
+      <text x="804" y="1154" class="small">이발소·식당 등</text>
+      <text x="804" y="1174" class="small">출입 금지 폐지</text>
+    </g>
+  </g>
+
+  <!-- Scene 6: 약자 간 갈등 -->
+  <g class="reveal" data-reveal-step="6">
+    <text x="64" y="1218" class="num">6</text>
+    <text x="92" y="1218" class="bd">약자 간 갈등의 정치적 과제</text>
+
+    <rect class="panel" x="64" y="1236" width="1072" height="36" rx="10" stroke="#a83a4a" stroke-width="1.4" fill="#fbf2f4"/>
+
+    <use href="#figureBJ" x="80" y="1234" width="20" height="26"/>
+    <text x="118" y="1248" class="small" fill="#a83a4a">↔</text>
+    <use href="#figureBJ" x="134" y="1234" width="20" height="26"/>
+    <text x="170" y="1258" class="small">양민(생계 경쟁자) ↔ 백정 — 약자의 분노가 또 다른 약자에게 향할 위험. ‘새로운 정치’ 요구.</text>
+  </g>
+
+  <text x="1140" y="1264" class="wm" text-anchor="end">EBS 2027 · 독서 방법 · 38쪽</text>
+</svg>

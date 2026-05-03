@@ -1,0 +1,312 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" role="img" aria-labelledby="t6 d6">
+  <title id="t6">식물의 생장 — 분열 조직의 분류</title>
+  <desc id="d6">식물 분열 조직을 측생(부피 생장)과 정단(길이 생장)으로 나누는 분류 트리를 식물 단면도로 보여 준 뒤, 측생 분열 조직의 두 종류(관다발 형성층, 코르크 형성층), 뿌리 정단 분열 조직과 뿌리골무, 슈트(줄기·가지·잎·꽃)와 슈트 정단 분열 조직, 그리고 슈트 정단 분열 조직에 대한 두 학설(네겔리 단일 시원 세포설 vs 슈미트 튜닉-코퍼스 이론)의 변천과 시원 세포의 분자 수준 조절(유전자·옥신·시토키닌)을 시각화한다.</desc>
+
+  <defs>
+    <marker id="ar6-sci" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f5582"/>
+    </marker>
+    <marker id="ar6-grn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e8c5e"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .sci { fill: #1f5582; }
+    .sci-st { stroke: #1f5582; }
+    .sci-bg { fill: rgba(31,85,130,0.08); }
+    .sci-bg2 { fill: rgba(31,85,130,0.18); }
+    .grn { fill: #5e8c5e; }
+    .grn-st { stroke: #5e8c5e; }
+    .grn-bg { fill: rgba(94,140,94,0.12); }
+    .brn { fill: #8b5a3c; }
+    .brn-st { stroke: #8b5a3c; }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+  ]]></style>
+
+  <!-- ===========================================================
+       Step 1 · 분열 조직 분류 (식물 단면도 + 트리)
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="280" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">식물 분열 조직 — 측생 (부피) vs 정단 (길이)</text>
+
+    <!-- 식물 도식 (좌측) -->
+    <g transform="translate(160, 200)">
+      <!-- 잎/꽃 -->
+      <g transform="translate(0, -80)">
+        <ellipse cx="-18" cy="0" rx="12" ry="20" class="grn" transform="rotate(-30 -18 0)"/>
+        <ellipse cx="18" cy="0" rx="12" ry="20" class="grn" transform="rotate(30 18 0)"/>
+        <circle cx="0" cy="-12" r="8" class="acc"/>
+      </g>
+      <!-- 줄기 끝 (슈트 정단) -->
+      <circle cx="0" cy="-58" r="6" class="sci"/>
+      <!-- 줄기 -->
+      <rect x="-6" y="-58" width="12" height="100" class="brn"/>
+      <!-- 가지 -->
+      <line x1="0" y1="-30" x2="-32" y2="-50" class="brn-st" stroke-width="3"/>
+      <ellipse cx="-36" cy="-52" rx="8" ry="14" class="grn" transform="rotate(-40 -36 -52)"/>
+      <line x1="0" y1="-10" x2="32" y2="-30" class="brn-st" stroke-width="3"/>
+      <ellipse cx="36" cy="-32" rx="8" ry="14" class="grn" transform="rotate(40 36 -32)"/>
+      <!-- 지면 -->
+      <line x1="-100" y1="42" x2="100" y2="42" class="ink" stroke-width="1.4"/>
+      <!-- 뿌리 -->
+      <path d="M -2 42 Q -12 60 -8 80 Q -20 90 -16 110" fill="none" class="brn-st" stroke-width="3"/>
+      <path d="M 2 42 Q 12 60 8 80 Q 20 90 16 110" fill="none" class="brn-st" stroke-width="3"/>
+      <path d="M 0 42 L 0 100" class="brn-st" stroke-width="3"/>
+      <!-- 뿌리 끝 (정단) -->
+      <circle cx="-16" cy="110" r="5" class="sci"/>
+      <circle cx="16" cy="110" r="5" class="sci"/>
+      <circle cx="0" cy="100" r="5" class="sci"/>
+
+      <!-- 라벨 leader -->
+      <line x1="0" y1="-58" x2="100" y2="-90" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="106" y="-86" class="lbl-sm" fill="#1f5582">슈트 정단 분열 조직</text>
+      <line x1="-6" y1="0" x2="-110" y2="-20" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="-114" y="-16" text-anchor="end" class="lbl-sm" fill="#a83a4a">측생 분열 조직 (옆면)</text>
+      <line x1="-16" y1="110" x2="-110" y2="120" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="-114" y="124" text-anchor="end" class="lbl-sm" fill="#1f5582">뿌리 정단 분열 조직</text>
+    </g>
+
+    <!-- 분류 트리 (우측) -->
+    <g transform="translate(560, 100)">
+      <rect x="0" y="0" width="160" height="40" rx="4" class="paper2 ink" stroke-width="1.2"/>
+      <text x="80" y="24" text-anchor="middle" class="lbl-strong">분열 조직</text>
+
+      <line x1="80" y1="40" x2="80" y2="60" class="ink" stroke-width="1.4"/>
+      <line x1="-30" y1="60" x2="190" y2="60" class="ink" stroke-width="1.4"/>
+      <line x1="-30" y1="60" x2="-30" y2="80" class="ink" stroke-width="1.4"/>
+      <line x1="190" y1="60" x2="190" y2="80" class="ink" stroke-width="1.4"/>
+
+      <rect x="-110" y="80" width="160" height="60" rx="4" class="acc" />
+      <text x="-30" y="106" text-anchor="middle" font-size="13" fill="#f5f1e8" font-weight="700">측생 분열 조직</text>
+      <text x="-30" y="124" text-anchor="middle" font-size="10" fill="#f5f1e8">부피 생장 (굵어짐)</text>
+
+      <rect x="110" y="80" width="160" height="60" rx="4" class="sci"/>
+      <text x="190" y="106" text-anchor="middle" font-size="13" fill="#f5f1e8" font-weight="700">정단 분열 조직</text>
+      <text x="190" y="124" text-anchor="middle" font-size="10" fill="#f5f1e8">길이 생장 (길어짐)</text>
+
+      <!-- 정단을 다시 둘로 -->
+      <line x1="190" y1="140" x2="190" y2="160" class="ink" stroke-width="1.2"/>
+      <line x1="120" y1="160" x2="260" y2="160" class="ink" stroke-width="1.2"/>
+      <line x1="120" y1="160" x2="120" y2="180" class="ink" stroke-width="1.2"/>
+      <line x1="260" y1="160" x2="260" y2="180" class="ink" stroke-width="1.2"/>
+
+      <rect x="60" y="180" width="120" height="40" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="120" y="204" text-anchor="middle" class="lbl-sm" font-weight="700">뿌리 정단</text>
+
+      <rect x="200" y="180" width="120" height="40" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="260" y="204" text-anchor="middle" class="lbl-sm" font-weight="700">슈트 정단</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 2 · 측생 분열 조직 (관다발·코르크 형성층)
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="330" width="540" height="280" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <rect x="40" y="330" width="540" height="34" rx="6" class="acc"/>
+    <text x="60" y="354" class="lbl-strong" fill="#f5f1e8">측생 분열 조직 — 굵어지는 부피 생장</text>
+
+    <!-- 줄기 단면 (동심원) -->
+    <g transform="translate(180, 490)">
+      <!-- 외곽 코르크 -->
+      <circle r="74" fill="#8b5a3c" opacity="0.9"/>
+      <text y="-66" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">코르크</text>
+      <!-- 코르크 형성층 (얇은 띠) -->
+      <circle r="60" fill="none" stroke="#a83a4a" stroke-width="3"/>
+      <!-- 체관 -->
+      <circle r="56" fill="#a8884a"/>
+      <!-- 관다발 형성층 (얇은 띠) -->
+      <circle r="40" fill="none" stroke="#a83a4a" stroke-width="3"/>
+      <!-- 물관 -->
+      <circle r="36" fill="#5e548e"/>
+      <text y="3" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">물관</text>
+
+      <!-- 라벨 -->
+      <line x1="40" y1="0" x2="98" y2="-30" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="102" y="-26" class="lbl-xs">관다발 형성층</text>
+      <line x1="60" y1="0" x2="98" y2="20" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="102" y="24" class="lbl-xs">코르크 형성층</text>
+    </g>
+
+    <!-- 설명 -->
+    <g transform="translate(320, 396)">
+      <rect x="0" y="0" width="240" height="56" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="20" class="lbl-sm" font-weight="700" fill="#a83a4a">관다발 형성층</text>
+      <text x="14" y="38" class="lbl-xs">안쪽 → 물관 / 바깥쪽 → 체관</text>
+      <text x="14" y="52" class="lbl-xs">→ 부피 ↑</text>
+
+      <rect x="0" y="68" width="240" height="56" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="88" class="lbl-sm" font-weight="700" fill="#a83a4a">코르크 형성층</text>
+      <text x="14" y="106" class="lbl-xs">표피 바깥 → 코르크 형성</text>
+      <text x="14" y="120" class="lbl-xs">→ 식물체 보호 (단단함)</text>
+
+      <text x="0" y="160" class="lbl-xs" fill="#a83a4a" font-weight="700">결과: 줄기·뿌리가 굵어지고 단단해진다</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 3 · 뿌리 정단 분열 조직
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="620" y="330" width="540" height="280" rx="6" class="sci-bg sci-st" stroke-width="1.5"/>
+    <rect x="620" y="330" width="540" height="34" rx="6" class="sci"/>
+    <text x="640" y="354" class="lbl-strong" fill="#f5f1e8">뿌리 정단 분열 조직 — 길이 생장 + 뿌리골무 보호</text>
+
+    <!-- 뿌리 끝 단면 -->
+    <g transform="translate(780, 510)">
+      <!-- 뿌리 본체 (위쪽) -->
+      <rect x="-30" y="-130" width="60" height="80" fill="#8b5a3c"/>
+      <text x="0" y="-90" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">분화된 조직</text>
+      <text x="0" y="-72" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">(뿌리털·물관·체관)</text>
+
+      <!-- 분열 조직 (가운데 짙은 색) -->
+      <rect x="-26" y="-50" width="52" height="40" class="sci"/>
+      <text x="0" y="-26" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">분열 조직</text>
+      <!-- 분열 표시 (점들) -->
+      <g fill="#f5f1e8">
+        <circle cx="-12" cy="-44" r="2"/>
+        <circle cx="0" cy="-40" r="2"/>
+        <circle cx="12" cy="-44" r="2"/>
+        <circle cx="-8" cy="-32" r="2"/>
+        <circle cx="6" cy="-30" r="2"/>
+      </g>
+
+      <!-- 뿌리골무 (둥근 모자) -->
+      <path d="M -28 -10 Q -28 30 0 36 Q 28 30 28 -10 Z" fill="#a8884a" stroke="#1a1612" stroke-width="1.2"/>
+      <text x="0" y="20" text-anchor="middle" class="lbl-xs" font-weight="700">뿌리골무</text>
+
+      <!-- 토양 -->
+      <g opacity="0.6">
+        <circle cx="-50" cy="20" r="3" fill="#7a6f5f"/>
+        <circle cx="-44" cy="32" r="2" fill="#7a6f5f"/>
+        <circle cx="50" cy="22" r="3" fill="#7a6f5f"/>
+        <circle cx="44" cy="34" r="2" fill="#7a6f5f"/>
+        <circle cx="-38" cy="46" r="2" fill="#7a6f5f"/>
+        <circle cx="38" cy="46" r="2" fill="#7a6f5f"/>
+      </g>
+      <text x="0" y="56" text-anchor="middle" class="lbl-xs" fill="#7a6f5f">토양</text>
+    </g>
+
+    <!-- 설명 -->
+    <g transform="translate(640, 386)">
+      <text x="0" y="0" class="lbl-strong">활동 방식</text>
+      <text x="0" y="20" class="lbl-sm">· 활발한 세포 분열로 새 세포 공급</text>
+      <text x="0" y="38" class="lbl-sm">· 새 세포가 분화 → 뿌리털·물관·체관</text>
+      <text x="0" y="56" class="lbl-sm">· 뿌리가 길어짐</text>
+
+      <text x="0" y="92" class="lbl-strong" fill="#1f5582">뿌리골무의 역할</text>
+      <text x="0" y="112" class="lbl-sm">· 토양 마찰로부터 분열 조직 보호</text>
+      <text x="0" y="130" class="lbl-sm">· 마찰로 떨어진 세포는 새로 보충</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 4 · 슈트 정단 분열 조직
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="630" width="540" height="180" rx="6" class="grn-bg grn-st" stroke-width="1.5"/>
+    <rect x="40" y="630" width="540" height="34" rx="6" class="grn"/>
+    <text x="60" y="654" class="lbl-strong" fill="#f5f1e8">슈트 정단 분열 조직 — 위쪽 부분의 길이 생장</text>
+
+    <!-- 슈트 정의 -->
+    <g transform="translate(60, 680)">
+      <rect x="0" y="0" width="240" height="116" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="20" class="lbl-strong">슈트 = 식물의 위쪽 부분</text>
+      <text x="14" y="40" class="lbl-sm">줄기 · 가지 · 잎 · 꽃</text>
+
+      <!-- 작은 식물 위쪽 -->
+      <g transform="translate(120, 80)">
+        <rect x="-3" y="-22" width="6" height="40" fill="#8b5a3c"/>
+        <ellipse cx="-12" cy="-10" rx="6" ry="10" class="grn" transform="rotate(-30 -12 -10)"/>
+        <ellipse cx="12" cy="-10" rx="6" ry="10" class="grn" transform="rotate(30 12 -10)"/>
+        <circle cx="0" cy="-26" r="5" class="acc"/>
+      </g>
+    </g>
+
+    <!-- 작용 -->
+    <g transform="translate(320, 680)">
+      <rect x="0" y="0" width="240" height="116" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="14" y="20" class="lbl-strong" fill="#5e8c5e">슈트 정단 분열 조직 활동</text>
+      <text x="14" y="40" class="lbl-sm">· 줄기 끝에서 활발히 분열</text>
+      <text x="14" y="58" class="lbl-sm">· 새 세포 공급 → 줄기 길어짐</text>
+      <text x="14" y="76" class="lbl-sm">· 가지·잎·꽃 같은 기관 형성</text>
+      <text x="14" y="100" class="lbl-xs" fill="#5e8c5e" font-weight="700">→ 식물 위쪽의 모든 새 부분 책임</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 5 · 두 학설 (네겔리 vs 슈미트)
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="620" y="630" width="540" height="180" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="640" y="658" class="lbl-strong">슈트 정단 분열 조직 — 학설의 변천</text>
+
+    <!-- 네겔리 -->
+    <g transform="translate(640, 678)">
+      <rect x="0" y="0" width="240" height="120" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="14" y="18" class="lbl-sm" font-weight="700">1858 · 네겔리</text>
+      <text x="14" y="34" class="lbl-xs">단일 시원 세포설</text>
+      <!-- 한 세포에서 식물 -->
+      <g transform="translate(120, 76)">
+        <circle r="14" class="sci"/>
+        <text y="3" text-anchor="middle" font-size="9" fill="#f5f1e8" font-weight="700">1개</text>
+        <line x1="0" y1="14" x2="-30" y2="34" stroke="#7a6f5f" stroke-width="0.8"/>
+        <line x1="0" y1="14" x2="0" y2="34" stroke="#7a6f5f" stroke-width="0.8"/>
+        <line x1="0" y1="14" x2="30" y2="34" stroke="#7a6f5f" stroke-width="0.8"/>
+        <text x="0" y="44" text-anchor="middle" class="lbl-xs">→ 식물 전체</text>
+      </g>
+    </g>
+
+    <!-- 화살표 -->
+    <line x1="892" y1="738" x2="916" y2="738" class="ink" stroke-width="1.4" marker-end="url(#ar6-sci)"/>
+
+    <!-- 슈미트 -->
+    <g transform="translate(920, 678)">
+      <rect x="0" y="0" width="240" height="120" rx="4" class="sci-bg sci-st" stroke-width="1.4"/>
+      <text x="14" y="18" class="lbl-sm" font-weight="700" fill="#1f5582">1924 · 슈미트</text>
+      <text x="14" y="34" class="lbl-xs" fill="#1f5582">튜닉-코퍼스 이론</text>
+      <!-- 여러 층의 시원 세포 -->
+      <g transform="translate(120, 70)">
+        <ellipse rx="60" ry="8" fill="none" class="sci-st" stroke-width="1.4"/>
+        <ellipse rx="60" ry="8" cy="14" fill="none" class="sci-st" stroke-width="1.4"/>
+        <ellipse rx="60" ry="8" cy="28" fill="none" class="sci-st" stroke-width="1.4"/>
+        <g class="sci">
+          <circle cx="-40" cy="0" r="3"/><circle cx="-20" cy="0" r="3"/>
+          <circle cx="0" cy="0" r="3"/><circle cx="20" cy="0" r="3"/><circle cx="40" cy="0" r="3"/>
+          <circle cx="-30" cy="14" r="3"/><circle cx="-10" cy="14" r="3"/>
+          <circle cx="10" cy="14" r="3"/><circle cx="30" cy="14" r="3"/>
+          <circle cx="-20" cy="28" r="3"/><circle cx="0" cy="28" r="3"/><circle cx="20" cy="28" r="3"/>
+        </g>
+        <text x="0" y="48" text-anchor="middle" class="lbl-xs" fill="#1f5582">여러 층 시원 세포의 협력</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 6 · 시원 세포의 분자 수준 조절
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="40" y="830" width="1120" height="100" rx="6" class="paper2 ink" stroke-width="1"/>
+    <text x="60" y="858" class="lbl-strong">시원 세포의 분자 수준 조절 — 평생 성장의 비밀</text>
+    <text x="60" y="884" class="lbl"><tspan font-weight="700" fill="#5e8c5e">유전자</tspan>: 시원 세포의 위치와 분화 운명 결정    /    <tspan font-weight="700" fill="#a83a4a">옥신·시토키닌 호르몬</tspan>: 분열 속도와 방향 조절</text>
+    <text x="60" y="908" class="lbl-xs">→ 환경에 맞춰 끊임없이 새 기관을 만들어 가며 평생 성장한다</text>
+  </g>
+
+  <text x="1160" y="990" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 과학·기술 · 194쪽</text>
+</svg>

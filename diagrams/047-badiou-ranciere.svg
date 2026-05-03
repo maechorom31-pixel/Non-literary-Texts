@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1300" role="img" aria-labelledby="t047 d047">
+  <title id="t047">정치에 대한 바디우와 랑시에르</title>
+  <desc id="d047">현대 두 철학자의 정치관을 좌우 대비로 시각화한다. (가) 바디우는 정치를 사회 구조의 근본적 변화로 보고 사건(기존 질서를 벗어난 예측 불가능한 일) → 사건이 남긴 이름을 근간으로 한 탐색 → 사건에 충실한 요소들의 집합인 진리로 이어지는 절차를 제시한다. (나) 랑시에르는 정치를 질서 유지가 아닌 불화의 장면으로 이해하며, 누구의 목소리가 들리고 무엇이 가치 있는지를 결정하는 감각적인 것의 분할 → 그 분할을 깨고 말할 수 없는 자들의 목소리를 드러내는 불화 → 평등을 목표가 아닌 전제로 두는 정치적 실천으로 사회 발전을 이해한다.</desc>
+
+  <defs>
+    <marker id="ar47-hum" viewBox="0 0 1200 1300" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- 도입 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="80" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">정치에 대한 두 사유 — 변화로서의 정치</text>
+    <text x="60" y="86" class="lbl-sm">바디우(<tspan font-weight="700" fill="#5e548e">사건과 진리</tspan>) vs 랑시에르(<tspan font-weight="700" fill="#a83a4a">불화와 평등</tspan>) — 둘 다 기존 질서를 넘어서는 변화를 정치의 본질로 본다</text>
+  </g>
+
+  <!-- (가) 바디우 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="130" width="540" height="36" rx="6" class="hum"/>
+    <text x="60" y="154" class="lbl-strong" fill="#f5f1e8">(가) 바디우 — 사건-탐색-진리</text>
+  </g>
+
+  <!-- Step 1 · 정치관 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="180" width="540" height="100" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="208" class="lbl-strong" fill="#5e548e">정치관</text>
+    <text x="60" y="230" class="lbl-sm">정치 = 철학의 진리 탐구 절차의 하나</text>
+    <text x="60" y="248" class="lbl-sm">진정한 정치적 변화 = 사회 구조의 근본적 변화</text>
+    <text x="60" y="270" class="lbl-xs" fill="#a83a4a">"좋은 지도자나 제도 개선만으로는 부족"</text>
+  </g>
+
+  <!-- 배경 패널 (always-on) -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="300" width="540" height="280" rx="6" class="hum-bg2 hum-st" stroke-width="1.5"/>
+    <text x="60" y="328" class="lbl-strong" fill="#5e548e">사건 → 탐색 → 진리 절차</text>
+
+    <!-- 사건 -->
+    <g transform="translate(60, 350)">
+      <rect x="0" y="0" width="500" height="60" rx="4" class="hum"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700" fill="#f5f1e8">① 사건</text>
+      <text x="14" y="42" class="lbl-xs" fill="#f5f1e8">기존 질서를 벗어남 + 기존 언어로 설명 불가</text>
+      <text x="14" y="56" class="lbl-xs" fill="#f5f1e8" opacity="0.85">예측 불가 + 잠시 일어났다 사라짐 + '이름'이라는 자국</text>
+    </g>
+  </g>
+
+  <!-- Step 3 · 탐색 -->
+  <g class="reveal" data-reveal-step="3">
+    <line x1="310" y1="416" x2="310" y2="436" class="hum-st" stroke-width="1.6" marker-end="url(#ar47-hum)"/>
+    <g transform="translate(60, 442)">
+      <rect x="0" y="0" width="500" height="60" rx="4" class="hum-bg2 hum-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700" fill="#5e548e">② 탐색</text>
+      <text x="14" y="42" class="lbl-xs">사건의 이름을 근간으로</text>
+      <text x="14" y="56" class="lbl-xs">→ 사건과 관련된 것이 무엇인지 묻고 검증</text>
+    </g>
+  </g>
+
+  <!-- Step 4 · 진리 -->
+  <g class="reveal" data-reveal-step="4">
+    <line x1="310" y1="508" x2="310" y2="528" class="hum-st" stroke-width="1.6" marker-end="url(#ar47-hum)"/>
+    <g transform="translate(60, 534)">
+      <rect x="0" y="0" width="500" height="40" rx="4" class="hum"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700" fill="#f5f1e8">③ 진리</text>
+      <text x="14" y="36" class="lbl-xs" fill="#f5f1e8">사건에 충실한 요소들의 집합 → 정치는 이를 통한 사회 재구성</text>
+    </g>
+  </g>
+
+  <!-- (나) 랑시에르 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="620" y="130" width="540" height="36" rx="6" class="acc"/>
+    <text x="640" y="154" class="lbl-strong" fill="#f5f1e8">(나) 랑시에르 — 불화-평등 재구성</text>
+  </g>
+
+  <!-- Step 5 · 정치관 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="620" y="180" width="540" height="100" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="640" y="208" class="lbl-strong" fill="#a83a4a">정치관</text>
+    <text x="640" y="230" class="lbl-sm">정치 = 국가 운영·제도 설계 X</text>
+    <text x="640" y="248" class="lbl-sm" fill="#a83a4a" font-weight="700">기존 질서를 중단시키고 새 주체성을 출현시키는 '불화'의 장면</text>
+    <text x="640" y="270" class="lbl-xs">사회 발전 = 기술·제도 향상 X → 평등의 재구성</text>
+  </g>
+
+  <!-- Step 6-7 · 감각적 분할 → 불화 -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="620" y="300" width="540" height="280" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="640" y="328" class="lbl-strong" fill="#a83a4a">감각적 분할 → 불화</text>
+
+    <!-- 감각적 분할 -->
+    <g transform="translate(640, 350)">
+      <rect x="0" y="0" width="500" height="60" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700">① 감각적인 것의 분할</text>
+      <text x="14" y="42" class="lbl-xs">기존 사회 질서</text>
+      <text x="14" y="56" class="lbl-xs">→ 누구의 목소리가 들리고, 무엇이 문제·가치인지 결정</text>
+    </g>
+
+  </g>
+
+  <!-- Step 7 · 불화 -->
+  <g class="reveal" data-reveal-step="7">
+    <line x1="890" y1="416" x2="890" y2="436" class="acc-st" stroke-width="1.6" marker-end="url(#ar47-hum)"/>
+    <g transform="translate(640, 442)">
+      <rect x="0" y="0" width="500" height="60" rx="4" class="acc"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700" fill="#f5f1e8">② 불화 (정치적 개입)</text>
+      <text x="14" y="42" class="lbl-xs" fill="#f5f1e8">단순 의견 차이 X</text>
+      <text x="14" y="56" class="lbl-xs" fill="#f5f1e8">→ '말할 수 없는 자들'이 목소리를 내고 영향력 있음을 드러내는 행위</text>
+    </g>
+
+    <line x1="890" y1="508" x2="890" y2="528" class="acc-st" stroke-width="1.6" marker-end="url(#ar47-hum)"/>
+
+    <!-- 평등 -->
+    <g transform="translate(640, 534)">
+      <rect x="0" y="0" width="500" height="40" rx="4" class="acc-bg acc-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700" fill="#a83a4a">③ 새로운 평등</text>
+      <text x="14" y="36" class="lbl-xs">평등 = 목표가 아니라 <tspan font-weight="700">전제</tspan></text>
+    </g>
+  </g>
+
+  <!-- 비교 요약 -->
+  <g class="reveal" data-reveal-step="8">
+    <rect x="40" y="600" width="1120" height="280" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="628" class="lbl-head">한눈에 보는 비교</text>
+
+    <g transform="translate(60, 650)">
+      <rect x="0" y="0" width="1080" height="30" class="paper2"/>
+      <text x="14" y="20" class="lbl-strong">기준</text>
+      <text x="240" y="20" class="lbl-strong" fill="#5e548e">바디우 (가)</text>
+      <text x="660" y="20" class="lbl-strong" fill="#a83a4a">랑시에르 (나)</text>
+
+      <line x1="0" y1="30" x2="1080" y2="30" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="14" y="56" class="lbl">정치의 본질</text>
+      <text x="240" y="56" class="lbl">사건과 진리에 대한 충실함</text>
+      <text x="660" y="56" class="lbl">기존 질서를 깨는 불화</text>
+
+      <line x1="0" y1="68" x2="1080" y2="68" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="94" class="lbl">출발점</text>
+      <text x="240" y="94" class="lbl">예측 불가능한 사건</text>
+      <text x="660" y="94" class="lbl">감각적인 것의 분할 비판</text>
+
+      <line x1="0" y1="106" x2="1080" y2="106" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="132" class="lbl">변화의 기제</text>
+      <text x="240" y="132" class="lbl">사건 → 탐색 → 진리 (사회 재구성)</text>
+      <text x="660" y="132" class="lbl">분할 → 불화 → 평등의 재구성</text>
+
+      <line x1="0" y1="144" x2="1080" y2="144" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="170" class="lbl">변화의 주체</text>
+      <text x="240" y="170" class="lbl">사건에 충실해지려 노력하는 자</text>
+      <text x="660" y="170" class="lbl">'말할 수 없는 자들'</text>
+
+      <line x1="0" y1="182" x2="1080" y2="182" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="208" class="lbl">평등에 대한 관점</text>
+      <text x="240" y="208" class="lbl">진리 출현의 부산물</text>
+      <text x="660" y="208" class="lbl">목표가 아닌 전제</text>
+    </g>
+  </g>
+
+  <!-- 공통 결말 -->
+  <g class="reveal" data-reveal-step="8">
+    <rect x="40" y="900" width="1120" height="60" rx="6" class="paper2 ink" stroke-width="1"/>
+    <text x="60" y="928" class="lbl-strong">공통의 통찰</text>
+    <text x="60" y="950" class="lbl-sm">정치 = 더 좋은 지도자나 제도 개선의 영역이 아니라, 기존 질서를 넘어서는 <tspan font-weight="700" fill="#5e548e">근본적 변화</tspan>의 영역</text>
+  </g>
+
+  <text x="1160" y="1070" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 주제 통합 · 255쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1080" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#5e548e"/>
+    <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">바디우의 사건</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">기존 질서를 벗어나 예측 불가능한 독특한 일. 잠시 일어났다 사라지지만 이름이라는 자국을 남긴다.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">탐색과 진리</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">사건의 이름을 근간으로 검증하는 탐색의 결과 모인 집합이 진리이며, 정치는 이를 통한 사회 재구성이다.</text>
+    <line x1="40" y1="1174" x2="1160" y2="1174" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1190" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">랑시에르의 감각적 분할</text>
+    <text x="240" y="1190" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">누구의 목소리가 들리고 무엇이 가치 있는지를 결정하는 기존 사회 질서.</text>
+    <line x1="40" y1="1204" x2="1160" y2="1204" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1220" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">불화</text>
+    <text x="240" y="1220" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">분할 구조를 깨고 말할 수 없는 자들의 목소리를 드러내는 정치적 개입.</text>
+    <line x1="40" y1="1234" x2="1160" y2="1234" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1250" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">평등의 재구성</text>
+    <text x="240" y="1250" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">평등은 목표가 아니라 전제이며, 정치는 모든 인간이 말하고 행동할 수 있음을 확인하는 실천이다.</text>
+  </g>
+</svg>

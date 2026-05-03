@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="t22 d22">
+  <title id="t22">종 차별주의와 종 중첩 논증</title>
+  <desc id="d22">종 차별주의의 세 옹호 근거(같은 종 / DNA / 고차원적 정신 능력)를 차례로 제시하면서 각 근거가 무너지는 이유를 함께 표시하고, 마지막에 정신 능력 축에서 인간과 동물이 어떻게 중첩되는지를 분포도로 시각화하여 종 중첩 논증의 핵심 통찰을 보여 준다.</desc>
+
+  <defs>
+    <marker id="ar22-acc" viewBox="0 0 1200 1200" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+    <marker id="ar22-hum" viewBox="0 0 1200 1200" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 12px; font-style: italic; fill: #5e548e; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1: 도입 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="106" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">종(種) 차별주의 — 동물을 인간과 다르게 대하는 게 정당한가?</text>
+    <text x="60" y="86" class="lbl">우리가 속한 종의 이익을 다른 종의 이익보다 우선시하는 입장. 인간에겐 절대 하지 않는 일을 동물에겐 한다.</text>
+    <text x="60" y="108" class="lbl-sm">옹호자들이 내세우는 근거는 세 가지인데, 글의 흐름은 그 근거들이 어떻게 무너지는지를 따라간다.</text>
+  </g>
+
+  <!-- Step 2: 근거 ① 같은 종 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="156" width="1120" height="160" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="184" class="lbl-strong" fill="#5e548e">근거 ① 같은 종 — "인간이라는 종에 속하므로 특별히 대우받아야 한다"</text>
+
+    <g transform="translate(60, 200)">
+      <rect x="0" y="0" width="320" height="100" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">옹호 주장</text>
+      <text x="14" y="44" class="lbl-sm">"같은 인간이므로 더 중요"</text>
+      <text x="14" y="62" class="lbl-sm">→ 가장 직관적·상식적 근거</text>
+    </g>
+    <line x1="386" y1="250" x2="430" y2="250" stroke="#a83a4a" stroke-width="1.6" marker-end="url(#ar22-acc)"/>
+    <text x="408" y="240" text-anchor="middle" class="lbl-xs" fill="#a83a4a" font-weight="700">그렇다면…</text>
+
+    <g transform="translate(440, 200)">
+      <rect x="0" y="0" width="700" height="100" rx="4" class="acc-bg acc-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#a83a4a">한계 — 같은 논리가 다른 차별주의도 허용함</text>
+      <g transform="translate(14, 40)">
+        <rect x="0" y="0" width="200" height="42" rx="3" fill="#a83a4a" opacity="0.18"/>
+        <text x="100" y="18" text-anchor="middle" class="lbl-sm" font-weight="700">"같은 성별이므로 더 중요"</text>
+        <text x="100" y="34" text-anchor="middle" class="lbl-xs" fill="#a83a4a">= 성차별주의 ✗</text>
+
+        <rect x="220" y="0" width="200" height="42" rx="3" fill="#a83a4a" opacity="0.18"/>
+        <text x="320" y="18" text-anchor="middle" class="lbl-sm" font-weight="700">"같은 인종이므로 더 중요"</text>
+        <text x="320" y="34" text-anchor="middle" class="lbl-xs" fill="#a83a4a">= 인종 차별주의 ✗</text>
+
+        <rect x="440" y="0" width="240" height="42" rx="3" fill="#5e548e" opacity="0.2"/>
+        <text x="560" y="20" text-anchor="middle" class="lbl-xs">→ 도덕적 근거 부족</text>
+        <text x="560" y="36" text-anchor="middle" class="lbl-xs">'특별한 특징'이 따로 필요</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Step 3: 근거 ② DNA -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="332" width="1120" height="160" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="360" class="lbl-strong" fill="#5e548e">근거 ② DNA — "호모 사피엔스의 DNA가 우리를 다르게 만든다"</text>
+
+    <g transform="translate(60, 376)">
+      <rect x="0" y="0" width="320" height="100" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">옹호 주장</text>
+      <text x="14" y="44" class="lbl-sm">"우리 DNA가 특정 방식이라서"</text>
+      <!-- DNA 아이콘 -->
+      <g transform="translate(220, 50)">
+        <path d="M0,-22 Q-14,-12 0,-2 Q14,8 0,18" stroke="#5e548e" stroke-width="1.5" fill="none"/>
+        <path d="M0,-22 Q14,-12 0,-2 Q-14,8 0,18" stroke="#5e548e" stroke-width="1.5" fill="none"/>
+        <line x1="-8" y1="-12" x2="8" y2="-12" stroke="#5e548e" stroke-width="0.8"/>
+        <line x1="-8" y1="-2" x2="8" y2="-2" stroke="#5e548e" stroke-width="0.8"/>
+        <line x1="-8" y1="8" x2="8" y2="8" stroke="#5e548e" stroke-width="0.8"/>
+      </g>
+    </g>
+
+    <line x1="386" y1="426" x2="430" y2="426" stroke="#a83a4a" stroke-width="1.6" marker-end="url(#ar22-acc)"/>
+
+    <g transform="translate(440, 376)">
+      <rect x="0" y="0" width="700" height="100" rx="4" class="acc-bg acc-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#a83a4a">한계 — DNA는 분자 순서일 뿐, 도덕적 의미가 없다</text>
+      <text x="14" y="44" class="lbl-sm">"피부색이 같다"고 우대하는 게 의미 없듯, "DNA가 같다"도 도덕적으로 무의미.</text>
+      <text x="14" y="62" class="lbl-sm">+ 부조리한 결론: <tspan font-weight="700" fill="#a83a4a">DNA가 매우 특이한 사람</tspan>은 동물처럼 대해도 된다는 이야기가 됨.</text>
+      <text x="14" y="84" class="lbl-xs">⇒ 결국 "같은 종이니까"의 변형에 불과</text>
+    </g>
+  </g>
+
+  <!-- Step 4: 근거 ③ 정신 능력 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="508" width="1120" height="170" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="536" class="lbl-strong" fill="#5e548e">근거 ③ 고차원적 정신 능력 — "인간만의 언어·사고·도덕적 이상"</text>
+
+    <g transform="translate(60, 552)">
+      <rect x="0" y="0" width="320" height="110" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">옹호 주장</text>
+      <text x="14" y="42" class="lbl-sm">정교한 언어 + 복잡한 사고</text>
+      <text x="14" y="58" class="lbl-sm">+ 도덕적 이상에 따라 살 능력</text>
+      <text x="14" y="84" class="lbl-xs" fill="#5e548e" font-weight="700">왜 도덕적으로 의미 있는가?</text>
+      <text x="14" y="100" class="lbl-xs">→ 자의식·자존감 같은 사고 능력</text>
+    </g>
+
+    <line x1="386" y1="610" x2="430" y2="610" stroke="#5e548e" stroke-width="1.6" marker-end="url(#ar22-hum)"/>
+
+    <g transform="translate(440, 552)">
+      <rect x="0" y="0" width="700" height="110" rx="4" class="hum-bg2 hum-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#5e548e">일관된 결론 (있어 보이는 듯)</text>
+      <text x="14" y="44" class="lbl-sm">고차원적 정신 능력 = 도덕적으로 중요 → 인간 사육은 인간성 훼손이라 ✗</text>
+      <text x="14" y="62" class="lbl-sm">반면 그런 능력이 없는 동물은 가두어 길러도 도덕적 문제 없음</text>
+      <text x="14" y="92" class="lbl-xs" fill="#a83a4a" font-weight="700">하지만 이 결론은 다음 단계 '종 중첩 논증'에 취약하다 ↓</text>
+    </g>
+  </g>
+
+  <!-- Step 5: 종 중첩 논증 (분포도) -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="694" width="1120" height="252" rx="6" class="acc-bg acc-st" stroke-width="1.6"/>
+    <text x="60" y="722" class="lbl-head" fill="#a83a4a">종 중첩 논증 — 정신 능력 축에서 인간과 동물이 겹친다</text>
+
+    <!-- 분포도 -->
+    <g transform="translate(80, 760)">
+      <!-- 축 -->
+      <line x1="0" y1="120" x2="1040" y2="120" stroke="#1a1612" stroke-width="1.4"/>
+      <line x1="0" y1="120" x2="0" y2="40" stroke="#1a1612" stroke-width="0.6"/>
+      <text x="0" y="34" class="lbl-xs" font-weight="700">분포</text>
+      <text x="-4" y="124" text-anchor="end" class="lbl-xs">낮음</text>
+      <text x="1044" y="124" class="lbl-xs">높음</text>
+      <text x="520" y="148" text-anchor="middle" class="lbl-strong">고차원적 정신 능력 (자의식·언어·사고)</text>
+
+      <!-- 동물 분포 곡선 (왼쪽) -->
+      <path d="M20,120 Q140,40 240,120 Z" fill="#a83a4a" opacity="0.35" stroke="#a83a4a" stroke-width="1.4"/>
+      <text x="140" y="60" text-anchor="middle" class="lbl-strong" fill="#a83a4a">동물 분포</text>
+
+      <!-- 침팬지 등 영장류 (overlap 우측) -->
+      <ellipse cx="320" cy="100" rx="40" ry="20" fill="#a83a4a" opacity="0.6"/>
+      <text x="320" y="86" text-anchor="middle" class="lbl-xs" fill="#a83a4a" font-weight="700">침팬지 등 영장류</text>
+      <text x="320" y="116" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">↑ 인간 일부 능력</text>
+
+      <!-- 인간 분포 곡선 (오른쪽 큰 분포) -->
+      <path d="M260,120 Q580,30 880,120 Z" fill="#5e548e" opacity="0.35" stroke="#5e548e" stroke-width="1.4"/>
+      <text x="700" y="50" text-anchor="middle" class="lbl-strong" fill="#5e548e">인간 분포</text>
+
+      <!-- 아기 / 뇌 손상 환자 (overlap 좌측) -->
+      <ellipse cx="320" cy="106" rx="40" ry="14" fill="#5e548e" opacity="0.65"/>
+      <text x="320" y="138" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">↓ 아기 · 뇌 손상 환자</text>
+
+      <!-- 중첩 영역 표시 -->
+      <rect x="240" y="80" width="160" height="40" fill="rgba(168,58,74,0.0)" stroke="#1a1612" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text x="320" y="74" text-anchor="middle" class="lbl-xs" font-weight="700">중첩 영역</text>
+
+      <!-- 부등식 강조 -->
+      <g transform="translate(420, 50)">
+        <rect x="0" y="0" width="600" height="62" rx="4" fill="#f5f1e8" stroke="#a83a4a" stroke-width="1.4"/>
+        <text x="14" y="22" class="lbl-strong" fill="#a83a4a">비일관성</text>
+        <text x="14" y="42" class="lbl-sm">'능력 낮은 인간'에는 절대 안 하는 사육·실험을, 능력이 비슷하거나 더 높은</text>
+        <text x="14" y="58" class="lbl-sm">'동물'에는 거리낌 없이 한다 — 정신 능력 기준으로는 일관되지 않는다.</text>
+      </g>
+    </g>
+
+    <text x="60" y="930" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 종 중첩 논증이 해결되지 않으면 종 차별주의는 옹호되기 어렵다 (글의 핵심 결론)</text>
+  </g>
+
+  <text x="1160" y="970" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 인문·예술 · 88쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="980" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="980" width="1120" height="32" rx="6" fill="#5e548e"/>
+    <text x="60" y="1002" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1002" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1014" x2="1160" y2="1014" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1030" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">종 차별주의</text>
+    <text x="240" y="1030" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">우리가 속한 종의 이익을 다른 종의 이익보다 우선시하여 동물을 인간과 다르게 대하는 입장.</text>
+    <line x1="40" y1="1044" x2="1160" y2="1044" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1060" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">근거 ① 같은 종</text>
+    <text x="240" y="1060" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">단순히 같은 종이라는 이유 → 성차별주의·인종 차별주의도 허용되어야 하는 결론. 도덕적 근거로 부족함.</text>
+    <line x1="40" y1="1074" x2="1160" y2="1074" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1090" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">근거 ② DNA</text>
+    <text x="240" y="1090" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">DNA 구성은 분자 순서에 관한 사실일 뿐 도덕적으로 의미 있는 특성이 아님. 특이 DNA를 가진 사람을 동물처럼 대해도 된다는 부조리한 결론.</text>
+    <line x1="40" y1="1104" x2="1160" y2="1104" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1120" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">근거 ③ 고차원적 정신 능력</text>
+    <text x="240" y="1120" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">정교한 언어·사고·도덕적 이상 등 인간에게 전형적인 능력을 들지만, 그 능력이 '왜' 도덕적으로 의미 있는지(자의식·자존감)를 별도로 설명해야 한다.</text>
+    <line x1="40" y1="1134" x2="1160" y2="1134" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1150" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">종 중첩 논증</text>
+    <text x="240" y="1150" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">정신 능력 기준에서 동물과 중첩되는 인간(아기·뇌 손상 환자)이 있고 인간에 가까운 동물도 있는데 둘을 다르게 대한다는 비일관성. 이 논증이 해결되지 않으면 종 차별주의는 옹호되기 어렵다.</text>
+  </g>
+</svg>

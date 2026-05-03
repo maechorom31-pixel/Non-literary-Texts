@@ -1,0 +1,1036 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-02",
+  "categories": {
+    "method": {
+      "label": "독서 방법",
+      "color": "#8b6f47",
+      "order": 1
+    },
+    "humanities": {
+      "label": "인문·예술",
+      "color": "#5e548e",
+      "order": 2
+    },
+    "social": {
+      "label": "사회·문화",
+      "color": "#2a6f6f",
+      "order": 3
+    },
+    "science": {
+      "label": "과학·기술",
+      "color": "#1f5582",
+      "order": 4
+    }
+  },
+  "passages": [
+    {
+      "id": "001-mobile-crane",
+      "order": 1,
+      "category": "science",
+      "title": "이동식 크레인",
+      "subtitle": "작동 방식과 작업 안정성을 결정하는 모멘트의 균형",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "메커니즘",
+        "지렛대 원리"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "002-fish-respiration",
+      "order": 2,
+      "category": "science",
+      "title": "수생 동물의 호흡",
+      "subtitle": "아가미를 통한 호흡과 두 가지 환수 방식",
+      "structure": "classification",
+      "tags": [
+        "분류",
+        "비교",
+        "역류 관계"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "003-quantum-dot",
+      "order": 3,
+      "category": "science",
+      "title": "양자점 디스플레이",
+      "subtitle": "에너지 밴드와 입자 크기가 결정하는 색의 선명함",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "원리 설명",
+        "신소재"
+      ],
+      "estMinutes": 18
+    },
+    {
+      "id": "004-epigenetics-cancer",
+      "order": 4,
+      "category": "science",
+      "title": "후성 유전학을 이용한 항암 치료",
+      "subtitle": "DNA 염기 서열을 바꾸지 않고 유전자 발현을 조절하는 방식",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "메커니즘",
+        "생명과학"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "005-hardy-weinberg",
+      "order": 5,
+      "category": "science",
+      "title": "하디-바인베르크 평형 법칙",
+      "subtitle": "유전자 빈도가 세대를 거쳐도 변하지 않는 다섯 가지 조건",
+      "structure": "cause",
+      "tags": [
+        "조건",
+        "수학적 모델",
+        "집단 유전"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "006-plant-growth",
+      "order": 6,
+      "category": "science",
+      "title": "식물의 생장",
+      "subtitle": "측생 분열 조직과 정단 분열 조직의 분업",
+      "structure": "classification",
+      "tags": [
+        "분류",
+        "구조",
+        "식물학"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "007-word-embedding",
+      "order": 7,
+      "category": "science",
+      "title": "임베딩과 유사도 표현",
+      "subtitle": "원-핫 인코딩에서 워드투벡까지, 컴퓨터가 단어를 이해하는 법",
+      "structure": "sequence",
+      "tags": [
+        "과정",
+        "비교",
+        "자연어 처리"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "008-gpu-computing",
+      "order": 8,
+      "category": "science",
+      "title": "연산 환경 변화와 GPU",
+      "subtitle": "CPU와 다른 길을 걷는 병렬 연산 장치",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "구조",
+        "컴퓨팅"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "009-energy-metabolism",
+      "order": 9,
+      "category": "science",
+      "title": "인체 내 에너지 대사와 항상성",
+      "subtitle": "음식물 섭취와 에너지 소비의 균형, 그리고 호르몬의 조절",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "항상성",
+        "생명과학"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "010-geomagnetic-reversal",
+      "order": 10,
+      "category": "science",
+      "title": "지자기 역전의 발견",
+      "subtitle": "고지자기 연구가 바꾼 지구과학의 두 가지 풍경",
+      "structure": "sequence",
+      "tags": [
+        "과정",
+        "과학사",
+        "지구과학"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "011-ozone-depletion",
+      "order": 11,
+      "category": "science",
+      "title": "CFC와 오존층 파괴",
+      "subtitle": "성층권의 방패가 무너지는 화학 반응과 그 발견",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "촉매 반응",
+        "환경 과학"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "012-physical-reality",
+      "order": 12,
+      "category": "science",
+      "title": "물리적 실재 개념의 변천",
+      "subtitle": "뉴턴의 입자에서 패러데이의 장(場)까지",
+      "structure": "sequence",
+      "tags": [
+        "과정",
+        "과학사",
+        "물리학"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "013-sharding",
+      "order": 13,
+      "category": "science",
+      "title": "샤딩",
+      "subtitle": "데이터를 잘게 나눠 저장하는 분산 파일 관리 기법",
+      "structure": "classification",
+      "tags": [
+        "분류",
+        "한계 분석",
+        "분산 시스템"
+      ],
+      "estMinutes": 12
+    },
+    {
+      "id": "014-heidegger-being",
+      "order": 14,
+      "category": "humanities",
+      "title": "하이데거의 존재론",
+      "subtitle": "존재자(있는 것)에서 존재(있음 그 자체)로",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "현상학",
+        "철학"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "015-minimalism-music",
+      "order": 15,
+      "category": "humanities",
+      "title": "미니멀리즘 음악",
+      "subtitle": "'같은 것의 반복'을 넘어서 '차이를 생성하는 반복'으로",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "현대 음악",
+        "미학"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "016-natural-law",
+      "order": 16,
+      "category": "humanities",
+      "title": "자연법의 역사와 현대적 재구성",
+      "subtitle": "스토아학파에서 마리탱·메스너까지, 인간 본성에 뿌리내린 보편 규범",
+      "structure": "sequence",
+      "tags": [
+        "과정",
+        "사상사",
+        "법철학"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "017-art-expression",
+      "order": 17,
+      "category": "humanities",
+      "title": "예술과 표현의 관계",
+      "subtitle": "예술가의 마음 안인가, 작품과의 소통인가, 작품 자체의 성질인가",
+      "structure": "classification",
+      "tags": [
+        "분류",
+        "한계 분석",
+        "미학"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "018-aristotle-tragedy",
+      "order": 18,
+      "category": "humanities",
+      "title": "아리스토텔레스의 비극론",
+      "subtitle": "플롯, 인물, 카타르시스로 정리한 비극의 구성과 효과",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "예술론",
+        "고전"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "019-frege-russell",
+      "order": 19,
+      "category": "humanities",
+      "title": "동일성 명제: 프레게와 러셀",
+      "subtitle": "'샛별은 개밥바라기이다'를 두 철학자는 어떻게 풀었나",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "언어 철학",
+        "의미 이론"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "020-zhang-zai-cheng-yi-zhu-xi",
+      "order": 20,
+      "category": "humanities",
+      "title": "장재, 정이와 주희의 철학",
+      "subtitle": "기 중심에서 이 중심으로, 그리고 두 사상의 종합",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "성리학",
+        "동양 철학"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "021-barthes-myth",
+      "order": 21,
+      "category": "humanities",
+      "title": "롤랑 바르트의 신화론",
+      "subtitle": "광고 한 장에 숨어 있는 이념을 어떻게 읽을까",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "기호학",
+        "비평"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "022-speciesism",
+      "order": 22,
+      "category": "humanities",
+      "title": "종 차별주의와 종 중첩 논증",
+      "subtitle": "동물을 인간과 다르게 대해도 되는 도덕적 근거가 있을까",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "윤리",
+        "동물권"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "023-hume-miracle",
+      "order": 23,
+      "category": "humanities",
+      "title": "기적적 사건에 대한 흄의 견해",
+      "subtitle": "기적의 증언을 우리는 얼마나 믿을 수 있을까",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "확률 논증",
+        "철학"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "024-origin-essentialism",
+      "order": 24,
+      "category": "humanities",
+      "title": "기원 본질주의",
+      "subtitle": "나를 나답게 만드는 것은 결국 '나의 기원'인가",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "정체성",
+        "형이상학"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "025-slippery-slope",
+      "order": 25,
+      "category": "humanities",
+      "title": "미끄러운 비탈길 논증",
+      "subtitle": "사소한 첫 발걸음이 정말 끔찍한 결과로 이어질까",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "논리학",
+        "윤리"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "026-zhuxi-joseon",
+      "order": 26,
+      "category": "humanities",
+      "title": "주희를 추종한 조선 사대부들의 문화",
+      "subtitle": "「무이도가」와 「무이구곡도」 수용의 두 갈래",
+      "structure": "classification",
+      "tags": [
+        "분류",
+        "조선 성리학",
+        "문화사"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "027-leadership-theory",
+      "order": 27,
+      "category": "social",
+      "title": "리더십 이론",
+      "subtitle": "피들러부터 자기 결정 이론까지, 리더십 모형의 변천",
+      "structure": "classification",
+      "tags": [
+        "분류",
+        "경영",
+        "사상사"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "028-information-asymmetry",
+      "order": 28,
+      "category": "social",
+      "title": "정보 비대칭과 역선택",
+      "subtitle": "정보가 한쪽으로 쏠릴 때 시장에 무슨 일이 일어나는가",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "경제학",
+        "시장"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "029-administrative-execution",
+      "order": 29,
+      "category": "social",
+      "title": "행정 대집행",
+      "subtitle": "공법상 의무를 의무자 대신 강제 이행하는 제도",
+      "structure": "sequence",
+      "tags": [
+        "과정",
+        "행정법",
+        "권리 구제"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "030-is-lm-mp-model",
+      "order": 30,
+      "category": "social",
+      "title": "거시 경제 이론과 IS-LM·IS-MP 모형",
+      "subtitle": "통화량에서 금리로, 거시 경제 모형의 진화",
+      "structure": "sequence",
+      "tags": [
+        "과정",
+        "거시 경제",
+        "모형 비교"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "031-mistaken-remittance",
+      "order": 31,
+      "category": "social",
+      "title": "착오 송금",
+      "subtitle": "디지털 금융 시대의 실수가 만들어 내는 법적 쟁점",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "법",
+        "금융"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "032-marriage-law",
+      "order": 32,
+      "category": "social",
+      "title": "법적 관점에서 본 혼인",
+      "subtitle": "혼인의 성립 요건, 무효·취소, 그리고 이혼",
+      "structure": "classification",
+      "tags": [
+        "분류",
+        "민법",
+        "가족"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "033-land-administration",
+      "order": 33,
+      "category": "social",
+      "title": "토지 행정의 주요 수단",
+      "subtitle": "토지 거래 허가제와 부동산 가격 공시제의 운영 원리",
+      "structure": "classification",
+      "tags": [
+        "분류",
+        "행정",
+        "부동산"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "034-public-organizations",
+      "order": 34,
+      "category": "social",
+      "title": "특별 공공 행정 조직",
+      "subtitle": "개념, 유형 그리고 기능과 재정 구조에 따른 분류",
+      "structure": "classification",
+      "tags": [
+        "분류",
+        "행정",
+        "조직"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "035-citizen-participation",
+      "order": 35,
+      "category": "social",
+      "title": "시민 참여에 대한 견해",
+      "subtitle": "루소·밀에서 바버까지, 참여 민주주의의 통시적 흐름",
+      "structure": "sequence",
+      "tags": [
+        "과정",
+        "정치 사상",
+        "민주주의"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "036-interaction-needs",
+      "order": 36,
+      "category": "social",
+      "title": "교류 욕구 이론",
+      "subtitle": "조너선 터너가 본 사회적 상호작용의 핵심 동력",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "사회학",
+        "정체성"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "037-poverty-debate",
+      "order": 37,
+      "category": "social",
+      "title": "중세의 청빈 논쟁",
+      "subtitle": "사용과 소유의 분리, 그리고 근원적 자유로의 확장",
+      "structure": "sequence",
+      "tags": [
+        "과정",
+        "중세 신학",
+        "법철학"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "038-democracy-republic",
+      "order": 38,
+      "category": "social",
+      "title": "민주정과 공화정 (매디슨)",
+      "subtitle": "파벌의 위험, 그리고 대표를 통해 공공선을 추구하는 정부",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "정치 사상",
+        "정치 제도"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "039-legal-fiction",
+      "order": 39,
+      "category": "social",
+      "title": "법적 의제",
+      "subtitle": "법이 사실 아닌 것을 사실로 받아들이는 이유",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "법철학",
+        "법체계"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "040-wangbi-guoxiang",
+      "order": 40,
+      "category": "humanities",
+      "title": "왕필과 곽상의 도가 사상",
+      "subtitle": "무(無)의 일원론과 제물론, 도가 사상의 두 갈래",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "동양 철학",
+        "주제 통합"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "041-bourdieu-giddens",
+      "order": 41,
+      "category": "social",
+      "title": "세계화에 대한 부르디외와 기든스",
+      "subtitle": "지배 전략으로 보는 시각 vs 근대성의 확장으로 보는 시각",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "사회학",
+        "주제 통합"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "042-teapot-effect",
+      "order": 42,
+      "category": "science",
+      "title": "찻주전자 효과와 젖음성",
+      "subtitle": "주둥이를 타고 흐르는 액체의 비밀과 표면 에너지",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "유체 역학",
+        "주제 통합"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "043-speculative-realism",
+      "order": 43,
+      "category": "humanities",
+      "title": "사변적 실재론과 그 비판",
+      "subtitle": "상관주의를 넘어 실재 자체로, 그리고 그에 대한 반론",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "현대 철학",
+        "주제 통합"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "044-tax-law-inheritance",
+      "order": 44,
+      "category": "social",
+      "title": "조세 법률주의와 상속·증여세",
+      "subtitle": "법률에 근거한 과세, 그리고 무상 이전에 부과되는 두 세금",
+      "structure": "classification",
+      "tags": [
+        "분류",
+        "조세",
+        "주제 통합"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "045-art-form-medium",
+      "order": 45,
+      "category": "humanities",
+      "title": "예술 형식과 매체",
+      "subtitle": "레싱의 시·회화 구분에서 페히의 매체 유동성까지",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "미학",
+        "주제 통합"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "046-architecture-space",
+      "order": 46,
+      "category": "humanities",
+      "title": "건축물과 공간",
+      "subtitle": "구조·재료의 과학과 르페브르의 사회적 공간 이론",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "건축",
+        "주제 통합"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "047-badiou-ranciere",
+      "order": 47,
+      "category": "humanities",
+      "title": "정치에 대한 바디우와 랑시에르",
+      "subtitle": "사건과 진리(바디우) 그리고 불화와 평등(랑시에르)",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "현대 정치 철학",
+        "주제 통합"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "048-criminal-causation",
+      "order": 48,
+      "category": "social",
+      "title": "형사법상의 인과 관계",
+      "subtitle": "조건설과 합법칙적 조건설, 그리고 택일적 인과 관계",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "형법",
+        "주제 통합"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "049-civil-disobedience",
+      "order": 49,
+      "category": "humanities",
+      "title": "시민 불복종과 소크라테스",
+      "subtitle": "현대의 시민 불복종 논쟁과 고대 소크라테스의 논변",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "정치 철학",
+        "주제 통합"
+      ],
+      "estMinutes": 18
+    },
+    {
+      "id": "050-legal-analogy",
+      "order": 50,
+      "category": "social",
+      "title": "법 해석의 본질과 유추",
+      "subtitle": "유추는 보조 수단인가, 법 해석의 본질인가",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "법철학",
+        "주제 통합"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "051-penicillin",
+      "order": 51,
+      "category": "science",
+      "title": "페니실린의 발견과 작용 원리",
+      "subtitle": "세런디피티가 만든 항생제, 그리고 그 화학 구조의 비밀",
+      "structure": "sequence",
+      "tags": [
+        "과정",
+        "과학사",
+        "주제 통합"
+      ],
+      "estMinutes": 16
+    },
+    {
+      "id": "052-sq3r",
+      "order": 52,
+      "category": "method",
+      "title": "SQ3R과 CSQ3R",
+      "subtitle": "전략적 독서 방법, 그리고 시각 바꾸기로의 확장",
+      "structure": "sequence",
+      "tags": [
+        "과정",
+        "독서 전략",
+        "독서법"
+      ],
+      "estMinutes": 12
+    },
+    {
+      "id": "053-formal-husserl-logic",
+      "order": 53,
+      "category": "method",
+      "title": "형식 논리학과 후설의 선험적 논리학",
+      "subtitle": "구조의 무모순성에서 의식의 본질로",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "논리학",
+        "독서법"
+      ],
+      "estMinutes": 12
+    },
+    {
+      "id": "054-fiction-makebelieve",
+      "order": 54,
+      "category": "method",
+      "title": "허구 이야기와 믿는 체하기 놀이",
+      "subtitle": "월턴의 놀이 이론과 불완전 명제 이론의 비교",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "미학",
+        "독서법"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "055-current-density",
+      "order": 55,
+      "category": "method",
+      "title": "전류 밀도와 표피 효과",
+      "subtitle": "도선의 열 발생을 결정하는 두 요인",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "물리",
+        "독서법"
+      ],
+      "estMinutes": 12
+    },
+    {
+      "id": "056-consumption-theory",
+      "order": 56,
+      "category": "method",
+      "title": "소비 이론",
+      "subtitle": "소비 수준을 결정하는 다양한 요인들",
+      "structure": "classification",
+      "tags": [
+        "분류",
+        "경제",
+        "독서법"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "057-rawls-macintyre",
+      "order": 57,
+      "category": "method",
+      "title": "롤스와 매킨타이어의 정의관",
+      "subtitle": "보편적 절차 vs 공동체의 덕",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "정의론",
+        "독서법"
+      ],
+      "estMinutes": 12
+    },
+    {
+      "id": "058-lichtenstein",
+      "order": 58,
+      "category": "method",
+      "title": "로이 리히텐슈타인",
+      "subtitle": "팝 아트의 거장이 활용한 만화의 형식",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "팝 아트",
+        "독서법"
+      ],
+      "estMinutes": 12
+    },
+    {
+      "id": "059-alveoli-surfactant",
+      "order": 59,
+      "category": "method",
+      "title": "폐포의 표면 장력과 계면 활성제",
+      "subtitle": "라플라스 법칙과 작은 폐포의 생존 전략",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "생리학",
+        "독서법"
+      ],
+      "estMinutes": 12
+    },
+    {
+      "id": "060-inclusive-design",
+      "order": 60,
+      "category": "method",
+      "title": "인클루시브 디자인",
+      "subtitle": "모두를 위한 배려를 넘어선 혁신",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "디자인",
+        "독서법"
+      ],
+      "estMinutes": 12
+    },
+    {
+      "id": "061-hyungpyong-movement",
+      "order": 61,
+      "category": "method",
+      "title": "형평 운동",
+      "subtitle": "백정에 대한 차별을 극복하기 위한 인권 운동",
+      "structure": "sequence",
+      "tags": [
+        "과정",
+        "역사",
+        "독서법"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "062-virtual-memory",
+      "order": 62,
+      "category": "method",
+      "title": "가상 메모리",
+      "subtitle": "물리적 한계를 넘어서는 컴퓨터 기억 장치의 원리",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "컴퓨팅",
+        "독서법"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "063-digital-reading",
+      "order": 63,
+      "category": "method",
+      "title": "디지털 읽기",
+      "subtitle": "인쇄 매체와 다른 디지털 텍스트 읽기의 특징",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "독서 매체",
+        "독서법"
+      ],
+      "estMinutes": 12
+    },
+    {
+      "id": "064-complexity-economics",
+      "order": 64,
+      "category": "method",
+      "title": "복잡계 경제학",
+      "subtitle": "현대 경제를 자연스러운 흐름의 결과로 보는 새 관점",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "경제",
+        "독서법"
+      ],
+      "estMinutes": 12
+    },
+    {
+      "id": "065-reading-space",
+      "order": 65,
+      "category": "method",
+      "title": "독서 공간",
+      "subtitle": "공간이 독자의 읽기에 미치는 영향",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "독서법",
+        "실전 학습"
+      ],
+      "estMinutes": 12
+    },
+    {
+      "id": "066-jaspers-limit",
+      "order": 66,
+      "category": "humanities",
+      "title": "야스퍼스의 한계 상황",
+      "subtitle": "인간이 피할 수 없는 상황 앞에서의 실존",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "실존주의",
+        "실전 학습"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "067-simultaneous-auction",
+      "order": 67,
+      "category": "social",
+      "title": "동시 다중 라운드 경매",
+      "subtitle": "주파수 면허 등 다중 자산 거래의 효율적 메커니즘",
+      "structure": "sequence",
+      "tags": [
+        "과정",
+        "경제",
+        "실전 학습"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "068-superconductor-superfluid",
+      "order": 68,
+      "category": "science",
+      "title": "초전도체와 초유체의 발견",
+      "subtitle": "20세기 초저온 물리학의 두 가지 양자 현상",
+      "structure": "compare",
+      "tags": [
+        "비교",
+        "물리학",
+        "실전 학습"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "069-discourse-community",
+      "order": 69,
+      "category": "method",
+      "title": "담화 공동체 독자",
+      "subtitle": "독자를 사회적 맥락 속에서 이해하기",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "독서이론",
+        "실전 학습"
+      ],
+      "estMinutes": 12
+    },
+    {
+      "id": "070-mind-uploading",
+      "order": 70,
+      "category": "humanities",
+      "title": "마음 업로딩",
+      "subtitle": "디지털 영생을 둘러싼 철학적 쟁점",
+      "structure": "thesis_support",
+      "tags": [
+        "주장-근거",
+        "심리철학",
+        "실전 학습"
+      ],
+      "estMinutes": 18
+    },
+    {
+      "id": "071-corporate-tax",
+      "order": 71,
+      "category": "social",
+      "title": "법인세",
+      "subtitle": "법인 소득에 부과되는 세금의 구조와 쟁점",
+      "structure": "classification",
+      "tags": [
+        "분류",
+        "조세",
+        "실전 학습"
+      ],
+      "estMinutes": 14
+    },
+    {
+      "id": "072-anti-aging",
+      "order": 72,
+      "category": "science",
+      "title": "역노화 기술",
+      "subtitle": "노화 시계를 되돌리려는 생명 과학의 시도",
+      "structure": "cause",
+      "tags": [
+        "인과",
+        "생명과학",
+        "실전 학습"
+      ],
+      "estMinutes": 12
+    }
+  ]
+}

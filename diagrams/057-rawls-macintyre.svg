@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1240" data-app role="img" aria-labelledby="t57 d57">
+  <title id="t57">롤스 vs 매킨타이어 — 보편적 절차 vs 공동체의 덕</title>
+  <desc id="d57">롤스(원초적 상황·무지의 베일·절차적 공정성)와 매킨타이어(공동체·서사적 존재·덕의 실천)의 정의관을 인물 도식과 비교 매트릭스로 시각화.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbf7ee}
+      .panel{fill:#ffffff;stroke:#d8cdb6;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e544a}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#8b6f47}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#4f463d}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e544a}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .figLabel{font:600 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .veilT{font:600 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e544a;letter-spacing:.06em}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#9c8e7a;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar57" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b6f47"/>
+    </marker>
+    <marker id="ar57-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+    <pattern id="veilHatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#8b6f47" stroke-width="0.6" opacity="0.45"/>
+    </pattern>
+    <symbol id="person" viewBox="0 0 40 60">
+      <circle cx="20" cy="14" r="9" fill="#fbeed3" stroke="#8b6f47" stroke-width="1.2"/>
+      <path d="M5 56 Q5 32 20 32 Q35 32 35 56 Z" fill="#fbeed3" stroke="#8b6f47" stroke-width="1.2"/>
+    </symbol>
+  </defs>
+
+  <rect class="bg" width="1200" height="1240"/>
+
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#8b6f47"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">롤스 vs 매킨타이어 — 보편적 절차 vs 공동체의 덕</text>
+  <text x="1136" y="80" class="sub" fill="#f4ead6" text-anchor="end">독서 방법 · 비교</text>
+
+  <!-- Scene 1: 도입 — 인물 대비 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">정의로운 사회란 무엇인가? — 두 갈래 답변</text>
+
+    <rect class="panel" x="64" y="160" width="1072" height="172" rx="10"/>
+    <rect x="64" y="160" width="6" height="172" fill="#8b6f47"/>
+
+    <!-- 롤스 인물 카드 -->
+    <g transform="translate(110,184)">
+      <circle cx="44" cy="40" r="36" fill="#fbeed3" stroke="#8b6f47" stroke-width="1.6"/>
+      <circle cx="44" cy="32" r="14" fill="#fff8ec" stroke="#8b6f47" stroke-width="1.2"/>
+      <path d="M22 70 Q22 46 44 46 Q66 46 66 70" fill="#fff8ec" stroke="#8b6f47" stroke-width="1.2"/>
+      <text x="44" y="100" class="figLabel" text-anchor="middle">롤스 (Rawls)</text>
+      <text x="44" y="118" class="small" text-anchor="middle">자유주의 · 절차</text>
+    </g>
+
+    <text x="220" y="220" class="lab">합리적 개인 + 절차적 공정성</text>
+    <text x="220" y="244" class="small">· 원초적 상황에서의 합의</text>
+    <text x="220" y="266" class="small">· 무지의 베일 → 보편적 정의 원칙</text>
+    <text x="220" y="288" class="small">· 국가의 적극적 역할 강조</text>
+
+    <line x1="608" y1="200" x2="608" y2="312" stroke="#d8cdb6" stroke-width="1.2" stroke-dasharray="4 4"/>
+    <text x="608" y="324" class="small" fill="#8b6f47" text-anchor="middle">↔ 인간상 · 정의 토대 다름 ↔</text>
+
+    <!-- 매킨타이어 인물 카드 -->
+    <g transform="translate(660,184)">
+      <circle cx="44" cy="40" r="36" fill="#fbf2f4" stroke="#a83a4a" stroke-width="1.6"/>
+      <circle cx="44" cy="32" r="14" fill="#fff5f6" stroke="#a83a4a" stroke-width="1.2"/>
+      <path d="M22 70 Q22 46 44 46 Q66 46 66 70" fill="#fff5f6" stroke="#a83a4a" stroke-width="1.2"/>
+      <text x="44" y="100" class="figLabel" text-anchor="middle" fill="#a83a4a">매킨타이어 (MacIntyre)</text>
+      <text x="44" y="118" class="small" text-anchor="middle">공동체주의 · 덕</text>
+    </g>
+
+    <text x="770" y="220" class="lab" fill="#a83a4a">서사적 자아 + 공동체의 덕</text>
+    <text x="770" y="244" class="small">· 인간은 공동체의 이야기 속 일부</text>
+    <text x="770" y="266" class="small">· 전통과 관습이 자아를 형성</text>
+    <text x="770" y="288" class="small">· 덕의 실천 → 공동체적 정의</text>
+  </g>
+
+  <!-- Scene 2: 롤스의 무지의 베일 시각화 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="378" class="num">2</text>
+    <text x="92" y="378" class="bd">롤스 — 원초적 상황 · 무지의 베일 · 절차적 공정성</text>
+
+    <rect class="panel" x="64" y="396" width="1072" height="320" rx="12" stroke-width="1.6" stroke="#8b6f47" fill="#fff8ec"/>
+    <rect x="64" y="396" width="1072" height="40" rx="12" fill="#8b6f47"/>
+    <text x="84" y="422" class="lab" fill="#ffffff">롤스의 정의관</text>
+    <text x="1116" y="422" class="small" fill="#f4ead6" text-anchor="end">결과적 정의 ✗ → 절차적 정의 ✓</text>
+
+    <!-- 좌: 무지의 베일 도식 -->
+    <g transform="translate(84,452)">
+      <rect x="0" y="0" width="440" height="240" rx="12" fill="#fbeed3" stroke="#d8c595" stroke-width="1.4"/>
+      <text x="220" y="24" class="lab" text-anchor="middle">원초적 상황 — 합의의 출발점</text>
+
+      <!-- 합의 테이블 -->
+      <ellipse cx="220" cy="148" rx="160" ry="44" fill="#fff8ec" stroke="#8b6f47" stroke-width="1.2"/>
+      <text x="220" y="153" class="small" text-anchor="middle" fill="#8b6f47">합의 · 사회 제도의 원칙</text>
+
+      <!-- 합리적 개인들 (4명) -->
+      <use href="#person" x="58" y="100" width="36" height="54"/>
+      <use href="#person" x="170" y="74" width="36" height="54"/>
+      <use href="#person" x="240" y="74" width="36" height="54"/>
+      <use href="#person" x="346" y="100" width="36" height="54"/>
+
+      <!-- 무지의 베일 (반투명 빗금 오버레이) -->
+      <rect x="40" y="60" width="360" height="120" rx="60" fill="url(#veilHatch)" stroke="#8b6f47" stroke-width="1" stroke-dasharray="4 3"/>
+      <text x="220" y="208" class="veilT" text-anchor="middle">무지의 베일 — 위치·능력·출신 모름</text>
+      <text x="220" y="226" class="small" text-anchor="middle">→ 자기 이익 편향 차단 → 공정한 합의</text>
+    </g>
+
+    <!-- 우: 절차→원칙→사회 -->
+    <g transform="translate(560,452)">
+      <text x="0" y="20" class="lab">합의 → 보편적 정의 원칙</text>
+      <line x1="0" y1="32" x2="552" y2="32" stroke="#d8cdb6" stroke-width="1"/>
+
+      <rect x="0" y="50" width="552" height="44" rx="8" fill="#fbeed3" stroke="#d8c595"/>
+      <text x="14" y="78" class="small">① 모든 시민의 자유 보장 (제1원칙)</text>
+
+      <rect x="0" y="104" width="552" height="44" rx="8" fill="#fbeed3" stroke="#d8c595"/>
+      <text x="14" y="132" class="small">② 사회적 약자 보호 (차등의 원칙)</text>
+
+      <rect x="0" y="158" width="552" height="44" rx="8" fill="#fff8ec" stroke="#8b6f47" stroke-width="1.4"/>
+      <text x="14" y="186" class="small" fill="#8b6f47">→ 특정 문화·전통에 얽매이지 않는 보편 원칙</text>
+
+      <rect x="0" y="216" width="552" height="40" rx="8" fill="#8b6f47"/>
+      <text x="276" y="242" class="pill" text-anchor="middle">제도가 정의롭다면 — 도덕적 미완의 시민도 공존 가능</text>
+    </g>
+  </g>
+
+  <!-- Scene 3: 매킨타이어의 비판 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="760" class="num">3</text>
+    <text x="92" y="760" class="bd">매킨타이어의 비판 — 공동체와 유리된 ‘추상적 개인’</text>
+
+    <rect class="panel" x="64" y="778" width="1072" height="160" rx="10" stroke="#a83a4a" stroke-width="1.4" fill="#fbf2f4"/>
+
+    <!-- 좌: 추상적 개인의 고립 -->
+    <g transform="translate(84,798)">
+      <rect x="0" y="0" width="220" height="124" rx="10" fill="#ffffff" stroke="#a83a4a" stroke-width="1.2"/>
+      <text x="110" y="22" class="lab" text-anchor="middle" fill="#a83a4a">롤스의 ‘추상적 개인’</text>
+      <use href="#person" x="92" y="36" width="36" height="54"/>
+      <circle cx="110" cy="64" r="46" fill="none" stroke="#a83a4a" stroke-width="1" stroke-dasharray="3 3"/>
+      <text x="110" y="116" class="small" text-anchor="middle">공동체 ✗</text>
+    </g>
+
+    <text x="328" y="848" class="bd" fill="#a83a4a">↛  비판 →</text>
+
+    <g transform="translate(440,798)">
+      <text x="0" y="22" class="lab" fill="#a83a4a">매킨타이어의 반박</text>
+      <text x="0" y="48" class="small">· 원초적 상황의 인간 = 공동체와 유리된 ‘추상적 개인’</text>
+      <text x="0" y="70" class="small">· 공동체 없이는 어떠한 윤리적 삶도 가능하지 않다</text>
+      <text x="0" y="92" class="small">· 공동체의 전통·관습이 개인의 자아를 만든다</text>
+      <text x="0" y="120" class="it" fill="#a83a4a">→ 인간은 공동체의 이야기 속 일부, 즉 ‘서사적 존재’</text>
+    </g>
+  </g>
+
+  <!-- Scene 4: 매킨타이어 — 공동체와 덕의 실천 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="982" class="num">4</text>
+    <text x="92" y="982" class="bd">매킨타이어 — 공동체 안에서 길러지는 덕</text>
+
+    <!-- 좌: 공동체 안의 자아 (원형 군집) -->
+    <g transform="translate(84,1000)">
+      <rect x="0" y="0" width="320" height="200" rx="10" fill="#fff8ec" stroke="#8b6f47" stroke-width="1.4"/>
+      <text x="160" y="24" class="lab" text-anchor="middle" fill="#8b6f47">공동체 = 덕의 토양</text>
+
+      <circle cx="160" cy="120" r="68" fill="none" stroke="#8b6f47" stroke-width="1.4" stroke-dasharray="4 4"/>
+      <use href="#person" x="100" y="80" width="28" height="44"/>
+      <use href="#person" x="146" y="64" width="28" height="44"/>
+      <use href="#person" x="194" y="80" width="28" height="44"/>
+      <use href="#person" x="146" y="118" width="28" height="44"/>
+
+      <!-- 연결선 -->
+      <line x1="118" y1="100" x2="160" y2="86" stroke="#8b6f47" stroke-width="1"/>
+      <line x1="208" y1="100" x2="160" y2="86" stroke="#8b6f47" stroke-width="1"/>
+      <line x1="118" y1="100" x2="160" y2="142" stroke="#8b6f47" stroke-width="1"/>
+      <line x1="208" y1="100" x2="160" y2="142" stroke="#8b6f47" stroke-width="1"/>
+
+      <text x="160" y="194" class="small" text-anchor="middle">서사적 자아 — 타인과의 결합 속에서 자기실현</text>
+    </g>
+
+    <!-- 중앙: 화살표 -->
+    <line x1="416" y1="1100" x2="448" y2="1100" stroke="#8b6f47" stroke-width="2" marker-end="url(#ar57)"/>
+
+    <!-- 우: 덕의 형성 흐름 -->
+    <g transform="translate(456,1000)">
+      <rect x="0" y="0" width="680" height="200" rx="10" fill="#ffffff" stroke="#d8cdb6" stroke-width="1.4"/>
+      <text x="340" y="24" class="lab" text-anchor="middle">덕의 형성 → 정의의 실현</text>
+
+      <rect x="20" y="44" width="200" height="56" rx="8" fill="#fbeed3" stroke="#d8c595"/>
+      <text x="120" y="68" class="small" text-anchor="middle">공유된 덕목</text>
+      <text x="120" y="88" class="small" text-anchor="middle">(공동체의 가치)</text>
+
+      <line x1="226" y1="72" x2="262" y2="72" stroke="#8b6f47" stroke-width="2" marker-end="url(#ar57)"/>
+
+      <rect x="268" y="44" width="170" height="56" rx="8" fill="#fbeed3" stroke="#d8c595"/>
+      <text x="353" y="68" class="small" text-anchor="middle">반복적 실천</text>
+      <text x="353" y="88" class="small" text-anchor="middle">(수행 + 습관화)</text>
+
+      <line x1="444" y1="72" x2="480" y2="72" stroke="#8b6f47" stroke-width="2" marker-end="url(#ar57)"/>
+
+      <rect x="486" y="44" width="180" height="56" rx="8" fill="#8b6f47"/>
+      <text x="576" y="68" class="pill" text-anchor="middle">덕(성향) 길러짐</text>
+      <text x="576" y="88" class="small" fill="#f4ead6" text-anchor="middle">→ 정의 = 덕의 실현</text>
+
+      <rect x="20" y="120" width="640" height="64" rx="8" fill="#fbf2f4" stroke="#a83a4a" stroke-width="1.2"/>
+      <text x="340" y="144" class="lab" text-anchor="middle" fill="#a83a4a">⚠ 한계</text>
+      <text x="340" y="164" class="small" text-anchor="middle">전통 강조 → 비판적 사고 저해 / 공동체별 가치 절대화 → 상대주의 위험</text>
+    </g>
+  </g>
+
+  <!-- 비교 매트릭스 (항상 노출) -->
+  <g>
+    <rect x="64" y="1216" width="1072" height="0" fill="none"/>
+  </g>
+
+  <text x="1140" y="1224" class="wm" text-anchor="end">EBS 2027 · 독서 방법 · 25쪽</text>
+</svg>

@@ -1,0 +1,285 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 940" role="img" aria-labelledby="title-001 desc-001">
+  <title id="title-001">이동식 크레인의 부품 구성과 모멘트 균형</title>
+  <desc id="desc-001">이동식 크레인을 측면에서 그린 도식. 무한궤도와 아웃트리거가 받쳐 주는 본체에서 격자형 붐이 위로 뻗어 후크와 와이어로프로 물체를 매달고 있다. 본체 아래의 전도 축을 기준으로 좌측에는 안정 모멘트(크레인 중량 W₁ × 거리 A), 우측에는 양중 모멘트(물체 무게 W₂ × 거리 B)를 표시하고, 두 모멘트의 부등식을 시소 그림으로 강조한다. 마지막에는 평형추·받침목·아웃트리거가 안정 모멘트를 키우거나 압력을 분산하는 모습을 보여 준다.</desc>
+
+  <defs>
+    <marker id="arrow-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1612"/>
+    </marker>
+    <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+    <marker id="arrow-sci" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f5582"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#7a6f5f" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .formula { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 600; fill: #1a1612; }
+    .formula-op { font-family: 'Noto Serif KR', serif; font-size: 28px; font-weight: 700; fill: #1f5582; }
+    .formula-warn { fill: #a83a4a; }
+    .ink { stroke: #1a1612; }
+    .ink-fill { fill: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .ghost { stroke: #c9bfa8; stroke-dasharray: 4 3; fill: none; }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+    .sci { fill: #1f5582; }
+    .sci-st { stroke: #1f5582; }
+    .sci-bg { fill: rgba(31,85,130,0.08); }
+    .dim { stroke: #7a6f5f; stroke-dasharray: 4 3; fill: none; }
+  ]]></style>
+
+  <!-- 지면 라인 (항상 보임) -->
+  <line x1="40" y1="660" x2="1160" y2="660" class="rule" stroke-width="1"/>
+  <text x="50" y="652" class="lbl-sm">지면</text>
+
+  <!-- ===========================================================
+       Step 4 · 부등식 박스 (상단 고정, 핵심 명제)
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="4" id="scene-inequality">
+    <rect x="60" y="30" width="1080" height="100" rx="6" class="paper2 sci-st" stroke-width="2"/>
+    <text x="600" y="60" text-anchor="middle" class="lbl-head" fill="#1f5582">전도가 일어나지 않을 조건</text>
+    <text x="280" y="106" text-anchor="middle" class="formula">안정 모멘트 = W₁ × A</text>
+    <text x="600" y="112" text-anchor="middle" class="formula-op">≥</text>
+    <text x="920" y="106" text-anchor="middle" class="formula formula-warn">양중 모멘트 = W₂ × B</text>
+  </g>
+
+  <!-- ===========================================================
+       Step 1 · 장비의 위치 (옅은 윤곽)
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="1" id="scene-base">
+    <rect x="280" y="490" width="240" height="125" rx="8" class="ghost"/>
+    <ellipse cx="400" cy="645" rx="140" ry="14" class="ghost"/>
+    <text x="400" y="600" text-anchor="middle" class="lbl-sm">이동식 크레인</text>
+  </g>
+
+  <!-- ===========================================================
+       Step 2 · 부품과 움직임
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="2" id="scene-parts">
+    <!-- 무한궤도 -->
+    <rect x="260" y="625" width="280" height="32" rx="16" class="paper2 ink" stroke-width="1.5"/>
+    <g class="ink" stroke-width="1">
+      <circle cx="290" cy="641" r="8" fill="#f5f1e8"/>
+      <circle cx="340" cy="641" r="8" fill="#f5f1e8"/>
+      <circle cx="390" cy="641" r="8" fill="#f5f1e8"/>
+      <circle cx="440" cy="641" r="8" fill="#f5f1e8"/>
+      <circle cx="490" cy="641" r="8" fill="#f5f1e8"/>
+    </g>
+
+    <!-- 본체 -->
+    <rect x="280" y="490" width="240" height="135" rx="6" class="paper2 ink" stroke-width="1.5"/>
+    <rect x="465" y="505" width="45" height="38" rx="2" fill="#f5f1e8" class="ink" stroke-width="1"/>
+    <circle cx="490" cy="490" r="6" class="ink-fill"/>
+
+    <!-- 격자형 붐 -->
+    <g class="ink" stroke-width="2.5">
+      <line x1="490" y1="490" x2="920" y2="235"/>
+      <line x1="510" y1="472" x2="940" y2="217"/>
+    </g>
+    <g class="ink" stroke-width="0.8">
+      <line x1="510" y1="490" x2="530" y2="472"/>
+      <line x1="555" y1="464" x2="575" y2="446"/>
+      <line x1="600" y1="438" x2="620" y2="420"/>
+      <line x1="645" y1="412" x2="665" y2="394"/>
+      <line x1="690" y1="386" x2="710" y2="368"/>
+      <line x1="735" y1="360" x2="755" y2="342"/>
+      <line x1="780" y1="334" x2="800" y2="316"/>
+      <line x1="825" y1="308" x2="845" y2="290"/>
+      <line x1="870" y1="282" x2="890" y2="264"/>
+      <line x1="510" y1="472" x2="530" y2="490"/>
+      <line x1="555" y1="446" x2="575" y2="464"/>
+      <line x1="600" y1="420" x2="620" y2="438"/>
+      <line x1="645" y1="394" x2="665" y2="412"/>
+      <line x1="690" y1="368" x2="710" y2="386"/>
+      <line x1="735" y1="342" x2="755" y2="360"/>
+      <line x1="780" y1="316" x2="800" y2="334"/>
+      <line x1="825" y1="290" x2="845" y2="308"/>
+      <line x1="870" y1="264" x2="890" y2="282"/>
+    </g>
+
+    <!-- 와이어로프 -->
+    <line x1="930" y1="226" x2="930" y2="515" class="ink" stroke-width="1.2"/>
+
+    <!-- 후크 -->
+    <path d="M 922 515 L 922 530 Q 922 540 930 540 Q 938 540 938 530 L 938 515 Z" class="ink-fill"/>
+    <path d="M 920 530 Q 930 548 940 530" fill="none" class="ink" stroke-width="1.5"/>
+
+    <!-- 물체 -->
+    <rect x="900" y="547" width="60" height="55" class="ink-fill"/>
+    <text x="930" y="581" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="600">물체</text>
+
+    <!-- 라벨 leader -->
+    <g class="rule" stroke-width="0.8">
+      <line x1="700" y1="365" x2="780" y2="330"/>
+      <line x1="940" y1="340" x2="1000" y2="340"/>
+      <line x1="940" y1="525" x2="1000" y2="525"/>
+      <line x1="400" y1="555" x2="200" y2="555"/>
+      <line x1="400" y1="645" x2="200" y2="645"/>
+      <line x1="490" y1="490" x2="560" y2="455"/>
+    </g>
+    <text x="785" y="325" class="lbl">붐 (격자형)</text>
+    <text x="1005" y="344" class="lbl">와이어로프</text>
+    <text x="1005" y="529" class="lbl">후크 + 물체</text>
+    <text x="195" y="559" text-anchor="end" class="lbl">크레인 본체</text>
+    <text x="195" y="649" text-anchor="end" class="lbl">무한궤도</text>
+    <text x="565" y="451" class="lbl">선회 축</text>
+
+    <!-- 기복 -->
+    <g class="sci-st" stroke-width="1.5" fill="none">
+      <path d="M 740 300 A 80 80 0 0 1 800 350" marker-end="url(#arrow-sci)"/>
+    </g>
+    <text x="745" y="285" class="lbl" fill="#1f5582">기복(수직)</text>
+
+    <!-- 선회 -->
+    <g class="sci-st" stroke-width="1.5" fill="none">
+      <path d="M 460 475 A 30 12 0 1 0 520 475" marker-end="url(#arrow-sci)"/>
+    </g>
+    <text x="395" y="468" class="lbl" fill="#1f5582">선회(수평)</text>
+
+    <!-- 아웃트리거 -->
+    <g>
+      <line x1="262" y1="620" x2="220" y2="660" class="ink" stroke-width="2"/>
+      <rect x="208" y="658" width="28" height="6" class="ink-fill"/>
+      <line x1="538" y1="620" x2="580" y2="660" class="ink" stroke-width="2"/>
+      <rect x="564" y="658" width="28" height="6" class="ink-fill"/>
+      <text x="180" y="688" class="lbl-sm">아웃트리거</text>
+      <text x="595" y="688" class="lbl-sm">아웃트리거</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 3 · 두 모멘트 (거리 A·B, 무게 W₁·W₂) + 시소 시각화
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="3" id="scene-moment">
+    <!-- 전도 축 -->
+    <circle cx="540" cy="660" r="7" class="sci"/>
+    <text x="558" y="685" class="lbl" fill="#1f5582" font-weight="600">전도 축</text>
+
+    <!-- 거리 A -->
+    <line x1="380" y1="557" x2="540" y2="660" class="dim"/>
+    <text x="445" y="600" class="lbl-strong">A</text>
+    <text x="445" y="618" class="lbl-xs">크레인 무게중심 → 전도 축</text>
+
+    <!-- W₁ -->
+    <line x1="380" y1="490" x2="380" y2="555" class="ink" stroke-width="2.5" marker-end="url(#arrow-ink)"/>
+    <circle cx="380" cy="557" r="3" class="ink-fill"/>
+    <text x="305" y="525" class="lbl-strong">W₁</text>
+    <text x="305" y="541" class="lbl-xs">크레인 중량</text>
+
+    <!-- 거리 B -->
+    <line x1="540" y1="660" x2="930" y2="574" class="dim"/>
+    <text x="730" y="632" class="lbl-strong">B</text>
+    <text x="730" y="648" class="lbl-xs">물체 중심축 → 전도 축</text>
+
+    <!-- W₂ -->
+    <line x1="930" y1="604" x2="930" y2="678" class="acc-st" stroke-width="2.5" marker-end="url(#arrow-accent)"/>
+    <text x="945" y="642" class="lbl-strong" fill="#a83a4a">W₂</text>
+    <text x="945" y="658" class="lbl-xs" fill="#a83a4a">물체 무게</text>
+  </g>
+
+  <!-- ===========================================================
+       시소 시각화 + 부등식 의미 (Step 3, 4)
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="715" width="560" height="180" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="742" class="lbl-strong">두 모멘트는 시소처럼 균형을 다툰다</text>
+
+    <!-- 시소 -->
+    <g transform="translate(320, 822)">
+      <line x1="-220" y1="0" x2="220" y2="0" class="ink" stroke-width="2"/>
+      <polygon points="-12,0 12,0 0,30" class="ink-fill"/>
+      <text x="0" y="50" text-anchor="middle" class="lbl-xs">전도 축</text>
+
+      <!-- 좌: 안정 모멘트 (W₁ × A) -->
+      <rect x="-180" y="-40" width="60" height="40" rx="3" class="sci"/>
+      <text x="-150" y="-28" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">W₁</text>
+      <text x="-150" y="-12" text-anchor="middle" font-size="9" fill="#f5f1e8">크레인</text>
+      <text x="-150" y="-58" text-anchor="middle" class="lbl-xs" fill="#1f5582" font-weight="700">×  A (긴 거리 ↔ 본체)</text>
+
+      <!-- 우: 양중 모멘트 (W₂ × B) -->
+      <rect x="120" y="-40" width="60" height="40" rx="3" class="acc"/>
+      <text x="150" y="-28" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">W₂</text>
+      <text x="150" y="-12" text-anchor="middle" font-size="9" fill="#f5f1e8">물체</text>
+      <text x="150" y="-58" text-anchor="middle" class="lbl-xs" fill="#a83a4a" font-weight="700">×  B (긴 거리 ↔ 물체)</text>
+
+      <!-- 부등식 -->
+      <text x="-30" y="6" class="formula-op" fill="#1f5582">≥</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       부등식 시나리오: 안정 vs 전도
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="620" y="715" width="540" height="180" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="640" y="742" class="lbl-strong">부등식이 성립할 때 vs 깨질 때</text>
+
+    <!-- 안정 -->
+    <g transform="translate(720, 822)">
+      <text x="0" y="-40" text-anchor="middle" class="lbl-xs" fill="#1f5582" font-weight="700">안정</text>
+      <rect x="-30" y="-26" width="46" height="34" class="paper2 ink" stroke-width="1.4"/>
+      <line x1="14" y1="-22" x2="60" y2="-50" class="ink" stroke-width="2"/>
+      <rect x="56" y="-58" width="14" height="14" class="ink-fill"/>
+      <line x1="-50" y1="14" x2="80" y2="14" class="ink" stroke-width="1"/>
+      <text x="14" y="36" text-anchor="middle" class="lbl-xs" fill="#1f5582">W₁A ≥ W₂B ✓</text>
+    </g>
+
+    <!-- 전도 -->
+    <g transform="translate(990, 822)">
+      <text x="0" y="-40" text-anchor="middle" class="lbl-xs" fill="#a83a4a" font-weight="700">전도 (되돌릴 수 없음)</text>
+      <g transform="rotate(20 14 -8)">
+        <rect x="-30" y="-26" width="46" height="34" class="acc-bg acc-st" stroke-width="1.4"/>
+        <line x1="14" y1="-22" x2="60" y2="-50" class="acc-st" stroke-width="2"/>
+        <rect x="56" y="-58" width="14" height="14" class="acc"/>
+      </g>
+      <line x1="-50" y1="14" x2="80" y2="14" class="ink" stroke-width="1"/>
+      <text x="14" y="36" text-anchor="middle" class="lbl-xs" fill="#a83a4a">W₁A &lt; W₂B ✗</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 5 · 전도 방지 장치 (평형추 + 받침목)
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="5" id="scene-supports">
+    <!-- 평형추 -->
+    <rect x="220" y="510" width="58" height="105" class="ink-fill"/>
+    <line x1="220" y1="515" x2="220" y2="610" stroke="#7a6f5f" stroke-width="1" stroke-dasharray="2 2"/>
+    <line x1="278" y1="515" x2="278" y2="610" stroke="#7a6f5f" stroke-width="1" stroke-dasharray="2 2"/>
+    <text x="249" y="570" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="600">평형추</text>
+
+    <path d="M 200 490 Q 240 460 285 490" fill="none" class="sci-st" stroke-width="1.5" marker-end="url(#arrow-sci)"/>
+    <text x="155" y="485" class="lbl" fill="#1f5582">W₁ 증가 → 안정 모멘트 ↑</text>
+
+    <!-- 받침목 -->
+    <rect x="240" y="660" width="320" height="14" fill="url(#hatch)" stroke="#7a6f5f" stroke-width="1"/>
+    <text x="400" y="710" text-anchor="middle" class="lbl">받침목 (지면 압력 분산)</text>
+    <g class="sci-st" stroke-width="1" fill="none">
+      <line x1="280" y1="678" x2="280" y2="700" marker-end="url(#arrow-sci)"/>
+      <line x1="320" y1="678" x2="320" y2="700" marker-end="url(#arrow-sci)"/>
+      <line x1="360" y1="678" x2="360" y2="700" marker-end="url(#arrow-sci)"/>
+      <line x1="400" y1="678" x2="400" y2="700" marker-end="url(#arrow-sci)"/>
+      <line x1="440" y1="678" x2="440" y2="700" marker-end="url(#arrow-sci)"/>
+      <line x1="480" y1="678" x2="480" y2="700" marker-end="url(#arrow-sci)"/>
+      <line x1="520" y1="678" x2="520" y2="700" marker-end="url(#arrow-sci)"/>
+    </g>
+  </g>
+
+  <text x="1160" y="930" text-anchor="end" class="lbl-sm">EBS · 과학·기술 · 187쪽</text>
+</svg>

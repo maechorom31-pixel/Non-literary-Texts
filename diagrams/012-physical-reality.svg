@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1220" role="img" aria-labelledby="t12 d12">
+  <title id="t12">물리적 실재 개념의 변천</title>
+  <desc id="d12">감각 너머의 세계가 무엇으로 이루어져 있는가에 대한 답인 '물리적 실재 개념'이 시대에 따라 변천한 흐름을 시각화한다. 뉴턴의 절대 공간 위에 놓인 입자들과 그 사이의 힘으로 세계를 설명하는 입자 중심의 자연관, 빛도 입자로 보고 광학으로 확장된 뉴턴주의, 패러데이가 제시한 공간 자체에 연속적으로 퍼진 장(場) 개념, 맥스웰의 수학화와 전자기파 예견, 헤르츠의 실험적 검증까지를 시간 순서로 제시한다.</desc>
+
+  <defs>
+    <marker id="ar12-sci" viewBox="0 0 1200 1220" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f5582"/>
+    </marker>
+    <marker id="ar12-hum" viewBox="0 0 1200 1220" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+    <radialGradient id="field-grad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5e548e" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#5e548e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 13px; font-style: italic; fill: #5e548e; }
+    .formula { font-family: ui-monospace, monospace; font-size: 13px; fill: #1f5582; font-weight: 700; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .sci { fill: #1f5582; }
+    .sci-st { stroke: #1f5582; }
+    .sci-bg { fill: rgba(31,85,130,0.08); }
+    .sci-bg2 { fill: rgba(31,85,130,0.18); }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+  ]]></style>
+
+  <!-- ===========================================================
+       Step 1 · 물리적 실재 개념
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="100" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">물리적 실재 개념 — 시대에 따라 변천</text>
+    <text x="60" y="86" class="lbl">감각 기관 너머에서 세계는 실제로 무엇으로 이루어져 있는가? — 그 답이 시대마다 달랐다.</text>
+    <text x="60" y="108" class="lbl-sm">뉴턴 (입자) → 패러데이 (장) → 맥스웰 (수학화) → 헤르츠 (검증) — 입자 중심에서 연속체 중심으로의 거대한 전환</text>
+  </g>
+
+  <!-- ===========================================================
+       Step 2 · 뉴턴의 입자 실재
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="150" width="540" height="240" rx="6" class="paper rule" stroke-width="1.2"/>
+    <rect x="40" y="150" width="540" height="34" rx="6" class="paper2"/>
+    <text x="60" y="174" class="lbl-strong">① 뉴턴 — 입자 + 절대 공간 + 힘</text>
+
+    <!-- 입자 그림: 절대 공간 위에 입자들 -->
+    <g transform="translate(60, 200)">
+      <rect x="0" y="0" width="500" height="120" rx="4" fill="#f5f1e8" stroke="#7a6f5f" stroke-width="1" stroke-dasharray="3 2"/>
+      <text x="250" y="18" text-anchor="middle" class="lbl-xs" fill="#7a6f5f">절대 공간 (입자가 차지하지 않은 곳은 빈 공간)</text>
+
+      <!-- 입자들과 힘 -->
+      <circle cx="100" cy="60" r="14" class="sci"/>
+      <text x="100" y="64" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">m₁</text>
+      <circle cx="380" cy="80" r="18" class="sci"/>
+      <text x="380" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">m₂</text>
+
+      <!-- 힘 화살표 (서로 끌어당김) -->
+      <line x1="118" y1="62" x2="358" y2="78" class="acc-st" stroke-width="1.6" marker-end="url(#ar12-sci)"/>
+      <line x1="362" y1="80" x2="120" y2="62" class="acc-st" stroke-width="1.6" marker-end="url(#ar12-sci)"/>
+      <text x="240" y="56" text-anchor="middle" class="lbl-xs" fill="#a83a4a" font-weight="700">F (입자 사이 힘)</text>
+    </g>
+
+    <!-- 핵심 -->
+    <g transform="translate(60, 332)">
+      <text x="0" y="0" class="lbl-xs" fill="#1f5582" font-weight="700">→ 세계는 입자 단위로 분리 가능. 공간은 무대일 뿐.</text>
+      <text x="0" y="18" class="lbl-xs">절대 공간 + 절대 시간 위에 입자들이 놓이고, 입자 간 힘으로 모든 운동 설명</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 3 · 광학으로 확장된 뉴턴주의
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="620" y="150" width="540" height="240" rx="6" class="sci-bg sci-st" stroke-width="1.5"/>
+    <rect x="620" y="150" width="540" height="34" rx="6" class="sci"/>
+    <text x="640" y="174" class="lbl-strong" fill="#f5f1e8">② 광학으로 확장 — 빛도 입자다 (뉴턴주의)</text>
+
+    <!-- 빛이 입자처럼 직진 -->
+    <g transform="translate(640, 220)">
+      <text x="0" y="0" class="lbl-strong" fill="#1f5582">빛 = 무게 없는 입자</text>
+
+      <!-- 빛 입자 직진 -->
+      <g transform="translate(0, 30)">
+        <text x="0" y="0" class="lbl-xs">직진</text>
+        <circle cx="40" cy="20" r="4" class="sci"/>
+        <circle cx="80" cy="20" r="4" class="sci"/>
+        <circle cx="120" cy="20" r="4" class="sci"/>
+        <circle cx="160" cy="20" r="4" class="sci"/>
+        <line x1="180" y1="20" x2="220" y2="20" class="sci-st" stroke-width="1.4" marker-end="url(#ar12-sci)"/>
+      </g>
+
+      <!-- 반사 -->
+      <g transform="translate(0, 74)">
+        <text x="0" y="0" class="lbl-xs">반사</text>
+        <line x1="40" y1="0" x2="220" y2="0" stroke="#7a6f5f" stroke-width="1.6"/>
+        <line x1="40" y1="-12" x2="120" y2="0" class="sci-st" stroke-width="1.4" marker-end="url(#ar12-sci)"/>
+        <line x1="120" y1="0" x2="200" y2="-12" class="sci-st" stroke-width="1.4" marker-end="url(#ar12-sci)"/>
+      </g>
+
+      <!-- 굴절 -->
+      <g transform="translate(280, 30)">
+        <text x="0" y="0" class="lbl-xs">굴절</text>
+        <rect x="0" y="-10" width="160" height="60" fill="rgba(31,85,130,0.15)"/>
+        <line x1="-20" y1="-30" x2="60" y2="-10" class="sci-st" stroke-width="1.4"/>
+        <line x1="60" y1="-10" x2="140" y2="40" class="sci-st" stroke-width="1.4" marker-end="url(#ar12-sci)"/>
+      </g>
+    </g>
+
+    <text x="640" y="346" class="lbl-xs" fill="#1f5582" font-weight="700">→ 입자 중심 자연관(뉴턴주의)이 18세기까지 물리학을 지배</text>
+  </g>
+
+  <!-- ===========================================================
+       Step 4 · 패러데이의 장(場) 개념
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="410" width="540" height="240" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <rect x="40" y="410" width="540" height="34" rx="6" class="hum"/>
+    <text x="60" y="434" class="lbl-strong" fill="#f5f1e8">③ 패러데이 — 공간 자체가 실재의 일부 (장 場)</text>
+
+    <!-- 장(field) 시각화 -->
+    <g transform="translate(300, 540)">
+      <!-- 그라디언트 장 -->
+      <circle r="100" fill="url(#field-grad)"/>
+
+      <!-- 자기력선 -->
+      <g fill="none" class="hum-st" stroke-width="1.2">
+        <path d="M -80 0 Q 0 -60 80 0 Q 0 60 -80 0"/>
+        <path d="M -110 0 Q 0 -80 110 0 Q 0 80 -110 0" opacity="0.6"/>
+        <path d="M -50 0 Q 0 -40 50 0 Q 0 40 -50 0" opacity="0.85"/>
+      </g>
+
+      <!-- 자석 (중앙) -->
+      <rect x="-30" y="-10" width="60" height="20" rx="2" fill="#a83a4a"/>
+      <rect x="-30" y="-10" width="30" height="20" rx="2" fill="#5e548e"/>
+      <text x="-15" y="3" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">N</text>
+      <text x="15" y="3" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">S</text>
+
+      <!-- 멀리 있는 입자 -->
+      <circle cx="120" cy="-30" r="6" fill="#1a1612"/>
+      <text x="120" y="-44" text-anchor="middle" class="lbl-xs">입자</text>
+
+      <text x="-130" y="-100" class="lbl-xs" fill="#5e548e" font-weight="700">공간 전체가 장</text>
+    </g>
+
+    <text x="60" y="634" class="lbl-xs" fill="#5e548e" font-weight="700">→ 입자 사이가 아닌 공간에 퍼진 연속체(장)가 매개가 되어 멀리까지 힘 전달</text>
+  </g>
+
+  <!-- ===========================================================
+       Step 5 · 맥스웰의 수학화
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="620" y="410" width="540" height="240" rx="6" class="hum-bg2 hum-st" stroke-width="1.5"/>
+    <rect x="620" y="410" width="540" height="34" rx="6" class="hum"/>
+    <text x="640" y="434" class="lbl-strong" fill="#f5f1e8">④ 맥스웰 — 패러데이를 수학으로 정리 + 전자기파 예견</text>
+
+    <!-- 방정식들 -->
+    <g transform="translate(640, 460)">
+      <rect x="0" y="0" width="500" height="100" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">맥스웰 방정식 (정성적 표현)</text>
+      <text x="14" y="44" class="formula">∇·E = ρ/ε₀     ∇·B = 0</text>
+      <text x="14" y="66" class="formula">∇×E = −∂B/∂t   ∇×B = μ₀J + μ₀ε₀ ∂E/∂t</text>
+      <text x="14" y="86" class="lbl-xs" fill="#5e548e" font-weight="700">→ 전기와 자기가 서로를 만들어 내며 공간으로 전파</text>
+    </g>
+
+    <!-- 전자기파 -->
+    <g transform="translate(640, 580)">
+      <text x="0" y="0" class="lbl-strong" fill="#5e548e">전자기파 (예견)</text>
+      <!-- 전기장 (위) -->
+      <path d="M 0 30 Q 30 10 60 30 T 120 30 T 180 30 T 240 30" fill="none" stroke="#1f5582" stroke-width="1.6"/>
+      <text x="246" y="34" class="lbl-xs" fill="#1f5582">E</text>
+      <!-- 자기장 (아래) -->
+      <path d="M 0 50 Q 30 70 60 50 T 120 50 T 180 50 T 240 50" fill="none" stroke="#a83a4a" stroke-width="1.6"/>
+      <text x="246" y="54" class="lbl-xs" fill="#a83a4a">B</text>
+      <!-- 진행 방향 -->
+      <line x1="276" y1="40" x2="316" y2="40" class="hum-st" stroke-width="1.6" marker-end="url(#ar12-hum)"/>
+      <text x="296" y="32" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">전파</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 6 · 헤르츠의 검증과 빛=전자기파
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="40" y="670" width="1120" height="220" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="698" class="lbl-head" fill="#5e548e">⑤ 헤르츠의 검증 — 연속체적 실재 개념의 결정적 증거</text>
+
+    <!-- 좌: 헤르츠 실험 -->
+    <g transform="translate(80, 740)">
+      <rect x="0" y="0" width="380" height="120" rx="4" class="paper rule" stroke-width="1.2"/>
+      <text x="14" y="22" class="lbl-strong">헤르츠의 실험 (1880년대)</text>
+      <text x="14" y="42" class="lbl-sm">맥스웰이 예견한 전자기파를 실제로 발견</text>
+
+      <!-- 송신·수신 회로 -->
+      <g transform="translate(40, 80)">
+        <rect x="0" y="-10" width="40" height="20" class="paper2 ink" stroke-width="1"/>
+        <text x="20" y="3" text-anchor="middle" class="lbl-xs">송신</text>
+        <line x1="40" y1="0" x2="160" y2="0" class="hum-st" stroke-width="1.4" stroke-dasharray="2 2"/>
+        <path d="M 60 0 Q 80 -8 100 0 T 140 0" fill="none" class="hum-st" stroke-width="1.4"/>
+        <rect x="160" y="-10" width="40" height="20" class="paper2 ink" stroke-width="1"/>
+        <text x="180" y="3" text-anchor="middle" class="lbl-xs">수신</text>
+        <text x="100" y="-18" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">전자기파</text>
+      </g>
+
+      <text x="14" y="116" class="lbl-xs" fill="#5e548e" font-weight="700">성질이 맥스웰 예견과 일치 → 결정적 증거</text>
+    </g>
+
+    <!-- 우: 빛도 전자기파 -->
+    <g transform="translate(500, 740)">
+      <rect x="0" y="0" width="640" height="120" rx="4" class="hum-bg2 hum-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#5e548e">결과 — 자연관의 거대한 전환</text>
+      <text x="14" y="44" class="lbl-sm">· 빛 = 일종의 전자기파임이 밝혀짐</text>
+      <text x="14" y="62" class="lbl-sm">· 입자 중심 뉴턴주의 광학 → 한계 노출</text>
+      <text x="14" y="80" class="lbl-sm">· 패러데이·맥스웰의 연속체적 실재 개념 → 정설</text>
+      <text x="14" y="106" class="quote">단, 양자역학 등장 → 빛은 입자성·파동성 동시 → 또 한 번 변천</text>
+    </g>
+  </g>
+
+  <text x="1160" y="990" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 과학·기술 · 218쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1000" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1000" width="1120" height="32" rx="6" fill="#1f5582"/>
+    <text x="60" y="1022" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1022" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">6개 항목</text>
+    <line x1="40" y1="1034" x2="1160" y2="1034" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1050" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#1f5582">물리적 실재 개념</text>
+    <text x="240" y="1050" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">감각 너머의 세계가 무엇으로 이루어져 있는지에 대한 답. 시대에 따라 변천해 온 핵심 개념이다.</text>
+    <line x1="40" y1="1064" x2="1160" y2="1064" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1080" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#1f5582">뉴턴의 실재 개념</text>
+    <text x="240" y="1080" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">절대 공간·절대 시간 위의 입자들과 그 사이의 힘으로 세계를 이해. 빈 공간과 입자가 분리된다.</text>
+    <line x1="40" y1="1094" x2="1160" y2="1094" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1110" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#1f5582">뉴턴주의의 광학 확장</text>
+    <text x="240" y="1110" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">빛을 무게 없는 입자로 보고 직진·반사·굴절을 입자 운동으로 설명. 18세기까지 지배적이었다.</text>
+    <line x1="40" y1="1124" x2="1160" y2="1124" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1140" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#1f5582">패러데이의 장(場)</text>
+    <text x="240" y="1140" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">공간 자체에 연속적으로 퍼진 장이 입자에 힘을 매개. 공간이 더 이상 비어 있는 무대가 아니다.</text>
+    <line x1="40" y1="1154" x2="1160" y2="1154" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1170" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#1f5582">맥스웰의 수학화</text>
+    <text x="240" y="1170" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">패러데이의 직관을 방정식으로 정리하고, 전기와 자기가 서로 만들어 내며 전파되는 전자기파를 예견했다.</text>
+  </g>
+</svg>

@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1420" data-app role="img" aria-labelledby="t32 d32">
+  <title id="t32">법적 관점에서 본 혼인 — 두 요건과 정리 방식</title>
+  <desc id="d32">법률혼주의에서 출발해 실질적 요건·형식적 요건의 두 축, 무효 vs 취소 사유, 그리고 이혼(협의·재판상)의 분류 구조.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f5f9f8}
+      .panel{fill:#ffffff;stroke:#c4dcd5;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#3e5953}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a6f6f}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#3e5953}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#436963}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#7d9994;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar32" viewBox="0 0 1200 1420" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a6f6f"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="1200"/>
+
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">법적 관점에서 본 혼인 — 두 요건과 정리 방식</text>
+  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회·문화 · 분류</text>
+
+  <!-- Scene 1: 법률혼주의 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">법률혼주의 — 법적 절차에 따른 혼인 성립</text>
+    <text x="64" y="166" class="small">사회적 관습(예식)만으로 혼인을 인정하던 과거에서, 법적 안정성과 사회적 신뢰를 위해 절차주의로 전환.</text>
+
+    <rect class="panel" x="64" y="184" width="1072" height="84" rx="10"/>
+    <rect x="64" y="184" width="6" height="84" fill="#2a6f6f"/>
+    <text x="84" y="212" class="lab">대부분의 현대 국가가 채택</text>
+    <text x="84" y="236" class="small">→ 법에서 규정한 절차에 따라 혼인이 성립</text>
+    <text x="84" y="258" class="it" fill="#2a6f6f">두 요건(실질적 + 형식적) 모두 충족돼야 법률혼이 된다.</text>
+  </g>
+
+  <!-- Scene 2: 실질적 요건 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="312" class="num">2</text>
+    <text x="92" y="312" class="bd">실질적 요건 — 의사·연령·친족 관계</text>
+
+    <g>
+      <rect class="panel" x="64" y="330" width="346" height="158" rx="10"/>
+      <rect x="64" y="330" width="346" height="36" rx="10" fill="#2a6f6f"/>
+      <text x="84" y="354" class="pill">① 혼인 의사의 합치</text>
+      <text x="84" y="392" class="small">부부 관계를 성립하겠다는</text>
+      <text x="84" y="412" class="small">의사가 당사자 간 일치</text>
+      <text x="84" y="442" class="it" fill="#2a6f6f">가장 중요한 핵심 요건</text>
+      <text x="84" y="472" class="small">결여 시 → 무효</text>
+
+      <rect class="panel" x="424" y="330" width="346" height="158" rx="10"/>
+      <rect x="424" y="330" width="346" height="36" rx="10" fill="#2a6f6f"/>
+      <text x="444" y="354" class="pill">② 적정 연령 도달</text>
+      <text x="444" y="392" class="small">법정 혼인 가능 연령에</text>
+      <text x="444" y="412" class="small">도달해야 함</text>
+      <text x="444" y="442" class="it" fill="#2a6f6f">미성년자 — 부모·법정대리인 동의</text>
+      <text x="444" y="472" class="small">결여 시 → 취소 사유</text>
+
+      <rect class="panel" x="784" y="330" width="352" height="158" rx="10"/>
+      <rect x="784" y="330" width="352" height="36" rx="10" fill="#2a6f6f"/>
+      <text x="804" y="354" class="pill">③ 친족 관계 제한</text>
+      <text x="804" y="392" class="small">일정한 친족 관계 내에서는</text>
+      <text x="804" y="412" class="small">혼인이 금지</text>
+      <text x="804" y="442" class="it" fill="#2a6f6f">근친혼 방지</text>
+      <text x="804" y="472" class="small">위반 시 → 무효</text>
+    </g>
+  </g>
+
+  <!-- Scene 3: 형식적 요건 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="540" class="num">3</text>
+    <text x="92" y="540" class="bd">형식적 요건 — 혼인 신고의 ‘수리’</text>
+    <text x="64" y="566" class="small">혼인 신고서를 관련 기관에 제출하고 ‘접수 및 수리’가 완료되어야 법적 효력 발생.</text>
+
+    <g>
+      <rect x="64" y="584" width="200" height="56" rx="10" fill="#eaf3f1" stroke="#bcd4cf"/>
+      <text x="164" y="612" class="lab" text-anchor="middle">두 요건 충족</text>
+      <text x="164" y="630" class="small" text-anchor="middle">실질 + 형식</text>
+
+      <line x1="272" y1="612" x2="312" y2="612" stroke="#2a6f6f" stroke-width="2.4" marker-end="url(#ar32)"/>
+
+      <rect x="320" y="584" width="200" height="56" rx="10" fill="#eaf3f1" stroke="#bcd4cf"/>
+      <text x="420" y="612" class="lab" text-anchor="middle">혼인 신고서 제출</text>
+      <text x="420" y="630" class="small" text-anchor="middle">관련 기관에</text>
+
+      <line x1="528" y1="612" x2="568" y2="612" stroke="#2a6f6f" stroke-width="2.4" marker-end="url(#ar32)"/>
+
+      <rect x="576" y="584" width="200" height="56" rx="10" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1.4"/>
+      <text x="676" y="612" class="lab" text-anchor="middle" fill="#2a6f6f">접수 + 수리</text>
+      <text x="676" y="630" class="small" text-anchor="middle">‘제출’만으로는 부족!</text>
+
+      <line x1="784" y1="612" x2="824" y2="612" stroke="#2a6f6f" stroke-width="2.4" marker-end="url(#ar32)"/>
+
+      <rect x="832" y="584" width="304" height="56" rx="10" fill="#2a6f6f"/>
+      <text x="984" y="612" class="lab" fill="#ffffff" text-anchor="middle">법적 효력 발생</text>
+      <text x="984" y="630" class="small" fill="#cfe5e1" text-anchor="middle">법적 배우자 지위 + 4촌 인척 관계</text>
+    </g>
+
+    <text x="84" y="668" class="it">→ 부부 간 권리·의무 발생, 4촌 이내 혈족 및 그 배우자와 인척 관계 형성</text>
+  </g>
+
+  <!-- Scene 4: 무효 vs 취소 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="720" class="num">4</text>
+    <text x="92" y="720" class="bd">정리 방식 ① — 무효 vs 취소</text>
+    <text x="64" y="746" class="small">혼인은 평생의 약속으로 원칙적으로 해소 불가. 단, 성립 요건 결여 시 소송과 법원 판결로 정리.</text>
+
+    <g>
+      <rect class="panel" x="64" y="764" width="528" height="156" rx="10" stroke="#a83a4a" stroke-width="1.4" fill="#fbf2f4"/>
+      <text x="84" y="792" class="lab" fill="#a83a4a">무효 사유</text>
+      <line x1="84" y1="804" x2="572" y2="804" stroke="#fbe6e9" stroke-width="1"/>
+      <text x="84" y="828" class="small">· 혼인 의사 합치 부재</text>
+      <text x="84" y="850" class="small">· 일정 친족 관계 내 혼인</text>
+      <text x="84" y="884" class="it" fill="#a83a4a">→ 처음부터 없었던 것으로(소급 효력)</text>
+
+      <rect class="panel" x="608" y="764" width="528" height="156" rx="10" stroke="#8b6f47" stroke-width="1.4" fill="#fff8ec"/>
+      <text x="628" y="792" class="lab" fill="#8b6f47">취소 사유</text>
+      <line x1="628" y1="804" x2="1116" y2="804" stroke="#f0e3cb" stroke-width="1"/>
+      <text x="628" y="828" class="small">· 적정 연령 미달 / 미성년자 무동의</text>
+      <text x="628" y="850" class="small">· 중혼 등 중대 사유 부지(不知)</text>
+      <text x="628" y="872" class="small">· 사기·강박에 의한 의사 표시</text>
+      <text x="628" y="900" class="it" fill="#8b6f47">→ 판결 시점부터 효력 상실(장래 효력)</text>
+    </g>
+  </g>
+
+  <!-- Scene 5: 취소 사유 세부 -->
+  <g class="reveal" data-reveal-step="5">
+    <text x="64" y="966" class="num">5</text>
+    <text x="92" y="966" class="bd">취소 사유의 네 가지 세부</text>
+
+    <g>
+      <rect x="64" y="984" width="260" height="64" rx="10" fill="#fff8ec" stroke="#d8c595" stroke-width="1"/>
+      <text x="84" y="1010" class="lab">① 적정 연령 미달</text>
+      <text x="84" y="1032" class="small">법정 연령에 도달하지 못함</text>
+
+      <rect x="336" y="984" width="260" height="64" rx="10" fill="#fff8ec" stroke="#d8c595" stroke-width="1"/>
+      <text x="356" y="1010" class="lab">② 미성년 무동의</text>
+      <text x="356" y="1032" class="small">동의 없이 미성년자가 혼인</text>
+
+      <rect x="608" y="984" width="260" height="64" rx="10" fill="#fff8ec" stroke="#d8c595" stroke-width="1"/>
+      <text x="628" y="1010" class="lab">③ 중대 사유 부지</text>
+      <text x="628" y="1032" class="small">중혼 등 사정 알지 못한 경우</text>
+
+      <rect x="880" y="984" width="256" height="64" rx="10" fill="#fff8ec" stroke="#d8c595" stroke-width="1"/>
+      <text x="900" y="1010" class="lab">④ 사기·강박</text>
+      <text x="900" y="1032" class="small">의사 표시가 자유롭지 못함</text>
+    </g>
+  </g>
+
+  <!-- Scene 6: 이혼 -->
+  <g class="reveal" data-reveal-step="6">
+    <text x="64" y="1098" class="num">6</text>
+    <text x="92" y="1098" class="bd">정리 방식 ② — 이혼 (적법한 혼인의 종료)</text>
+
+    <g>
+      <rect x="64" y="1116" width="528" height="64" rx="10" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1.4"/>
+      <text x="84" y="1142" class="lab" fill="#2a6f6f">협의 이혼</text>
+      <text x="84" y="1164" class="small">당사자 간 합의에 의한 이혼 + 이혼 신고</text>
+
+      <rect x="608" y="1116" width="528" height="64" rx="10" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1.4"/>
+      <text x="628" y="1142" class="lab" fill="#2a6f6f">재판상 이혼</text>
+      <text x="628" y="1164" class="small">법원의 판결에 의한 이혼 + 이혼 신고로 절차 완료</text>
+    </g>
+  </g>
+
+  <text x="1140" y="1184" class="wm" text-anchor="end">EBS 2027 · 사회·문화 · 132쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1200" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1200" width="1120" height="32" rx="6" fill="#2a6f6f"/>
+    <text x="60" y="1222" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1222" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1234" x2="1160" y2="1234" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1250" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">법률혼주의</text>
+    <text x="240" y="1250" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">법에서 규정한 절차에 따라 혼인 성립을 인정하는 제도. 법적 안정성과 사회적 신뢰가 목적이다.</text>
+    <line x1="40" y1="1264" x2="1160" y2="1264" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1280" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">실질적 요건</text>
+    <text x="240" y="1280" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">혼인 의사 합치 + 적정 연령(미성년자는 동의) + 일정 친족 관계 내 혼인 금지.</text>
+    <line x1="40" y1="1294" x2="1160" y2="1294" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1310" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">형식적 요건</text>
+    <text x="240" y="1310" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">혼인 신고서 제출과 수리. 법적 배우자 지위와 인척 관계가 형성된다.</text>
+    <line x1="40" y1="1324" x2="1160" y2="1324" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1340" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">무효 vs 취소</text>
+    <text x="240" y="1340" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">혼인 의사 부재·친족 내 혼인은 무효, 연령 미달·사기·강박은 취소. 모두 법원 판결이 필요하다.</text>
+    <line x1="40" y1="1354" x2="1160" y2="1354" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1370" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">이혼</text>
+    <text x="240" y="1370" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">적법한 혼인의 관계를 종료시키는 제도. 협의 이혼과 재판상 이혼이 있으며, 이혼 신고로 완료된다.</text>
+  </g>
+</svg>

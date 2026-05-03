@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1300" role="img" aria-labelledby="t046 d046">
+  <title id="t046">건축물과 공간</title>
+  <desc id="d046">(가) 건축 설계의 두 핵심인 건축 구조(정하중·활하중을 지탱하는 내력)와 건축 재료(내력뿐 아니라 단열·방수·수명·감성에 영향)의 과학적 측면, 그리고 칼라트라바의 밀워키 아트 뮤지엄처럼 구조 자체가 조형미가 되는 현대 건축, (나) 르페브르가 제시한 사회적 산물로서의 공간 개념과 세 가지 공간(지각된 공간·개념화된 공간·체험된 공간), 자본주의 사회의 모순 공간과 시민 실천이 만드는 차이 공간까지를 좌우 대비로 시각화한다.</desc>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .sci { fill: #1f5582; }
+    .sci-st { stroke: #1f5582; }
+    .sci-bg { fill: rgba(31,85,130,0.08); }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- (가) 헤더 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="36" rx="6" class="sci"/>
+    <text x="60" y="54" class="lbl-strong" fill="#f5f1e8">(가) 건축의 물리적 측면 — 구조와 재료의 과학</text>
+  </g>
+
+  <!-- Step 1 · 건축 설계 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="80" width="1120" height="80" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="108" class="lbl-head">건축 설계 = 과학 + 예술</text>
+    <text x="60" y="134" class="lbl-sm">구조적 안정성 + 기능적 효율성 + 미적 가치 → 핵심 두 축: <tspan font-weight="700" fill="#1f5582">건축 구조</tspan>와 <tspan font-weight="700" fill="#1f5582">건축 재료</tspan></text>
+  </g>
+
+  <!-- Step 2 · 하중과 내력 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="180" width="540" height="200" rx="6" class="sci-bg sci-st" stroke-width="1.5"/>
+    <text x="60" y="208" class="lbl-strong" fill="#1f5582">건축 구조 — 하중과 내력</text>
+
+    <g transform="translate(60, 230)">
+      <rect x="0" y="0" width="240" height="60" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700">정하중</text>
+      <text x="14" y="42" class="lbl-xs">건축물 자체의 영구적 무게</text>
+      <text x="14" y="56" class="lbl-xs" fill="#7a6f5f">기둥·보·슬래브·벽체</text>
+
+      <rect x="260" y="0" width="240" height="60" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700" transform="translate(260,0)">활하중</text>
+      <text x="14" y="42" class="lbl-xs" transform="translate(260,0)">일시적·가변적 무게</text>
+      <text x="14" y="56" class="lbl-xs" fill="#7a6f5f" transform="translate(260,0)">사람·가구·차량</text>
+
+      <rect x="0" y="80" width="500" height="50" rx="4" class="sci"/>
+      <text x="250" y="100" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">정하중 + 활하중을 지탱할 내력 필요</text>
+      <text x="250" y="118" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">건축물의 기본 요건</text>
+    </g>
+  </g>
+
+  <!-- Step 3 · 건축 재료 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="620" y="180" width="540" height="200" rx="6" class="sci-bg sci-st" stroke-width="1.5"/>
+    <text x="640" y="208" class="lbl-strong" fill="#1f5582">건축 재료 — 다층적 영향</text>
+
+    <g transform="translate(640, 230)">
+      <rect x="0" y="0" width="240" height="60" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700">대표 재료</text>
+      <text x="14" y="42" class="lbl-xs">콘크리트 / 강철 /</text>
+      <text x="14" y="56" class="lbl-xs">목재 / 유리</text>
+
+      <rect x="260" y="0" width="240" height="60" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700" transform="translate(260,0)">물성 기준</text>
+      <text x="14" y="42" class="lbl-xs" transform="translate(260,0)">압축·인장 강도</text>
+      <text x="14" y="56" class="lbl-xs" transform="translate(260,0)">열전도율</text>
+
+      <rect x="0" y="80" width="500" height="50" rx="4" class="sci"/>
+      <text x="250" y="98" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">내력 + 단열·방수 + 수명·효율 + 감성까지 영향</text>
+    </g>
+  </g>
+
+  <!-- Step 4 · 현대 건축 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="400" width="1120" height="100" rx="6" class="paper2 ink" stroke-width="1"/>
+    <text x="60" y="428" class="lbl-strong">현대 건축 — 구조와 재료의 조화 = 조형미</text>
+    <text x="60" y="452" class="lbl-sm">칼라트라바의 밀워키 아트 뮤지엄: 트러스 구조의 차양이 새의 날개처럼 접히고 펼쳐짐</text>
+    <text x="60" y="476" class="lbl-xs" fill="#1f5582" font-weight="700">→ 건축 구조 자체가 미적 표현이 되는 사례</text>
+  </g>
+
+  <!-- (나) 헤더 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="520" width="1120" height="36" rx="6" class="hum"/>
+    <text x="60" y="544" class="lbl-strong" fill="#f5f1e8">(나) 르페브르 — 사회적 산물로서의 공간</text>
+  </g>
+
+  <!-- Step 5 · 사회적 공간 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="570" width="1120" height="80" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="598" class="lbl-head" fill="#5e548e">공간은 배경이 아니라 사회적 산물</text>
+    <text x="60" y="622" class="lbl-sm">인간 실천 + 권력 + 자본이 작용하는 방식에 따라 공간이 구성된다</text>
+    <text x="60" y="640" class="lbl-xs" fill="#5e548e">→ 르페브르는 이를 설명하기 위해 <tspan font-weight="700">세 가지 공간</tspan> 개념을 제시</text>
+  </g>
+
+  <!-- Step 6 · 세 가지 공간 -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="40" y="670" width="1120" height="180" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="698" class="lbl-head">세 가지 공간</text>
+
+    <g transform="translate(60, 720)">
+      <rect x="0" y="0" width="340" height="110" rx="4" class="hum-bg hum-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#5e548e">지각된 공간</text>
+      <text x="14" y="44" class="lbl-sm">실제로 살아가며 사용하는</text>
+      <text x="14" y="62" class="lbl-sm">물리적 공간</text>
+      <text x="14" y="84" class="lbl-xs" fill="#5e548e" font-weight="700">일상 반복적 행위</text>
+      <text x="14" y="100" class="lbl-xs">사회적 관습 행위가 일어나는 환경</text>
+
+      <rect x="360" y="0" width="340" height="110" rx="4" class="hum-bg hum-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#5e548e" transform="translate(360,0)">개념화된 공간</text>
+      <text x="14" y="44" class="lbl-sm" transform="translate(360,0)">전문가들이 도면·기호·이론으로</text>
+      <text x="14" y="62" class="lbl-sm" transform="translate(360,0)">추상적으로 만든 공간</text>
+      <text x="14" y="84" class="lbl-xs" fill="#5e548e" font-weight="700" transform="translate(360,0)">건축가·도시 계획가·기술자</text>
+      <text x="14" y="100" class="lbl-xs" transform="translate(360,0)">설계도면 위의 공간</text>
+
+      <rect x="720" y="0" width="340" height="110" rx="4" class="hum-bg2 hum-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#5e548e" transform="translate(720,0)">체험된 공간</text>
+      <text x="14" y="44" class="lbl-sm" transform="translate(720,0)">거주자의 감정·상상·기억이</text>
+      <text x="14" y="62" class="lbl-sm" transform="translate(720,0)">결합되어 의미가 부여된 공간</text>
+      <text x="14" y="84" class="lbl-xs" fill="#5e548e" font-weight="700" transform="translate(720,0)">실제 거주자의 시선</text>
+      <text x="14" y="100" class="lbl-xs" transform="translate(720,0)">기억과 의미의 층</text>
+    </g>
+  </g>
+
+  <!-- Step 7 · 모순 공간 -->
+  <g class="reveal" data-reveal-step="7">
+    <rect x="40" y="870" width="540" height="160" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="898" class="lbl-strong" fill="#a83a4a">모순 공간 — 자본주의 비판</text>
+    <text x="60" y="920" class="lbl-sm">현대 자본주의 공간은 중립적이지 않음</text>
+    <text x="60" y="938" class="lbl-sm">권력·자본에 의한 지배 공간으로 기획</text>
+
+    <text x="60" y="970" class="lbl-xs">표면: 효율과 발전 추구</text>
+    <text x="60" y="988" class="lbl-xs" fill="#a83a4a" font-weight="700">실제: 거주자 체험 배제 + 자본 이익 우선</text>
+    <text x="60" y="1006" class="lbl-xs">예: 도시 개발·신도시 설계</text>
+  </g>
+
+  <!-- Step 8 · 차이 공간 -->
+  <g class="reveal" data-reveal-step="8">
+    <rect x="620" y="870" width="540" height="160" rx="6" class="hum-bg2 hum-st" stroke-width="1.5"/>
+    <text x="640" y="898" class="lbl-strong" fill="#5e548e">차이 공간 — 시민의 권리</text>
+    <text x="640" y="920" class="lbl-sm">모든 사람에게 자기 삶의 공간에 접근·참여할</text>
+    <text x="640" y="938" class="lbl-sm">권리, 공간을 바꿀 권리가 있다</text>
+
+    <text x="640" y="970" class="lbl-xs" fill="#5e548e" font-weight="700">시민의 일상적 실천 + 감각적 경험</text>
+    <text x="640" y="988" class="lbl-xs">→ 공간을 탈영토화시킬 수 있다</text>
+    <text x="640" y="1006" class="lbl-xs" fill="#5e548e" font-weight="700">→ 자본·권력에 통제되지 않는 차이 공간 가능</text>
+  </g>
+
+  <text x="1160" y="1070" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 주제 통합 · 250쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1080" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#5e548e"/>
+    <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">하중과 내력</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">정하중(영구)과 활하중(가변)을 모두 지탱할 내력이 건축물의 기본 요건이다.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">건축 재료의 다층 영향</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">내력뿐 아니라 단열·방수·수명·감성에까지 영향을 미친다.</text>
+    <line x1="40" y1="1174" x2="1160" y2="1174" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1190" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">르페브르의 세 공간</text>
+    <text x="240" y="1190" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">지각된 공간(일상 물리적), 개념화된 공간(전문가 추상적), 체험된 공간(감정·기억 결합).</text>
+    <line x1="40" y1="1204" x2="1160" y2="1204" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1220" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">모순 공간</text>
+    <text x="240" y="1220" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">효율을 표방하면서 거주자 체험을 배제하고 자본 이익을 우선시하는 공간.</text>
+    <line x1="40" y1="1234" x2="1160" y2="1234" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1250" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">차이 공간</text>
+    <text x="240" y="1250" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">시민의 일상적 실천으로 자본·권력 통제에서 벗어나 만들어지는 공간.</text>
+  </g>
+</svg>

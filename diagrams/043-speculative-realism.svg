@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1240" role="img" aria-labelledby="t043 d043">
+  <title id="t043">사변적 실재론과 그 비판</title>
+  <desc id="d043">20세기 후반 구조주의·포스트구조주의의 영향으로 등장한 상관주의(주체와 대상의 불가분성을 강조)에서 출발해, (가) 사변적 실재론이 인간 중심 편견을 비판하며 인식 주체와 무관한 실재를 사변적으로 사유한다는 입장(브라시에의 소멸 개념과 메이야수의 사실론성·우연성 원리), (나) 가브리엘이 사변적 실재론의 단일·외재적 실재 개념이 독단적이라며 다양한 '의미의 장' 속에서만 파악된다고 비판하는 입장과 페라리스가 실재를 철학 외부에 두면 사유할 언어적 정당성을 잃는다고 비판하는 입장을 좌우 대비로 시각화한다.</desc>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 12px; font-style: italic; fill: #5e548e; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1 · 상관주의 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="110" rx="6" class="paper2 rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">상관주의 — 사변적 실재론의 비판 대상</text>
+    <text x="60" y="86" class="lbl">20세기 후반 구조주의·포스트구조주의 영향: 주체와 대상은 <tspan font-weight="700">불가분의 관계</tspan></text>
+    <text x="60" y="108" class="lbl-sm" fill="#7a6f5f">→ 인식 주체의 관점을 벗어난 실재 자체에 대한 논의는 사실상 불가능</text>
+    <text x="60" y="130" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 비판자들: "철학을 인간 중심 편견에 가둔다"</text>
+  </g>
+
+  <!-- (가) 사변적 실재론 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="160" width="540" height="36" rx="6" class="hum"/>
+    <text x="60" y="184" class="lbl-strong" fill="#f5f1e8">(가) 사변적 실재론 — 상관주의 비판</text>
+
+    <rect x="40" y="200" width="540" height="160" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="226" class="lbl-strong" fill="#5e548e">핵심 주장</text>
+    <text x="60" y="246" class="lbl-sm">인식 주체와 무관하게 존재하는 실재가 있다</text>
+    <text x="60" y="264" class="lbl-sm">철학은 그것을 사변적으로 사유할 수 있어야 한다</text>
+    <text x="60" y="290" class="lbl-strong">사변(speculation)이란?</text>
+    <text x="60" y="310" class="lbl-sm">경험적 검증을 넘어서 이성을 통해 실재를 사유하는 태도</text>
+    <text x="60" y="340" class="lbl-xs" fill="#5e548e" font-weight="700">→ 인간 중심을 넘어 실재 자체로 향함</text>
+  </g>
+
+  <!-- Step 3 · 브라시에 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="380" width="540" height="160" rx="6" class="hum-bg2 hum-st" stroke-width="1.5"/>
+    <text x="60" y="408" class="lbl-strong" fill="#5e548e">브라시에 — 소멸 개념</text>
+    <text x="60" y="428" class="lbl-sm">실재 = 인간의 의미 구성 능력을 넘어서는 사건들</text>
+
+    <g transform="translate(60, 450)">
+      <rect x="0" y="0" width="240" height="60" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="120" y="22" text-anchor="middle" class="lbl-sm" font-weight="700">우주의 소멸</text>
+      <text x="120" y="42" text-anchor="middle" class="lbl-xs">인간 의미로 환원 불가</text>
+
+      <rect x="260" y="0" width="220" height="60" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="370" y="22" text-anchor="middle" class="lbl-sm" font-weight="700">생명체의 멸종</text>
+      <text x="370" y="42" text-anchor="middle" class="lbl-xs">객관적 실재의 일례</text>
+    </g>
+  </g>
+
+  <!-- Step 4 · 메이야수 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="560" width="540" height="160" rx="6" class="hum-bg2 hum-st" stroke-width="1.5"/>
+    <text x="60" y="588" class="lbl-strong" fill="#5e548e">메이야수 — 사실론성의 원리</text>
+    <text x="60" y="608" class="lbl-sm">실재 = 필연성과 우연성의 관점에서 해석</text>
+
+    <g transform="translate(60, 626)">
+      <rect x="0" y="0" width="500" height="80" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">사실론성의 원리</text>
+      <text x="14" y="42" class="lbl-sm">"어떤 존재도 필연적으로 존재하지 않는다"</text>
+      <text x="14" y="60" class="lbl-sm">모든 것은 어떤 이유도 없이 단지 우연적으로 사실로서 그러할 뿐</text>
+      <text x="14" y="76" class="lbl-xs" fill="#5e548e" font-weight="700">→ 절대적 우연성 차원에서 실재를 본다</text>
+    </g>
+  </g>
+
+  <!-- (나) 가브리엘·페라리스 비판 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="620" y="160" width="540" height="36" rx="6" class="acc"/>
+    <text x="640" y="184" class="lbl-strong" fill="#f5f1e8">(나) 사변적 실재론에 대한 비판</text>
+
+    <rect x="620" y="200" width="540" height="160" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="640" y="226" class="lbl-strong" fill="#a83a4a">평가의 양면</text>
+    <text x="640" y="246" class="lbl-sm">긍정: 철학 담론의 지평을 넓혔다</text>
+    <text x="640" y="264" class="lbl-sm" fill="#a83a4a" font-weight="700">비판: 주체-실재 분리 입장이 철학적으로 정당한가?</text>
+
+    <text x="640" y="294" class="lbl-strong">두 비판자</text>
+    <text x="640" y="316" class="lbl-sm">① 가브리엘 — 의미의 장 (Step 5)</text>
+    <text x="640" y="334" class="lbl-sm">② 페라리스 — 언어적 매개 (Step 6)</text>
+  </g>
+
+  <!-- Step 5 · 가브리엘 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="620" y="380" width="540" height="160" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="640" y="408" class="lbl-strong" fill="#a83a4a">가브리엘 — 의미의 장</text>
+    <text x="640" y="428" class="lbl-sm">사변적 실재론의 실재 개념이 너무 독단적</text>
+
+    <g transform="translate(640, 446)">
+      <rect x="0" y="0" width="500" height="80" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">대안</text>
+      <text x="14" y="42" class="lbl-sm">실재 = 단일·외재적 실체 X</text>
+      <text x="14" y="62" class="lbl-sm" fill="#a83a4a" font-weight="700">→ 다양한 '의미의 장' 속에 드러나는 방식으로만 파악</text>
+      <text x="14" y="78" class="lbl-xs">맥락에 따라 다른 모습으로 나타남</text>
+    </g>
+  </g>
+
+  <!-- Step 6 · 페라리스 -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="620" y="560" width="540" height="160" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="640" y="588" class="lbl-strong" fill="#a83a4a">페라리스 — 언어적 매개</text>
+    <text x="640" y="608" class="lbl-sm">실재를 철학 외부의 절대적 실체로 두면…</text>
+
+    <g transform="translate(640, 626)">
+      <rect x="0" y="0" width="500" height="80" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">결과</text>
+      <text x="14" y="42" class="lbl-sm" fill="#a83a4a" font-weight="700">→ 그 실재에 대해 사유할 언어적 정당성 상실</text>
+      <text x="14" y="62" class="lbl-sm">실재 접근은 주체-실재 직접 관계 X</text>
+      <text x="14" y="78" class="lbl-xs">언어와 인식의 매개 → 인식론적 조건과 분리 불가</text>
+    </g>
+  </g>
+
+  <!-- 종합 비교 -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="40" y="740" width="1120" height="240" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="768" class="lbl-head">한눈에 보는 대립 구도</text>
+
+    <g transform="translate(60, 790)">
+      <rect x="0" y="0" width="1080" height="30" class="paper2"/>
+      <text x="14" y="20" class="lbl-strong">기준</text>
+      <text x="240" y="20" class="lbl-strong" fill="#5e548e">사변적 실재론 (가)</text>
+      <text x="660" y="20" class="lbl-strong" fill="#a83a4a">비판 진영 (나)</text>
+
+      <line x1="0" y1="30" x2="1080" y2="30" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="14" y="56" class="lbl">실재 위치</text>
+      <text x="240" y="56" class="lbl">주체 인식 너머의 외재적 실재</text>
+      <text x="660" y="56" class="lbl">의미의 장 / 언어적 매개 안에서 드러남</text>
+
+      <line x1="0" y1="68" x2="1080" y2="68" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="94" class="lbl">사유 방식</text>
+      <text x="240" y="94" class="lbl">사변(이성으로 직접 사유)</text>
+      <text x="660" y="94" class="lbl">맥락·인식론적 조건과 결합</text>
+
+      <line x1="0" y1="106" x2="1080" y2="106" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="132" class="lbl">대표 사상가</text>
+      <text x="240" y="132" class="lbl">브라시에(소멸), 메이야수(우연성)</text>
+      <text x="660" y="132" class="lbl">가브리엘(의미의 장), 페라리스(언어 매개)</text>
+
+      <line x1="0" y1="144" x2="1080" y2="144" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="170" class="lbl">상관주의 평가</text>
+      <text x="240" y="170" class="lbl" fill="#5e548e">인간 중심 편견 → 비판</text>
+      <text x="660" y="170" class="lbl" fill="#a83a4a">상관주의의 정당한 핵심을 옹호</text>
+    </g>
+  </g>
+
+  <text x="1160" y="1010" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 주제 통합 · 235쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1020" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1020" width="1120" height="32" rx="6" fill="#5e548e"/>
+    <text x="60" y="1042" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1042" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1054" x2="1160" y2="1054" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1070" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">상관주의</text>
+    <text x="240" y="1070" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">주체와 대상이 불가분의 관계라고 보아 인식 너머의 실재 자체 논의를 불가능하다고 본다.</text>
+    <line x1="40" y1="1084" x2="1160" y2="1084" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1100" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">사변적 실재론</text>
+    <text x="240" y="1100" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">인식 주체와 무관한 실재를 사변적으로 사유할 수 있다는 입장. 상관주의를 비판한다.</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">브라시에 vs 메이야수</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">브라시에는 우주 소멸·멸종 같은 의미로 환원되지 않는 사건을, 메이야수는 절대적 우연성을 실재로 사유한다.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">가브리엘의 비판</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">단일·외재적 실재 개념이 독단적이며, 실재는 다양한 '의미의 장' 속에서만 파악된다.</text>
+    <line x1="40" y1="1174" x2="1160" y2="1174" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1190" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">페라리스의 비판</text>
+    <text x="240" y="1190" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">실재를 철학 외부에 두면 사유할 언어적 정당성을 잃게 되며, 인식론적 매개를 분리할 수 없다.</text>
+  </g>
+</svg>

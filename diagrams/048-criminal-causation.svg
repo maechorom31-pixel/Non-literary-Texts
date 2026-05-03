@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1300" role="img" aria-labelledby="t048 d048">
+  <title id="t048">형사법상의 인과 관계</title>
+  <desc id="d048">(가) 결과의 전체 조건에 포함된 모든 조건을 동등하게 원인으로 보는 조건설과 그 발견 방법인 가설적 소거법, 그리고 단독으로 결과를 낼 수 있는 복수의 독립한 행위가 함께 작용한 택일적 인과 관계 사례에서 조건 공식을 적용하면 모든 행위의 인과 관계가 부정되는 한계, (나) 인과의 본질을 조건적 결합이 아닌 '야기'로 보고 행위와 결과가 일반 법칙에 포섭되는지 확인하는 합법칙적 조건설, 그리고 택일적 인과 관계 사례에서 복수의 독립적 행위 모두가 결과를 야기한 것으로 처리할 수 있는 점을 좌우 대비로 시각화한다.</desc>
+
+  <defs>
+    <marker id="ar48-soc" viewBox="0 0 1200 1300" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a6f6f"/>
+    </marker>
+    <marker id="ar48-acc" viewBox="0 0 1200 1300" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 12px; font-style: italic; fill: #2a6f6f; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .soc { fill: #2a6f6f; }
+    .soc-st { stroke: #2a6f6f; }
+    .soc-bg { fill: rgba(42,111,111,0.08); }
+    .soc-bg2 { fill: rgba(42,111,111,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- (가) 헤더 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="36" rx="6" class="soc"/>
+    <text x="60" y="54" class="lbl-strong" fill="#f5f1e8">(가) 조건설 — 가설적 소거법으로 인과 발견</text>
+  </g>
+
+  <!-- Step 1 · 조건설 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="80" width="540" height="160" rx="6" class="soc-bg soc-st" stroke-width="1.5"/>
+    <text x="60" y="108" class="lbl-strong" fill="#2a6f6f">조건설</text>
+    <text x="60" y="130" class="lbl-sm">결과를 필연적으로 야기하는 전체 조건에 포함된</text>
+    <text x="60" y="148" class="lbl-sm">모든 개별 조건들을 동등하게 결과의 원인으로 인정</text>
+
+    <text x="60" y="180" class="lbl-strong">전제</text>
+    <text x="60" y="200" class="lbl-sm">사건의 원인 = 그 필요조건</text>
+    <text x="60" y="220" class="lbl-xs" fill="#a83a4a">조건 중 하나라도 결여 → 결과 발생 X</text>
+  </g>
+
+  <!-- Step 2-3 · 가설적 소거법 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="620" y="80" width="540" height="160" rx="6" class="soc-bg2 soc-st" stroke-width="1.5"/>
+    <text x="640" y="108" class="lbl-strong" fill="#2a6f6f">가설적 소거법 — 조건 공식</text>
+
+    <g transform="translate(640, 130)">
+      <rect x="0" y="0" width="500" height="40" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="250" y="24" text-anchor="middle" class="lbl-sm" font-weight="700">"선행 사실이 없었다고 가정할 경우</text>
+      <text x="250" y="40" text-anchor="middle" class="lbl-sm" font-weight="700">후행 사실이 발생했을 것인가?"</text>
+    </g>
+
+  </g>
+
+  <!-- Step 3 · 필요조건 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="640" y="200" class="lbl-sm">→ 행위를 제거했을 때 결과가 발생하지 않으면</text>
+    <text x="640" y="220" class="lbl-sm" fill="#2a6f6f" font-weight="700">행위와 결과 사이 인과 관계 인정 (필요조건 충족)</text>
+  </g>
+
+  <!-- Step 4 · 택일적 인과 관계의 한계 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="260" width="1120" height="180" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="288" class="lbl-head" fill="#a83a4a">택일적 인과 관계 — 조건설의 한계</text>
+    <text x="60" y="312" class="lbl-sm">단독으로도 결과를 낼 수 있는 복수의 독립한 행위가 함께 작용한 사례</text>
+
+    <!-- 사례 시각화 -->
+    <g transform="translate(80, 340)">
+      <rect x="0" y="0" width="120" height="50" rx="3" class="acc"/>
+      <text x="60" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">A의 행위</text>
+      <text x="60" y="40" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">단독으로 결과 가능</text>
+
+      <text x="140" y="30" text-anchor="middle" class="lbl-strong" fill="#a83a4a">+</text>
+
+      <rect x="160" y="0" width="120" height="50" rx="3" class="acc"/>
+      <text x="220" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">B의 행위</text>
+      <text x="220" y="40" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">단독으로 결과 가능</text>
+
+      <text x="300" y="30" text-anchor="middle" class="lbl-strong" fill="#a83a4a">→</text>
+
+      <rect x="320" y="0" width="120" height="50" rx="3" class="paper2 acc-st" stroke-width="1.4"/>
+      <text x="380" y="22" text-anchor="middle" class="lbl-sm" font-weight="700">결과 발생</text>
+      <text x="380" y="40" text-anchor="middle" class="lbl-xs">예: X의 사망</text>
+
+      <text x="500" y="30" class="lbl-xs" fill="#a83a4a" font-weight="700">A 제거 → B만으로도 결과 발생 → A 인과 부정</text>
+      <text x="500" y="48" class="lbl-xs" fill="#a83a4a" font-weight="700">B 제거 → A만으로도 결과 발생 → B 인과 부정</text>
+    </g>
+
+    <text x="60" y="416" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 모든 행위의 인과 관계가 부정되는 부조리한 결론에 이른다 (조건 공식의 한계)</text>
+  </g>
+
+  <!-- (나) 헤더 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="460" width="1120" height="36" rx="6" class="acc"/>
+    <text x="60" y="484" class="lbl-strong" fill="#f5f1e8">(나) 합법칙적 조건설 — 야기와 법칙적 포섭</text>
+  </g>
+
+  <!-- Step 5 · 야기 개념 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="510" width="1120" height="100" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="538" class="lbl-head" fill="#a83a4a">관점의 전환 — 단순 결합 → 야기</text>
+    <text x="60" y="562" class="lbl-sm">조건 공식 = 결과의 '야기'를 정면으로 다루지 않음</text>
+    <text x="60" y="582" class="lbl"><tspan font-weight="700">야기</tspan>: 행위가 일반적 법칙에 따라 결과의 발생에 기여한다는 의미</text>
+    <text x="60" y="602" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 인과의 본질은 단순 조건적 결합이 아니라 야기이다</text>
+  </g>
+
+  <!-- Step 6 · 합법칙적 조건 공식 -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="40" y="630" width="540" height="180" rx="6" class="soc-bg2 soc-st" stroke-width="1.5"/>
+    <text x="60" y="658" class="lbl-strong" fill="#2a6f6f">합법칙적 조건 공식</text>
+
+    <g transform="translate(60, 678)">
+      <rect x="0" y="0" width="500" height="50" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="250" y="22" text-anchor="middle" class="lbl-sm" font-weight="700">"행위와 결과가 일반 법칙에</text>
+      <text x="250" y="40" text-anchor="middle" class="lbl-sm" font-weight="700">포섭될 가능성이 있는가?"</text>
+    </g>
+
+    <text x="60" y="754" class="lbl-sm">→ 조건 공식 자체를 포기하고 새 대안 모색의 결과</text>
+  </g>
+
+  <!-- Step 7 · 합법칙적 조건설 한계 -->
+  <g class="reveal" data-reveal-step="7">
+    <text x="60" y="774" class="lbl-xs" fill="#a83a4a" font-weight="700">한계: 일반적 법칙이 알려져 있지 않거나 불확실하면 판단 어려움</text>
+  </g>
+
+  <!-- Step 7-8 · 택일적 사례 처리 -->
+  <g class="reveal" data-reveal-step="8">
+    <rect x="620" y="630" width="540" height="180" rx="6" class="soc-bg soc-st" stroke-width="1.5"/>
+    <text x="640" y="658" class="lbl-strong" fill="#2a6f6f">합법칙적 조건설로 본 택일적 사례</text>
+
+    <g transform="translate(640, 678)">
+      <rect x="0" y="0" width="500" height="60" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700">예: A·B가 동시에 X에게 칼 휘두름 → X 사망</text>
+      <text x="14" y="42" class="lbl-xs">일반 법칙(상해 → 사망) 자체에 의문 X</text>
+      <text x="14" y="56" class="lbl-xs">→ A·B 각자에게 법칙적 연관 인정</text>
+    </g>
+
+    <text x="640" y="760" class="lbl-sm" fill="#2a6f6f" font-weight="700">→ A·B의 행위 모두가 결과를 야기한 것으로 처리</text>
+    <text x="640" y="780" class="lbl-xs">조건설로 부정된 인과 관계가 합법칙적 조건설로는 인정됨</text>
+  </g>
+
+  <!-- 한눈에 비교표 -->
+  <g class="reveal" data-reveal-step="8">
+    <rect x="40" y="830" width="1120" height="220" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="858" class="lbl-head">한눈에 보는 비교</text>
+
+    <g transform="translate(60, 880)">
+      <rect x="0" y="0" width="1080" height="30" class="paper2"/>
+      <text x="14" y="20" class="lbl-strong">기준</text>
+      <text x="240" y="20" class="lbl-strong" fill="#2a6f6f">조건설 (가)</text>
+      <text x="660" y="20" class="lbl-strong" fill="#a83a4a">합법칙적 조건설 (나)</text>
+
+      <line x1="0" y1="30" x2="1080" y2="30" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="14" y="56" class="lbl">인과 발견 방법</text>
+      <text x="240" y="56" class="lbl">가설적 소거법 (조건 공식)</text>
+      <text x="660" y="56" class="lbl">법칙적 포섭 가능성 확인</text>
+
+      <line x1="0" y1="68" x2="1080" y2="68" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="94" class="lbl">인과의 본질</text>
+      <text x="240" y="94" class="lbl">조건적 결합 (필요조건)</text>
+      <text x="660" y="94" class="lbl">야기 (법칙적 기여)</text>
+
+      <line x1="0" y1="106" x2="1080" y2="106" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="132" class="lbl">택일적 사례 처리</text>
+      <text x="240" y="132" class="lbl" fill="#a83a4a">모든 행위 인과 부정 (한계)</text>
+      <text x="660" y="132" class="lbl" fill="#2a6f6f">모든 행위 인과 인정</text>
+
+      <line x1="0" y1="144" x2="1080" y2="144" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="170" class="lbl">한계</text>
+      <text x="240" y="170" class="lbl">택일적 사례에서 부조리</text>
+      <text x="660" y="170" class="lbl">법칙이 불확실하면 판단 어려움</text>
+    </g>
+  </g>
+
+  <text x="1160" y="1070" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 주제 통합 · 258쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1080" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#2a6f6f"/>
+    <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">조건설</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">결과를 야기하는 전체 조건에 포함된 모든 개별 조건을 동등한 원인으로 인정.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">가설적 소거법</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">선행 행위를 제거했을 때 결과가 발생하지 않으면 인과 관계를 인정하는 방법.</text>
+    <line x1="40" y1="1174" x2="1160" y2="1174" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1190" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">택일적 인과 관계의 한계</text>
+    <text x="240" y="1190" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">조건 공식으로는 어느 행위를 제거해도 결과가 발생하므로 모든 행위의 인과 관계가 부정된다.</text>
+    <line x1="40" y1="1204" x2="1160" y2="1204" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1220" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">야기와 합법칙적 조건설</text>
+    <text x="240" y="1220" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">야기는 행위가 일반 법칙에 따라 결과 발생에 기여하는 것이며, 합법칙적 조건설은 법칙적 포섭 가능성으로 인과를 판단한다.</text>
+    <line x1="40" y1="1234" x2="1160" y2="1234" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1250" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">합법칙적 조건설의 처리</text>
+    <text x="240" y="1250" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">택일적 인과 사례에서 복수의 독립적 행위 모두가 결과를 야기한 것으로 인정될 수 있다.</text>
+  </g>
+</svg>

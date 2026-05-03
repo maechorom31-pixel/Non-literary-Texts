@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1180" role="img" aria-labelledby="t15 d15">
+  <title id="t15">미니멀리즘 음악</title>
+  <desc id="d15">미니멀리즘 음악이 1960년대 미국에서 등장한 흐름에서 출발해, 들뢰즈의 표현으로 전통 서양 음악의 '같은 것의 반복'(주제 강화)과 미니멀리즘의 '차이를 생성하는 반복'(매 순간 미세한 변화)을 좌우로 대비하고, 라 몬테 영의 음의 지속(완전 5도와 배음의 변화), 스티브 라이히의 위상 변위(동일 패턴이 점차 어긋남), 그리고 감상자의 역할이 수동적 청취에서 능동적 참여로 전환되는 흐름을 시각화한다.</desc>
+
+  <defs>
+    <marker id="ar15-hum" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 12px; font-style: italic; fill: #5e548e; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1 · 미니멀리즘 등장 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="100" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">미니멀리즘 음악 — 1960년대 미국에서 출발</text>
+    <text x="60" y="86" class="lbl">대표 작곡가: 라 몬테 영 · 테리 라일리 · 스티브 라이히 · 필립 글래스</text>
+    <text x="60" y="108" class="lbl-sm">소수의 음형·패턴 반복으로 복잡한 서사·화성을 축소 → 감상자가 <tspan font-weight="700" fill="#5e548e">소리 자체</tspan>를 경험</text>
+  </g>
+
+  <!-- Step 2 · 두 종류의 반복 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="600" y="158" text-anchor="middle" class="lbl-head">들뢰즈가 짚은 두 종류의 반복</text>
+
+    <rect x="40" y="180" width="540" height="220" rx="6" class="paper rule" stroke-width="1.2"/>
+    <rect x="40" y="180" width="540" height="34" rx="6" class="paper2"/>
+    <text x="60" y="204" class="lbl-strong">전통 음악 · 「같은 것의 반복」 (주제 강화)</text>
+
+    <g transform="translate(60, 250)">
+      <rect x="0" y="0" width="160" height="40" rx="3" class="paper2 ink" stroke-width="1"/>
+      <text x="80" y="24" text-anchor="middle" class="lbl-sm" font-weight="700">제시부</text>
+      <line x1="160" y1="20" x2="180" y2="20" class="ink" stroke-width="1.4"/>
+      <rect x="180" y="0" width="160" height="40" rx="3" class="paper2 ink" stroke-width="1"/>
+      <text x="260" y="24" text-anchor="middle" class="lbl-sm" font-weight="700">발전부</text>
+      <line x1="340" y1="20" x2="360" y2="20" class="ink" stroke-width="1.4"/>
+      <rect x="360" y="0" width="160" height="40" rx="3" class="paper2 ink" stroke-width="1"/>
+      <text x="440" y="24" text-anchor="middle" class="lbl-sm" font-weight="700">재현부</text>
+
+      <path d="M 80 0 Q 260 -22 440 0" fill="none" stroke="#7a6f5f" stroke-width="1" stroke-dasharray="3 2"/>
+      <text x="260" y="-12" text-anchor="middle" class="lbl-xs" fill="#7a6f5f">주제로 회귀</text>
+    </g>
+
+    <text x="60" y="340" class="lbl-sm">주제가 중심에 놓이고, 각 부분은 그 주제를 재확인하는 역할만 수행</text>
+    <text x="60" y="362" class="lbl-xs" fill="#7a6f5f" font-weight="700">→ 감상 = 작곡가가 설정한 보편 주제 알아맞히기 (수동적)</text>
+  </g>
+
+  <g class="reveal" data-reveal-step="2">
+    <rect x="620" y="180" width="540" height="220" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <rect x="620" y="180" width="540" height="34" rx="6" class="hum"/>
+    <text x="640" y="204" class="lbl-strong" fill="#f5f1e8">미니멀리즘 · 「차이를 생성하는 반복」</text>
+
+    <g transform="translate(660, 244)">
+      <g class="hum">
+        <circle cx="20" cy="20" r="9"/>
+        <circle cx="120" cy="20" r="9" opacity="0.85"/>
+        <circle cx="220" cy="20" r="9" opacity="0.7"/>
+        <circle cx="320" cy="20" r="9" opacity="0.55"/>
+        <circle cx="420" cy="20" r="9" opacity="0.4"/>
+      </g>
+      <line x1="34" y1="20" x2="500" y2="20" class="hum-st" stroke-width="1.4" stroke-dasharray="2 2" marker-end="url(#ar15-hum)"/>
+      <text x="0" y="50" class="lbl-xs" fill="#5e548e">표면은 같은 음형 — 실제로는 매 순간 미세한 차이</text>
+    </g>
+
+    <text x="640" y="340" class="lbl-sm">음색·강세 등의 미세한 차이가 매 순간 드러남</text>
+    <text x="640" y="358" class="quote">"천천히 회전하는 만화경"</text>
+    <text x="640" y="386" class="lbl-xs" fill="#5e548e" font-weight="700">→ 감상 = 매 순간 새 음악적 사건 만남 (능동적)</text>
+  </g>
+
+  <!-- Step 3 · 라 몬테 영 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="420" width="1120" height="220" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="448" class="lbl-head" fill="#5e548e">라 몬테 영 · 「컴포지션 1960 No. 7」 — 음의 지속</text>
+    <text x="60" y="470" class="lbl-sm">완전 5도(B-F#) 두 음을 장시간 동시 누름 → 감상자는 음 내부의 배음 변화를 경험</text>
+
+    <g transform="translate(140, 540)">
+      <text x="-4" y="6" text-anchor="end" class="lbl-xs">B 음</text>
+      <rect x="0" y="-4" width="900" height="14" class="hum"/>
+      <text x="916" y="4" class="lbl-xs" fill="#5e548e">→ 매우 길게 지속</text>
+
+      <text x="-4" y="36" text-anchor="end" class="lbl-xs">F# 음</text>
+      <rect x="0" y="26" width="900" height="14" class="hum"/>
+
+      <path d="M 0 -10 Q 60 -18 120 -10 T 240 -10 T 360 -10 T 480 -10 T 600 -10 T 720 -10 T 840 -10 L 900 -10" fill="none" class="hum-st" stroke-width="0.8" opacity="0.85"/>
+      <path d="M 0 50 Q 60 58 120 50 T 240 50 T 360 50 T 480 50 T 600 50 T 720 50 T 840 50 L 900 50" fill="none" class="hum-st" stroke-width="0.8" opacity="0.85"/>
+
+      <text x="450" y="-26" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">↑ 무수한 배음들의 어울림 — 매 순간 미묘한 변화</text>
+      <text x="450" y="78" text-anchor="middle" class="lbl-xs" fill="#5e548e">정수비(완전 5도) → 안정된 화성 + 풍부한 배음 구조</text>
+    </g>
+  </g>
+
+  <!-- Step 4 · 스티브 라이히 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="660" width="1120" height="220" rx="6" class="hum-bg2 hum-st" stroke-width="1.5"/>
+    <text x="60" y="688" class="lbl-head" fill="#5e548e">스티브 라이히 · 「피아노 페이즈」 — 위상 변위</text>
+    <text x="60" y="710" class="lbl-sm">동일 4마디 패턴을 두 악기가 약간 다른 속도로 연주 → 시간이 지나면서 점차 어긋남</text>
+
+    <g transform="translate(80, 760)">
+      <text x="80" y="-6" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">t₁ · 일치</text>
+      <g transform="translate(0, 0)">
+        <path d="M 0 10 L 20 0 L 40 10 L 60 0 L 80 10 L 100 0 L 120 10 L 140 0 L 160 10" fill="none" class="hum-st" stroke-width="1.6"/>
+        <path d="M 0 26 L 20 16 L 40 26 L 60 16 L 80 26 L 100 16 L 120 26 L 140 16 L 160 26" fill="none" class="acc-st" stroke-width="1.6" stroke-dasharray="2 2"/>
+      </g>
+
+      <text x="320" y="-6" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">t₂ · 약간 어긋남</text>
+      <g transform="translate(240, 0)">
+        <path d="M 0 10 L 20 0 L 40 10 L 60 0 L 80 10 L 100 0 L 120 10 L 140 0 L 160 10" fill="none" class="hum-st" stroke-width="1.6"/>
+        <path d="M 8 26 L 28 16 L 48 26 L 68 16 L 88 26 L 108 16 L 128 26 L 148 16 L 168 26" fill="none" class="acc-st" stroke-width="1.6" stroke-dasharray="2 2"/>
+      </g>
+
+      <text x="560" y="-6" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">t₃ · 새 음악적 사건</text>
+      <g transform="translate(480, 0)">
+        <path d="M 0 10 L 20 0 L 40 10 L 60 0 L 80 10 L 100 0 L 120 10 L 140 0 L 160 10" fill="none" class="hum-st" stroke-width="1.6"/>
+        <path d="M 24 26 L 44 16 L 64 26 L 84 16 L 104 26 L 124 16 L 144 26 L 164 16" fill="none" class="acc-st" stroke-width="1.6" stroke-dasharray="2 2"/>
+      </g>
+
+      <text x="800" y="-6" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">t₄ · 다시 일치</text>
+      <g transform="translate(720, 0)">
+        <path d="M 0 10 L 20 0 L 40 10 L 60 0 L 80 10 L 100 0 L 120 10 L 140 0 L 160 10" fill="none" class="hum-st" stroke-width="1.6"/>
+        <path d="M 0 26 L 20 16 L 40 26 L 60 16 L 80 26 L 100 16 L 120 26 L 140 16 L 160 26" fill="none" class="acc-st" stroke-width="1.6" stroke-dasharray="2 2"/>
+      </g>
+
+      <g transform="translate(0, 70)">
+        <line x1="0" y1="0" x2="20" y2="0" class="hum-st" stroke-width="2"/>
+        <text x="26" y="4" class="lbl-xs">악기 A (원래 속도)</text>
+        <line x1="160" y1="0" x2="180" y2="0" class="acc-st" stroke-width="2" stroke-dasharray="2 2"/>
+        <text x="186" y="4" class="lbl-xs">악기 B (미세하게 빠른 템포)</text>
+        <text x="500" y="4" class="lbl-xs" fill="#5e548e" font-weight="700">→ 동어 반복의 효과로 내부 잠재성 발현 · 칼 앙드레의 금속판 나열과 같은 개방 구조</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Step 5 · 감상 방식 전환 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="900" width="1120" height="60" rx="6" class="paper2 ink" stroke-width="1"/>
+    <text x="60" y="928" class="lbl-strong">감상자의 역할 전환</text>
+    <text x="60" y="950" class="lbl"><tspan font-weight="700" fill="#7a6f5f">"어떤 주제를 보여 주는가?"</tspan> (수동) → <tspan font-weight="700" fill="#5e548e">"방금 전과 어떤 차이가 있는가?"</tspan> (능동)</text>
+  </g>
+
+  <!-- 종합 비교 매트릭스 -->
+  <g>
+    <rect x="40" y="980" width="1120" height="160" rx="6" class="paper rule" stroke-width="1.2"/>
+    <rect x="40" y="980" width="280" height="34" class="paper2"/>
+    <rect x="320" y="980" width="420" height="34" class="hum-bg"/>
+    <rect x="740" y="980" width="420" height="34" class="hum-bg2"/>
+    <text x="180" y="1004" text-anchor="middle" class="lbl-strong">기준</text>
+    <text x="530" y="1004" text-anchor="middle" class="lbl-strong">전통 음악</text>
+    <text x="950" y="1004" text-anchor="middle" class="lbl-strong" fill="#5e548e">미니멀리즘</text>
+
+    <line x1="40" y1="1014" x2="1160" y2="1014" stroke="#c9bfa8"/>
+    <text x="60" y="1036" class="lbl-sm">반복의 성격</text>
+    <text x="340" y="1036" class="lbl-sm">같은 것의 반복 (주제 강화)</text>
+    <text x="760" y="1036" class="lbl-sm" fill="#5e548e">차이를 생성하는 반복</text>
+
+    <line x1="40" y1="1046" x2="1160" y2="1046" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1068" class="lbl-sm">중심</text>
+    <text x="340" y="1068" class="lbl-sm">주제 (제시→발전→재현)</text>
+    <text x="760" y="1068" class="lbl-sm" fill="#5e548e">매 순간의 미세한 변화</text>
+
+    <line x1="40" y1="1078" x2="1160" y2="1078" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1100" class="lbl-sm">감상자 역할</text>
+    <text x="340" y="1100" class="lbl-sm">수동 (주제 알아맞히기)</text>
+    <text x="760" y="1100" class="lbl-sm" fill="#5e548e">능동 (방금 전과의 차이)</text>
+
+    <line x1="40" y1="1110" x2="1160" y2="1110" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1132" class="lbl-sm">대표 작곡가</text>
+    <text x="340" y="1132" class="lbl-sm">소나타 형식의 거장들</text>
+    <text x="760" y="1132" class="lbl-sm" fill="#5e548e">라 몬테 영 · 라이히 · 라일리 · 글래스</text>
+
+    <line x1="320" y1="980" x2="320" y2="1140" stroke="#c9bfa8"/>
+    <line x1="740" y1="980" x2="740" y2="1140" stroke="#c9bfa8"/>
+  </g>
+
+  <text x="1160" y="1170" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 인문·예술 · 58쪽</text>
+</svg>

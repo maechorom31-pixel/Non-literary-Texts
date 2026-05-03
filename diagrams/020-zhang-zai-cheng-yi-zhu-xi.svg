@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1160" role="img" aria-labelledby="t20 d20">
+  <title id="t20">장재·정이·주희의 철학</title>
+  <desc id="d20">북송 시대에 유학이 형이상학으로 거듭나던 흐름에서 출발해, 우주와 존재의 근원을 '기'로 보고 이를 그 안에 내재한 질서의 원리로 본 장재의 사상과, 모든 존재와 인간 본성에 내재한 선하고 보편적인 원리를 '이'로 보아 기보다 존재론적으로 우선시한 정이의 사상을 좌우로 대비하고, 마지막으로 주희가 두 사상을 선별·종합해 '이는 본체, 기는 발현 수단'으로 두는 이기론을 확립하는 구조를 보여 준다.</desc>
+
+  <defs>
+    <marker id="ar20-hum" viewBox="0 0 1200 1160" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 12px; font-style: italic; fill: #5e548e; }
+    .han { font-family: 'Noto Serif KR', serif; font-size: 28px; font-weight: 700; fill: #f5f1e8; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1 · 북송 시대 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="100" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">북송 시대 — 유학이 형이상학으로 거듭나다</text>
+    <text x="60" y="86" class="lbl">실천적 학문이었던 유학이 존재의 본질을 탐구하는 철학으로 발전</text>
+    <text x="60" y="108" class="lbl-sm">장재(기 중심) · 정이(이 중심) → 후대 주희에 의해 종합 → <tspan font-weight="700" fill="#5e548e">성리학</tspan></text>
+  </g>
+
+  <!-- Step 2 · 장재 (기 중심) -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="150" width="540" height="320" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <rect x="40" y="150" width="540" height="36" rx="6" class="hum"/>
+    <text x="60" y="174" class="lbl-strong" fill="#f5f1e8">장재 · 「기」 중심 — 우주의 근원</text>
+
+    <!-- 기 중심 시각: 큰 기 + 작은 이 -->
+    <g transform="translate(180, 280)">
+      <circle r="78" class="hum"/>
+      <text x="0" y="10" text-anchor="middle" class="han">氣</text>
+      <text x="0" y="36" text-anchor="middle" font-size="10" fill="#f5f1e8">우주의 근원</text>
+
+      <!-- 이 (안에 작게) -->
+      <circle cx="32" cy="-32" r="14" class="paper2" stroke="#1a1612" stroke-width="1.2"/>
+      <text x="32" y="-28" text-anchor="middle" font-size="11" font-weight="700">理</text>
+      <text x="58" y="-50" class="lbl-xs" fill="#5e548e">기 안에 내재하는</text>
+      <text x="58" y="-36" class="lbl-xs" fill="#5e548e">질서의 원리</text>
+    </g>
+
+    <!-- 핵심 -->
+    <g transform="translate(60, 218)">
+      <text x="0" y="0" class="lbl-strong">기와 이의 관계</text>
+      <text x="0" y="20" class="lbl-sm">기 = 우주·존재의 근원 (단순 물질 X)</text>
+      <text x="0" y="38" class="lbl-sm">이 = 기 안에 내재한 질서 원리</text>
+    </g>
+
+    <g transform="translate(60, 386)">
+      <text x="0" y="0" class="lbl-strong">화육 + 천인합일</text>
+      <text x="0" y="20" class="lbl-sm">우주는 끊임없이 변화·생성하는 역동적 과정</text>
+      <text x="0" y="38" class="lbl-sm">→ 만물을 낳고 기르는 화육</text>
+      <text x="0" y="56" class="lbl-xs" fill="#5e548e" font-weight="700">→ 인간 = 화육의 정수, 도덕 실천 = 천도 실현 (천인합일)</text>
+    </g>
+  </g>
+
+  <!-- Step 3 · 정이 (이 중심) -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="620" y="150" width="540" height="320" rx="6" class="hum-bg2 hum-st" stroke-width="1.5"/>
+    <rect x="620" y="150" width="540" height="36" rx="6" class="hum"/>
+    <text x="640" y="174" class="lbl-strong" fill="#f5f1e8">정이 · 「이」 중심 — 만물의 본질</text>
+
+    <!-- 이 중심 시각: 큰 이 + 작은 기 -->
+    <g transform="translate(760, 280)">
+      <circle r="78" class="hum"/>
+      <text x="0" y="10" text-anchor="middle" class="han">理</text>
+      <text x="0" y="36" text-anchor="middle" font-size="10" fill="#f5f1e8">만물·본성의 본질</text>
+
+      <!-- 기 (작게) -->
+      <circle cx="32" cy="-32" r="14" class="paper2" stroke="#1a1612" stroke-width="1.2"/>
+      <text x="32" y="-28" text-anchor="middle" font-size="11" font-weight="700">氣</text>
+      <text x="58" y="-50" class="lbl-xs" fill="#5e548e">이가 현실에서</text>
+      <text x="58" y="-36" class="lbl-xs" fill="#5e548e">실현되는 수단</text>
+    </g>
+
+    <!-- 핵심 -->
+    <g transform="translate(640, 218)">
+      <text x="0" y="0" class="lbl-strong" fill="#5e548e">이와 기의 관계</text>
+      <text x="0" y="20" class="lbl-sm">이 = 선하고 보편적인 원리, 본질 그 자체</text>
+      <text x="0" y="38" class="lbl-sm" fill="#5e548e" font-weight="700">→ 이가 기보다 존재론적으로 우선</text>
+    </g>
+
+    <g transform="translate(640, 386)">
+      <text x="0" y="0" class="lbl-strong">존천리 거인욕의 수양론</text>
+      <text x="0" y="20" class="lbl-sm">기 = 사물의 물질적 형체, 인간의 감정·욕망 발현</text>
+      <text x="0" y="38" class="lbl-sm" fill="#5e548e" font-weight="700">존천리</text>
+      <text x="80" y="38" class="lbl-sm">: 본성 안의 이를 보존</text>
+      <text x="0" y="56" class="lbl-sm" fill="#a83a4a" font-weight="700">거인욕</text>
+      <text x="80" y="56" class="lbl-sm">: 사사로운 욕망을 제거</text>
+    </g>
+  </g>
+
+  <!-- 분기 화살표 (장재·정이 → 주희) -->
+  <g class="reveal" data-reveal-step="4">
+    <line x1="310" y1="476" x2="600" y2="510" class="hum-st" stroke-width="1.6" marker-end="url(#ar20-hum)"/>
+    <line x1="890" y1="476" x2="600" y2="510" class="hum-st" stroke-width="1.6" marker-end="url(#ar20-hum)"/>
+    <text x="600" y="498" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">선별·종합</text>
+  </g>
+
+  <!-- Step 4 · 주희의 종합 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="520" width="1120" height="380" rx="6" class="paper rule" stroke-width="1.2"/>
+    <rect x="40" y="520" width="1120" height="36" rx="6" class="paper2"/>
+    <text x="60" y="544" class="lbl-strong">주희 · 이기론 — 두 사상의 종합</text>
+
+    <!-- 핵심 도식: 이(본체) + 기(발현 수단) -->
+    <g transform="translate(80, 590)">
+      <!-- 이 (본체) -->
+      <rect x="0" y="0" width="320" height="100" rx="4" class="hum"/>
+      <text x="160" y="32" text-anchor="middle" font-size="22" fill="#f5f1e8" font-weight="700" font-family="Noto Serif KR">理</text>
+      <text x="160" y="56" text-anchor="middle" font-size="12" fill="#f5f1e8" font-weight="700">근원적 본체</text>
+      <text x="160" y="76" text-anchor="middle" font-size="10" fill="#f5f1e8">항상 선하고 불변하는 절대적 이치</text>
+      <text x="160" y="92" text-anchor="middle" font-size="10" fill="#f5f1e8" opacity="0.85">만물·인간 본성의 본질</text>
+
+      <!-- 화살표 -->
+      <line x1="324" y1="50" x2="376" y2="50" class="hum-st" stroke-width="2" marker-end="url(#ar20-hum)"/>
+      <text x="350" y="40" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">발현</text>
+
+      <!-- 기 (수단) -->
+      <rect x="380" y="0" width="320" height="100" rx="4" class="paper2" stroke="#1a1612" stroke-width="1.4"/>
+      <text x="540" y="32" text-anchor="middle" font-size="22" font-weight="700" font-family="Noto Serif KR">氣</text>
+      <text x="540" y="56" text-anchor="middle" class="lbl-strong">발현 수단</text>
+      <text x="540" y="76" text-anchor="middle" class="lbl-xs">탁하거나 맑은 정도에 따라</text>
+      <text x="540" y="92" text-anchor="middle" class="lbl-xs">현상의 다양한 차이를 만든다</text>
+
+      <!-- 위계 표시 -->
+      <line x1="-20" y1="0" x2="-20" y2="100" stroke="#5e548e" stroke-width="2"/>
+      <line x1="-26" y1="-2" x2="-14" y2="-2" stroke="#5e548e" stroke-width="2"/>
+      <line x1="-26" y1="102" x2="-14" y2="102" stroke="#5e548e" stroke-width="2"/>
+      <text x="-30" y="56" text-anchor="end" class="lbl-xs" fill="#5e548e" font-weight="700">위계</text>
+    </g>
+
+    <!-- 우측 설명 -->
+    <g transform="translate(820, 590)">
+      <rect x="0" y="0" width="320" height="100" rx="4" class="hum-bg hum-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#5e548e">주희의 핵심</text>
+      <text x="14" y="42" class="lbl-sm">이와 기를 모두 인정하되,</text>
+      <text x="14" y="60" class="lbl-sm">이를 본체, 기를 발현 수단으로</text>
+      <text x="14" y="78" class="lbl-sm">균형 있게 다룸</text>
+      <text x="14" y="94" class="lbl-xs" fill="#5e548e" font-weight="700">→ 구분하되 떨어지지 않는 위계</text>
+    </g>
+
+    <!-- 인간에서의 적용 -->
+    <g transform="translate(80, 712)">
+      <rect x="0" y="0" width="1060" height="80" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">인간에서의 적용</text>
+      <text x="14" y="42" class="lbl-sm">본래의 <tspan fill="#5e548e" font-weight="700">이</tspan>는 선해도, <tspan fill="#a83a4a" font-weight="700">기</tspan>가 탁하면 성정·기질에 편차 → 감정·욕망 치우침 → 도덕적 결함</text>
+      <text x="14" y="62" class="lbl-xs">기를 배제하지 않고, 이를 본체로 삼아 기와 균형 있게 다스리는 것이 수양의 길</text>
+    </g>
+
+    <!-- 결말 -->
+    <g transform="translate(80, 808)">
+      <rect x="0" y="0" width="1060" height="68" rx="4" class="hum-bg2 hum-st" stroke-width="1.4"/>
+      <text x="14" y="24" class="lbl-strong" fill="#5e548e">결과</text>
+      <text x="14" y="46" class="lbl-sm">주희의 이기론은 우주를 이와 기가 살아 움직이며 만물을 낳고 기르는 생명적 체계로 본다.</text>
+      <text x="14" y="62" class="lbl-xs">인간의 도덕적 수양 = 우주의 도를 실현·완성하는 과정</text>
+    </g>
+  </g>
+
+  <text x="1160" y="930" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 인문·예술 · 79쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="940" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="940" width="1120" height="32" rx="6" fill="#5e548e"/>
+    <text x="60" y="962" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="962" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="974" x2="1160" y2="974" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="990" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">장재의 기</text>
+    <text x="240" y="990" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">우주와 존재의 근원이자 화육(생성·성장)의 동력. 이는 기 안에 내재한 질서의 원리로 본다.</text>
+    <line x1="40" y1="1004" x2="1160" y2="1004" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1020" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">장재의 천인합일</text>
+    <text x="240" y="1020" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">인간은 화육의 정수이며 도덕 실천이 곧 천도의 실현이라는 관점.</text>
+    <line x1="40" y1="1034" x2="1160" y2="1034" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1050" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">정이의 이</text>
+    <text x="240" y="1050" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">만물과 인간 본성에 내재한 선하고 보편적인 원리. 존재의 본질 그 자체이며 기보다 존재론적으로 우선한다.</text>
+    <line x1="40" y1="1064" x2="1160" y2="1064" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1080" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">정이의 수양론</text>
+    <text x="240" y="1080" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">본성 안의 이(천리)는 보존하고 사사로운 인욕은 제거하는 '존천리 거인욕'.</text>
+    <line x1="40" y1="1094" x2="1160" y2="1094" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1110" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">주희의 이기론</text>
+    <text x="240" y="1110" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">이는 절대적·불변의 본체, 기는 그 발현 수단. 두 요소를 구분하되 떨어지지 않는 위계 속에서 통합한다.</text>
+  </g>
+</svg>

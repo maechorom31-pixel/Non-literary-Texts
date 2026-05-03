@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1240" role="img" aria-labelledby="t19 d19">
+  <title id="t19">동일성 명제 · 프레게 vs 러셀</title>
+  <desc id="d19">'샛별은 개밥바라기이다'와 '샛별은 샛별이다'가 같은 행성을 가리키는데도 정보의 양이 다른 이유를 두 철학자가 어떻게 설명했는지를 시각화한다. 프레게는 이름의 '뜻'(제시 방법)과 '지시체'(실제 대상)를 구별하고, 망원경 비유(천체-렌즈상-망막상)로 뜻의 객관성을 설명했다. 러셀은 이 뜻 개념을 불필요하다고 비판하면서, 한정 기술구를 분석하는 기술 이론으로 동일성 문제를 다시 풀었다.</desc>
+
+  <defs>
+    <marker id="ar19-hum" viewBox="0 0 1200 1240" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+    <marker id="ar19-acc" viewBox="0 0 1200 1240" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 13px; font-style: italic; fill: #5e548e; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1 · 뜻과 지시체 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="180" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">프레게 ① 같은 지시체, 다른 뜻</text>
+    <text x="60" y="86" class="lbl-sm">이름의 두 측면: <tspan font-weight="700" fill="#5e548e">지시체</tspan>(가리키는 실제 대상) + <tspan font-weight="700" fill="#5e548e">뜻</tspan>(대상을 제시하는 방법)</text>
+
+    <!-- 샛별과 개밥바라기 -->
+    <g transform="translate(80, 130)">
+      <rect x="0" y="0" width="240" height="60" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="120" y="22" text-anchor="middle" class="lbl-strong">샛별</text>
+      <text x="120" y="42" text-anchor="middle" class="lbl-xs">새벽 동쪽 하늘</text>
+      <text x="120" y="56" text-anchor="middle" class="lbl-xs" fill="#5e548e">뜻 ①</text>
+
+      <rect x="380" y="0" width="240" height="60" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="500" y="22" text-anchor="middle" class="lbl-strong">개밥바라기</text>
+      <text x="500" y="42" text-anchor="middle" class="lbl-xs">저녁 서쪽 하늘</text>
+      <text x="500" y="56" text-anchor="middle" class="lbl-xs" fill="#5e548e">뜻 ②</text>
+
+      <line x1="244" y1="30" x2="376" y2="30" stroke="#7a6f5f" stroke-width="1" stroke-dasharray="2 2"/>
+      <text x="310" y="22" text-anchor="middle" class="lbl-xs" fill="#a83a4a" font-weight="700">뜻 다름</text>
+
+      <!-- 같은 지시체로 -->
+      <line x1="120" y1="60" x2="800" y2="50" class="hum-st" stroke-width="1.4" marker-end="url(#ar19-hum)"/>
+      <line x1="500" y1="60" x2="800" y2="50" class="hum-st" stroke-width="1.4" marker-end="url(#ar19-hum)"/>
+
+      <rect x="800" y="20" width="200" height="60" rx="4" class="hum"/>
+      <text x="900" y="42" text-anchor="middle" font-size="13" fill="#f5f1e8" font-weight="700">금성</text>
+      <text x="900" y="64" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">지시체 (실제 행성)</text>
+    </g>
+  </g>
+
+  <!-- Step 2 · 정보 차이 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="230" width="1120" height="160" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="258" class="lbl-head" fill="#5e548e">동일성 명제 — 정보의 양이 다르다</text>
+
+    <g transform="translate(80, 290)">
+      <rect x="0" y="0" width="500" height="80" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">"샛별 = 샛별"  (a = a)</text>
+      <text x="14" y="44" class="lbl-sm">같은 이름 두 번 → 새 정보 없음</text>
+      <text x="14" y="64" class="lbl-xs" fill="#7a6f5f">동어 반복</text>
+    </g>
+
+    <g transform="translate(620, 290)">
+      <rect x="0" y="0" width="500" height="80" rx="4" class="hum-bg2 hum-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#5e548e">"샛별 = 개밥바라기"  (a = b)</text>
+      <text x="14" y="44" class="lbl-sm">두 뜻이 같은 지시체로 모인다는 새 정보</text>
+      <text x="14" y="64" class="lbl-xs" fill="#5e548e" font-weight="700">→ a=a보다 더 많은 정보</text>
+    </g>
+  </g>
+
+  <!-- Step 3 · 망원경 비유 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="410" width="1120" height="220" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="438" class="lbl-head">프레게 ② 뜻의 객관성 — 망원경 비유</text>
+
+    <!-- 망원경 일러스트 -->
+    <g transform="translate(80, 480)">
+      <!-- 천체 (지시체) -->
+      <circle cx="0" cy="60" r="28" class="hum"/>
+      <text x="0" y="64" text-anchor="middle" font-size="12" fill="#f5f1e8" font-weight="700">천체</text>
+      <text x="0" y="116" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">지시체 (객관 실체)</text>
+
+      <!-- 망원경 -->
+      <line x1="32" y1="60" x2="160" y2="60" stroke="#7a6f5f" stroke-width="1" stroke-dasharray="2 2"/>
+      <rect x="160" y="40" width="120" height="40" rx="4" class="paper2 ink" stroke-width="1.4"/>
+      <circle cx="170" cy="60" r="14" fill="#1a1612" stroke="#7a6f5f" stroke-width="1"/>
+      <circle cx="270" cy="60" r="14" fill="#1a1612" stroke="#7a6f5f" stroke-width="1"/>
+      <text x="220" y="32" text-anchor="middle" class="lbl-sm" font-weight="700">망원경 렌즈</text>
+      <text x="220" y="100" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">뜻 (객관, 누구나 동일)</text>
+
+      <!-- 관찰자 망막 -->
+      <line x1="280" y1="60" x2="380" y2="60" stroke="#7a6f5f" stroke-width="1" stroke-dasharray="2 2"/>
+      <ellipse cx="420" cy="60" rx="34" ry="24" class="paper2" stroke="#1a1612" stroke-width="1.4"/>
+      <circle cx="420" cy="60" r="10" class="ink" fill="#1a1612"/>
+      <text x="420" y="32" text-anchor="middle" class="lbl-sm" font-weight="700">관찰자 망막</text>
+      <text x="420" y="116" text-anchor="middle" class="lbl-xs" fill="#a83a4a" font-weight="700">관념 (주관, 시력·기분 따라 다름)</text>
+    </g>
+
+    <!-- 정리 -->
+    <g transform="translate(640, 470)">
+      <rect x="0" y="0" width="480" height="140" rx="4" class="hum-bg hum-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#5e548e">프레게의 의미론적 지시 이론</text>
+      <text x="14" y="46" class="lbl-sm">· 뜻은 단어에 붙은 객관적 존재자 (관찰자 무관)</text>
+      <text x="14" y="66" class="lbl-sm">· 관념은 개인적·주관적 (다름)</text>
+      <text x="14" y="92" class="lbl-xs" fill="#5e548e" font-weight="700">→ 언어 사용자나 맥락 고려 없이</text>
+      <text x="14" y="108" class="lbl-xs" fill="#5e548e" font-weight="700">  지시체와 뜻의 관계 설명 가능</text>
+      <text x="14" y="130" class="lbl-xs">고유 명사뿐 아니라 한정 기술구에도 적용</text>
+    </g>
+  </g>
+
+  <!-- Step 4 · 러셀의 비판 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="650" width="1120" height="160" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="678" class="lbl-head" fill="#a83a4a">러셀 ① 비판 — "뜻은 불필요한 가정"</text>
+
+    <g transform="translate(80, 700)">
+      <rect x="0" y="0" width="540" height="92" rx="4" class="paper2 acc-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#a83a4a">러셀의 주장</text>
+      <text x="14" y="44" class="lbl-sm">· 뜻과 지시체는 구분되지 않는다</text>
+      <text x="14" y="62" class="lbl-sm">· 단어의 의미 = 지시체 그 자체</text>
+      <text x="14" y="82" class="lbl-xs">예: '둥근 사각형'은 지시체가 없으므로 의미 없는 말</text>
+    </g>
+
+    <g transform="translate(640, 700)">
+      <rect x="0" y="0" width="480" height="92" rx="4" class="acc-bg acc-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#a83a4a">생기는 약점</text>
+      <text x="14" y="44" class="lbl-sm">"샛별은 개밥바라기" = "샛별은 샛별"</text>
+      <text x="14" y="62" class="lbl-sm">→ 모두 동어 반복으로 환원됨</text>
+      <text x="14" y="82" class="lbl-xs" fill="#a83a4a" font-weight="700">→ a=b와 a=a의 정보 차이 설명 못 함</text>
+    </g>
+  </g>
+
+  <!-- Step 5 · 기술 이론 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="830" width="1120" height="100" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="858" class="lbl-head" fill="#5e548e">러셀 ② 기술 이론 (Theory of Description)</text>
+
+    <g transform="translate(80, 880)">
+      <rect x="0" y="0" width="500" height="40" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="14" y="20" class="lbl-sm" font-weight="700">진정한 이름</text>
+      <text x="160" y="20" class="lbl-xs">사용자·문맥 무관, 지시 대상과 직접 관련</text>
+
+      <rect x="540" y="0" width="540" height="40" rx="4" class="hum-bg2 hum-st" stroke-width="1.4"/>
+      <text x="554" y="20" class="lbl-sm" font-weight="700" fill="#5e548e">위장된 이름</text>
+      <text x="700" y="20" class="lbl-xs">한정 기술구로 분석되어야 의미 드러남</text>
+    </g>
+  </g>
+
+  <!-- Step 6 · 동일성 문제 해결 -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="40" y="950" width="1120" height="50" rx="6" class="paper2 ink" stroke-width="1"/>
+    <text x="60" y="970" class="lbl-strong">기술 이론으로 풀어 본 동일성 명제</text>
+    <text x="60" y="990" class="lbl-xs">"샛별 = 개밥바라기" → "<tspan fill="#5e548e" font-weight="700">새벽 동쪽의 그 행성</tspan> = <tspan fill="#5e548e" font-weight="700">저녁 서쪽의 그 행성</tspan>" — 뜻 가정 없이도 정보 차이 설명 ✓</text>
+  </g>
+
+  <text x="1160" y="1010" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 인문·예술 · 70쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1020" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1020" width="1120" height="32" rx="6" fill="#5e548e"/>
+    <text x="60" y="1042" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1042" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">6개 항목</text>
+    <line x1="40" y1="1054" x2="1160" y2="1054" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1070" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">프레게의 뜻과 지시체</text>
+    <text x="240" y="1070" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">지시체는 이름이 가리키는 실제 대상, 뜻은 그 대상을 제시하는 방법. 같은 지시체라도 뜻이 다를 수 있다.</text>
+    <line x1="40" y1="1084" x2="1160" y2="1084" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1100" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">동일성 명제의 정보 차이</text>
+    <text x="240" y="1100" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">지시체만으로는 a=b와 a=a가 같은 정보지만, 뜻이 다르면 a=b가 더 많은 정보를 제공한다.</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">뜻의 객관성 (망원경 비유)</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">천체(지시체) = 객관적 실체, 망원경 렌즈상(뜻) = 관찰자와 무관하게 일정, 망막상(관념) = 개인마다 다름.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">러셀의 비판</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">뜻은 불필요한 요소이며 단어의 의미는 지시체이다. 그러나 이 입장은 a=b와 a=a의 정보 차이를 설명하지 못한다.</text>
+    <line x1="40" y1="1174" x2="1160" y2="1174" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1190" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">기술 이론</text>
+    <text x="240" y="1190" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">진정한 이름(지시 대상과 직접 관련)과 위장된 이름(한정 기술구로 분석되어 의미를 드러냄)의 구분.</text>
+  </g>
+</svg>

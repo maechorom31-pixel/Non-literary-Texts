@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1270" data-app role="img" aria-labelledby="t66 d66">
+  <title id="t66">야스퍼스의 한계 상황과 실존적 자각</title>
+  <desc id="d66">죽음·고통·죄·투쟁의 한계 상황을 마주한 인간이 좌절을 통해 초월자를 감지하고 암호 해독으로 실존을 회복하는 과정.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8f6fb}
+      .panel{fill:#ffffff;stroke:#d6cfe8;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a2434}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#5b5170}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a2434}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a2434}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e548e}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#4f4664}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#5b5170}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#9b91b1;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar66" viewBox="0 0 1200 1270" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="1080"/>
+
+  <!-- Header -->
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#5e548e"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">야스퍼스의 한계 상황과 실존적 자각</text>
+  <text x="1136" y="80" class="sub" fill="#ddd5ec" text-anchor="end">인문 · 주장 · 근거</text>
+
+  <!-- Scene 1: 실존주의 배경 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">상황 내 존재로서의 인간</text>
+    <text x="64" y="166" class="small">야스퍼스 — 인간은 자신이 선택하지 않은 상황 속에 구속된 존재이며, 상황에 대한 물음에서 철학이 시작된다.</text>
+
+    <rect class="panel" x="64" y="184" width="1072" height="92" rx="10"/>
+    <rect x="64" y="184" width="6" height="92" fill="#5e548e"/>
+    <text x="84" y="212" class="lab">상황 내 존재(Karl Jaspers, 1883–1969)</text>
+    <text x="84" y="238" class="small">인간은 늘 어떤 상황 속에 있다. 그 상황은 자신이 선택한 것이 아니며, 인간을 구속하고 짓누르는 낯선 것으로 다가온다.</text>
+    <text x="84" y="260" class="it" fill="#5e548e">→ 상황을 자각하는 일이 곧 철학의 출발점이다.</text>
+  </g>
+
+  <!-- Scene 2: 한계 상황 정의 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="320" class="num">2</text>
+    <text x="92" y="320" class="bd">일반 상황 vs 한계 상황</text>
+    <text x="64" y="346" class="small">한계 상황은 능동적 노력으로도 변경할 수 없는 결정적·근원적 상황이다.</text>
+
+    <rect class="panel" x="64" y="364" width="528" height="146" rx="10"/>
+    <text x="84" y="392" class="lab">일반 상황</text>
+    <line x1="84" y1="404" x2="572" y2="404" stroke="#e5dff1" stroke-width="1"/>
+    <text x="84" y="430" class="small">· 인간의 능동적 노력으로 변경 가능</text>
+    <text x="84" y="452" class="small">· 일상 속에서 처리·극복할 수 있는 사건</text>
+    <text x="84" y="474" class="small">· 본래적 존재가 가려져 있다</text>
+    <text x="84" y="498" class="it">예) 직업 선택, 인간관계의 갈등 등</text>
+
+    <rect class="panel" x="608" y="364" width="528" height="146" rx="10" stroke="#5e548e" stroke-width="1.6"/>
+    <text x="628" y="392" class="lab" fill="#5e548e">한계 상황</text>
+    <line x1="628" y1="404" x2="1116" y2="404" stroke="#d8cfee" stroke-width="1"/>
+    <text x="628" y="430" class="small">· 능동적 노력으로 변경 불가능</text>
+    <text x="628" y="452" class="small">· 결코 소멸되지 않고 인간과 함께 있다</text>
+    <text x="628" y="474" class="small">· 본래적 존재를 드러내는 결정적 순간</text>
+    <text x="628" y="498" class="it" fill="#5e548e">→ 인간을 압도하며 좌절·불안을 가져온다</text>
+  </g>
+
+  <!-- Scene 3: 4가지 사례 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="554" class="num">3</text>
+    <text x="92" y="554" class="bd">한계 상황의 네 가지 사례</text>
+    <text x="64" y="580" class="small">야스퍼스가 든 대표 사례 — 죽음 · 고통 · 죄책감 · 투쟁</text>
+
+    <g>
+      <rect x="64" y="598" width="258" height="124" rx="10" fill="#ede8f6" stroke="#c8bee1" stroke-width="1"/>
+      <text x="84" y="626" class="lab">죽음</text>
+      <text x="84" y="650" class="small">유한성의 극한</text>
+      <text x="84" y="672" class="small">자기 존재의 끝을</text>
+      <text x="84" y="690" class="small">피할 수 없음</text>
+      <text x="84" y="710" class="it" fill="#5e548e">불가역적</text>
+
+      <rect x="338" y="598" width="258" height="124" rx="10" fill="#ede8f6" stroke="#c8bee1" stroke-width="1"/>
+      <text x="358" y="626" class="lab">고통</text>
+      <text x="358" y="650" class="small">완전히 제거할 수</text>
+      <text x="358" y="672" class="small">없는 신체적·정신적</text>
+      <text x="358" y="690" class="small">아픔의 경험</text>
+      <text x="358" y="710" class="it" fill="#5e548e">불가피</text>
+
+      <rect x="612" y="598" width="258" height="124" rx="10" fill="#ede8f6" stroke="#c8bee1" stroke-width="1"/>
+      <text x="632" y="626" class="lab">죄책감</text>
+      <text x="632" y="650" class="small">자기 행위에 대한</text>
+      <text x="632" y="672" class="small">책임을 결코 지울</text>
+      <text x="632" y="690" class="small">수 없음</text>
+      <text x="632" y="710" class="it" fill="#5e548e">불가환원적</text>
+
+      <rect x="886" y="598" width="250" height="124" rx="10" fill="#ede8f6" stroke="#c8bee1" stroke-width="1"/>
+      <text x="906" y="626" class="lab">투쟁</text>
+      <text x="906" y="650" class="small">타자와의 갈등은</text>
+      <text x="906" y="672" class="small">결코 완전히 해소될</text>
+      <text x="906" y="690" class="small">수 없음</text>
+      <text x="906" y="710" class="it" fill="#5e548e">불가소멸</text>
+    </g>
+  </g>
+
+  <!-- Scene 4: 실존적 자각 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="766" class="num">4</text>
+    <text x="92" y="766" class="bd">실존적 자각 — 좌절에서 초월자로</text>
+    <text x="64" y="792" class="small">한계 상황을 회피하지 않고 마주할 때 인간은 본래적 존재를 자각하는 도약을 경험한다.</text>
+
+    <g>
+      <rect x="64" y="810" width="244" height="78" rx="10" fill="#ffffff" stroke="#c8bee1" stroke-width="1.2"/>
+      <text x="186" y="838" class="lab" text-anchor="middle">한계 상황 직면</text>
+      <text x="186" y="860" class="small" text-anchor="middle">기존 지식·근거의 회의</text>
+      <text x="186" y="880" class="small" text-anchor="middle">불안 · 좌절</text>
+
+      <line x1="312" y1="849" x2="350" y2="849" stroke="#5e548e" stroke-width="2.2" marker-end="url(#ar66)"/>
+
+      <rect x="354" y="810" width="244" height="78" rx="10" fill="#ffffff" stroke="#c8bee1" stroke-width="1.2"/>
+      <text x="476" y="838" class="lab" text-anchor="middle">유한성의 자각</text>
+      <text x="476" y="860" class="small" text-anchor="middle">세계의 불완전성을</text>
+      <text x="476" y="880" class="small" text-anchor="middle">받아들임</text>
+
+      <line x1="602" y1="849" x2="640" y2="849" stroke="#5e548e" stroke-width="2.2" marker-end="url(#ar66)"/>
+
+      <rect x="644" y="810" width="244" height="78" rx="10" fill="#ffffff" stroke="#c8bee1" stroke-width="1.2"/>
+      <text x="766" y="838" class="lab" text-anchor="middle">초월자 감지</text>
+      <text x="766" y="860" class="small" text-anchor="middle">언어·표상·추론을</text>
+      <text x="766" y="880" class="small" text-anchor="middle">넘어선 존재 앞에 섬</text>
+
+      <line x1="892" y1="849" x2="930" y2="849" stroke="#5e548e" stroke-width="2.2" marker-end="url(#ar66)"/>
+
+      <rect x="934" y="810" width="202" height="78" rx="10" fill="#5e548e"/>
+      <text x="1035" y="838" class="lab" fill="#ffffff" text-anchor="middle">실존적 도약</text>
+      <text x="1035" y="860" class="small" fill="#e3dcf3" text-anchor="middle">본래적 존재와 자유의</text>
+      <text x="1035" y="880" class="small" fill="#e3dcf3" text-anchor="middle">자각</text>
+    </g>
+  </g>
+
+  <!-- Scene 5: 의의 - 암호 해독 -->
+  <g class="reveal" data-reveal-step="5">
+    <text x="64" y="932" class="num">5</text>
+    <text x="92" y="932" class="bd">의의 — 암호 해독을 통한 실존 회복</text>
+    <text x="64" y="958" class="small">초월자는 가능적 실존에게 ‘암호’로 나타나며, 인간은 자신의 방식으로 이를 해독해 실존을 회복한다.</text>
+
+    <rect class="panel" x="64" y="976" width="528" height="80" rx="10"/>
+    <text x="84" y="1002" class="lab">암호 = 초월자의 언어</text>
+    <text x="84" y="1024" class="small">· 보편타당하게 검증 불가, 다의적</text>
+    <text x="84" y="1044" class="small">· 가능적 실존만이 각자의 방식으로 해독</text>
+
+    <line x1="600" y1="1016" x2="640" y2="1016" stroke="#5e548e" stroke-width="2.2" marker-end="url(#ar66)"/>
+
+    <rect class="panel" x="648" y="976" width="488" height="80" rx="10" stroke="#5e548e" stroke-width="1.6" fill="#f1ecf8"/>
+    <text x="668" y="1002" class="lab" fill="#5e548e">철학적 의의</text>
+    <text x="668" y="1024" class="small">일상 속 회피적 태도를 비판하고</text>
+    <text x="668" y="1044" class="small">진정한 자유와 실존의 의미를 묻는 출발점</text>
+  </g>
+
+  <text x="1140" y="1064" class="wm" text-anchor="end">EBS 2027 · 인문 · 283쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1080" width="1120" height="170" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#5e548e"/>
+    <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">4개 항목</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">한계 상황</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">인간이 피하거나 변경할 수 없는 본질적 상황. 일상의 표면을 넘어 본래적 존재가 드러나는 순간.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">구체적 사례</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">죽음, 고통, 죄, 투쟁이 대표적 사례.</text>
+    <line x1="40" y1="1174" x2="1160" y2="1174" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1190" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">실존적 도약</text>
+    <text x="240" y="1190" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">한계 상황의 경험을 통해 본래적 존재와 자유를 자각하는 도약.</text>
+    <line x1="40" y1="1204" x2="1160" y2="1204" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1220" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">의의</text>
+    <text x="240" y="1220" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">일상 속 회피적 태도를 비판하고 진정한 자유와 실존의 의미를 묻는 철학적 출발점이 된다.</text>
+  </g>
+</svg>

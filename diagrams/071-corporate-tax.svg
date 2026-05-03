@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" data-app role="img" aria-labelledby="t71 d71">
+  <title id="t71">법인세 — 이중 과세 문제와 해결 방식의 분류</title>
+  <desc id="d71">법인의 소득에 부과되는 법인세, 배당 단계의 소득세로 인한 이중 과세 문제, 통합주의·이원주의 분류와 현대 절충 방식, 감가상각·인플레이션 보정.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f5f9f8}
+      .panel{fill:#ffffff;stroke:#c4dcd5;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#3e5953}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a6f6f}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#3e5953}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#436963}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .axis{font:600 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a6f6f}
+      .accent{fill:#a83a4a}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#7d9994;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar71" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a6f6f"/>
+    </marker>
+    <marker id="ar71-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+    <symbol id="bldg71" viewBox="0 0 32 36">
+      <rect x="2" y="6" width="28" height="30" fill="#dff0ec" stroke="#2a6f6f"/>
+      <rect x="6" y="12" width="6" height="6" fill="#2a6f6f"/>
+      <rect x="14" y="12" width="6" height="6" fill="#2a6f6f"/>
+      <rect x="22" y="12" width="6" height="6" fill="#2a6f6f"/>
+      <rect x="6" y="22" width="6" height="6" fill="#2a6f6f"/>
+      <rect x="14" y="22" width="6" height="10" fill="#1d2a28"/>
+      <rect x="22" y="22" width="6" height="6" fill="#2a6f6f"/>
+    </symbol>
+    <symbol id="person71" viewBox="0 0 28 36">
+      <circle cx="14" cy="9" r="6" fill="#fbeed3" stroke="#a8884a"/>
+      <path d="M3 34 Q3 19 14 19 Q25 19 25 34 Z" fill="#fbeed3" stroke="#a8884a"/>
+    </symbol>
+  </defs>
+
+  <rect class="bg" width="1200" height="1200"/>
+
+  <!-- Header -->
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">법인세 — 이중 과세 문제와 해결 방식의 분류</text>
+  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회 · 분류</text>
+
+  <!-- Scene 1: 법인세 정의 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">법인세란? — 법인의 소득에 부과되는 직접세</text>
+    <text x="64" y="166" class="small">법적으로만 실체가 인정되는 ‘법인’의 소득에 부과. 일반 조세와 달리 누진 구조 적용 어려움.</text>
+
+    <rect class="panel" x="64" y="184" width="1072" height="120" rx="10"/>
+    <rect x="64" y="184" width="6" height="120" fill="#2a6f6f"/>
+
+    <!-- 좌측 도식: 수입 - 비용 = 과세 대상 -->
+    <g transform="translate(96,206)">
+      <rect width="180" height="40" rx="8" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1.2"/>
+      <text x="90" y="26" class="lab" text-anchor="middle" fill="#2a6f6f">수입 (매출)</text>
+
+      <text x="190" y="26" class="bd" text-anchor="middle">−</text>
+
+      <rect x="208" width="180" height="40" rx="8" fill="#fbeed3" stroke="#a8884a" stroke-width="1.2"/>
+      <text x="298" y="26" class="lab" text-anchor="middle" fill="#a8884a">사업 비용</text>
+
+      <text x="402" y="26" class="bd" text-anchor="middle">=</text>
+
+      <rect x="420" width="220" height="40" rx="8" fill="#a83a4a"/>
+      <text x="530" y="26" class="pill" text-anchor="middle">과세 대상 (법인 소득)</text>
+    </g>
+
+    <text x="84" y="278" class="small">· 자연인과 별도의 납세 주체로 ‘법인’ 인정 — 법인을 독립된 인격으로 보는 데서 출발</text>
+    <text x="84" y="296" class="small">· 단순 세율 구조 — 누진성과 무관 / 능력 원칙(부담 능력에 따른 차등) 적용 어려움</text>
+  </g>
+
+  <!-- Scene 2: 이중 과세 문제 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="346" class="num">2</text>
+    <text x="92" y="346" class="bd">이중 과세 문제 — 법인 단계와 주주 단계의 두 번 과세</text>
+
+    <rect class="panel" x="64" y="364" width="1072" height="170" rx="10"/>
+
+    <g transform="translate(84,388)">
+      <use href="#bldg71" x="0" y="0" width="48" height="54"/>
+      <text x="24" y="68" class="small" text-anchor="middle">법인의 소득</text>
+      <text x="24" y="84" class="small" text-anchor="middle">(수입−비용)</text>
+
+      <line x1="58" y1="28" x2="98" y2="28" stroke="#a83a4a" stroke-width="2.4" marker-end="url(#ar71-r)"/>
+
+      <rect x="106" y="0" width="180" height="56" rx="10" fill="#fbe6e9" stroke="#a83a4a" stroke-width="1.4"/>
+      <text x="196" y="22" class="lab" fill="#a83a4a" text-anchor="middle">①  법인세</text>
+      <text x="196" y="42" class="small" fill="#a83a4a" text-anchor="middle">법인 단계 과세</text>
+
+      <line x1="294" y1="28" x2="334" y2="28" stroke="#2a6f6f" stroke-width="2.2" marker-end="url(#ar71)"/>
+
+      <rect x="342" y="0" width="180" height="56" rx="10" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1"/>
+      <text x="432" y="22" class="lab" text-anchor="middle">세후 이익</text>
+      <text x="432" y="42" class="small" text-anchor="middle">→ 배당으로 분배</text>
+
+      <line x1="530" y1="28" x2="570" y2="28" stroke="#a83a4a" stroke-width="2.4" marker-end="url(#ar71-r)"/>
+
+      <rect x="578" y="0" width="180" height="56" rx="10" fill="#fbe6e9" stroke="#a83a4a" stroke-width="1.4"/>
+      <text x="668" y="22" class="lab" fill="#a83a4a" text-anchor="middle">②  소득세</text>
+      <text x="668" y="42" class="small" fill="#a83a4a" text-anchor="middle">주주 단계 과세</text>
+
+      <line x1="766" y1="28" x2="806" y2="28" stroke="#2a6f6f" stroke-width="2.2" marker-end="url(#ar71)"/>
+
+      <use href="#person71" x="816" y="0" width="40" height="50"/>
+      <use href="#person71" x="858" y="0" width="40" height="50"/>
+      <use href="#person71" x="900" y="0" width="40" height="50"/>
+      <text x="888" y="68" class="small" text-anchor="middle">주주 수령</text>
+    </g>
+
+    <rect x="84" y="486" width="1052" height="38" rx="8" fill="#fbe6e9" stroke="#a83a4a"/>
+    <text x="100" y="510" class="lab" fill="#a83a4a">→ 같은 경제적 소득(법인의 이익)에 두 번 과세 — ‘이중 과세 문제’</text>
+  </g>
+
+  <!-- Scene 3: 통합주의 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="576" class="num">3</text>
+    <text x="92" y="576" class="bd">통합주의 — 법인을 주주의 ‘도관(pipe)’으로 보기</text>
+
+    <rect class="panel" x="64" y="594" width="1072" height="160" rx="10"/>
+
+    <!-- 좌: 도관 도식 -->
+    <g transform="translate(84,612)">
+      <use href="#bldg71" x="0" y="20" width="40" height="44"/>
+      <line x1="40" y1="40" x2="160" y2="40" stroke="#2a6f6f" stroke-width="14" stroke-linecap="round" opacity="0.45"/>
+      <line x1="40" y1="40" x2="160" y2="40" stroke="#2a6f6f" stroke-width="2"/>
+      <text x="100" y="22" class="small" text-anchor="middle" fill="#2a6f6f">도관 통과</text>
+      <text x="100" y="68" class="small" text-anchor="middle">법인세 면제·감면</text>
+      <use href="#person71" x="160" y="20" width="32" height="40"/>
+      <use href="#person71" x="194" y="20" width="32" height="40"/>
+      <text x="195" y="78" class="small" text-anchor="middle">자본 소유자</text>
+    </g>
+
+    <g transform="translate(380,610)">
+      <text x="0" y="20" class="lab" fill="#2a6f6f">기본 관점</text>
+      <line x1="0" y1="32" x2="730" y2="32" stroke="#dfeae7"/>
+      <text x="0" y="56" class="small">· 법인은 별개 인격이 아니라 주주의 도관 — 부담은 결국 자본 소유자(주주)에게</text>
+      <text x="0" y="78" class="small">· 법인 단계 과세를 면제 또는 감면하여 ‘이중 과세’를 해소</text>
+      <text x="0" y="100" class="small">· 방식 예) 법인세 면제 / 통합 세액 공제 / 도관 과세</text>
+      <text x="0" y="124" class="it" fill="#2a6f6f">법인세 부담의 귀착 = 자본 소유자 + (상황) 노동·소비자</text>
+    </g>
+  </g>
+
+  <!-- Scene 4: 이원주의 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="796" class="num">4</text>
+    <text x="92" y="796" class="bd">이원주의 — 법인을 별개 인격으로 인정</text>
+
+    <rect class="panel" x="64" y="814" width="1072" height="160" rx="10"/>
+
+    <!-- 좌: 별개 인격 도식 -->
+    <g transform="translate(84,832)">
+      <use href="#bldg71" x="0" y="20" width="40" height="44"/>
+      <text x="20" y="78" class="small" text-anchor="middle">법인 (별개)</text>
+      <line x1="40" y1="40" x2="80" y2="40" stroke="#a8884a" stroke-width="1.4" stroke-dasharray="4 4"/>
+      <text x="60" y="32" class="small" text-anchor="middle">≠</text>
+      <use href="#person71" x="86" y="20" width="32" height="40"/>
+      <text x="102" y="78" class="small" text-anchor="middle">주주 (자연인)</text>
+    </g>
+
+    <g transform="translate(280,830)">
+      <text x="0" y="20" class="lab" fill="#a8884a">기본 관점</text>
+      <line x1="0" y1="32" x2="830" y2="32" stroke="#dfeae7"/>
+      <text x="0" y="56" class="small">· 법인 = 자연인과 구별되는 별개의 납세 주체</text>
+      <text x="0" y="78" class="small">· 법인세와 소득세를 별도로 부과 — 이중 과세를 별도 부담으로 인정</text>
+      <text x="0" y="100" class="small">· 경제적 이윤(차입 자금 + 이자 비용 처리 후 남은 이윤)에 부과되는 측면</text>
+      <text x="0" y="124" class="it" fill="#a8884a">법인세 부담의 귀착 = 법인 소유주(주주)에게 전적 귀착</text>
+    </g>
+  </g>
+
+  <!-- Scene 5: 현대의 절충 -->
+  <g class="reveal" data-reveal-step="5">
+    <text x="64" y="1016" class="num">5</text>
+    <text x="92" y="1016" class="bd">현대의 절충 — 부분 통합·경감 방식</text>
+
+    <g>
+      <!-- 배당 세액 공제 -->
+      <rect x="64" y="1034" width="528" height="74" rx="10" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1.4"/>
+      <text x="84" y="1058" class="lab" fill="#2a6f6f">배당 세액 공제 (부분 통합)</text>
+      <text x="84" y="1080" class="small">법인세 일부를 주주의 소득세에서 공제 → 부분적 이중 과세 해소</text>
+      <text x="84" y="1100" class="small">한국·영국 등 다수 국가의 주류 방식</text>
+
+      <!-- 감가상각·인플레이션 보정 -->
+      <rect x="608" y="1034" width="528" height="74" rx="10" fill="#fff5e6" stroke="#a8884a" stroke-width="1.4"/>
+      <text x="628" y="1058" class="lab" fill="#a8884a">감가상각 · 인플레이션 보정</text>
+      <text x="628" y="1080" class="small">정액법(1/n씩) · 가속 상각(투자 유도) · 경제적 감가상각과 일치 시도</text>
+      <text x="628" y="1100" class="small">역사적 비용 → 인플레이션 시 실질 가치 하락 ⇒ 보정</text>
+    </g>
+
+    <!-- 시각적 비교 — 정액 vs 가속 vs 경제적 감가상각 곡선 -->
+    <g transform="translate(64,1126)">
+      <rect x="0" y="0" width="1072" height="60" rx="8" fill="#fff" stroke="#c4dcd5" stroke-width="1"/>
+      <text x="14" y="22" class="small" fill="#2a6f6f">감가상각 곡선 비교 ⇣</text>
+      <!-- 정액 -->
+      <line x1="180" y1="14" x2="280" y2="50" stroke="#2a6f6f" stroke-width="1.6"/>
+      <text x="290" y="32" class="small" fill="#2a6f6f">정액법 (직선)</text>
+      <!-- 가속 -->
+      <path d="M400 14 Q420 30 460 50" fill="none" stroke="#a8884a" stroke-width="1.6"/>
+      <text x="470" y="32" class="small" fill="#a8884a">가속 상각 (초기↑)</text>
+      <!-- 경제적 -->
+      <path d="M620 14 C660 22 670 38 720 50" fill="none" stroke="#a83a4a" stroke-width="1.6" stroke-dasharray="3 3"/>
+      <text x="730" y="32" class="small" fill="#a83a4a">경제적 감가상각 (실제 가치 손실)</text>
+    </g>
+  </g>
+
+  <text x="1140" y="1196" class="wm" text-anchor="end">EBS 2027 · 사회 · 304쪽</text>
+</svg>

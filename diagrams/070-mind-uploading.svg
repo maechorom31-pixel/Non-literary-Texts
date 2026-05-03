@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" data-app role="img" aria-labelledby="t70 d70">
+  <title id="t70">마음 업로딩 — 정체성·연속성·의식을 둘러싼 철학적 쟁점</title>
+  <desc id="d70">계산 기능주의와 체화된 인지가 마음 업로딩 가능성에 대해 충돌하는 구조 — 정체성·연속성 문제와 강한·약한 환원주의의 대립.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8f6fb}
+      .panel{fill:#ffffff;stroke:#d6cfe8;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a2434}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#5b5170}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a2434}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a2434}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e548e}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#4f4664}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#5b5170}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#9b91b1;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar70" viewBox="0 0 1200 1500" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="1280"/>
+
+  <!-- Header -->
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#5e548e"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">마음 업로딩 — 정체성·연속성·의식의 쟁점</text>
+  <text x="1136" y="80" class="sub" fill="#ddd5ec" text-anchor="end">인문 · 주장과 근거</text>
+
+  <!-- Scene 1: 도입 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">도입 — 디지털 영생의 기획</text>
+    <text x="64" y="166" class="small">커즈와일·보스트룀: 기억·가치관·정서적 성향을 정보 패턴으로 보존하면 신체의 죽음 이후에도 ‘나’가 존재한다.</text>
+
+    <rect class="panel" x="64" y="184" width="1072" height="74" rx="10"/>
+    <rect x="64" y="184" width="6" height="74" fill="#5e548e"/>
+    <text x="84" y="212" class="lab">심리적 연속성 이론</text>
+    <text x="84" y="238" class="small">‘나’ = 기억·신념·생각·감정·희망·두려움의 묶음. 이 묶음이 보존되면 ‘나’는 지속된다.</text>
+  </g>
+
+  <!-- Scene 2: 기술적 시나리오 (계산 기능주의) -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="296" class="num">2</text>
+    <text x="92" y="296" class="bd">기술적 전제 — 계산 기능주의 + 복수 실현 가능성</text>
+    <text x="64" y="322" class="small">정신 작용 = 뇌라는 하드웨어에서 작동하는 소프트웨어. 동일한 계산은 다른 물질에서도 실현될 수 있다.</text>
+
+    <g>
+      <rect class="panel" x="64" y="340" width="528" height="120" rx="10"/>
+      <text x="84" y="368" class="lab">계산 기능주의</text>
+      <line x1="84" y1="380" x2="572" y2="380" stroke="#e5dff1" stroke-width="1"/>
+      <text x="84" y="404" class="small">· 심적 상태 = 인과적 역할로 정의</text>
+      <text x="84" y="426" class="small">· 두뇌 = 생물학적 컴퓨터(하드웨어)</text>
+      <text x="84" y="448" class="small">· 생각·기억 = 데이터 구조와 계산 조작</text>
+
+      <rect class="panel" x="608" y="340" width="528" height="120" rx="10" stroke="#5e548e" stroke-width="1.6" fill="#f1ecf8"/>
+      <text x="628" y="368" class="lab" fill="#5e548e">복수 실현 가능성</text>
+      <line x1="628" y1="380" x2="1116" y2="380" stroke="#d8cfee" stroke-width="1"/>
+      <text x="628" y="404" class="small">하나의 정신 상태 = 여러 물질에서 구현 가능</text>
+      <text x="628" y="426" class="small">예) 1+1=2 — 전자계산기 · 주판 · 인간 뇌 모두 가능</text>
+      <text x="628" y="448" class="it" fill="#5e548e">→ 심리적 연속성은 물리적 동일성을 요구하지 않는다</text>
+    </g>
+  </g>
+
+  <!-- Scene 3 & 4: 정체성 & 연속성 문제 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="500" class="num">3</text>
+    <text x="92" y="500" class="bd">정체성 문제 — 업로딩의 기제</text>
+    <text x="64" y="526" class="small">시냅스 구조를 스캔→계산 구조로 컴퓨터에 구현→재현. 정보 패턴을 다른 물질적 기반으로 이전한다.</text>
+
+    <g>
+      <rect x="64" y="544" width="220" height="62" rx="10" fill="#ede8f6" stroke="#c8bee1" stroke-width="1"/>
+      <text x="174" y="570" class="lab" text-anchor="middle">생물학적 뇌</text>
+      <text x="174" y="592" class="small" text-anchor="middle">시냅스 패턴</text>
+
+      <line x1="292" y1="575" x2="338" y2="575" stroke="#5e548e" stroke-width="2.2" marker-end="url(#ar70)"/>
+
+      <rect x="344" y="544" width="220" height="62" rx="10" fill="#ede8f6" stroke="#c8bee1" stroke-width="1"/>
+      <text x="454" y="570" class="lab" text-anchor="middle">스캔 · 추출</text>
+      <text x="454" y="592" class="small" text-anchor="middle">정보 패턴화</text>
+
+      <line x1="572" y1="575" x2="618" y2="575" stroke="#5e548e" stroke-width="2.2" marker-end="url(#ar70)"/>
+
+      <rect x="624" y="544" width="220" height="62" rx="10" fill="#ede8f6" stroke="#c8bee1" stroke-width="1"/>
+      <text x="734" y="570" class="lab" text-anchor="middle">컴퓨터로 전송</text>
+      <text x="734" y="592" class="small" text-anchor="middle">계산 구조로 구현</text>
+
+      <line x1="852" y1="575" x2="898" y2="575" stroke="#5e548e" stroke-width="2.2" marker-end="url(#ar70)"/>
+
+      <rect x="904" y="544" width="232" height="62" rx="10" fill="#5e548e"/>
+      <text x="1020" y="570" class="lab" fill="#ffffff" text-anchor="middle">디지털 자아</text>
+      <text x="1020" y="592" class="small" fill="#e3dcf3" text-anchor="middle">재현된 정신 패턴</text>
+    </g>
+  </g>
+
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="650" class="num">4</text>
+    <text x="92" y="650" class="bd">연속성 문제 — 동시 존재의 역설</text>
+    <text x="64" y="676" class="small">원래 신체와 디지털 자아가 동시에 존재한다면 어느 쪽이 ‘나’인가? 의식의 흐름이 끊긴 채 복사된 것은 진짜 나인가?</text>
+
+    <g>
+      <rect class="panel" x="64" y="694" width="528" height="100" rx="10"/>
+      <text x="84" y="722" class="lab">정체성의 갈래</text>
+      <text x="84" y="748" class="small">· 동일성 — 디지털 자아 = 원래의 ‘나’?</text>
+      <text x="84" y="770" class="small">· 복사본 — 정교한 사본일 뿐인가?</text>
+
+      <rect class="panel" x="608" y="694" width="528" height="100" rx="10"/>
+      <text x="628" y="722" class="lab">연속성의 갈래</text>
+      <text x="628" y="748" class="small">· 의식의 끊김 — 스캔 시점에서 단절</text>
+      <text x="628" y="770" class="small">· 분기 — 두 개의 ‘나’가 동시에 존재</text>
+    </g>
+  </g>
+
+  <!-- Scene 5: 의식의 본질 -->
+  <g class="reveal" data-reveal-step="5">
+    <text x="64" y="838" class="num">5</text>
+    <text x="92" y="838" class="bd">의식의 본질 — 패턴인가 물질인가?</text>
+    <text x="64" y="864" class="small">업로딩이 ‘나의 생존’이 되려면 심리적으로 충분히 유사한 ‘나’가 물질에 구애받지 않고 계속 존재해야 한다.</text>
+
+    <rect class="panel" x="64" y="882" width="1072" height="62" rx="10" fill="#f1ecf8" stroke="#5e548e" stroke-width="1.4"/>
+    <text x="84" y="910" class="lab" fill="#5e548e">핵심 물음</text>
+    <text x="84" y="932" class="small">의식이 정보 패턴이라면 업로딩 가능. 물질·생물학적 기반에 의존한다면 디지털 자아는 진정한 의식이 아닐 수 있다.</text>
+  </g>
+
+  <!-- Scene 6 & 7: 강한 vs 약한 환원주의 (좌우 비교) -->
+  <g class="reveal" data-reveal-step="6">
+    <text x="64" y="990" class="num">6</text>
+    <text x="92" y="990" class="bd">강한 환원주의 — 신체 중립성</text>
+
+    <rect class="panel" x="64" y="1006" width="528" height="178" rx="10" stroke="#5e548e" stroke-width="1.6" fill="#f1ecf8"/>
+    <text x="84" y="1034" class="lab" fill="#5e548e">정신 = 정보 구조</text>
+    <line x1="84" y1="1046" x2="572" y2="1046" stroke="#d8cfee" stroke-width="1"/>
+    <text x="84" y="1070" class="small">· 신체의 종류는 정신의 구조·종류에 차이를 만들지 않는다</text>
+    <text x="84" y="1092" class="small">· 정신은 손실 없이 추출·복제 가능한 정보 구조</text>
+    <text x="84" y="1114" class="small">· 인간의 본질 = 알고리즘과 계산적 구성</text>
+    <text x="84" y="1136" class="small">· 뇌·신체 폐기 후에도 생존 가능</text>
+    <text x="84" y="1162" class="it" fill="#5e548e">⇒ 마음 업로딩 가능</text>
+  </g>
+
+  <g class="reveal" data-reveal-step="7">
+    <text x="608" y="990" class="num">7</text>
+    <text x="636" y="990" class="bd">약한 환원주의 — 체화된 인지</text>
+
+    <rect class="panel" x="608" y="1006" width="528" height="178" rx="10"/>
+    <text x="628" y="1034" class="lab">정신 = 신체와 결부된 인지</text>
+    <line x1="628" y1="1046" x2="1116" y2="1046" stroke="#e5dff1" stroke-width="1"/>
+    <text x="628" y="1070" class="small">· 인지는 뇌+신체 구조+환경을 구성 요소로 포함</text>
+    <text x="628" y="1092" class="small">· 몸 종류가 마음의 표상·개념 구조를 결정</text>
+    <text x="628" y="1114" class="small">· 예) 시각 정보 패턴을 박쥐 뇌로 이식해도 인간의 시각이 아님</text>
+    <text x="628" y="1136" class="small">· 손실 없는 추출과 이전이 어렵다</text>
+    <text x="628" y="1162" class="it" fill="#a83a4a">⇒ 디지털 자아는 진정한 의식이 아닐 수 있다</text>
+  </g>
+
+  <!-- Scene 8: 결론 -->
+  <g class="reveal" data-reveal-step="8">
+    <text x="64" y="1224" class="num">8</text>
+    <text x="92" y="1224" class="bd">철학적 도전</text>
+    <text x="64" y="1250" class="small">단순한 기술 문제가 아니라 인간 정체성·의식·죽음의 이해 자체를 재구성하는 도전. 신체가 다르면 개념도 다르다.</text>
+  </g>
+
+  <text x="1140" y="1264" class="wm" text-anchor="end">EBS 2027 · 인문 · 299쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1280" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1280" width="1120" height="32" rx="6" fill="#5e548e"/>
+    <text x="60" y="1302" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1302" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1314" x2="1160" y2="1314" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1330" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">마음 업로딩의 시나리오</text>
+    <text x="240" y="1330" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">뇌 스캐닝과 신경 시뮬레이션을 통해 정보 패턴을 디지털 시스템으로 옮긴다.</text>
+    <line x1="40" y1="1344" x2="1160" y2="1344" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1360" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">정체성 문제</text>
+    <text x="240" y="1360" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">디지털 자아가 원래의 나와 동일한지, 아니면 정교한 복사본인지의 쟁점.</text>
+    <line x1="40" y1="1374" x2="1160" y2="1374" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1390" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">연속성 문제</text>
+    <text x="240" y="1390" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">원래 신체와 디지털 자아가 동시에 존재할 때 어느 쪽이 나인지, 의식의 연속성이 보장되는지의 쟁점.</text>
+    <line x1="40" y1="1404" x2="1160" y2="1404" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1420" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">강한 환원주의 vs 약한 환원주의</text>
+    <text x="240" y="1420" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">강한 입장은 의식을 정보 패턴으로 환원해 업로딩을 인정, 약한 입장은 물질 기반을 분리할 수 없다고 비판.</text>
+    <line x1="40" y1="1434" x2="1160" y2="1434" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1450" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">철학적 도전</text>
+    <text x="240" y="1450" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">단순 기술 문제가 아니라 정체성·의식·죽음에 대한 이해를 재구성하는 도전이다.</text>
+  </g>
+</svg>

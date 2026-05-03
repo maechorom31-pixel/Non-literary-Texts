@@ -1,0 +1,285 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 940" role="img" aria-labelledby="t3 d3">
+  <title id="t3">양자점 디스플레이 — 에너지 밴드와 입자 크기</title>
+  <desc id="d3">원자 1개의 특정 에너지 준위에서 출발해, 여러 원자가 모이면 띠 모양 에너지 밴드가 형성되는 과정, 양자점이 작을수록 변동 폭이 커지면서 푸른빛에 가까워지는 인과, 일반 발광 물질의 넓은 파장 분포와 양자점의 좁고 집중된 파장 분포 비교, 그리고 코어·셸·리간드 동심원 구조와 친환경 양자점 연구 방향(카드뮴→갈륨·인)을 시각화한다.</desc>
+
+  <defs>
+    <marker id="ar3-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1612"/>
+    </marker>
+    <marker id="ar3-sci" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f5582"/>
+    </marker>
+    <marker id="ar3-grey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7a6f5f"/>
+    </marker>
+    <marker id="ar3-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+    <linearGradient id="band-blue-red" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#3b6fb5"/>
+      <stop offset="0.5" stop-color="#7aae7a"/>
+      <stop offset="1" stop-color="#a83a4a"/>
+    </linearGradient>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .ghost { stroke: #c9bfa8; stroke-dasharray: 3 2; fill: none; }
+    .sci { fill: #1f5582; }
+    .sci-st { stroke: #1f5582; }
+    .sci-bg { fill: rgba(31,85,130,0.08); }
+    .sci-bg2 { fill: rgba(31,85,130,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- ===========================================================
+       Step 1 · 에너지 준위 → 에너지 밴드
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="600" y="56" text-anchor="middle" class="lbl-head">원자 1개 → 여러 원자 → 에너지 밴드 형성</text>
+
+    <!-- 좌: 원자 1개 -->
+    <rect x="40" y="76" width="360" height="200" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="104" class="lbl-strong">원자 1개</text>
+    <text x="60" y="122" class="lbl-sm">전자 궤도 = 특정 에너지 준위</text>
+
+    <g transform="translate(160, 200)">
+      <circle r="50" class="ghost" stroke-width="1"/>
+      <circle r="32" class="ghost" stroke-width="1"/>
+      <circle r="6" class="ink" fill="#1a1612"/>
+      <text x="0" y="3" text-anchor="middle" font-size="9" fill="#f5f1e8">+</text>
+      <circle cx="32" cy="0" r="4" class="sci"/>
+      <circle cx="-50" cy="0" r="3" fill="none" class="sci-st" stroke-width="1.5" stroke-dasharray="2 2"/>
+    </g>
+
+    <g transform="translate(280, 130)">
+      <line x1="0" y1="120" x2="80" y2="120" class="ink" stroke-width="2.4"/>
+      <line x1="0" y1="84" x2="80" y2="84" class="ink" stroke-width="2.4"/>
+      <line x1="0" y1="42" x2="80" y2="42" class="ink" stroke-width="2.4"/>
+      <line x1="0" y1="0" x2="80" y2="0" class="ink" stroke-width="2.4"/>
+      <text x="-4" y="124" text-anchor="end" class="lbl-xs">바닥</text>
+      <text x="-4" y="4" text-anchor="end" class="lbl-xs">바깥</text>
+      <text x="84" y="62" class="lbl-xs">에너지 ↑</text>
+      <text x="-4" y="64" text-anchor="end" class="lbl-xs" fill="#7a6f5f">띄엄띄엄</text>
+    </g>
+
+    <!-- 중앙: 변환 화살표 -->
+    <g transform="translate(420, 176)">
+      <line x1="0" y1="0" x2="40" y2="0" class="ink" stroke-width="1.6" marker-end="url(#ar3-ink)"/>
+      <text x="20" y="-8" text-anchor="middle" class="lbl-xs">원자 모임</text>
+      <text x="20" y="20" text-anchor="middle" class="lbl-xs">궤도 중첩</text>
+    </g>
+
+    <!-- 우: 여러 원자 + 에너지 밴드 -->
+    <rect x="490" y="76" width="670" height="200" rx="6" class="sci-bg sci-st" stroke-width="1.5"/>
+    <text x="510" y="104" class="lbl-strong" fill="#1f5582">여러 원자 (보통 물질)</text>
+    <text x="510" y="122" class="lbl-sm" fill="#1f5582">궤도 중첩 → 에너지 준위가 일정 범위(밴드)로 퍼짐</text>
+
+    <!-- 원자 격자 -->
+    <g transform="translate(610, 200)">
+      <g class="sci">
+        <circle cx="-30" cy="0" r="3"/>
+        <circle cx="-15" cy="-12" r="3"/>
+        <circle cx="0" cy="0" r="3"/>
+        <circle cx="15" cy="-12" r="3"/>
+        <circle cx="30" cy="0" r="3"/>
+        <circle cx="-15" cy="12" r="3"/>
+        <circle cx="15" cy="12" r="3"/>
+      </g>
+      <g class="ghost">
+        <circle cx="-15" cy="-12" r="14"/>
+        <circle cx="15" cy="-12" r="14"/>
+        <circle cx="0" cy="0" r="14"/>
+        <circle cx="-15" cy="12" r="14"/>
+        <circle cx="15" cy="12" r="14"/>
+      </g>
+    </g>
+
+    <!-- 에너지 밴드 (띠 형태) -->
+    <g transform="translate(750, 130)">
+      <rect x="0" y="100" width="380" height="22" fill="url(#band-blue-red)" opacity="0.85"/>
+      <text x="-4" y="115" text-anchor="end" class="lbl-xs">낮은 밴드</text>
+      <rect x="0" y="0" width="380" height="22" fill="url(#band-blue-red)" opacity="0.85"/>
+      <text x="-4" y="14" text-anchor="end" class="lbl-xs">높은 밴드</text>
+
+      <!-- 빛 방출 화살표 -->
+      <line x1="100" y1="22" x2="100" y2="100" stroke="#7a6f5f" stroke-width="1.4" marker-end="url(#ar3-grey)"/>
+      <text x="108" y="64" class="lbl-xs">빛 방출 (변동 폭 = 빛 에너지)</text>
+
+      <!-- 변동 폭 강조 -->
+      <line x1="320" y1="22" x2="320" y2="100" class="acc-st" stroke-width="1.4" stroke-dasharray="3 2"/>
+      <text x="328" y="60" class="lbl-xs" fill="#a83a4a" font-weight="700">변동 폭</text>
+      <text x="328" y="74" class="lbl-xs" fill="#a83a4a">= 빛의 색</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 2 · 양자점 크기 → 변동 폭 → 색
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="296" width="1120" height="180" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="324" class="lbl-head">양자점 (반도체 나노 입자) — 크기가 색을 결정한다</text>
+    <text x="60" y="346" class="lbl-sm">크기 ↓ → 전자 에너지 변동 폭 ↑ → 푸른 계열   /   크기 ↑ → 변동 폭 ↓ → 붉은 계열</text>
+
+    <!-- 작은 양자점 (푸른빛) -->
+    <g transform="translate(180, 416)">
+      <circle r="14" fill="#3b6fb5"/>
+      <circle r="22" fill="none" stroke="#3b6fb5" stroke-width="1" opacity="0.5"/>
+      <circle r="32" fill="none" stroke="#3b6fb5" stroke-width="1" opacity="0.25"/>
+      <text y="56" text-anchor="middle" class="lbl-strong" fill="#3b6fb5">작음</text>
+      <text y="74" text-anchor="middle" class="lbl-sm" fill="#3b6fb5">변동 폭 ↑ → 푸른빛</text>
+    </g>
+
+    <!-- 중간 양자점 -->
+    <g transform="translate(450, 416)">
+      <circle r="22" fill="#5a9b6f"/>
+      <circle r="30" fill="none" stroke="#5a9b6f" stroke-width="1" opacity="0.4"/>
+      <text y="56" text-anchor="middle" class="lbl-strong" fill="#5a9b6f">중간</text>
+      <text y="74" text-anchor="middle" class="lbl-sm" fill="#5a9b6f">변동 폭 중간 → 초록빛</text>
+    </g>
+
+    <!-- 큰 양자점 -->
+    <g transform="translate(720, 416)">
+      <circle r="32" fill="#a83a4a"/>
+      <text y="56" text-anchor="middle" class="lbl-strong" fill="#a83a4a">큼</text>
+      <text y="74" text-anchor="middle" class="lbl-sm" fill="#a83a4a">변동 폭 ↓ → 붉은빛</text>
+    </g>
+
+    <!-- 변동 폭 vs 빛 색 미니 차트 -->
+    <g transform="translate(890, 372)">
+      <!-- 작 -->
+      <text x="0" y="0" class="lbl-xs">작은 양자점</text>
+      <rect x="80" y="-12" width="180" height="14" fill="rgba(59,111,181,0.85)" rx="2"/>
+      <line x1="80" y1="-22" x2="260" y2="-22" stroke="#1f5582" stroke-width="1" marker-start="url(#ar3-sci)" marker-end="url(#ar3-sci)"/>
+      <text x="170" y="-26" text-anchor="middle" class="lbl-xs" fill="#1f5582">큰 변동 폭</text>
+
+      <!-- 큰 -->
+      <text x="0" y="46" class="lbl-xs">큰 양자점</text>
+      <rect x="170" y="34" width="60" height="14" fill="rgba(168,58,74,0.85)" rx="2"/>
+      <line x1="170" y1="64" x2="230" y2="64" stroke="#a83a4a" stroke-width="1" marker-start="url(#ar3-acc)" marker-end="url(#ar3-acc)"/>
+      <text x="200" y="80" text-anchor="middle" class="lbl-xs" fill="#a83a4a">작은 변동 폭</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 3 · 파장 분포 비교 (일반 vs 양자점)
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="600" y="510" text-anchor="middle" class="lbl-head">파장 분포 — 디스플레이 화질의 비밀</text>
+
+    <!-- 일반 발광 물질 -->
+    <rect x="40" y="528" width="540" height="190" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="556" class="lbl-strong">일반 발광 물질 (수많은 원자)</text>
+    <text x="60" y="574" class="lbl-sm">밴드 → 밴드 이동 → 넓은 파장 분포 → 다른 색 섞임</text>
+
+    <!-- 스펙트럼 막대 -->
+    <rect x="80" y="678" width="460" height="14" fill="url(#band-blue-red)" opacity="0.4"/>
+    <text x="80" y="706" class="lbl-xs">파랑</text>
+    <text x="540" y="706" text-anchor="end" class="lbl-xs">빨강</text>
+    <!-- 넓은 종 모양 곡선 -->
+    <path d="M 80 678 Q 130 660 180 630 Q 240 590 310 590 Q 380 590 440 630 Q 490 660 540 678 Z" fill="rgba(168,58,74,0.18)" stroke="#a83a4a" stroke-width="2"/>
+    <text x="310" y="620" text-anchor="middle" class="lbl-xs" fill="#a83a4a" font-weight="700">의도한 색 외 다른 파장도 섞임</text>
+
+    <!-- 양자점 -->
+    <rect x="620" y="528" width="540" height="190" rx="6" class="sci-bg sci-st" stroke-width="1.5"/>
+    <text x="640" y="556" class="lbl-strong" fill="#1f5582">양자점 디스플레이 (적은 원자)</text>
+    <text x="640" y="574" class="lbl-sm">좁은 변동 폭 → 좁고 집중된 파장 → 원색에 가까움</text>
+
+    <rect x="660" y="678" width="460" height="14" fill="url(#band-blue-red)" opacity="0.4"/>
+    <text x="660" y="706" class="lbl-xs">파랑</text>
+    <text x="1120" y="706" text-anchor="end" class="lbl-xs">빨강</text>
+    <!-- 좁은 종 모양 곡선 (스파이크) -->
+    <path d="M 840 678 Q 860 660 880 600 Q 890 580 900 600 Q 920 660 940 678 Z" fill="rgba(31,85,130,0.32)" stroke="#1f5582" stroke-width="2"/>
+    <text x="890" y="600" text-anchor="middle" class="lbl-xs" fill="#1f5582" font-weight="700">집중된 빛</text>
+    <text x="890" y="640" text-anchor="middle" class="lbl-xs" fill="#1f5582">원색에 가까움 + 발열 ↓</text>
+  </g>
+
+  <!-- ===========================================================
+       Step 4 · 코어·셸·리간드 구조
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="738" width="700" height="180" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="764" class="lbl-strong">양자점의 동심 구조 — 코어 + 셸 + 리간드</text>
+
+    <!-- 동심원 단면 -->
+    <g transform="translate(140, 832)">
+      <!-- 리간드 (가장 바깥, 점선 + 작은 점들) -->
+      <circle r="44" fill="none" stroke="#7a6f5f" stroke-dasharray="2 3"/>
+      <g fill="#7a6f5f">
+        <circle cx="0" cy="-44" r="2.2"/>
+        <circle cx="31" cy="-31" r="2.2"/>
+        <circle cx="44" cy="0" r="2.2"/>
+        <circle cx="31" cy="31" r="2.2"/>
+        <circle cx="0" cy="44" r="2.2"/>
+        <circle cx="-31" cy="31" r="2.2"/>
+        <circle cx="-44" cy="0" r="2.2"/>
+        <circle cx="-31" cy="-31" r="2.2"/>
+      </g>
+      <!-- 셸 -->
+      <circle r="30" fill="#ebe5d4" stroke="#1a1612" stroke-width="1.3"/>
+      <!-- 코어 -->
+      <circle r="18" class="sci"/>
+      <text y="3" text-anchor="middle" font-size="10" fill="#f5f1e8" font-weight="700">코어</text>
+    </g>
+
+    <g transform="translate(220, 786)">
+      <rect x="0" y="0" width="160" height="22" rx="3" class="sci"/>
+      <text x="80" y="15" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">코어 (발광)</text>
+      <text x="0" y="40" class="lbl-xs">전자 에너지 변동 → 빛 방출</text>
+      <text x="0" y="56" class="lbl-xs">예: 카드뮴 / 갈륨 / 인 등</text>
+    </g>
+    <g transform="translate(400, 786)">
+      <rect x="0" y="0" width="140" height="22" rx="3" class="paper2 ink" stroke-width="1"/>
+      <text x="70" y="15" text-anchor="middle" font-size="11" font-weight="700">셸 (무기물)</text>
+      <text x="0" y="40" class="lbl-xs">코어 보호 → 발광 효율 유지</text>
+      <text x="0" y="56" class="lbl-xs">온도·습도·산화·광 퇴색 차단</text>
+    </g>
+    <g transform="translate(560, 786)">
+      <rect x="0" y="0" width="140" height="22" rx="3" fill="none" stroke="#7a6f5f" stroke-dasharray="2 2" stroke-width="1.4"/>
+      <text x="70" y="15" text-anchor="middle" font-size="11" font-weight="700" fill="#7a6f5f">리간드 (유기)</text>
+      <text x="0" y="40" class="lbl-xs">셸에 붙어 안정화·성능 향상</text>
+      <text x="0" y="56" class="lbl-xs" fill="#a83a4a">작아질수록 표면층 영향 ↑</text>
+    </g>
+  </g>
+
+  <!-- ===========================================================
+       Step 5 · 친환경 양자점
+       =========================================================== -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="760" y="738" width="400" height="180" rx="6" class="sci-bg sci-st" stroke-width="1.5"/>
+    <text x="780" y="764" class="lbl-strong" fill="#1f5582">친환경 양자점 연구</text>
+
+    <g transform="translate(780, 786)">
+      <rect x="0" y="0" width="120" height="32" rx="3" class="acc-bg acc-st" stroke-width="1"/>
+      <text x="60" y="14" text-anchor="middle" font-size="11" fill="#a83a4a" font-weight="700">카드뮴</text>
+      <text x="60" y="27" text-anchor="middle" class="lbl-xs" fill="#a83a4a">독성·환경 오염</text>
+
+      <line x1="124" y1="16" x2="158" y2="16" class="ink" stroke-width="1.5" marker-end="url(#ar3-ink)"/>
+
+      <rect x="160" y="0" width="220" height="32" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="270" y="14" text-anchor="middle" font-size="11" font-weight="700">갈륨 / 인 (저독성 대체)</text>
+      <text x="270" y="27" text-anchor="middle" class="lbl-xs">결합력 약 → 합성 까다로움</text>
+
+      <text x="0" y="62" class="lbl-xs" fill="#a83a4a">단점: 성능·수명 ↓</text>
+      <line x1="190" y1="68" x2="190" y2="86" class="sci-st" stroke-width="1.5" marker-end="url(#ar3-sci)"/>
+      <rect x="80" y="92" width="220" height="24" rx="3" class="sci-bg2 sci-st" stroke-width="1"/>
+      <text x="190" y="108" text-anchor="middle" class="lbl-xs" fill="#1f5582" font-weight="700">→ 리간드 최적화로 약점 보완</text>
+    </g>
+  </g>
+
+  <text x="1160" y="932" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 과학·기술 · 173쪽</text>
+</svg>

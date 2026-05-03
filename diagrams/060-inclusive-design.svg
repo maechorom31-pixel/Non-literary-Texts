@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" data-app role="img" aria-labelledby="t60 d60">
+  <title id="t60">인클루시브 디자인 — 평균을 넘어선 두 기둥과 피드백</title>
+  <desc id="d60">평균적 사용자 가정의 소외에서 출발해 접근성과 포용성의 두 기둥, 그리고 사용자 피드백 기반의 끊임없는 수정 순환을 다양한 사용자 도식으로 시각화.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbf7ee}
+      .panel{fill:#ffffff;stroke:#d8cdb6;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e544a}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#8b6f47}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#4f463d}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e544a}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .figLab{font:600 11px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#9c8e7a;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar60" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b6f47"/>
+    </marker>
+    <symbol id="ableUser" viewBox="0 0 28 36">
+      <circle cx="14" cy="9" r="6" fill="#fbeed3" stroke="#8b6f47"/>
+      <path d="M3 34 Q3 19 14 19 Q25 19 25 34 Z" fill="#fbeed3" stroke="#8b6f47"/>
+    </symbol>
+    <symbol id="wheelchair" viewBox="0 0 36 36">
+      <circle cx="14" cy="9" r="5" fill="#fbeed3" stroke="#8b6f47"/>
+      <path d="M8 30 Q8 16 14 16 Q20 16 20 30" fill="#fbeed3" stroke="#8b6f47"/>
+      <circle cx="22" cy="30" r="6" fill="none" stroke="#8b6f47" stroke-width="1.4"/>
+      <line x1="20" y1="22" x2="28" y2="30" stroke="#8b6f47" stroke-width="1.4"/>
+    </symbol>
+    <symbol id="elderly" viewBox="0 0 28 36">
+      <circle cx="14" cy="9" r="6" fill="#ebe5d4" stroke="#7a6f5f"/>
+      <path d="M5 34 Q5 19 14 19 Q23 19 23 34 Z" fill="#ebe5d4" stroke="#7a6f5f"/>
+      <line x1="22" y1="22" x2="26" y2="34" stroke="#7a6f5f" stroke-width="1.4"/>
+    </symbol>
+    <symbol id="child" viewBox="0 0 24 30">
+      <circle cx="12" cy="8" r="6" fill="#fff8ec" stroke="#8b6f47"/>
+      <path d="M3 28 Q3 16 12 16 Q21 16 21 28 Z" fill="#fff8ec" stroke="#8b6f47"/>
+    </symbol>
+    <symbol id="visImp" viewBox="0 0 28 36">
+      <circle cx="14" cy="9" r="6" fill="#fbeed3" stroke="#8b6f47"/>
+      <path d="M3 34 Q3 19 14 19 Q25 19 25 34 Z" fill="#fbeed3" stroke="#8b6f47"/>
+      <line x1="6" y1="6" x2="22" y2="14" stroke="#8b6f47" stroke-width="1.6"/>
+      <line x1="6" y1="14" x2="22" y2="6" stroke="#8b6f47" stroke-width="1.6"/>
+    </symbol>
+  </defs>
+
+  <rect class="bg" width="1200" height="1200"/>
+
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#8b6f47"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">인클루시브 디자인 — 평균을 넘어선 두 기둥과 피드백</text>
+  <text x="1136" y="80" class="sub" fill="#f4ead6" text-anchor="end">독서 방법 · 주장과 근거</text>
+
+  <!-- Scene 1: 평균 가정의 소외 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">출발 — 평균적 사용자 가정의 한계</text>
+    <text x="64" y="166" class="small">과거 디자인은 ‘평균’만을 전제 → 다양한 신체·환경·문화적 조건의 사용자가 소외되었다.</text>
+
+    <g>
+      <rect class="panel" x="64" y="184" width="528" height="220" rx="10" stroke="#a83a4a" stroke-width="1.4" fill="#fbf2f4"/>
+      <text x="84" y="212" class="lab" fill="#a83a4a">표준화된 보편 디자인의 한계</text>
+      <line x1="84" y1="224" x2="572" y2="224" stroke="#fbe6e9" stroke-width="1"/>
+
+      <!-- 정규분포 곡선 + 중앙만 포함 -->
+      <g transform="translate(84,240)">
+        <path d="M0 80 Q60 80 90 60 Q110 30 150 0 Q190 30 210 60 Q240 80 300 80" fill="#fbe6e9" stroke="#a83a4a" stroke-width="1.4"/>
+        <line x1="0" y1="80" x2="300" y2="80" stroke="#a83a4a" stroke-width="1"/>
+        <rect x="120" y="0" width="60" height="80" fill="rgba(168,58,74,0.18)"/>
+        <line x1="120" y1="0" x2="120" y2="80" stroke="#a83a4a" stroke-width="1" stroke-dasharray="3 3"/>
+        <line x1="180" y1="0" x2="180" y2="80" stroke="#a83a4a" stroke-width="1" stroke-dasharray="3 3"/>
+        <text x="150" y="98" class="figLab" text-anchor="middle" fill="#a83a4a">‘평균’ 사용자만 포함</text>
+        <text x="40" y="98" class="figLab" text-anchor="middle" fill="#a83a4a">소외</text>
+        <text x="260" y="98" class="figLab" text-anchor="middle" fill="#a83a4a">소외</text>
+      </g>
+
+      <text x="84" y="370" class="small">예) 단차에 경사로 = 휠체어 + 비휠체어 모두 가능</text>
+      <text x="84" y="390" class="it" fill="#a83a4a">→ 모두에게 ‘적합한 조건’은 아니다</text>
+
+      <rect class="panel" x="608" y="184" width="528" height="220" rx="10" stroke="#8b6f47" stroke-width="1.4" fill="#fff8ec"/>
+      <text x="628" y="212" class="lab" fill="#8b6f47">새 패러다임 — 인클루시브 디자인</text>
+      <line x1="628" y1="224" x2="1116" y2="224" stroke="#e3d6b8" stroke-width="1"/>
+
+      <!-- 다양한 사용자 군집 -->
+      <g transform="translate(628,240)">
+        <use href="#ableUser" x="0" y="14" width="32" height="42"/>
+        <use href="#wheelchair" x="60" y="14" width="40" height="42"/>
+        <use href="#elderly" x="120" y="14" width="32" height="42"/>
+        <use href="#child" x="172" y="20" width="28" height="36"/>
+        <use href="#visImp" x="220" y="14" width="32" height="42"/>
+        <use href="#ableUser" x="272" y="14" width="32" height="42"/>
+        <use href="#wheelchair" x="324" y="14" width="40" height="42"/>
+        <use href="#child" x="380" y="20" width="28" height="36"/>
+
+        <rect x="0" y="64" width="408" height="20" rx="4" fill="#dff0ec" stroke="#2a6f6f"/>
+        <text x="204" y="78" class="figLab" fill="#2a6f6f" text-anchor="middle">동시에 여러 방식 제공 → 모든 사용자 포함</text>
+      </g>
+
+      <text x="628" y="356" class="small">· 표준화된 단일 방식이 아니라 여러 방식을 동시에 제공</text>
+      <text x="628" y="378" class="small">· 누구나 안전·편리하게 경험할 수 있도록 설계</text>
+    </g>
+  </g>
+
+  <!-- Scene 2: 두 기둥 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="456" class="num">2</text>
+    <text x="92" y="456" class="bd">두 기둥 — 접근성 + 포용성</text>
+    <text x="64" y="482" class="small">상호 보완적인 두 핵심 성질. 함께 충족되어야 인클루시브 디자인의 목표가 실현된다.</text>
+
+    <!-- 두 기둥 시각화 -->
+    <g transform="translate(556,500)">
+      <rect width="88" height="240" rx="6" fill="#8b6f47"/>
+      <rect x="0" y="0" width="88" height="20" fill="#a8884a"/>
+      <text x="44" y="14" class="pill" text-anchor="middle">목표</text>
+      <text x="44" y="240" class="figLab" text-anchor="middle" fill="#fff" transform="translate(0,-130) rotate(-90,44,110)">인클루시브 디자인</text>
+    </g>
+
+    <g>
+      <rect class="panel" x="64" y="500" width="488" height="240" rx="10" stroke="#8b6f47" stroke-width="1.4" fill="#fff8ec"/>
+      <rect x="64" y="500" width="488" height="40" rx="10" fill="#8b6f47"/>
+      <text x="84" y="526" class="pill">① 접근성 (Accessibility)</text>
+      <text x="532" y="526" class="small" fill="#f4ead6" text-anchor="end">기술적 기반</text>
+
+      <text x="84" y="564" class="bd">정의</text>
+      <text x="84" y="588" class="small">신체 조건·환경 제약과 무관하게</text>
+      <text x="84" y="608" class="small">사용자가 인공물에 도달하고 사용할 수 있는 상태</text>
+
+      <text x="84" y="638" class="bd">포함 영역</text>
+      <text x="84" y="662" class="small">· 물리적 구조 · 정보 전달 방식</text>
+      <text x="84" y="682" class="small">· 사용자 인터페이스</text>
+      <text x="84" y="710" class="it" fill="#8b6f47">‘도달과 작동’을 보장</text>
+
+      <rect class="panel" x="648" y="500" width="488" height="240" rx="10" stroke="#8b6f47" stroke-width="1.4" fill="#fff8ec"/>
+      <rect x="648" y="500" width="488" height="40" rx="10" fill="#8b6f47"/>
+      <text x="668" y="526" class="pill">② 포용성 (Inclusivity)</text>
+      <text x="1116" y="526" class="small" fill="#f4ead6" text-anchor="end">실천적 태도</text>
+
+      <text x="668" y="564" class="bd">정의</text>
+      <text x="668" y="588" class="small">사용자의 다양한 차이와 요구를</text>
+      <text x="668" y="608" class="small">전제로 각자의 방식으로 경험·참여</text>
+
+      <text x="668" y="638" class="bd">포함 영역</text>
+      <text x="668" y="662" class="small">· 배경·능력·문화적 조건 고려</text>
+      <text x="668" y="682" class="small">· 다양한 선택지·대응 방식 마련</text>
+      <text x="668" y="710" class="it" fill="#8b6f47">‘적극적 참여’를 보장</text>
+    </g>
+  </g>
+
+  <!-- Scene 3: 피드백 순환 + 의의 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="788" class="num">3</text>
+    <text x="92" y="788" class="bd">피드백 순환 — 끊임없이 수정·발전</text>
+
+    <g>
+      <rect class="panel" x="64" y="806" width="1072" height="200" rx="10"/>
+
+      <!-- 피드백 순환 -->
+      <g>
+        <rect x="84" y="826" width="200" height="60" rx="8" fill="#fbeed3" stroke="#8b6f47"/>
+        <use href="#ableUser" x="100" y="836" width="20" height="34"/>
+        <text x="200" y="852" class="lab" text-anchor="middle">사용자 조사</text>
+        <text x="200" y="872" class="small" text-anchor="middle">배경·능력 분석</text>
+
+        <line x1="292" y1="855" x2="332" y2="855" stroke="#8b6f47" stroke-width="2.4" marker-end="url(#ar60)"/>
+
+        <rect x="340" y="826" width="200" height="60" rx="8" fill="#fbeed3" stroke="#8b6f47"/>
+        <text x="440" y="852" class="lab" text-anchor="middle">설계</text>
+        <text x="440" y="872" class="small" text-anchor="middle">초안 제작</text>
+
+        <line x1="548" y1="855" x2="588" y2="855" stroke="#8b6f47" stroke-width="2.4" marker-end="url(#ar60)"/>
+
+        <rect x="596" y="826" width="200" height="60" rx="8" fill="#fbeed3" stroke="#8b6f47"/>
+        <use href="#wheelchair" x="608" y="836" width="22" height="34"/>
+        <use href="#elderly" x="630" y="836" width="20" height="34"/>
+        <text x="710" y="852" class="lab" text-anchor="middle">의견 수렴</text>
+        <text x="710" y="872" class="small" text-anchor="middle">사용자 시험·평가</text>
+
+        <line x1="804" y1="855" x2="844" y2="855" stroke="#8b6f47" stroke-width="2.4" marker-end="url(#ar60)"/>
+
+        <rect x="852" y="826" width="200" height="60" rx="8" fill="#8b6f47"/>
+        <text x="952" y="852" class="lab" fill="#ffffff" text-anchor="middle">반복 수정</text>
+        <text x="952" y="872" class="small" fill="#f4ead6" text-anchor="middle">설계 단계마다</text>
+
+        <!-- 순환 화살표 -->
+        <path d="M 1052 886 Q 1080 956 700 968 Q 300 968 184 896" fill="none" stroke="#8b6f47" stroke-width="2.2" stroke-dasharray="5 4" marker-end="url(#ar60)"/>
+        <text x="600" y="990" class="it" fill="#8b6f47" text-anchor="middle">조사 → 설계 → 수렴 → 수정의 끊임없는 순환</text>
+      </g>
+    </g>
+
+    <rect x="64" y="1024" width="1072" height="156" rx="10" fill="#fbeed3" stroke="#8b6f47" stroke-width="1.4"/>
+    <text x="84" y="1052" class="bd" fill="#8b6f47">의의</text>
+    <line x1="84" y1="1064" x2="1116" y2="1064" stroke="#e3d6b8"/>
+
+    <use href="#ableUser" x="84" y="1080" width="22" height="32"/>
+    <use href="#wheelchair" x="116" y="1080" width="26" height="32"/>
+    <use href="#elderly" x="152" y="1080" width="22" height="32"/>
+    <use href="#child" x="184" y="1084" width="20" height="28"/>
+    <use href="#visImp" x="216" y="1080" width="22" height="32"/>
+
+    <text x="260" y="1098" class="small">· 특정 약자만을 위한 ‘배려’가 아니라, 누구나 언제든 배제될 수 있다는 전제에서 출발</text>
+    <text x="260" y="1120" class="small">· 인간의 다양성을 폭넓게 수용 — 처음부터 그렇게 설계하는 것이 원칙</text>
+    <text x="260" y="1156" class="it" fill="#8b6f47">→ 더 많은 사람이 더 쉽게 접근하고 동시에 포용되는 미래</text>
+  </g>
+
+  <text x="1140" y="1196" class="wm" text-anchor="end">EBS 2027 · 독서 방법 · 36쪽</text>
+</svg>

@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1240" data-app role="img" aria-labelledby="t53 d53">
+  <title id="t53">형식 논리학과 후설의 선험적 논리학 — 두 갈래</title>
+  <desc id="d53">형식 논리학(전제·결론의 무모순성, 명제·술어 논리)과 후설의 선험적 논리학(왜 모순을 배제해야 하는가에 답하는 의식의 보편 형식·직관)을 인물 도식·삼단논법 도식·근거 보충 화살표로 시각화.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbf7ee}
+      .panel{fill:#ffffff;stroke:#d8cdb6;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e544a}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#8b6f47}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#4f463d}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e544a}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .mono{font:600 14px ui-monospace,'SF Mono',monospace;fill:#2b2622}
+      .figLab{font:600 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#2b2622}
+      .quote{font:600 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#a83a4a;font-style:italic}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#9c8e7a;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar53" viewBox="0 0 1200 1240" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b6f47"/>
+    </marker>
+    <marker id="ar53-r" viewBox="0 0 1200 1240" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+    <symbol id="brain" viewBox="0 0 1200 1240">
+      <path d="M30 4 C18 4 12 12 12 22 C8 24 6 30 10 36 C12 42 18 46 24 46 L36 46 C42 46 48 42 50 36 C54 30 52 24 48 22 C48 12 42 4 30 4 Z" fill="#fbeed3" stroke="#8b6f47" stroke-width="1.4"/>
+      <path d="M30 4 V46" stroke="#8b6f47" stroke-width="1" stroke-dasharray="2 2"/>
+      <path d="M16 16 Q20 18 24 16 M36 16 Q40 18 44 16" stroke="#8b6f47" stroke-width="1" fill="none"/>
+      <path d="M14 28 Q22 30 30 28 Q38 30 46 28" stroke="#8b6f47" stroke-width="1" fill="none"/>
+    </symbol>
+    <symbol id="qmark53" viewBox="0 0 1200 1240">
+      <path d="M5 7 Q5 2 10 2 Q15 2 15 7 Q15 11 10 12 V16" fill="none" stroke="#a83a4a" stroke-width="2.4" stroke-linecap="round"/>
+      <circle cx="10" cy="20" r="1.6" fill="#a83a4a"/>
+    </symbol>
+  </defs>
+
+  <rect class="bg" width="1200" height="1080"/>
+
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#8b6f47"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">형식 논리학과 후설의 선험적 논리학</text>
+  <text x="1136" y="80" class="sub" fill="#f4ead6" text-anchor="end">독서 방법 · 비교</text>
+
+  <!-- Scene 1: 두 갈래 + 보완 관계 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">논리학의 두 대표적 갈래 — 보완 관계</text>
+    <text x="64" y="166" class="small">논리학 = 사고 과정의 오류를 피하고 올바르게 사고하는 방법을 연구하는 학문.</text>
+
+    <rect class="panel" x="64" y="184" width="1072" height="140" rx="10"/>
+    <rect x="64" y="184" width="6" height="140" fill="#8b6f47"/>
+
+    <g transform="translate(120,210)">
+      <rect width="280" height="80" rx="10" fill="#fbeed3" stroke="#8b6f47" stroke-width="1.4"/>
+      <text x="140" y="30" class="lab" fill="#8b6f47" text-anchor="middle">형식 논리학</text>
+      <text x="140" y="52" class="small" text-anchor="middle">전제 → 결론의 무모순성</text>
+      <text x="140" y="72" class="mono" text-anchor="middle" fill="#8b6f47">P → Q,  ∀x P(x)</text>
+
+      <line x1="300" y1="40" x2="380" y2="40" stroke="#8b6f47" stroke-width="2.4" marker-end="url(#ar53)" stroke-dasharray="6 4"/>
+      <text x="340" y="30" class="small" fill="#8b6f47" text-anchor="middle">근본 토대 보충</text>
+      <text x="340" y="56" class="small" fill="#8b6f47" text-anchor="middle">‘왜?’</text>
+
+      <rect x="396" width="320" height="80" rx="10" fill="#fbeed3" stroke="#8b6f47" stroke-width="1.4"/>
+      <text x="556" y="30" class="lab" fill="#8b6f47" text-anchor="middle">후설의 선험적 논리학</text>
+      <text x="556" y="52" class="small" text-anchor="middle">의식의 보편 형식 · 직관</text>
+      <use href="#brain" x="500" y="56" width="32" height="22"/>
+      <use href="#qmark53" x="572" y="58" width="14" height="20"/>
+
+      <text x="780" y="40" class="it" fill="#8b6f47">두 갈래는 대립이 아니라 보완 관계</text>
+      <text x="780" y="62" class="small">선험 논리는 형식 논리의 ‘근거’를 제공</text>
+    </g>
+  </g>
+
+  <!-- Scene 2: 형식 논리학 (좌) -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="366" class="num">2</text>
+    <text x="92" y="366" class="bd">형식 논리학 — 무모순성과 구조적 일관성</text>
+
+    <rect class="panel" x="64" y="384" width="528" height="606" rx="12" stroke-width="1.6" stroke="#8b6f47" fill="#fff8ec"/>
+    <rect x="64" y="384" width="528" height="40" rx="12" fill="#8b6f47"/>
+    <text x="84" y="410" class="lab" fill="#ffffff">형식 논리학</text>
+
+    <text x="84" y="450" class="bd">중심 가치</text>
+    <text x="84" y="476" class="small">· 전제와 결론이 모순 없이 연결되는 구조적 일관성</text>
+    <text x="84" y="496" class="small">· 사고의 형식적 측면에 집중</text>
+    <text x="84" y="516" class="small">· 전제의 실제 참·거짓보다 논리적 연결 구조를 중시</text>
+
+    <text x="84" y="550" class="bd">두 갈래</text>
+
+    <rect x="84" y="568" width="232" height="92" rx="8" fill="#fbeed3" stroke="#d8c595" stroke-width="1"/>
+    <text x="200" y="594" class="lab" text-anchor="middle">명제 논리</text>
+    <text x="200" y="616" class="small" text-anchor="middle">명제 ↔ 명제의</text>
+    <text x="200" y="634" class="small" text-anchor="middle">결합 관계 분석</text>
+    <text x="200" y="652" class="mono" text-anchor="middle">P ∧ Q,  P → Q</text>
+
+    <rect x="332" y="568" width="240" height="92" rx="8" fill="#fbeed3" stroke="#d8c595" stroke-width="1"/>
+    <text x="452" y="594" class="lab" text-anchor="middle">술어 논리</text>
+    <text x="452" y="616" class="small" text-anchor="middle">주어 ↔ 술어의</text>
+    <text x="452" y="634" class="small" text-anchor="middle">관계 분석</text>
+    <text x="452" y="652" class="mono" text-anchor="middle">∀x P(x),  ∃x P(x)</text>
+
+    <text x="84" y="696" class="bd">예시 — 무모순적 추론 (삼단논법)</text>
+    <rect x="84" y="710" width="488" height="124" rx="8" fill="#ffffff" stroke="#d8c595" stroke-width="1"/>
+    <text x="104" y="734" class="mono">전제 1: 모든 인간은 죽는다.</text>
+    <text x="104" y="756" class="mono">전제 2: 소크라테스는 인간이다.</text>
+    <line x1="104" y1="766" x2="552" y2="766" stroke="#8b6f47" stroke-width="1"/>
+    <text x="104" y="788" class="mono" fill="#8b6f47">결론: ∴ 소크라테스는 죽는다.</text>
+    <text x="104" y="812" class="small" fill="#8b6f47">→ 형식적으로 무모순 (전제→결론 연결 ✓)</text>
+
+    <rect x="84" y="850" width="488" height="124" rx="8" fill="#fbf2f4" stroke="#a83a4a" stroke-width="1.2"/>
+    <use href="#qmark53" x="98" y="868" width="20" height="24"/>
+    <text x="124" y="884" class="bd" fill="#a83a4a">한계</text>
+    <text x="104" y="908" class="quote">‘왜 우리는 모순을 배제해야 하는가?’</text>
+    <text x="104" y="932" class="small" fill="#a83a4a">— 이 근본 물음에는 답하지 못함</text>
+    <text x="104" y="958" class="it" fill="#a83a4a">→ 후설이 파고든 지점</text>
+  </g>
+
+  <!-- Scene 3: 후설 (우) -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="608" y="366" class="num">3</text>
+    <text x="636" y="366" class="bd">후설의 선험적 논리학 — 의식의 보편 형식</text>
+
+    <rect class="panel" x="608" y="384" width="528" height="606" rx="12" stroke-width="1.6" stroke="#8b6f47" fill="#fff8ec"/>
+    <rect x="608" y="384" width="528" height="40" rx="12" fill="#8b6f47"/>
+    <text x="628" y="410" class="lab" fill="#ffffff">후설의 선험적 논리학</text>
+
+    <use href="#brain" x="628" y="442" width="60" height="50"/>
+
+    <text x="704" y="464" class="bd">출발 물음</text>
+    <text x="704" y="488" class="quote">왜 모순을 배제해야 하는가?</text>
+
+    <text x="628" y="520" class="small">→ 형식 논리는 답하지 않는다.</text>
+    <text x="628" y="540" class="small">후설은 그 토대를 인간 의식에서 찾는다.</text>
+
+    <text x="628" y="582" class="bd">핵심 개념</text>
+
+    <rect x="628" y="600" width="488" height="100" rx="8" fill="#fbeed3" stroke="#d8c595" stroke-width="1"/>
+    <text x="648" y="626" class="lab">의식의 보편 형식 (선험적)</text>
+    <line x1="648" y1="638" x2="1100" y2="638" stroke="#d8c595"/>
+
+    <!-- 경험 vs 선험 비교 -->
+    <rect x="648" y="650" width="200" height="32" rx="6" fill="#fff" stroke="#a83a4a"/>
+    <text x="748" y="670" class="small" text-anchor="middle" fill="#a83a4a">경험적 ✗</text>
+
+    <text x="858" y="670" class="lab" fill="#8b6f47">↔</text>
+
+    <rect x="884" y="650" width="216" height="32" rx="6" fill="#fbeed3" stroke="#8b6f47"/>
+    <text x="992" y="670" class="small" text-anchor="middle" fill="#8b6f47">선험적 ✓ (의식의 보편 형식)</text>
+
+    <text x="648" y="694" class="it" fill="#8b6f47">규칙성의 근거를 의식에서 찾기</text>
+
+    <rect x="628" y="714" width="488" height="100" rx="8" fill="#fbeed3" stroke="#d8c595" stroke-width="1"/>
+    <text x="648" y="740" class="lab">직관 (Intuition)</text>
+    <line x1="648" y1="752" x2="1100" y2="752" stroke="#d8c595"/>
+    <text x="648" y="774" class="small">언어·기호 없이 대상의 본질을 직접 파악</text>
+    <text x="648" y="794" class="small">→ 형식 논리가 전제하는 ‘타당성의 근거’를 밝힘</text>
+    <text x="648" y="810" class="it" fill="#8b6f47" font-size="11">예: 1+1=2의 자명함이 어떻게 알려지는가?</text>
+
+    <text x="628" y="848" class="bd">기능</text>
+    <rect x="628" y="862" width="488" height="78" rx="8" fill="#ffffff" stroke="#d8c595" stroke-width="1"/>
+    <text x="648" y="884" class="small">형식 논리: ‘무엇이 무모순인가’를 판정</text>
+    <text x="648" y="906" class="small" fill="#8b6f47">선험 논리: ‘왜 그렇게 판정해야 하는가’의 근거</text>
+    <line x1="648" y1="916" x2="1096" y2="916" stroke="#d8c595" stroke-dasharray="3 3"/>
+    <text x="648" y="932" class="it" fill="#8b6f47">→ 형식 논리학과 무관하게 ✗ — 그 ‘근거’를 보충</text>
+
+    <text x="628" y="972" class="quote">의식의 선험 형식 = 무모순성의 토대</text>
+  </g>
+
+  <!-- 보완 화살표 (양쪽 사이) -->
+  <g>
+    <path d="M 596 700 Q 600 720 604 700" fill="none" stroke="#8b6f47" stroke-width="2" stroke-dasharray="4 3"/>
+  </g>
+
+  <text x="1140" y="1064" class="wm" text-anchor="end">EBS 2027 · 독서 방법 · 11쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1080" width="1120" height="140" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#8b6f47"/>
+    <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">3개 항목</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">형식 논리학</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">무모순성과 구조적 일관성을 중시하며 명제 논리·술어 논리로 나뉜다.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">형식 논리의 한계</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">왜 모순을 배제해야 하는지에 대한 근본 물음에 답하지 못한다.</text>
+    <line x1="40" y1="1174" x2="1160" y2="1174" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1190" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">후설의 선험적 논리학</text>
+    <text x="240" y="1190" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">논리의 토대를 인간 의식의 보편 형식과 직관에서 찾는다. 형식 논리가 전제하는 타당성의 근거를 밝힌다.</text>
+  </g>
+</svg>

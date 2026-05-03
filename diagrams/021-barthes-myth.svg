@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1220" role="img" aria-labelledby="t21 d21">
+  <title id="t21">롤랑 바르트의 신화론</title>
+  <desc id="d21">바르트가 명명한 '현대의 신화' 개념을 중심으로, 소쉬르의 1차 기호 체계(기표+기의=기호)에서 출발해, 그 1차 기호 전체가 다시 새로운 기표가 되어 사회적·이념적 기의가 덧붙는 2차 기호 체계의 두 층 구조, 인위적 의미가 자연스러운 사실처럼 보이게 만드는 자연화 효과, 잡지 표지(흑인 군인이 프랑스 국기에 거수경례) 사례에서 '프랑스는 인종 차별 없는 관대한 국가'라는 이념이 어떻게 전달되는지, 그리고 비판적 수용의 필요성까지 시각화한다.</desc>
+
+  <defs>
+    <marker id="ar21-hum" viewBox="0 0 1200 1220" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 12px; font-style: italic; fill: #5e548e; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1 · 현대의 신화 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="100" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">롤랑 바르트의 「현대의 신화」</text>
+    <text x="60" y="86" class="lbl">대중 매체의 이미지·텍스트는 단순한 오락이 아니라 특정 이념을 자연스럽게 받아들이게 만드는 장치</text>
+    <text x="60" y="108" class="lbl-sm">→ 일상 기호 속에 숨어 있는 이념과 권력의 작동 방식을 분석하는 것이 바르트 신화론의 목표</text>
+  </g>
+
+  <!-- Step 2 · 소쉬르 기호학 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="150" width="1120" height="180" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="178" class="lbl-head">기초 — 소쉬르의 기호학</text>
+
+    <!-- 기표 + 기의 = 기호 -->
+    <g transform="translate(140, 220)">
+      <rect x="0" y="0" width="240" height="80" rx="4" class="paper2 ink" stroke-width="1.4"/>
+      <text x="120" y="22" text-anchor="middle" class="lbl-strong">기표 (Signifier)</text>
+      <text x="120" y="44" text-anchor="middle" class="lbl-sm">감각 가능한 형태</text>
+      <text x="120" y="62" text-anchor="middle" class="lbl-xs">예: '나무'라는 말소리·문자</text>
+
+      <text x="280" y="46" text-anchor="middle" font-size="22" fill="#5e548e" font-weight="700">+</text>
+
+      <rect x="320" y="0" width="240" height="80" rx="4" class="paper2 ink" stroke-width="1.4"/>
+      <text x="440" y="22" text-anchor="middle" class="lbl-strong">기의 (Signified)</text>
+      <text x="440" y="44" text-anchor="middle" class="lbl-sm">개념적 내용</text>
+      <text x="440" y="62" text-anchor="middle" class="lbl-xs">예: 줄기와 가지를 가진 목질 식물</text>
+
+      <text x="600" y="46" text-anchor="middle" font-size="22" fill="#5e548e" font-weight="700">=</text>
+
+      <rect x="640" y="0" width="280" height="80" rx="4" class="hum"/>
+      <text x="780" y="22" text-anchor="middle" class="lbl-strong" fill="#f5f1e8">기호 (Sign)</text>
+      <text x="780" y="44" text-anchor="middle" font-size="11" fill="#f5f1e8">기표 + 기의의 결합</text>
+      <text x="780" y="62" text-anchor="middle" font-size="10" fill="#f5f1e8" opacity="0.85">결합은 자의적 (사회적 약속)</text>
+    </g>
+  </g>
+
+  <!-- Step 3 · 1차 vs 2차 기호 체계 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="350" width="1120" height="280" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="378" class="lbl-head" fill="#5e548e">1차 기호 체계 → 2차 기호 체계 (현대의 신화)</text>
+
+    <!-- 1차 (아래) -->
+    <g transform="translate(80, 410)">
+      <text x="0" y="0" class="lbl-strong">1차 기호 체계 — 단일한 의미</text>
+      <rect x="0" y="14" width="200" height="46" rx="3" class="paper2 ink" stroke-width="1"/>
+      <text x="100" y="32" text-anchor="middle" class="lbl-xs" font-weight="700">기표</text>
+      <text x="100" y="50" text-anchor="middle" class="lbl-xs" fill="#7a6f5f">감각 형태</text>
+
+      <text x="220" y="42" text-anchor="middle" font-size="18" fill="#5e548e" font-weight="700">+</text>
+
+      <rect x="240" y="14" width="200" height="46" rx="3" class="paper2 ink" stroke-width="1"/>
+      <text x="340" y="32" text-anchor="middle" class="lbl-xs" font-weight="700">기의</text>
+      <text x="340" y="50" text-anchor="middle" class="lbl-xs" fill="#7a6f5f">개념 내용</text>
+
+      <text x="460" y="42" text-anchor="middle" font-size="18" fill="#5e548e" font-weight="700">=</text>
+
+      <rect x="480" y="14" width="280" height="46" rx="3" class="hum"/>
+      <text x="620" y="32" text-anchor="middle" class="lbl-xs" font-weight="700" fill="#f5f1e8">1차 기호 (단순한 의미)</text>
+      <text x="620" y="50" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">예: 흑인 군인의 거수경례 사진</text>
+    </g>
+
+    <!-- 화살표: 1차 기호 전체 → 2차 기표 -->
+    <g transform="translate(720, 480)">
+      <path d="M 0 0 Q 60 30 120 60" fill="none" class="hum-st" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#ar21-hum)"/>
+      <text x="60" y="50" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">1차 기호 전체 → 2차 기표</text>
+    </g>
+
+    <!-- 2차 (위) -->
+    <g transform="translate(80, 540)">
+      <text x="0" y="0" class="lbl-strong" fill="#5e548e">2차 기호 체계 — 신화의 형성</text>
+      <rect x="0" y="14" width="280" height="46" rx="3" class="hum"/>
+      <text x="140" y="32" text-anchor="middle" class="lbl-xs" font-weight="700" fill="#f5f1e8">2차 기표 = 1차 기호 전체</text>
+      <text x="140" y="50" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">사진 자체가 새 기표</text>
+
+      <text x="300" y="42" text-anchor="middle" font-size="18" fill="#5e548e" font-weight="700">+</text>
+
+      <rect x="320" y="14" width="280" height="46" rx="3" class="hum-bg2 hum-st" stroke-width="1.4"/>
+      <text x="460" y="32" text-anchor="middle" class="lbl-xs" font-weight="700" fill="#5e548e">새로운 기의 = 사회·이념적 함의</text>
+      <text x="460" y="50" text-anchor="middle" class="lbl-xs" fill="#5e548e">예: "프랑스는 관대한 국가"</text>
+
+      <text x="620" y="42" text-anchor="middle" font-size="18" fill="#5e548e" font-weight="700">=</text>
+
+      <rect x="640" y="14" width="380" height="46" rx="3" fill="#a83a4a"/>
+      <text x="830" y="32" text-anchor="middle" class="lbl-xs" font-weight="700" fill="#f5f1e8">현대의 신화 (자연화된 이념)</text>
+      <text x="830" y="50" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">사람들에게 자연스러운 사실처럼 받아들여짐</text>
+    </g>
+  </g>
+
+  <!-- Step 4 · 자연화 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="650" width="540" height="180" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="678" class="lbl-head" fill="#a83a4a">자연화 (Naturalization)</text>
+    <text x="60" y="700" class="lbl-sm">인위적으로 구성된 의미가 그 구성 과정을 감춘 채</text>
+    <text x="60" y="718" class="lbl-sm">스스로를 순수하고 중립적인 것처럼 드러내는 현상</text>
+
+    <text x="60" y="752" class="lbl-strong" fill="#a83a4a">효과</text>
+    <text x="60" y="772" class="lbl-sm">· 이념을 더욱 공고히 함</text>
+    <text x="60" y="790" class="lbl-sm">· 수용자가 사회적 구성물임을 인식 못 하게</text>
+    <text x="60" y="812" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 강제적 선전이 아닌 일상적 기호로 은밀하게 전파</text>
+  </g>
+
+  <!-- Step 5 · 잡지 표지 사례 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="620" y="650" width="540" height="180" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="640" y="678" class="lbl-head" fill="#5e548e">잡지 표지 사례 — 프랑스</text>
+
+    <!-- 잡지 표지 일러스트 -->
+    <g transform="translate(660, 700)">
+      <rect x="0" y="0" width="100" height="120" rx="4" fill="#f5f1e8" stroke="#1a1612" stroke-width="1.4"/>
+      <!-- 인물 (흑인 군인) -->
+      <circle cx="50" cy="40" r="14" fill="#5e3a2c"/>
+      <rect x="36" y="54" width="28" height="32" fill="#5a8b6f"/>
+      <!-- 거수경례 손 -->
+      <line x1="50" y1="56" x2="64" y2="46" stroke="#5e3a2c" stroke-width="3"/>
+      <!-- 프랑스 국기 -->
+      <g transform="translate(72, 96)">
+        <rect x="0" y="0" width="6" height="14" fill="#1f5582"/>
+        <rect x="6" y="0" width="6" height="14" fill="#f5f1e8" stroke="#1a1612" stroke-width="0.4"/>
+        <rect x="12" y="0" width="6" height="14" fill="#a83a4a"/>
+      </g>
+      <text x="50" y="116" text-anchor="middle" class="lbl-xs" fill="#7a6f5f">잡지 표지</text>
+    </g>
+
+    <g transform="translate(800, 706)">
+      <text x="0" y="0" class="lbl-sm" font-weight="700">1차 기호:</text>
+      <text x="0" y="18" class="lbl-xs">흑인 군인이 프랑스 국기에 경례하는 사진</text>
+
+      <text x="0" y="44" class="lbl-sm" font-weight="700" fill="#5e548e">2차 기의 (덧붙는 이념):</text>
+      <text x="0" y="62" class="lbl-xs" fill="#5e548e">"프랑스는 인종 차별 없는 관대한 국가"</text>
+      <text x="0" y="78" class="lbl-xs" fill="#5e548e">+ 다문화 포용성 + 흑인의 충성심 + 정의로움</text>
+
+      <text x="0" y="104" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 본래부터 당연한 사실처럼 수용</text>
+    </g>
+  </g>
+
+  <!-- Step 6 · 비판적 수용 -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="40" y="850" width="1120" height="110" rx="6" class="paper2 ink" stroke-width="1"/>
+    <text x="60" y="878" class="lbl-head">바르트의 제안 — 비판적 수용 능력</text>
+    <text x="60" y="902" class="lbl">대중 매체·문화 산업은 중립적이지 않으며, 특정 이념을 자연스럽게 재생산하는 장치가 될 수 있다.</text>
+    <text x="60" y="924" class="lbl-sm">광고 · 기사 · 영화 · 포스터 등 모든 콘텐츠는 1차 의미만이 아니라 사회적·이념적 함의를 담고 있다.</text>
+    <text x="60" y="946" class="lbl-xs" fill="#5e548e" font-weight="700">→ 2차 기호 체계가 작동할 수 있음을 인지하고 그 배후의 사회·역사·이념을 읽어 내는 비판적 태도가 필수</text>
+  </g>
+
+  <text x="1160" y="990" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 인문·예술 · 83쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1000" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1000" width="1120" height="32" rx="6" fill="#5e548e"/>
+    <text x="60" y="1022" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1022" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">6개 항목</text>
+    <line x1="40" y1="1034" x2="1160" y2="1034" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1050" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">현대의 신화</text>
+    <text x="240" y="1050" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">대중 매체의 이미지·텍스트가 특정 이념을 자연스럽게 받아들이게 만드는 현상.</text>
+    <line x1="40" y1="1064" x2="1160" y2="1064" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1080" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">기표·기의·기호</text>
+    <text x="240" y="1080" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">소쉬르의 기호학. 기호 = 기표(감각 가능한 형태) + 기의(개념적 내용). 둘의 결합은 자의적이다.</text>
+    <line x1="40" y1="1094" x2="1160" y2="1094" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1110" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">1차 vs 2차 기호 체계</text>
+    <text x="240" y="1110" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">1차는 단일한 의미만, 2차는 1차 기호 전체가 새 기표가 되어 사회적·이념적 기의가 덧붙는 구조.</text>
+    <line x1="40" y1="1124" x2="1160" y2="1124" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1140" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">자연화</text>
+    <text x="240" y="1140" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">인위적으로 구성된 의미가 그 구성 과정을 감춘 채 자연스러운 사실처럼 드러나는 현상. 이념을 공고히 한다.</text>
+    <line x1="40" y1="1154" x2="1160" y2="1154" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1170" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">잡지 표지 사례</text>
+    <text x="240" y="1170" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">흑인 군인의 거수경례 이미지가 '프랑스는 인종 차별 없는 관대한 국가'라는 신화로 작동한다.</text>
+  </g>
+</svg>

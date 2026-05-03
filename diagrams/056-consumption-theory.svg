@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1300" role="img" aria-labelledby="t056 d056">
+  <title id="t056">소비 이론</title>
+  <desc id="d056">소비 수준을 결정하는 요인을 다루는 여러 경제 이론을 시각화한다. 케인스의 소비 함수 C=a+bY와 그 그래프, 평균 소비 성향(소득 대비 소비 비율)·한계 소비 성향(소득 1단위 증가 시 소비 증가분)의 정의와 예시 계산, 한계 소비 성향과 한계 저축 성향의 합이 1이라는 관계, 프리드먼의 항상 소득 이론(소비자는 일시 소득보다 정기적인 항상 소득에 따라 소비), 모딜리아니의 생애 주기 이론(청년기 부채 → 중장년기 저축 → 노년기 소비로 일생 동안 일정한 소비 수준 유지)을 차례로 보여 준다.</desc>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .formula { font-family: ui-monospace, monospace; font-size: 14px; fill: #1a1612; font-weight: 700; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .met { fill: #8b6f47; }
+    .met-st { stroke: #8b6f47; }
+    .met-bg { fill: rgba(139,111,71,0.08); }
+    .met-bg2 { fill: rgba(139,111,71,0.18); }
+  ]]></style>
+
+  <!-- 도입 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="80" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">소비를 결정하는 요인 — 세 이론의 흐름</text>
+    <text x="60" y="86" class="lbl-sm">가처분 소득 → 소비. 둘 사이에 양의 상관관계가 있지만, 어떤 이론이 더 정확히 설명할까?</text>
+  </g>
+
+  <!-- 케인스 소비 함수 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="130" width="1120" height="36" rx="6" class="met"/>
+    <text x="60" y="154" class="lbl-strong" fill="#f5f1e8">① 케인스의 소비 함수</text>
+  </g>
+
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="180" width="540" height="280" rx="6" class="met-bg met-st" stroke-width="1.5"/>
+    <text x="60" y="208" class="lbl-strong" fill="#8b6f47">소비 함수: C = a + bY</text>
+
+    <g transform="translate(60, 230)">
+      <rect x="0" y="0" width="500" height="50" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="formula">a</text>
+      <text x="40" y="22" class="lbl-sm">: 생존을 위해 필요한 최소한의 소비</text>
+      <text x="14" y="40" class="lbl-xs">소득이 0이어도 발생하는 기본 소비</text>
+
+      <rect x="0" y="60" width="500" height="50" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="82" class="formula">b</text>
+      <text x="40" y="82" class="lbl-sm">: 한계 소비 성향 (0 &lt; b &lt; 1)</text>
+      <text x="14" y="100" class="lbl-xs">소득 1단위 증가 시 소비 증가분의 비율</text>
+
+      <rect x="0" y="120" width="500" height="50" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="142" class="formula">Y</text>
+      <text x="40" y="142" class="lbl-sm">: 가처분 소득</text>
+      <text x="14" y="160" class="lbl-xs">소득에서 세금을 뺀, 가계가 실제로 사용하는 소득</text>
+    </g>
+
+    <text x="60" y="430" class="lbl-xs" fill="#8b6f47" font-weight="700">b가 0~1 사이라는 것 = 늘어난 소득의 일부만 소비, 나머지는 저축</text>
+  </g>
+
+  <!-- 케인스 그래프 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="620" y="180" width="540" height="280" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="640" y="208" class="lbl-strong">소비 함수 그래프</text>
+
+    <g transform="translate(700, 410)">
+      <line x1="0" y1="0" x2="0" y2="-180" class="ink" stroke-width="1.4"/>
+      <line x1="0" y1="0" x2="380" y2="0" class="ink" stroke-width="1.4"/>
+      <text x="-8" y="-180" text-anchor="end" class="lbl-xs">C (소비)</text>
+      <text x="380" y="14" text-anchor="end" class="lbl-xs">Y (가처분 소득)</text>
+
+      <!-- a 절편 (y축에서) -->
+      <circle cx="0" cy="-30" r="4" class="met"/>
+      <text x="-12" y="-26" text-anchor="end" class="lbl-xs" fill="#8b6f47" font-weight="700">a</text>
+
+      <!-- 소비 함수 직선 -->
+      <line x1="0" y1="-30" x2="360" y2="-150" class="met-st" stroke-width="2.4"/>
+      <text x="280" y="-130" class="lbl-strong" fill="#8b6f47">C = a + bY</text>
+
+      <!-- 기울기 표시 -->
+      <line x1="180" y1="-90" x2="240" y2="-90" stroke="#7a6f5f" stroke-width="0.8" stroke-dasharray="2 2"/>
+      <line x1="240" y1="-90" x2="240" y2="-110" stroke="#7a6f5f" stroke-width="0.8" stroke-dasharray="2 2"/>
+      <text x="248" y="-98" class="lbl-xs" fill="#8b6f47">기울기 = b</text>
+    </g>
+  </g>
+
+  <!-- Step 3 · 평균·한계 성향 (정의) -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="480" width="1120" height="160" rx="6" class="met-bg2 met-st" stroke-width="1.5"/>
+    <text x="60" y="508" class="lbl-head" fill="#8b6f47">평균 소비 성향 vs 한계 소비 성향 + 한계 저축 성향</text>
+
+    <g transform="translate(60, 530)">
+      <rect x="0" y="0" width="350" height="90" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700">평균 소비 성향</text>
+      <text x="14" y="44" class="lbl-xs">가처분 소득에서 소비가 차지하는 비율</text>
+
+      <rect x="370" y="0" width="350" height="90" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700" transform="translate(370,0)">한계 소비 성향</text>
+      <text x="14" y="44" class="lbl-xs" transform="translate(370,0)">소득 1단위 증가 시 소비 증가분</text>
+      <text x="14" y="80" class="lbl-xs" transform="translate(370,0)">정부 정책 효과 예측의 기초</text>
+    </g>
+  </g>
+
+  <!-- Step 4 · 예시 계산 -->
+  <g class="reveal" data-reveal-step="4">
+    <g transform="translate(60, 530)">
+      <text x="14" y="64" class="formula" fill="#8b6f47">예: Y=100, C=70 → 0.7</text>
+      <text x="14" y="64" class="formula" fill="#8b6f47" transform="translate(370,0)">예: ΔY=1, ΔC=0.6 → 0.6</text>
+    </g>
+  </g>
+
+  <!-- Step 5 · 한계 성향과 저축 성향 (항등식) -->
+  <g class="reveal" data-reveal-step="5">
+    <g transform="translate(60, 530)">
+      <text x="14" y="80" class="lbl-xs">평균 저축 성향 = 1 - 평균 소비 성향 = 0.3</text>
+
+      <rect x="740" y="0" width="350" height="90" rx="4" class="met"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700" fill="#f5f1e8" transform="translate(740,0)">기본 항등식</text>
+      <text x="14" y="48" class="formula" fill="#f5f1e8" transform="translate(740,0)">한계 소비 + 한계 저축 = 1</text>
+      <text x="14" y="68" class="lbl-xs" fill="#f5f1e8" transform="translate(740,0)">소득 증가분은 소비와 저축으로 나뉜다</text>
+      <text x="14" y="84" class="lbl-xs" fill="#f5f1e8" transform="translate(740,0)">→ 둘의 합은 1로 고정</text>
+    </g>
+  </g>
+
+  <!-- 프리드먼 -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="40" y="660" width="540" height="36" rx="6" class="met"/>
+    <text x="60" y="684" class="lbl-strong" fill="#f5f1e8">② 프리드먼 — 항상 소득 이론</text>
+
+    <rect x="40" y="710" width="540" height="160" rx="6" class="met-bg met-st" stroke-width="1.5"/>
+    <text x="60" y="738" class="lbl-strong" fill="#8b6f47">소득의 두 종류</text>
+
+    <g transform="translate(60, 758)">
+      <rect x="0" y="0" width="240" height="80" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700">항상 소득</text>
+      <text x="14" y="42" class="lbl-xs">정기적·확실한 소득</text>
+      <text x="14" y="58" class="lbl-xs">예: 매달 받는 월급</text>
+      <text x="14" y="74" class="lbl-xs" fill="#8b6f47" font-weight="700">한계 소비 성향 ↑</text>
+
+      <rect x="260" y="0" width="240" height="80" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-sm" font-weight="700" transform="translate(260,0)">일시 소득</text>
+      <text x="14" y="42" class="lbl-xs" transform="translate(260,0)">일시적 여건으로 생긴 소득</text>
+      <text x="14" y="58" class="lbl-xs" transform="translate(260,0)">예: 경기 호전 보너스</text>
+      <text x="14" y="74" class="lbl-xs" fill="#a83a4a" font-weight="700" transform="translate(260,0)">한계 소비 성향 ↓</text>
+    </g>
+  </g>
+
+  <!-- 모딜리아니 -->
+  <g class="reveal" data-reveal-step="7">
+    <rect x="620" y="660" width="540" height="36" rx="6" class="met"/>
+    <text x="640" y="684" class="lbl-strong" fill="#f5f1e8">③ 모딜리아니 — 생애 주기 이론</text>
+
+    <rect x="620" y="710" width="540" height="160" rx="6" class="met-bg2 met-st" stroke-width="1.5"/>
+    <text x="640" y="738" class="lbl-strong" fill="#8b6f47">"낙타 등 모양" 소득 vs 일정한 소비</text>
+
+    <!-- 그래프: 소득(낙타 등) + 소비(평평한 선) -->
+    <g transform="translate(660, 850)">
+      <line x1="0" y1="0" x2="460" y2="0" class="ink" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="-90" class="ink" stroke-width="1"/>
+
+      <!-- 소득 곡선 (낙타 등) -->
+      <path d="M 0 -10 Q 80 -10 80 -30 Q 200 -80 350 -50 Q 400 -30 460 -10" fill="none" class="met-st" stroke-width="2"/>
+      <text x="240" y="-88" text-anchor="middle" class="lbl-xs" fill="#8b6f47" font-weight="700">소득</text>
+
+      <!-- 소비 직선 (일정) -->
+      <line x1="0" y1="-50" x2="460" y2="-50" stroke="#a83a4a" stroke-width="2" stroke-dasharray="3 2"/>
+      <text x="240" y="-58" text-anchor="middle" class="lbl-xs" fill="#a83a4a" font-weight="700">소비 (일정)</text>
+
+      <!-- 단계 표시 -->
+      <text x="60" y="14" text-anchor="middle" class="lbl-xs">청년</text>
+      <text x="240" y="14" text-anchor="middle" class="lbl-xs">중장년</text>
+      <text x="400" y="14" text-anchor="middle" class="lbl-xs">노년</text>
+    </g>
+  </g>
+
+  <!-- 결론 -->
+  <g class="reveal" data-reveal-step="7">
+    <rect x="40" y="890" width="1120" height="160" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="918" class="lbl-strong">생애 주기 이론의 핵심</text>
+    <text x="60" y="940" class="lbl-sm">청년기: 소득 &lt; 소비 → 빚 / 중장년기: 소득 &gt; 소비 → 저축 / 노년기: 모아둔 돈으로 종전 소비 수준 유지</text>
+    <text x="60" y="962" class="lbl-xs">소비자는 현재 소득이 아니라 일생 동안의 소득을 염두에 두고 소비 수준을 결정한다</text>
+
+    <text x="60" y="998" class="lbl-strong">세 이론의 공통 통찰</text>
+    <text x="60" y="1020" class="lbl-sm">소비는 단순 소득 함수 X → 항상 소득(프리드먼) / 일생 소득(모딜리아니) 등 <tspan font-weight="700" fill="#8b6f47">예상까지 고려</tspan>하는 안정적 행위</text>
+  </g>
+
+  <text x="1160" y="1070" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 독서 방법 · 21쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1080" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#8b6f47"/>
+    <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">케인스의 소비 함수</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">C = a + bY. a는 생존 최소 소비, b는 한계 소비 성향, Y는 가처분 소득.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">평균·한계 소비 성향</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">평균 = 소득 대비 소비 비율, 한계 = 소득 1단위 증가 시 소비 증가분.</text>
+    <line x1="40" y1="1174" x2="1160" y2="1174" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1190" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">한계 성향의 합</text>
+    <text x="240" y="1190" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">한계 소비 성향 + 한계 저축 성향 = 1.</text>
+    <line x1="40" y1="1204" x2="1160" y2="1204" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1220" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">항상 소득 이론(프리드먼)</text>
+    <text x="240" y="1220" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">소비자는 일시 소득이 아닌 정기적 항상 소득을 기준으로 소비 수준을 결정한다.</text>
+    <line x1="40" y1="1234" x2="1160" y2="1234" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1250" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">생애 주기 이론(모딜리아니)</text>
+    <text x="240" y="1250" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">일생 소득(청년기 부채, 중장년기 저축, 노년기 소비)을 고려해 소비를 일정하게 유지한다.</text>
+  </g>
+</svg>

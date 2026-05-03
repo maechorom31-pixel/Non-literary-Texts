@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1080" data-app role="img" aria-labelledby="t11 d11">
+  <title id="t11">CFC와 오존층 파괴 — 촉매 사슬과 오존 구멍의 발견</title>
+  <desc id="d11">성층권의 오존층이 형성되는 균형, CFC가 성층권까지 올라가 염소 원자를 방출하고 촉매 사슬로 오존을 분해하는 메커니즘, 1985년 남극 오존 구멍 발견과 1987년 몬트리올 의정서.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f5f8fc}
+      .panel{fill:#ffffff;stroke:#bfd0e3;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#10243a}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#3a5371}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#10243a}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#10243a}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#1f5582}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#3a5371}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#42597a}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .mono{font:600 14px ui-monospace,'SF Mono',monospace;fill:#10243a}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#7d97b6;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar11" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f5582"/>
+    </marker>
+    <marker id="ar11-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="1080"/>
+
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#1f5582"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">CFC와 오존층 파괴 — 촉매 사슬과 오존 구멍의 발견</text>
+  <text x="1136" y="80" class="sub" fill="#cfdcec" text-anchor="end">과학·기술 · 인과</text>
+
+  <!-- Scene 1: 오존층 형성 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">오존층의 형성 — 성층권의 동적 균형</text>
+    <text x="64" y="166" class="small">지상 약 10~50km 성층권에서 산소 분자(O₂)와 자외선의 상호 작용이 균형을 이루며 일정한 농도가 유지된다.</text>
+
+    <!-- 대기 단면 모형 -->
+    <g>
+      <rect class="panel" x="64" y="184" width="528" height="186" rx="10"/>
+      <text x="84" y="212" class="lab">대기의 층 구조</text>
+      <line x1="84" y1="224" x2="572" y2="224" stroke="#dfe7f1" stroke-width="1"/>
+
+      <!-- 지표 -->
+      <rect x="100" y="334" width="460" height="20" fill="#8b6f47"/>
+      <text x="100" y="350" class="small" fill="#ffffff">지표 (0 km)</text>
+
+      <!-- 대류권 -->
+      <rect x="100" y="294" width="460" height="40" fill="#cfdcec"/>
+      <text x="106" y="320" class="small">대류권 (~10 km)</text>
+
+      <!-- 성층권 (오존층) -->
+      <rect x="100" y="240" width="460" height="54" fill="#dfeef9" stroke="#1f5582" stroke-width="1.4"/>
+      <text x="106" y="266" class="lab" fill="#1f5582">성층권 — 오존층 (10~50 km)</text>
+      <g>
+        <circle cx="200" cy="280" r="6" fill="#1f5582"/>
+        <text x="200" y="284" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">O₃</text>
+        <circle cx="280" cy="278" r="5" fill="#1f5582"/>
+        <text x="280" y="282" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">O₃</text>
+        <circle cx="370" cy="282" r="6" fill="#1f5582"/>
+        <text x="370" y="286" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">O₃</text>
+        <circle cx="450" cy="276" r="5" fill="#1f5582"/>
+        <text x="450" y="280" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="700">O₃</text>
+      </g>
+    </g>
+
+    <!-- 균형 식 -->
+    <rect class="panel" x="608" y="184" width="528" height="186" rx="10" stroke="#1f5582" stroke-width="1.6" fill="#f0f5fb"/>
+    <text x="628" y="212" class="lab" fill="#1f5582">생성과 분해의 균형</text>
+    <line x1="628" y1="224" x2="1116" y2="224" stroke="#d8e3f0" stroke-width="1"/>
+    <text x="628" y="252" class="small" fill="#1f5582" font-weight="600">생성</text>
+    <text x="628" y="276" class="mono">O₂ + 자외선 → 2 O</text>
+    <text x="628" y="298" class="mono">O + O₂ → O₃</text>
+    <text x="628" y="328" class="small" fill="#a83a4a" font-weight="600">분해</text>
+    <text x="628" y="352" class="mono">O₃ + 자외선 → O₂ + O</text>
+  </g>
+
+  <!-- Scene 2: CFC 상승 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="412" class="num">2</text>
+    <text x="92" y="412" class="bd">CFC의 위협 — 안정해서 위험하다</text>
+    <text x="64" y="438" class="small">냉매·발포제·분사제로 쓰이던 CFC는 화학적으로 매우 안정해 지표에서 분해되지 않고 천천히 성층권까지 상승한다.</text>
+
+    <g>
+      <rect class="panel" x="64" y="456" width="1072" height="124" rx="10"/>
+
+      <!-- 지표 -->
+      <rect x="84" y="546" width="1032" height="14" fill="#8b6f47"/>
+      <text x="104" y="558" class="small" fill="#ffffff">지표</text>
+
+      <!-- CFC 시작 -->
+      <g transform="translate(180,540)">
+        <rect x="-32" y="-22" width="64" height="20" rx="4" fill="#cfdcec"/>
+        <text x="0" y="-7" font-size="11" fill="#10243a" text-anchor="middle" font-weight="700">CFC</text>
+        <text x="0" y="14" class="small" text-anchor="middle">냉매·분사제</text>
+      </g>
+
+      <!-- 상승 -->
+      <line x1="240" y1="525" x2="320" y2="500" stroke="#5e548e" stroke-width="2.4" marker-end="url(#ar11)" stroke-dasharray="4 3"/>
+      <text x="270" y="548" class="small" fill="#5e548e">안정 → 분해되지 않음</text>
+
+      <!-- 성층권 진입 -->
+      <g transform="translate(440,484)">
+        <rect x="-40" y="-22" width="80" height="20" rx="4" fill="#cfdcec"/>
+        <text x="0" y="-7" font-size="11" fill="#10243a" text-anchor="middle" font-weight="700">CFC</text>
+        <text x="0" y="14" class="small" text-anchor="middle">성층권 도달</text>
+      </g>
+
+      <!-- 자외선 충격 -->
+      <g transform="translate(560,484)">
+        <text x="0" y="-26" class="small" fill="#a83a4a" text-anchor="middle">강한 자외선</text>
+        <line x1="-20" y1="-20" x2="0" y2="-2" stroke="#a83a4a" stroke-width="2" marker-end="url(#ar11-r)"/>
+        <line x1="20" y1="-20" x2="0" y2="-2" stroke="#a83a4a" stroke-width="2" marker-end="url(#ar11-r)"/>
+      </g>
+
+      <!-- 분해 -->
+      <line x1="600" y1="492" x2="660" y2="492" stroke="#1f5582" stroke-width="2.4" marker-end="url(#ar11)"/>
+
+      <g transform="translate(760,484)">
+        <circle r="22" fill="#a83a4a"/>
+        <text y="6" class="pill" text-anchor="middle">Cl·</text>
+        <text x="0" y="40" class="small" text-anchor="middle">염소 원자 방출</text>
+      </g>
+
+      <line x1="800" y1="484" x2="860" y2="484" stroke="#a83a4a" stroke-width="2.4" marker-end="url(#ar11-r)"/>
+      <text x="940" y="490" class="lab" fill="#a83a4a">오존(O₃) 공격 시작</text>
+    </g>
+  </g>
+
+  <!-- Scene 3: 촉매 사슬 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="624" class="num">3</text>
+    <text x="92" y="624" class="bd">염소 원자의 촉매 사슬 — 한 개가 수만 개를 분해</text>
+    <text x="64" y="650" class="small">염소 원자는 반응을 거치고도 자기 자신은 보존되어 다음 오존을 다시 공격한다.</text>
+
+    <g>
+      <rect class="panel" x="64" y="668" width="1072" height="184" rx="10" stroke="#a83a4a" stroke-width="1.6" fill="#fbf2f4"/>
+
+      <!-- 단계 1 -->
+      <g transform="translate(120,756)">
+        <circle r="32" fill="#a83a4a"/>
+        <text y="6" class="pill" text-anchor="middle">Cl</text>
+        <text y="56" class="small" text-anchor="middle">염소</text>
+      </g>
+      <text x="180" y="730" class="mono" text-anchor="middle">+</text>
+      <g transform="translate(244,756)">
+        <circle r="32" fill="#1f5582"/>
+        <text y="6" class="pill" text-anchor="middle">O₃</text>
+        <text y="56" class="small" text-anchor="middle">오존</text>
+      </g>
+      <line x1="290" y1="756" x2="346" y2="756" stroke="#a83a4a" stroke-width="2.4" marker-end="url(#ar11-r)"/>
+      <g transform="translate(390,756)">
+        <circle r="32" fill="#5e548e"/>
+        <text y="6" class="pill" text-anchor="middle">ClO</text>
+        <text y="56" class="small" text-anchor="middle">일산화 염소</text>
+      </g>
+      <text x="450" y="730" class="mono" text-anchor="middle">+</text>
+      <g transform="translate(514,756)">
+        <circle r="32" fill="#cfdcec" stroke="#1f5582"/>
+        <text y="6" font-size="13" fill="#1f5582" text-anchor="middle" font-weight="700">O₂</text>
+        <text y="56" class="small" text-anchor="middle">산소</text>
+      </g>
+
+      <line x1="556" y1="756" x2="608" y2="756" stroke="#1f5582" stroke-width="2.4" marker-end="url(#ar11)"/>
+      <text x="582" y="744" class="small" fill="#1f5582" text-anchor="middle">다음 단계</text>
+
+      <!-- 단계 2 -->
+      <g transform="translate(660,756)">
+        <circle r="32" fill="#5e548e"/>
+        <text y="6" class="pill" text-anchor="middle">ClO</text>
+      </g>
+      <text x="720" y="730" class="mono" text-anchor="middle">+</text>
+      <g transform="translate(782,756)">
+        <circle r="32" fill="#cfdcec" stroke="#1f5582"/>
+        <text y="6" font-size="13" fill="#1f5582" text-anchor="middle" font-weight="700">O</text>
+      </g>
+      <line x1="830" y1="756" x2="884" y2="756" stroke="#a83a4a" stroke-width="2.4" marker-end="url(#ar11-r)"/>
+      <g transform="translate(928,756)">
+        <circle r="32" fill="#a83a4a"/>
+        <text y="6" class="pill" text-anchor="middle">Cl</text>
+        <text y="56" class="small" text-anchor="middle">염소 부활</text>
+      </g>
+      <text x="990" y="730" class="mono" text-anchor="middle">+</text>
+      <g transform="translate(1052,756)">
+        <circle r="32" fill="#cfdcec" stroke="#1f5582"/>
+        <text y="6" font-size="13" fill="#1f5582" text-anchor="middle" font-weight="700">O₂</text>
+      </g>
+
+      <!-- 순환 화살표 -->
+      <path d="M 1080 720 Q 1100 670 1080 660 Q 1000 656 200 712" fill="none" stroke="#a83a4a" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ar11-r)"/>
+      <text x="640" y="694" class="it" fill="#a83a4a" text-anchor="middle">염소 원자가 재생되어 다음 오존을 다시 공격 (촉매 작용)</text>
+
+      <text x="64" y="836" class="small">→ 염소 원자 1개가 수만 개의 오존 파괴 가능 — 적은 양의 CFC도 큰 파괴력</text>
+    </g>
+  </g>
+
+  <!-- Scene 4: 오존 구멍 + 의정서 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="900" class="num">4</text>
+    <text x="92" y="900" class="bd">발견과 대응 — 1985 오존 구멍 → 1987 의정서</text>
+
+    <g>
+      <rect x="64" y="918" width="240" height="116" rx="10" fill="#dfeef9" stroke="#1f5582" stroke-width="1.4"/>
+      <text x="184" y="946" class="lab" text-anchor="middle">1974</text>
+      <text x="184" y="970" class="small" text-anchor="middle">몰리나 논문 발표</text>
+      <text x="184" y="990" class="small" text-anchor="middle">CFC의 오존 파괴</text>
+      <text x="184" y="1010" class="small" text-anchor="middle">메커니즘 이론</text>
+
+      <line x1="312" y1="976" x2="354" y2="976" stroke="#1f5582" stroke-width="2.4" marker-end="url(#ar11)"/>
+
+      <rect x="362" y="918" width="240" height="116" rx="10" fill="#fbe6e9" stroke="#a83a4a" stroke-width="1.4"/>
+      <text x="482" y="946" class="lab" text-anchor="middle" fill="#a83a4a">1985</text>
+      <text x="482" y="970" class="small" text-anchor="middle">남극 오존 구멍 발견</text>
+      <text x="482" y="990" class="small" text-anchor="middle">영국 과학자들이</text>
+      <text x="482" y="1010" class="small" text-anchor="middle">봄철 급격한 감소 관측</text>
+
+      <line x1="610" y1="976" x2="652" y2="976" stroke="#1f5582" stroke-width="2.4" marker-end="url(#ar11)"/>
+
+      <rect x="660" y="918" width="240" height="116" rx="10" fill="#dfeef9" stroke="#1f5582" stroke-width="1.4"/>
+      <text x="780" y="946" class="lab" text-anchor="middle">1987</text>
+      <text x="780" y="970" class="small" text-anchor="middle">몬트리올 의정서</text>
+      <text x="780" y="990" class="small" text-anchor="middle">CFC 사용 단계적</text>
+      <text x="780" y="1010" class="small" text-anchor="middle">감축</text>
+
+      <line x1="908" y1="976" x2="950" y2="976" stroke="#1f5582" stroke-width="2.4" marker-end="url(#ar11)"/>
+
+      <rect x="958" y="918" width="178" height="116" rx="10" fill="#1f5582"/>
+      <text x="1047" y="956" class="lab" fill="#ffffff" text-anchor="middle">현재</text>
+      <text x="1047" y="982" class="small" fill="#cfdcec" text-anchor="middle">CFC 사용 격감</text>
+      <text x="1047" y="1004" class="small" fill="#cfdcec" text-anchor="middle">오존층 서서히 회복</text>
+    </g>
+  </g>
+
+  <text x="1140" y="1064" class="wm" text-anchor="end">EBS 2027 · 과학·기술 · 214쪽</text>
+</svg>

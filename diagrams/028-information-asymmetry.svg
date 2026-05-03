@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1140" data-app role="img" aria-labelledby="t28 d28">
+  <title id="t28">정보 비대칭과 역선택 — 악순환과 세 해결 방안</title>
+  <desc id="d28">정보 비대칭의 역선택 악순환을 시각화하고, 신호 발송·선별·평판 구축의 세 해결책을 아이콘 비교로 보여 준다.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f5f9f8}
+      .panel{fill:#ffffff;stroke:#c4dcd5;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#3e5953}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a6f6f}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#3e5953}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#436963}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .ico{font:700 22px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a6f6f}
+      .cap{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#7d9994;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar28" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a6f6f"/>
+    </marker>
+    <marker id="ar28-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+    <symbol id="seller" viewBox="0 0 28 36">
+      <circle cx="14" cy="9" r="6" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1"/>
+      <path d="M3 34 Q3 19 14 19 Q25 19 25 34 Z" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1"/>
+    </symbol>
+    <symbol id="buyer" viewBox="0 0 28 36">
+      <circle cx="14" cy="9" r="6" fill="#fbeed3" stroke="#a8884a" stroke-width="1"/>
+      <path d="M3 34 Q3 19 14 19 Q25 19 25 34 Z" fill="#fbeed3" stroke="#a8884a" stroke-width="1"/>
+    </symbol>
+  </defs>
+
+  <rect class="bg" width="1200" height="1140"/>
+
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">정보 비대칭과 역선택 — 악순환과 세 해결 방안</text>
+  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회·문화 · 인과</text>
+
+  <!-- Scene 1: 정보 비대칭 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">정보 비대칭 — 거래 양쪽의 정보 격차</text>
+
+    <rect class="panel" x="64" y="160" width="1072" height="118" rx="10"/>
+    <rect x="64" y="160" width="6" height="118" fill="#2a6f6f"/>
+
+    <!-- 좌: 정보 격차 도식 -->
+    <g transform="translate(84,180)">
+      <rect x="0" y="0" width="200" height="84" rx="10" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1.2"/>
+      <text x="100" y="22" class="lab" text-anchor="middle" fill="#2a6f6f">정보 우위 측 (판매자)</text>
+      <use href="#seller" x="44" y="32" width="22" height="28"/>
+      <text x="156" y="50" class="ico" text-anchor="end">📚📚</text>
+      <text x="100" y="78" class="small" text-anchor="middle">정보 ▣▣▣▣</text>
+
+      <rect x="218" y="20" width="160" height="44" rx="22" fill="#fff" stroke="#a83a4a" stroke-width="1.4"/>
+      <text x="298" y="44" class="lab" text-anchor="middle" fill="#a83a4a">정보 격차</text>
+      <text x="298" y="60" class="small" text-anchor="middle">↔ 비용 차이</text>
+
+      <rect x="396" y="0" width="200" height="84" rx="10" fill="#fbeed3" stroke="#a8884a" stroke-width="1.2"/>
+      <text x="496" y="22" class="lab" text-anchor="middle" fill="#a8884a">정보 열위 측 (구매자)</text>
+      <use href="#buyer" x="440" y="32" width="22" height="28"/>
+      <text x="552" y="50" class="ico" text-anchor="end" fill="#a8884a">📖</text>
+      <text x="496" y="78" class="small" text-anchor="middle">정보 ▣</text>
+    </g>
+
+    <!-- 우: 설명 -->
+    <g transform="translate(700,196)">
+      <text x="0" y="20" class="lab">발생 원인</text>
+      <text x="0" y="42" class="small">· 정보 취득에 비용이 든다</text>
+      <text x="0" y="62" class="small">· 비용 제약이 경제 주체마다 다르다</text>
+      <text x="0" y="84" class="it" fill="#2a6f6f">→ 거래 당사자들의 정보 양·질에 차이</text>
+    </g>
+  </g>
+
+  <!-- Scene 2: 역선택 악순환 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="320" class="num">2</text>
+    <text x="92" y="320" class="bd">역선택 — 정보 부족한 쪽이 ‘가장 나쁜 상대’와 거래</text>
+    <text x="64" y="346" class="small">보험 시장의 사례 — 평균 보험료 책정으로 시작되는 악순환.</text>
+
+    <rect class="panel" x="64" y="364" width="1072" height="216" rx="10" stroke="#a83a4a" stroke-width="1.4" fill="#fbf2f4"/>
+
+    <g>
+      <rect x="84" y="392" width="220" height="58" rx="10" fill="#ffffff" stroke="#a83a4a" stroke-width="1.2"/>
+      <text x="194" y="418" class="lab" text-anchor="middle">평균 보험료 책정</text>
+      <text x="194" y="438" class="small" text-anchor="middle">위험 수준 정확 판단 ✗</text>
+
+      <line x1="312" y1="421" x2="350" y2="421" stroke="#a83a4a" stroke-width="2.2" marker-end="url(#ar28-r)"/>
+
+      <rect x="358" y="392" width="220" height="58" rx="10" fill="#ffffff" stroke="#a83a4a" stroke-width="1.2"/>
+      <text x="468" y="418" class="lab" text-anchor="middle">저위험자 — 비싸다</text>
+      <text x="468" y="438" class="small" text-anchor="middle">고위험자 — 싸다</text>
+
+      <line x1="586" y1="421" x2="624" y2="421" stroke="#a83a4a" stroke-width="2.2" marker-end="url(#ar28-r)"/>
+
+      <rect x="632" y="392" width="220" height="58" rx="10" fill="#ffffff" stroke="#a83a4a" stroke-width="1.2"/>
+      <text x="742" y="418" class="lab" text-anchor="middle">저위험자 이탈</text>
+      <text x="742" y="438" class="small" text-anchor="middle">고위험자만 남음</text>
+
+      <line x1="860" y1="421" x2="898" y2="421" stroke="#a83a4a" stroke-width="2.2" marker-end="url(#ar28-r)"/>
+
+      <rect x="906" y="392" width="218" height="58" rx="10" fill="#a83a4a"/>
+      <text x="1015" y="418" class="lab" fill="#ffffff" text-anchor="middle">예상보다 많은 보험금</text>
+
+      <!-- 악순환 화살표 -->
+      <path d="M 1015 450 Q 1090 506 700 520 Q 400 520 194 516 Q 90 506 90 450" fill="none" stroke="#a83a4a" stroke-width="2.4" stroke-dasharray="6 4" marker-end="url(#ar28-r)"/>
+      <text x="600" y="546" class="lab" fill="#a83a4a" text-anchor="middle">→ 보험료 인상 → 다시 저위험자 이탈 (악순환)</text>
+    </g>
+  </g>
+
+  <!-- Scene 3: 신호 발송 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="624" class="num">3</text>
+    <text x="92" y="624" class="bd">해결 ① 신호 발송 (Signaling) — 정보 우위 쪽이 능동적으로 알리기</text>
+
+    <rect class="panel" x="64" y="642" width="1072" height="138" rx="10"/>
+
+    <!-- 좌: 아이콘 -->
+    <g transform="translate(84,664)">
+      <rect x="0" y="0" width="180" height="100" rx="10" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1.2"/>
+      <use href="#seller" x="78" y="14" width="24" height="32"/>
+      <text x="90" y="64" class="cap" text-anchor="middle" fill="#2a6f6f">정보 우위</text>
+      <text x="90" y="84" class="small" text-anchor="middle">↓ 비용 들여 발송</text>
+
+      <line x1="186" y1="50" x2="222" y2="50" stroke="#2a6f6f" stroke-width="2" marker-end="url(#ar28)"/>
+
+      <rect x="230" y="14" width="100" height="72" rx="8" fill="#fff" stroke="#2a6f6f" stroke-width="1.2"/>
+      <text x="280" y="38" class="lab" text-anchor="middle">학위·자격증</text>
+      <text x="280" y="58" class="small" text-anchor="middle">긴 보증 기간</text>
+      <text x="280" y="78" class="small" text-anchor="middle">품질 인증</text>
+    </g>
+
+    <!-- 우: 설명 -->
+    <g transform="translate(484,664)">
+      <text x="0" y="22" class="lab">정의와 조건</text>
+      <line x1="0" y1="34" x2="650" y2="34" stroke="#dfeae7" stroke-width="1"/>
+      <text x="0" y="58" class="small">· 정보를 더 많이 가진 쪽이 비용을 들여 자신/상품의 숨겨진 특성을 알림</text>
+      <text x="0" y="80" class="small">· 효과 조건: 우수한 특성일수록 신호 발송 비용이 ‘낮아야’ (저질이 모방 불가)</text>
+      <text x="0" y="102" class="it" fill="#2a6f6f">예) 노동시장 — 학위·자격증 / 상품시장 — 긴 보증 기간</text>
+    </g>
+  </g>
+
+  <!-- Scene 4: 선별 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="824" class="num">4</text>
+    <text x="92" y="824" class="bd">해결 ② 선별 (Screening) — 정보 열위 쪽이 ‘드러내게’ 하기</text>
+
+    <rect class="panel" x="64" y="842" width="1072" height="148" rx="10"/>
+
+    <!-- 좌: 메뉴 도식 -->
+    <g transform="translate(84,860)">
+      <use href="#buyer" x="0" y="36" width="24" height="32"/>
+      <text x="12" y="84" class="small" text-anchor="middle">정보 열위</text>
+      <line x1="36" y1="56" x2="74" y2="56" stroke="#2a6f6f" stroke-width="2" marker-end="url(#ar28)"/>
+
+      <rect x="80" y="14" width="220" height="40" rx="8" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1"/>
+      <text x="190" y="38" class="small" text-anchor="middle">A안: 보험료 ↓ + 보장 ↓</text>
+
+      <rect x="80" y="60" width="220" height="40" rx="8" fill="#fbf2f4" stroke="#a83a4a" stroke-width="1"/>
+      <text x="190" y="84" class="small" text-anchor="middle">B안: 보험료 ↑ + 보장 ↑</text>
+
+      <line x1="306" y1="34" x2="344" y2="34" stroke="#2a6f6f" stroke-width="2" marker-end="url(#ar28)"/>
+      <line x1="306" y1="80" x2="344" y2="80" stroke="#a83a4a" stroke-width="2" marker-end="url(#ar28-r)"/>
+
+      <use href="#buyer" x="350" y="14" width="24" height="32"/>
+      <text x="362" y="60" class="small" text-anchor="middle">건강 ✓</text>
+      <use href="#buyer" x="350" y="64" width="24" height="32"/>
+      <text x="362" y="108" class="small" text-anchor="middle" fill="#a83a4a">건강 ✗</text>
+    </g>
+
+    <!-- 우: 설명 -->
+    <g transform="translate(540,860)">
+      <text x="0" y="22" class="lab">방식</text>
+      <line x1="0" y1="34" x2="600" y2="34" stroke="#dfeae7" stroke-width="1"/>
+      <text x="0" y="58" class="small">· 정보 열위 쪽이 두 개 이상의 선택지를 제공</text>
+      <text x="0" y="80" class="small">· 상대가 자신에게 유리한 선택을 함으로써</text>
+      <text x="0" y="100" class="it" fill="#2a6f6f">→ 자신의 숨겨진 특성을 ‘스스로 드러냄’ (자기 분류)</text>
+      <text x="0" y="124" class="small">예) 보험 메뉴 / 보증서 옵션 / 자기부담금 단계</text>
+    </g>
+  </g>
+
+  <!-- Scene 5: 평판 -->
+  <g class="reveal" data-reveal-step="5">
+    <text x="64" y="1034" class="num">5</text>
+    <text x="92" y="1034" class="bd">해결 ③ 평판 구축 (Reputation) — 반복 거래의 누적</text>
+
+    <rect class="panel" x="64" y="1052" width="1072" height="74" rx="10" stroke="#2a6f6f" stroke-width="1.4" fill="#dff0ec"/>
+
+    <!-- 별점 아이콘 -->
+    <g transform="translate(84,1066)">
+      <text x="0" y="22" class="ico" fill="#e0a020">★★★★★</text>
+      <text x="120" y="22" class="lab" fill="#2a6f6f">반복 거래에서 좋은 평판이 곧 신호</text>
+    </g>
+    <text x="84" y="1112" class="small">온라인 시대 — 리뷰 시스템·평점 제도가 정보 비대칭을 줄이는 효율적 메커니즘</text>
+    <text x="700" y="1112" class="small" fill="#2a6f6f">신호 발송 + 선별 + 평판 = 세 가지 보완적 메커니즘</text>
+  </g>
+
+  <text x="1140" y="1124" class="wm" text-anchor="end">EBS 2027 · 사회·문화 · 114쪽</text>
+</svg>

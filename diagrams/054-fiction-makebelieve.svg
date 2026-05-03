@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1300" role="img" aria-labelledby="t054 d054">
+  <title id="t054">허구 이야기와 믿는 체하기 놀이</title>
+  <desc id="d054">소설·연극 같은 허구가 가짜인 줄 알면서도 우리가 슬퍼하거나 기뻐하는 이중적 태도를 두 입장이 어떻게 설명하는지를 좌우 대비로 시각화한다. (가) 월턴은 의미론적 내용과 사용상의 내용을 구별하고 허구 이야기를 '믿는 체하기 놀이'로 해석해 허구 문장을 참·거짓을 따지는 명제가 아니라 놀이를 작동시키는 소품으로 본다. (나) 불완전 명제 이론은 허구 문장도 일반 문장처럼 의미를 가진 명제를 표현하되 실재하지 않는 대상의 자리가 비어 있는 형태(불완전 명제)라고 보아, 감정 반응의 촉발점과 참·거짓 판단 가능성을 자연스럽게 설명한다.</desc>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 13px; font-style: italic; fill: #5e548e; }
+    .mono { font-family: ui-monospace, monospace; font-size: 12px; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .met { fill: #8b6f47; }
+    .met-st { stroke: #8b6f47; }
+    .met-bg { fill: rgba(139,111,71,0.08); }
+    .met-bg2 { fill: rgba(139,111,71,0.18); }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+  ]]></style>
+
+  <!-- 도입 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="100" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">허구의 모순 — 가짜인 줄 알면서도 슬퍼한다</text>
+    <text x="60" y="86" class="lbl-sm">소설 속 흥부의 가난에 슬퍼하고, 연극 배우의 외침에 놀란다 — 그러나 우리는 이것이 가짜임을 안다</text>
+    <text x="60" y="108" class="lbl-xs" fill="#5e548e" font-weight="700">→ 이 이중적 태도를 두 이론이 다르게 설명한다</text>
+  </g>
+
+  <!-- (가) 월턴 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="150" width="540" height="36" rx="6" class="met"/>
+    <text x="60" y="174" class="lbl-strong" fill="#f5f1e8">(가) 월턴 — 믿는 체하기 놀이 이론</text>
+  </g>
+
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="200" width="540" height="220" rx="6" class="met-bg met-st" stroke-width="1.5"/>
+    <text x="60" y="228" class="lbl-strong" fill="#8b6f47">두 내용의 구별</text>
+  </g>
+
+  <!-- Step 3 · 사용상의 내용 -->
+  <g class="reveal" data-reveal-step="3">
+    <g transform="translate(60, 248)">
+      <rect x="0" y="0" width="500" height="50" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="20" class="lbl-sm" font-weight="700">의미론적 내용</text>
+      <text x="14" y="38" class="lbl-xs">맥락과 무관한 명제 자체</text>
+
+      <rect x="0" y="60" width="500" height="50" rx="4" class="met-bg2 met-st" stroke-width="1.4"/>
+      <text x="14" y="80" class="lbl-sm" font-weight="700" fill="#8b6f47">사용상의 내용</text>
+      <text x="14" y="98" class="lbl-xs" fill="#8b6f47">맥락 속에서 실제로 사용된 내용</text>
+    </g>
+
+    <text x="60" y="380" class="lbl-strong">허구 = '믿는 체하기 놀이'</text>
+    <text x="60" y="402" class="lbl-sm">허구 문장은 명제 표현 X → <tspan font-weight="700" fill="#8b6f47">놀이를 작동시키는 소품</tspan></text>
+  </g>
+
+  <!-- Step 4 · 월턴의 사례 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="440" width="540" height="200" rx="6" class="met-bg2 met-st" stroke-width="1.5"/>
+    <text x="60" y="468" class="lbl-strong" fill="#8b6f47">예시 — 배우의 외침</text>
+
+    <g transform="translate(60, 488)">
+      <rect x="0" y="0" width="500" height="44" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="14" y="28" class="quote">"호랑이가 달려온다!"</text>
+
+      <text x="0" y="68" class="lbl-sm">배우가 외쳐도 → 누구도 거짓말쟁이라 비난 X</text>
+      <text x="0" y="86" class="lbl-xs">→ 사실이 아님을 알면서도 놀람 (감정 반응)</text>
+
+      <rect x="0" y="100" width="500" height="50" rx="4" class="met"/>
+      <text x="14" y="120" class="lbl-sm" font-weight="700" fill="#f5f1e8">월턴의 설명</text>
+      <text x="14" y="140" class="lbl-xs" fill="#f5f1e8">언어 행위 X, 놀이 → 의미론적 내용 비활성화 + 사용상 내용만 수용</text>
+    </g>
+  </g>
+
+  <!-- (나) 불완전 명제 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="620" y="150" width="540" height="36" rx="6" class="hum"/>
+    <text x="640" y="174" class="lbl-strong" fill="#f5f1e8">(나) 불완전 명제 이론</text>
+  </g>
+
+  <g class="reveal" data-reveal-step="5">
+    <rect x="620" y="200" width="540" height="220" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="640" y="228" class="lbl-strong" fill="#5e548e">핵심 주장</text>
+    <text x="640" y="248" class="lbl-sm">허구 문장도 일반 문장처럼 의미론적 내용을 가진다</text>
+
+    <g transform="translate(640, 268)">
+      <rect x="0" y="0" width="500" height="50" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="quote">"한양의 어느 마을에 놀부와 흥부라는 형제가 살았다"</text>
+      <text x="14" y="42" class="lbl-xs">→ 불완전 명제로 분석</text>
+
+      <rect x="0" y="60" width="500" height="60" rx="4" class="hum-bg2 hum-st" stroke-width="1.4"/>
+      <text x="14" y="82" class="mono" fill="#5e548e">⟨한양의 어느 마을, ___ , ___ , 형제, 산다⟩</text>
+      <text x="14" y="100" class="lbl-xs" fill="#5e548e" font-weight="700">'놀부'·'흥부' = 빈 자리(허구)</text>
+      <text x="14" y="116" class="lbl-xs">기타 부분은 일반 문장과 동일하게 의미를 가짐</text>
+    </g>
+  </g>
+
+  <!-- 불완전 명제의 효과 -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="620" y="440" width="540" height="200" rx="6" class="hum-bg2 hum-st" stroke-width="1.5"/>
+    <text x="640" y="468" class="lbl-strong" fill="#5e548e">세 가지 효과</text>
+
+    <g transform="translate(640, 488)">
+      <rect x="0" y="0" width="500" height="44" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="14" y="20" class="lbl-sm" font-weight="700">① 감정 반응의 촉발점</text>
+      <text x="14" y="36" class="lbl-xs">불완전 명제가 인식·감정의 시작점이 됨</text>
+
+      <rect x="0" y="50" width="500" height="44" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="14" y="70" class="lbl-sm" font-weight="700">② 참·거짓 판단 가능</text>
+      <text x="14" y="86" class="lbl-xs">"놀부와 흥부는 실제 인물이다" → 거짓 판단 가능</text>
+
+      <rect x="0" y="100" width="500" height="44" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="14" y="120" class="lbl-sm" font-weight="700">③ 일반 언어 행위로 통합</text>
+      <text x="14" y="136" class="lbl-xs">허구를 예외 X → 언어 규칙의 지배를 받는 일반 행위로</text>
+    </g>
+  </g>
+
+  <!-- Step 7 · 비교 표 -->
+  <g class="reveal" data-reveal-step="7">
+    <rect x="40" y="660" width="1120" height="320" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="688" class="lbl-head">한눈에 보는 두 입장의 결정적 차이</text>
+
+    <g transform="translate(60, 710)">
+      <rect x="0" y="0" width="1080" height="30" class="paper2"/>
+      <text x="14" y="20" class="lbl-strong">기준</text>
+      <text x="280" y="20" class="lbl-strong" fill="#8b6f47">월턴 (놀이 이론)</text>
+      <text x="700" y="20" class="lbl-strong" fill="#5e548e">불완전 명제 이론</text>
+
+      <line x1="0" y1="30" x2="1080" y2="30" stroke="#7a6f5f" stroke-width="0.6"/>
+      <text x="14" y="56" class="lbl">허구 문장의 본질</text>
+      <text x="280" y="56" class="lbl">놀이의 소품</text>
+      <text x="700" y="56" class="lbl">불완전 명제 (빈 자리 있음)</text>
+
+      <line x1="0" y1="68" x2="1080" y2="68" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="94" class="lbl">의미론적 내용</text>
+      <text x="280" y="94" class="lbl">비활성화</text>
+      <text x="700" y="94" class="lbl">불완전하게나마 활성화</text>
+
+      <line x1="0" y1="106" x2="1080" y2="106" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="132" class="lbl">참·거짓 판단</text>
+      <text x="280" y="132" class="lbl" fill="#a83a4a">불가능</text>
+      <text x="700" y="132" class="lbl" fill="#5e548e">가능</text>
+
+      <line x1="0" y1="144" x2="1080" y2="144" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="170" class="lbl">감정 반응 설명</text>
+      <text x="280" y="170" class="lbl">놀이 규칙 안에서 발생</text>
+      <text x="700" y="170" class="lbl">불완전 명제 인식이 촉발</text>
+
+      <line x1="0" y1="182" x2="1080" y2="182" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="208" class="lbl">언어 행위</text>
+      <text x="280" y="208" class="lbl">언어 행위 X (놀이)</text>
+      <text x="700" y="208" class="lbl">일반 언어 행위에 포함</text>
+
+      <line x1="0" y1="220" x2="1080" y2="220" stroke="#c9bfa8" stroke-width="0.5"/>
+      <text x="14" y="246" class="lbl">관점</text>
+      <text x="280" y="246" class="lbl">허구 = 특별한 활동</text>
+      <text x="700" y="246" class="lbl">허구 = 언어 규칙 안의 일반 행위</text>
+    </g>
+  </g>
+
+  <!-- (나)의 (가) 비판 한 줄 -->
+  <g class="reveal" data-reveal-step="8">
+    <rect x="40" y="1000" width="1120" height="44" rx="6" class="hum-bg2 hum-st" stroke-width="1.4"/>
+    <text x="60" y="1028" class="lbl-sm" fill="#5e548e"><tspan font-weight="700">(나)의 (가) 비판</tspan>: 허구 문장이 명제를 표현하지 않는다고 보면, 독자가 그 내용을 인식·반응하는 근거를 설명하지 못한다.</text>
+  </g>
+
+  <text x="1160" y="1070" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 독서 방법 · 13쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1080" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#8b6f47"/>
+    <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">6개 항목</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">허구의 모순</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">소설·영화가 가짜인 줄 알면서도 슬퍼하거나 기뻐하는 우리의 이중적 태도.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">월턴의 놀이 이론</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">허구 문장은 참·거짓을 따지는 명제가 아니라 독자가 실제처럼 가정하는 '믿는 체하기 놀이'의 소품이다.</text>
+    <line x1="40" y1="1174" x2="1160" y2="1174" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1190" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">사용상의 내용</text>
+    <text x="240" y="1190" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">문장의 원래 의미는 비활성화되고, 놀이 규칙 안에서 사실로 받아들여지는 맥락상의 내용만 수용된다.</text>
+    <line x1="40" y1="1204" x2="1160" y2="1204" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1220" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">불완전 명제</text>
+    <text x="240" y="1220" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">허구 문장도 일반 문장처럼 의미를 갖지만, 실재하지 않는 대상의 자리는 비어 있는 형태로 명제를 이룬다.</text>
+    <line x1="40" y1="1234" x2="1160" y2="1234" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1250" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">감정 반응의 차이</text>
+    <text x="240" y="1250" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">월턴은 놀이 규칙으로, 불완전 명제 이론은 비어 있는 명제 인식으로 우리의 감정 반응을 설명한다.</text>
+  </g>
+</svg>

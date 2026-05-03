@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" role="img" aria-labelledby="t14 d14">
+  <title id="t14">하이데거의 존재론</title>
+  <desc id="d14">유물론과 주관적 관념론을 양쪽으로 두고 그 사이를 가로지르는 하이데거의 '존재' 물음을 중앙에 배치하고, 망치 두 장면으로 '손안에 있음'(쓰임 안)과 '눈앞에 있음'(객관 관찰)을 대비, 과거-현재-미래의 통합된 시간 구조와 색맹 동물 예시로 본 실존적 지평과 대응설 비판까지 시각화한다.</desc>
+
+  <defs>
+    <marker id="ar14-hum" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .quote { font-family: 'Noto Serif KR', serif; font-size: 13px; font-style: italic; fill: #5e548e; }
+    .ink { stroke: #1a1612; }
+    .ink-fill { fill: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+  ]]></style>
+
+  <!-- Step 1: 두 입장 비판 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="600" y="56" text-anchor="middle" class="lbl-head">하이데거의 출발 — 두 입장을 모두 거부</text>
+
+    <!-- 좌: 유물론 -->
+    <g transform="translate(60, 80)">
+      <rect x="0" y="0" width="380" height="140" rx="6" class="paper2 rule" stroke-width="1.4"/>
+      <line x1="20" y1="20" x2="360" y2="120" stroke="#a83a4a" stroke-width="3" opacity="0.85"/>
+      <line x1="360" y1="20" x2="20" y2="120" stroke="#a83a4a" stroke-width="3" opacity="0.85"/>
+      <text x="20" y="32" class="lbl-strong">유물론</text>
+      <text x="20" y="56" class="lbl">세상의 본질 = 물질</text>
+      <text x="20" y="78" class="lbl-sm">의식·정신도 물질의 산물</text>
+      <text x="20" y="108" class="lbl-xs" fill="#a83a4a" font-weight="700">하이데거 비판:</text>
+      <text x="20" y="124" class="lbl-xs" fill="#a83a4a">인간을 다른 물질 대상과 동렬로 봄 ✗</text>
+    </g>
+
+    <!-- 우: 주관적 관념론 -->
+    <g transform="translate(760, 80)">
+      <rect x="0" y="0" width="380" height="140" rx="6" class="paper2 rule" stroke-width="1.4"/>
+      <line x1="20" y1="20" x2="360" y2="120" stroke="#a83a4a" stroke-width="3" opacity="0.85"/>
+      <line x1="360" y1="20" x2="20" y2="120" stroke="#a83a4a" stroke-width="3" opacity="0.85"/>
+      <text x="20" y="32" class="lbl-strong">주관적 관념론</text>
+      <text x="20" y="56" class="lbl">세상의 본질 = 정신</text>
+      <text x="20" y="78" class="lbl-sm">외부 세계는 의식 속에서만 존재</text>
+      <text x="20" y="108" class="lbl-xs" fill="#a83a4a" font-weight="700">하이데거 비판:</text>
+      <text x="20" y="124" class="lbl-xs" fill="#a83a4a">사물 의미가 인간에 의해 구성된다고 봄 ✗</text>
+    </g>
+
+    <!-- 중앙: 하이데거 -->
+    <g transform="translate(440, 80)">
+      <rect x="0" y="0" width="320" height="140" rx="6" class="hum-bg2 hum-st" stroke-width="1.6"/>
+      <text x="160" y="28" text-anchor="middle" class="lbl-strong" fill="#5e548e">하이데거의 길</text>
+      <text x="160" y="58" text-anchor="middle" class="lbl">한쪽으로 환원하지 않고</text>
+      <text x="160" y="78" text-anchor="middle" class="lbl">인간 ↔ 사물 <tspan font-weight="700">관계</tspan> 속에서</text>
+      <text x="160" y="98" text-anchor="middle" class="lbl">사물이 어떻게 <tspan font-weight="700">드러나는지</tspan> 묻는다</text>
+      <text x="160" y="124" text-anchor="middle" class="quote">= 존재 물음</text>
+    </g>
+  </g>
+
+  <!-- Step 2: 존재자 → 존재, 현존재, 시간 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="240" width="1120" height="200" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="270" class="lbl-head" fill="#5e548e">존재자 → 존재 / 현존재 / 시간</text>
+
+    <!-- 존재자 vs 존재 -->
+    <g transform="translate(60, 296)">
+      <rect x="0" y="0" width="240" height="120" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="120" y="22" text-anchor="middle" class="lbl-strong">존재자</text>
+      <text x="120" y="44" text-anchor="middle" class="lbl-sm">우리가 일상적으로</text>
+      <text x="120" y="60" text-anchor="middle" class="lbl-sm">경험·인식하는 대상</text>
+      <text x="120" y="86" text-anchor="middle" class="lbl-xs">(컵, 책상, 망치, 사람…)</text>
+      <text x="120" y="106" text-anchor="middle" class="lbl-xs" fill="#7a6f5f">전통 형이상학 ← 여기에만 집중</text>
+    </g>
+
+    <line x1="310" y1="356" x2="350" y2="356" stroke="#5e548e" stroke-width="1.8" marker-end="url(#ar14-hum)"/>
+
+    <g transform="translate(360, 296)">
+      <rect x="0" y="0" width="240" height="120" rx="4" class="hum"/>
+      <text x="120" y="22" text-anchor="middle" font-family="Noto Serif KR" font-size="14" fill="#f5f1e8" font-weight="700">존재</text>
+      <text x="120" y="46" text-anchor="middle" font-size="11" fill="#f5f1e8">존재자가 어떻게</text>
+      <text x="120" y="62" text-anchor="middle" font-size="11" fill="#f5f1e8">드러나는지, 그 드러남</text>
+      <text x="120" y="92" text-anchor="middle" font-size="10" fill="#f5f1e8" opacity="0.85">하이데거가 묻는 곳</text>
+    </g>
+
+    <!-- 현존재 -->
+    <g transform="translate(630, 296)">
+      <rect x="0" y="0" width="220" height="120" rx="4" class="paper rule" stroke-width="1.2"/>
+      <text x="110" y="22" text-anchor="middle" class="lbl-strong">현존재 = 인간</text>
+      <text x="110" y="46" text-anchor="middle" class="lbl-sm">자신의 존재를</text>
+      <text x="110" y="62" text-anchor="middle" class="lbl-sm">문제 삼을 수 있는</text>
+      <text x="110" y="78" text-anchor="middle" class="lbl-sm">유일한 존재자</text>
+      <text x="110" y="104" text-anchor="middle" class="lbl-xs" fill="#5e548e">→ 존재 물음을 던지는 자</text>
+    </g>
+
+    <!-- 시간 -->
+    <g transform="translate(880, 296)">
+      <rect x="0" y="0" width="260" height="120" rx="4" class="paper rule" stroke-width="1.2"/>
+      <text x="130" y="22" text-anchor="middle" class="lbl-strong">"존재는 시간이다"</text>
+      <text x="130" y="40" text-anchor="middle" class="lbl-xs">과거·현재·미래 = 직선이 아닌 통합</text>
+      <!-- 삼각 통합 -->
+      <g transform="translate(130, 88)">
+        <circle cx="-50" cy="0" r="20" class="hum-bg2 hum-st" stroke-width="1"/>
+        <text x="-50" y="3" text-anchor="middle" font-size="10" fill="#5e548e" font-weight="700">과거</text>
+        <circle cx="0" cy="-20" r="20" class="hum-bg2 hum-st" stroke-width="1"/>
+        <text x="0" y="-17" text-anchor="middle" font-size="10" fill="#5e548e" font-weight="700">현재</text>
+        <circle cx="50" cy="0" r="20" class="hum-bg2 hum-st" stroke-width="1"/>
+        <text x="50" y="3" text-anchor="middle" font-size="10" fill="#5e548e" font-weight="700">미래</text>
+        <line x1="-32" y1="-8" x2="-12" y2="-18" stroke="#5e548e" stroke-width="1"/>
+        <line x1="12" y1="-18" x2="32" y2="-8" stroke="#5e548e" stroke-width="1"/>
+        <line x1="-30" y1="0" x2="30" y2="0" stroke="#5e548e" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Step 3: 손안에 있음 vs 눈앞에 있음 (망치) -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="600" y="478" text-anchor="middle" class="lbl-head">두 가지 관계 방식 — 망치를 예로</text>
+
+    <!-- 좌: 손안에 있음 -->
+    <g transform="translate(60, 500)">
+      <rect x="0" y="0" width="540" height="240" rx="6" class="hum-bg2 hum-st" stroke-width="1.5"/>
+      <rect x="0" y="0" width="540" height="36" rx="6" fill="#5e548e"/>
+      <text x="20" y="24" class="lbl-strong" fill="#f5f1e8">손안에 있음 · 쓰임 안의 망치</text>
+
+      <!-- 망치를 잡고 못을 박는 그림 -->
+      <g transform="translate(140, 130)">
+        <!-- 손 -->
+        <ellipse cx="-20" cy="20" rx="18" ry="22" fill="#d4a574" stroke="#7a6f5f" stroke-width="1"/>
+        <!-- 망치 손잡이 -->
+        <rect x="0" y="-10" width="90" height="14" rx="2" fill="#8b5a3c" stroke="#1a1612" stroke-width="0.8" transform="rotate(-25 0 -3)"/>
+        <!-- 망치 머리 -->
+        <rect x="80" y="-30" width="40" height="30" rx="3" fill="#5e548e" stroke="#1a1612" stroke-width="1" transform="rotate(-25 100 -15)"/>
+        <!-- 못 -->
+        <line x1="120" y1="36" x2="120" y2="60" stroke="#1a1612" stroke-width="3"/>
+        <polygon points="115,38 125,38 120,30" fill="#7a6f5f"/>
+        <!-- 나무판 -->
+        <rect x="80" y="50" width="80" height="20" fill="#c9a878" stroke="#7a6f5f" stroke-width="1"/>
+        <!-- 동작선 -->
+        <path d="M40,-50 Q60,-30 70,-10" stroke="#5e548e" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+      </g>
+
+      <text x="380" y="80" class="lbl-strong">못 박는 행위에 집중</text>
+      <text x="380" y="100" class="lbl-sm">→ 망치는 "객관 대상"이 아니라</text>
+      <text x="380" y="118" class="lbl-sm">  쓰임의 맥락 안에 있는 도구</text>
+      <text x="380" y="148" class="lbl-strong" fill="#5e548e">관계 방식</text>
+      <text x="380" y="168" class="lbl-sm">현존재가 도구로 활용 →</text>
+      <text x="380" y="186" class="lbl-sm">사물이 쓰임의 맥락 속에서</text>
+      <text x="380" y="204" class="lbl-sm">드러남</text>
+      <text x="380" y="226" class="lbl-xs" fill="#5e548e" font-weight="700">하이데거: 대부분의 사물 = 이 방식</text>
+    </g>
+
+    <!-- 우: 눈앞에 있음 -->
+    <g transform="translate(620, 500)">
+      <rect x="0" y="0" width="540" height="240" rx="6" class="paper rule" stroke-width="1.5"/>
+      <rect x="0" y="0" width="540" height="36" rx="6" class="paper2"/>
+      <text x="20" y="24" class="lbl-strong">눈앞에 있음 · 부러진 망치 = 객관 대상</text>
+
+      <!-- 부러진 망치 -->
+      <g transform="translate(140, 130)">
+        <!-- 손잡이 (부러진) -->
+        <rect x="0" y="-6" width="40" height="12" rx="2" fill="#8b5a3c" stroke="#1a1612" stroke-width="0.8"/>
+        <!-- 부러진 단면 -->
+        <polygon points="40,-6 50,-2 44,2 50,6" fill="#a83a4a" opacity="0.6"/>
+        <!-- 망치 머리 (분리됨) -->
+        <rect x="60" y="-20" width="40" height="30" rx="3" fill="#5e548e" stroke="#1a1612" stroke-width="1"/>
+        <line x1="58" y1="-12" x2="68" y2="-8" stroke="#a83a4a" stroke-width="1.2"/>
+        <!-- 관찰자 시선 (눈) -->
+        <g transform="translate(-30, -50)">
+          <ellipse cx="0" cy="0" rx="14" ry="8" fill="#f5f1e8" stroke="#1a1612" stroke-width="1.2"/>
+          <circle cx="0" cy="0" r="4" fill="#1a1612"/>
+        </g>
+        <line x1="-20" y1="-46" x2="40" y2="-22" stroke="#7a6f5f" stroke-width="0.8" stroke-dasharray="2 2"/>
+        <text x="50" y="50" text-anchor="middle" class="lbl-xs" fill="#a83a4a">부러져 못 쓰게 된 망치</text>
+      </g>
+
+      <text x="380" y="80" class="lbl-strong">망치를 들여다본다</text>
+      <text x="380" y="100" class="lbl-sm">→ 도구 맥락에서 벗어남</text>
+      <text x="380" y="118" class="lbl-sm">→ "이건 무엇인가?" 객관 관찰</text>
+      <text x="380" y="148" class="lbl-strong">관계 방식</text>
+      <text x="380" y="168" class="lbl-sm">사물이 객관화된 인식 대상으로</text>
+      <text x="380" y="186" class="lbl-sm">현존재 앞에 드러남</text>
+      <text x="380" y="226" class="lbl-xs" fill="#a83a4a" font-weight="700">전통 철학: 이 방식만으로 사물을 봄 ← 비판</text>
+    </g>
+  </g>
+
+  <!-- Step 4: 실존적 지평 + 대응설 비판 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="760" width="1120" height="180" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <text x="60" y="788" class="lbl-head" fill="#5e548e">실존적 지평 + 대응설 비판</text>
+
+    <!-- 실존적 지평 -->
+    <g transform="translate(60, 808)">
+      <rect x="0" y="0" width="380" height="116" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">실존적 지평</text>
+      <text x="14" y="42" class="lbl-sm">현존재가 세계를 이해하는 틀</text>
+      <text x="14" y="60" class="lbl-sm">→ 존재자는 그 지평 속에서 드러남</text>
+      <!-- 색맹 동물 예시 -->
+      <g transform="translate(14, 76)">
+        <circle cx="20" cy="14" r="14" fill="#a83a4a" opacity="0.85"/>
+        <text x="44" y="10" class="lbl-xs">붉은 꽃 (인간이 보는 것)</text>
+        <circle cx="20" cy="32" r="14" fill="#7a6f5f" opacity="0.6"/>
+        <text x="44" y="36" class="lbl-xs">회색 꽃 (색맹 동물이 보는 것)</text>
+      </g>
+    </g>
+
+    <text x="464" y="864" class="lbl-head" fill="#5e548e">→</text>
+
+    <!-- 대응설 비판 -->
+    <g transform="translate(500, 808)">
+      <rect x="0" y="0" width="640" height="116" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">대응설 — 명제 = 객관적 사태이면 참</text>
+      <text x="14" y="44" class="lbl-sm">전통 진리론. 하이데거는 이를 비판:</text>
+      <text x="14" y="64" class="quote">"사물은 객관 실체가 아니라 우리와의 만남 속에서 드러나는 존재자다."</text>
+      <text x="14" y="92" class="lbl-xs" fill="#5e548e" font-weight="700">단, 현상이 존재의 전부는 아님</text>
+      <text x="200" y="92" class="lbl-xs">→ 현상 너머에 은폐된 존재의 측면이 있다</text>
+    </g>
+  </g>
+
+  <!-- Step 5: 의의와 비판 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="958" width="1120" height="22" rx="3" class="hum-bg2 hum-st" stroke-width="1"/>
+    <text x="60" y="974" class="lbl-sm" fill="#5e548e"><tspan font-weight="700">의의</tspan> · 인간-대상 만남 속에서 존재가 드러난다는 통찰    /    <tspan font-weight="700">비판</tspan> · 대상을 부차적 존재자로 격하한다는 평가</text>
+  </g>
+
+  <text x="1160" y="996" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 인문·예술 · 54쪽</text>
+</svg>

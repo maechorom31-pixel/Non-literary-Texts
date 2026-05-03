@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1220" role="img" aria-labelledby="t036 d036">
+  <title id="t036">교류 욕구 이론</title>
+  <desc id="d036">조너선 터너의 교류 욕구 이론을 시각화한다. 자아를 이루는 네 가지 정체성(핵심·사회적·집단·역할)을 중앙에 배치하고, 정체성 검증의 성공 시 발현되는 만족·기쁨·자긍심 같은 긍정적 감정과 그로 인한 사회적 유대 강화, 검증 실패 시 발현되는 부정적 감정과 회피·공격으로의 이행, 그리고 사회 구조가 정체성 검증 환경을 제공함으로써 감정의 구심적 힘으로 개인의 몰입을 이끌어 내는 메커니즘까지 정리한다.</desc>
+
+  <defs>
+    <marker id="ar36-soc" viewBox="0 0 1200 1220" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a6f6f"/>
+    </marker>
+    <marker id="ar36-acc" viewBox="0 0 1200 1220" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .soc { fill: #2a6f6f; }
+    .soc-st { stroke: #2a6f6f; }
+    .soc-bg { fill: rgba(42,111,111,0.08); }
+    .soc-bg2 { fill: rgba(42,111,111,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1 · 교류 욕구 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="100" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">조너선 터너의 교류 욕구 이론</text>
+    <text x="60" y="86" class="lbl">사회적 상호 작용에는 항상 활성화되는 근본적 <tspan font-weight="700" fill="#2a6f6f">교류 욕구</tspan>가 있다</text>
+    <text x="60" y="108" class="lbl-sm">→ 욕구의 충족 정도에 따라 정도와 종류가 다른 감정이 발현된다</text>
+  </g>
+
+  <!-- Step 2 · 네 정체성 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="150" width="1120" height="280" rx="6" class="soc-bg soc-st" stroke-width="1.5"/>
+    <text x="60" y="178" class="lbl-head" fill="#2a6f6f">자아를 이루는 네 가지 정체성</text>
+    <text x="60" y="200" class="lbl-sm">교류 욕구의 가장 중요한 하위 욕구 = 정체성을 검증받고자 하는 욕구</text>
+
+    <!-- 중앙 자아 + 4 정체성 둘레 -->
+    <g transform="translate(600, 320)">
+      <!-- 중앙 자아 -->
+      <circle r="40" class="soc"/>
+      <text x="0" y="-2" text-anchor="middle" class="lbl-strong" fill="#f5f1e8">자아</text>
+      <text x="0" y="14" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">(Self)</text>
+
+      <!-- 4 정체성 (둘레) -->
+      <g transform="translate(-220, -60)">
+        <rect x="0" y="0" width="180" height="60" rx="4" class="paper2 soc-st" stroke-width="1.4"/>
+        <text x="90" y="22" text-anchor="middle" class="lbl-strong" fill="#2a6f6f">핵심 정체성</text>
+        <text x="90" y="42" text-anchor="middle" class="lbl-xs">개인이 자신을 정의하는</text>
+        <text x="90" y="55" text-anchor="middle" class="lbl-xs">가장 기본적 정체성</text>
+        <line x1="180" y1="30" x2="220" y2="30" class="soc-st" stroke-width="1.2"/>
+      </g>
+
+      <g transform="translate(40, -60)">
+        <rect x="0" y="0" width="180" height="60" rx="4" class="paper2 soc-st" stroke-width="1.4"/>
+        <text x="90" y="22" text-anchor="middle" class="lbl-strong" fill="#2a6f6f">사회적 정체성</text>
+        <text x="90" y="42" text-anchor="middle" class="lbl-xs">사회적 범주</text>
+        <text x="90" y="55" text-anchor="middle" class="lbl-xs">(인종·성별·계층)</text>
+        <line x1="0" y1="30" x2="-40" y2="30" class="soc-st" stroke-width="1.2"/>
+      </g>
+
+      <g transform="translate(-220, 0)">
+        <rect x="0" y="0" width="180" height="60" rx="4" class="paper2 soc-st" stroke-width="1.4"/>
+        <text x="90" y="22" text-anchor="middle" class="lbl-strong" fill="#2a6f6f">집단 정체성</text>
+        <text x="90" y="42" text-anchor="middle" class="lbl-xs">속한 집단과의</text>
+        <text x="90" y="55" text-anchor="middle" class="lbl-xs">동일시</text>
+        <line x1="180" y1="30" x2="220" y2="30" class="soc-st" stroke-width="1.2"/>
+      </g>
+
+      <g transform="translate(40, 0)">
+        <rect x="0" y="0" width="180" height="60" rx="4" class="paper2 soc-st" stroke-width="1.4"/>
+        <text x="90" y="22" text-anchor="middle" class="lbl-strong" fill="#2a6f6f">역할 정체성</text>
+        <text x="90" y="42" text-anchor="middle" class="lbl-xs">특정 역할 수행에 따라</text>
+        <text x="90" y="55" text-anchor="middle" class="lbl-xs">형성됨</text>
+        <line x1="0" y1="30" x2="-40" y2="30" class="soc-st" stroke-width="1.2"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Step 3 · 검증 성공 → 긍정 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="450" width="540" height="220" rx="6" class="soc-bg2 soc-st" stroke-width="1.5"/>
+    <text x="60" y="478" class="lbl-head" fill="#2a6f6f">검증 성공 → 긍정 감정</text>
+
+    <g transform="translate(60, 500)">
+      <rect x="0" y="0" width="500" height="50" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-sm">타자가 정체성을 수용한다는 신호 → 자아가 받음</text>
+      <text x="14" y="40" class="lbl-xs" fill="#2a6f6f">"당신의 그 모습이 맞다"는 인정</text>
+
+      <line x1="250" y1="60" x2="250" y2="80" class="soc-st" stroke-width="1.6" marker-end="url(#ar36-soc)"/>
+
+      <rect x="0" y="90" width="500" height="50" rx="3" class="soc"/>
+      <text x="250" y="112" text-anchor="middle" class="lbl-strong" fill="#f5f1e8">만족감 · 기쁨 · 자긍심</text>
+      <text x="250" y="130" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">긍정적 감정</text>
+    </g>
+
+    <text x="60" y="660" class="lbl-xs" fill="#2a6f6f" font-weight="700">→ 상호 작용 활성화 + 사회적 유대 강화</text>
+  </g>
+
+  <!-- Step 4 · 검증 실패 → 부정 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="620" y="450" width="540" height="220" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="640" y="478" class="lbl-head" fill="#a83a4a">검증 실패 → 부정 감정</text>
+
+    <g transform="translate(640, 500)">
+      <rect x="0" y="0" width="500" height="50" rx="3" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-sm">타자가 정체성을 거부·무시 → 자아가 받음</text>
+      <text x="14" y="40" class="lbl-xs" fill="#a83a4a">"그 모습은 받아들일 수 없다"</text>
+
+      <line x1="250" y1="60" x2="250" y2="80" class="acc-st" stroke-width="1.6" marker-end="url(#ar36-acc)"/>
+
+      <rect x="0" y="90" width="500" height="50" rx="3" class="acc"/>
+      <text x="250" y="112" text-anchor="middle" class="lbl-strong" fill="#f5f1e8">분노 · 슬픔 · 수치심</text>
+      <text x="250" y="130" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">부정적 감정 (회피·공격으로 이어짐)</text>
+    </g>
+
+    <text x="640" y="660" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 핵심·사회적 정체성처럼 일반적으로 드러나는 정체성일수록 강렬</text>
+  </g>
+
+  <!-- Step 5 · 사회 구조와 몰입 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="690" width="1120" height="240" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="718" class="lbl-head">사회 구조와 정체성 몰입 — 감정의 구심적 힘</text>
+
+    <g transform="translate(80, 740)">
+      <rect x="0" y="0" width="220" height="60" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="110" y="22" text-anchor="middle" class="lbl-strong">사회 구조</text>
+      <text x="110" y="42" text-anchor="middle" class="lbl-xs">집단·조직 등 환경 제공</text>
+
+      <line x1="224" y1="30" x2="266" y2="30" class="soc-st" stroke-width="1.6" marker-end="url(#ar36-soc)"/>
+
+      <rect x="270" y="0" width="260" height="60" rx="4" class="soc-bg soc-st" stroke-width="1.4"/>
+      <text x="400" y="22" text-anchor="middle" class="lbl-strong" fill="#2a6f6f">정체성 검증 환경 강화</text>
+      <text x="400" y="42" text-anchor="middle" class="lbl-xs">역할 정체성 검증 가능</text>
+
+      <line x1="534" y1="30" x2="576" y2="30" class="soc-st" stroke-width="1.6" marker-end="url(#ar36-soc)"/>
+
+      <rect x="580" y="0" width="220" height="60" rx="4" class="soc"/>
+      <text x="690" y="22" text-anchor="middle" class="lbl-strong" fill="#f5f1e8">감정의 구심적 힘</text>
+      <text x="690" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">긍정 감정 누적</text>
+
+      <line x1="804" y1="30" x2="846" y2="30" class="soc-st" stroke-width="1.6" marker-end="url(#ar36-soc)"/>
+
+      <rect x="850" y="0" width="220" height="60" rx="4" class="soc-bg2 soc-st" stroke-width="1.4"/>
+      <text x="960" y="22" text-anchor="middle" class="lbl-strong" fill="#2a6f6f">개인의 몰입</text>
+      <text x="960" y="42" text-anchor="middle" class="lbl-xs">구조에 연결됨</text>
+    </g>
+
+    <text x="80" y="864" class="lbl-sm">→ 사회 구조는 정체성 검증 환경을 제공함으로써 감정을 매개로 개인을 그 구조에 묶어 둔다</text>
+    <text x="80" y="884" class="lbl-xs" fill="#2a6f6f" font-weight="700">→ 인간의 사회적 결속을 정서적으로 설명하는 이론</text>
+    <text x="80" y="906" class="lbl-xs">예: 직장에서 좋은 평가를 받는 사람일수록 직장에 정서적으로 더 깊이 몰입한다</text>
+  </g>
+
+  <text x="1160" y="990" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 사회·문화 · 149쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1000" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1000" width="1120" height="32" rx="6" fill="#2a6f6f"/>
+    <text x="60" y="1022" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1022" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1034" x2="1160" y2="1034" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1050" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">교류 욕구</text>
+    <text x="240" y="1050" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">사회적 상호 작용에서 개인에게 항상 활성화되는 근본적 욕구.</text>
+    <line x1="40" y1="1064" x2="1160" y2="1064" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1080" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">네 가지 정체성</text>
+    <text x="240" y="1080" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">핵심 정체성, 사회적 정체성, 집단 정체성, 역할 정체성.</text>
+    <line x1="40" y1="1094" x2="1160" y2="1094" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1110" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">검증 성공</text>
+    <text x="240" y="1110" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">타자의 수용 신호 → 만족·기쁨·자긍심 → 상호 작용 활성화·사회적 유대 강화.</text>
+    <line x1="40" y1="1124" x2="1160" y2="1124" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1140" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">검증 실패</text>
+    <text x="240" y="1140" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">핵심·사회적 정체성처럼 일반적으로 드러나는 정체성일수록 부정적 감정이 강렬하다.</text>
+    <line x1="40" y1="1154" x2="1160" y2="1154" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1170" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">사회 구조와 몰입</text>
+    <text x="240" y="1170" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">정체성 검증 환경을 제공하는 사회 구조는 감정의 구심적 힘을 통해 개인의 몰입을 이끌어 낸다.</text>
+  </g>
+</svg>

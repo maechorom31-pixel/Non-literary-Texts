@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1100" role="img" aria-labelledby="t052 d052">
+  <title id="t052">SQ3R과 CSQ3R</title>
+  <desc id="d052">복잡한 글을 효율적으로 읽기 위한 전략적 독서 방법인 SQ3R의 다섯 단계(Survey 훑어보기 → Question 질문하기 → Read 읽기 → Recite 확인하기 → Review 재검토하기)와 그 변이형 CSQ3R(Change perspective 시각 바꾸기 단계가 추가된 형태)을 시각화하고, 효과적 활용법(독자의 배경지식 활용·표현 활동·단계 간 양방향 이동)까지 정리한다.</desc>
+
+  <defs>
+    <marker id="ar52-met" viewBox="0 0 1200 1100" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b6f47"/>
+    </marker>
+    <marker id="ar52-back" viewBox="0 0 1200 1100" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .met { fill: #8b6f47; }
+    .met-st { stroke: #8b6f47; }
+    .met-bg { fill: rgba(139,111,71,0.08); }
+    .met-bg2 { fill: rgba(139,111,71,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1 · 도입 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="100" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">SQ3R — 복잡한 글을 효율적으로 읽는 전략</text>
+    <text x="60" y="86" class="lbl-sm">중요한 내용을 놓치거나 기억하지 못하는 일을 방지하기 위한 전략적 독서 방법</text>
+    <text x="60" y="108" class="lbl-xs">Survey · Question · Read · Recite · Review의 다섯 머리글자</text>
+  </g>
+
+  <!-- Step 2 · 5단계 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="150" width="1120" height="200" rx="6" class="met-bg met-st" stroke-width="1.5"/>
+    <text x="60" y="178" class="lbl-head" fill="#8b6f47">SQ3R — 다섯 단계</text>
+
+    <g transform="translate(60, 200)">
+      <!-- 단계 1: Survey -->
+      <rect x="0" y="0" width="200" height="120" rx="4" class="met"/>
+      <text x="100" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">① Survey</text>
+      <text x="100" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">훑어보기</text>
+      <text x="100" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">제목·소제목·도표·</text>
+      <text x="100" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">목차로 핵심 내용</text>
+      <text x="100" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">개관·예측</text>
+
+      <line x1="204" y1="60" x2="220" y2="60" class="met-st" stroke-width="1.6" marker-end="url(#ar52-met)"/>
+
+      <!-- 단계 2: Question -->
+      <rect x="224" y="0" width="200" height="120" rx="4" class="met"/>
+      <text x="324" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">② Question</text>
+      <text x="324" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">질문하기</text>
+      <text x="324" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">전 단계 정보를</text>
+      <text x="324" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">토대로 질문</text>
+      <text x="324" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">만들기</text>
+
+      <line x1="428" y1="60" x2="444" y2="60" class="met-st" stroke-width="1.6" marker-end="url(#ar52-met)"/>
+
+      <!-- 단계 3: Read -->
+      <rect x="448" y="0" width="200" height="120" rx="4" class="met"/>
+      <text x="548" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">③ Read</text>
+      <text x="548" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">읽기</text>
+      <text x="548" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">내용 파악 +</text>
+      <text x="548" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">전 단계 질문에</text>
+      <text x="548" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">답을 찾으며</text>
+
+      <line x1="652" y1="60" x2="668" y2="60" class="met-st" stroke-width="1.6" marker-end="url(#ar52-met)"/>
+
+      <!-- 단계 4: Recite -->
+      <rect x="672" y="0" width="200" height="120" rx="4" class="met"/>
+      <text x="772" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">④ Recite</text>
+      <text x="772" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">확인하기</text>
+      <text x="772" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">중요한 부분</text>
+      <text x="772" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">확인 + 명확히</text>
+      <text x="772" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">기억</text>
+
+      <line x1="876" y1="60" x2="892" y2="60" class="met-st" stroke-width="1.6" marker-end="url(#ar52-met)"/>
+
+      <!-- 단계 5: Review -->
+      <rect x="896" y="0" width="200" height="120" rx="4" class="met"/>
+      <text x="996" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">⑤ Review</text>
+      <text x="996" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">재검토하기</text>
+      <text x="996" y="68" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">전체 내용을</text>
+      <text x="996" y="84" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">다시 훑고</text>
+      <text x="996" y="100" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">정리</text>
+    </g>
+  </g>
+
+  <!-- Step 3 · CSQ3R -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="370" width="1120" height="180" rx="6" class="met-bg2 met-st" stroke-width="1.5"/>
+    <text x="60" y="398" class="lbl-head" fill="#8b6f47">CSQ3R — 시각 바꾸기 단계 추가</text>
+    <text x="60" y="420" class="lbl-sm">SQ3R + 'Change perspective(시각 바꾸기)' 단계가 추가된 변이형</text>
+
+    <g transform="translate(60, 440)">
+      <rect x="0" y="0" width="500" height="90" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">시각 바꾸기 (Change perspective)</text>
+      <text x="14" y="44" class="lbl-sm">"내가 저자라면 독자에게 어떻게 전달할 것인가?"</text>
+      <text x="14" y="62" class="lbl-sm">→ 책의 내용을 능동적으로 이해하는 태도</text>
+      <text x="14" y="80" class="lbl-xs" fill="#8b6f47" font-weight="700">→ 분석적·비판적 인식 가능</text>
+    </g>
+
+    <g transform="translate(620, 440)">
+      <rect x="0" y="0" width="500" height="90" rx="4" class="met-bg met-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#8b6f47">독서 태도와 직결</text>
+      <text x="14" y="44" class="lbl-sm">단순 정보 수용 → 능동적 재구성</text>
+      <text x="14" y="62" class="lbl-sm">관점 전환을 통해 깊이 있는 이해</text>
+      <text x="14" y="80" class="lbl-xs">SQ3R 위에 한 층을 더 쌓는 구조</text>
+    </g>
+  </g>
+
+  <!-- Step 4 · 효과적 활용 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="570" width="1120" height="320" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="598" class="lbl-head">효과적 활용 방법</text>
+
+    <!-- 두 핵심 요소 -->
+    <g transform="translate(80, 620)">
+      <rect x="0" y="0" width="500" height="80" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">① 배경지식 활용</text>
+      <text x="14" y="44" class="lbl-sm">독자가 자신의 배경지식을 적극적으로 활용</text>
+      <text x="14" y="62" class="lbl-xs">→ 글에 대한 이해도 ↑</text>
+
+      <rect x="540" y="0" width="500" height="80" rx="4" class="paper2 ink" stroke-width="1"/>
+      <text x="554" y="22" class="lbl-strong">② 마지막 단계의 표현 활동</text>
+      <text x="554" y="44" class="lbl-sm">토론, 감상문 쓰기 등으로 이해한 내용 표현</text>
+      <text x="554" y="62" class="lbl-xs">→ 깊이 있는 학습 효과</text>
+    </g>
+
+    <!-- 양방향 이동 -->
+    <g transform="translate(80, 720)">
+      <text x="0" y="0" class="lbl-strong">단계 간 양방향 이동</text>
+      <text x="0" y="20" class="lbl-sm">단계가 일방향으로만 이루어지는 것이 아니라, 필요시 이전 단계로 되돌아가 수행 가능</text>
+
+      <!-- 양방향 화살표 시각화 -->
+      <g transform="translate(0, 50)">
+        <rect x="0" y="0" width="80" height="36" rx="3" class="met"/>
+        <text x="40" y="22" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">Survey</text>
+
+        <line x1="84" y1="14" x2="120" y2="14" class="met-st" stroke-width="1.6" marker-end="url(#ar52-met)"/>
+        <line x1="120" y1="22" x2="84" y2="22" class="acc-st" stroke-width="1.6" marker-end="url(#ar52-back)"/>
+
+        <rect x="124" y="0" width="80" height="36" rx="3" class="met"/>
+        <text x="164" y="22" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">Question</text>
+
+        <line x1="208" y1="14" x2="244" y2="14" class="met-st" stroke-width="1.6" marker-end="url(#ar52-met)"/>
+        <line x1="244" y1="22" x2="208" y2="22" class="acc-st" stroke-width="1.6" marker-end="url(#ar52-back)"/>
+
+        <rect x="248" y="0" width="80" height="36" rx="3" class="met"/>
+        <text x="288" y="22" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">Read</text>
+
+        <line x1="332" y1="14" x2="368" y2="14" class="met-st" stroke-width="1.6" marker-end="url(#ar52-met)"/>
+        <line x1="368" y1="22" x2="332" y2="22" class="acc-st" stroke-width="1.6" marker-end="url(#ar52-back)"/>
+
+        <rect x="372" y="0" width="80" height="36" rx="3" class="met"/>
+        <text x="412" y="22" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">Recite</text>
+
+        <line x1="456" y1="14" x2="492" y2="14" class="met-st" stroke-width="1.6" marker-end="url(#ar52-met)"/>
+        <line x1="492" y1="22" x2="456" y2="22" class="acc-st" stroke-width="1.6" marker-end="url(#ar52-back)"/>
+
+        <rect x="496" y="0" width="80" height="36" rx="3" class="met"/>
+        <text x="536" y="22" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" font-weight="700">Review</text>
+
+        <text x="600" y="22" class="lbl-xs" fill="#a83a4a" font-weight="700">↔ 필요시 되돌아감</text>
+      </g>
+
+      <text x="0" y="120" class="lbl-xs" fill="#7a6f5f">예: Read 단계에서 이해 안 되면 → Question 단계로 돌아가 새 질문 생성</text>
+    </g>
+  </g>
+
+  <text x="1160" y="930" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 독서 방법 · 9쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="940" width="1120" height="140" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="940" width="1120" height="32" rx="6" fill="#8b6f47"/>
+    <text x="60" y="962" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="962" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">3개 항목</text>
+    <line x1="40" y1="974" x2="1160" y2="974" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="990" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">SQ3R</text>
+    <text x="240" y="990" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">훑어보기-질문하기-읽기-확인하기-재검토하기의 다섯 단계 독서 전략.</text>
+    <line x1="40" y1="1004" x2="1160" y2="1004" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1020" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">CSQ3R</text>
+    <text x="240" y="1020" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">SQ3R에 '시각 바꾸기' 단계를 추가해 능동적·비판적 인식을 강화한 변이형.</text>
+    <line x1="40" y1="1034" x2="1160" y2="1034" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1050" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#8b6f47">효과적 활용</text>
+    <text x="240" y="1050" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">배경지식 활용 + 표현 활동(토론·감상문) + 단계 간 양방향 이동이 효과를 높인다.</text>
+  </g>
+</svg>

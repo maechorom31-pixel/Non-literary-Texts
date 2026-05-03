@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1160" role="img" aria-labelledby="t040 d040">
+  <title id="t040">왕필과 곽상의 도가 사상</title>
+  <desc id="d040">고대 도가 사상이 시대에 따라 다양한 해석을 거치며 발전한 흐름에서 출발해, (가) 왕필이 무(無)를 만물의 근원이 되는 비어 있음으로 보고 모든 유(有)는 무에서 비롯된다는 일원론과 그 통치 철학인 무위이치를 제시한 입장과, (나) 곽상이 제물론을 출발점 삼아 만물이 근원적 무에 의존하지 않고 각자의 본성에 따라 저절로 생기고 변한다는 자생자화의 관점을 제시하며 왕필의 일원론을 비판한 입장을 좌우 대비로 시각화한다.</desc>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .han { font-family: 'Noto Serif KR', serif; font-size: 24px; font-weight: 700; fill: #f5f1e8; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .hum { fill: #5e548e; }
+    .hum-st { stroke: #5e548e; }
+    .hum-bg { fill: rgba(94,84,142,0.08); }
+    .hum-bg2 { fill: rgba(94,84,142,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1 · 도가 사상의 발전 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="100" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">도가 사상의 발전 — 두 갈래의 해석</text>
+    <text x="60" y="86" class="lbl">『노자』·『장자』 중심 형성 → 시대별 다양한 해석 → 후한·삼국 시대 무위·자연 원리를 정치와 결합</text>
+    <text x="60" y="108" class="lbl-sm">→ 위·진 시대에 <tspan font-weight="700" fill="#5e548e">왕필</tspan>(무 일원론)과 <tspan font-weight="700" fill="#5e548e">곽상</tspan>(제물론)이 두 갈래의 해석을 제시</text>
+  </g>
+
+  <!-- Step 2-3 · (가) 왕필 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="150" width="540" height="370" rx="6" class="hum-bg hum-st" stroke-width="1.5"/>
+    <rect x="40" y="150" width="540" height="36" rx="6" class="hum"/>
+    <text x="60" y="174" class="lbl-strong" fill="#f5f1e8">(가) 왕필 — 무 일원론</text>
+
+    <!-- 큰 무(無) -->
+    <g transform="translate(310, 280)">
+      <circle r="62" class="hum"/>
+      <text x="0" y="10" text-anchor="middle" class="han">無</text>
+      <text x="0" y="34" text-anchor="middle" font-size="10" fill="#f5f1e8" opacity="0.85">만물의 근원</text>
+    </g>
+
+    <!-- 무에서 비롯되는 유(有)들 -->
+    <g transform="translate(310, 280)">
+      <line x1="-62" y1="0" x2="-110" y2="-50" class="hum-st" stroke-width="1.4"/>
+      <circle cx="-120" cy="-58" r="14" fill="#5e548e" opacity="0.55"/>
+      <text x="-120" y="-54" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">有</text>
+
+      <line x1="-62" y1="0" x2="-130" y2="0" class="hum-st" stroke-width="1.4"/>
+      <circle cx="-140" cy="0" r="14" fill="#5e548e" opacity="0.55"/>
+      <text x="-140" y="4" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">有</text>
+
+      <line x1="-62" y1="0" x2="-110" y2="50" class="hum-st" stroke-width="1.4"/>
+      <circle cx="-120" cy="58" r="14" fill="#5e548e" opacity="0.55"/>
+      <text x="-120" y="62" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">有</text>
+
+      <line x1="62" y1="0" x2="110" y2="-50" class="hum-st" stroke-width="1.4"/>
+      <circle cx="120" cy="-58" r="14" fill="#5e548e" opacity="0.55"/>
+      <text x="120" y="-54" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">有</text>
+
+      <line x1="62" y1="0" x2="130" y2="0" class="hum-st" stroke-width="1.4"/>
+      <circle cx="140" cy="0" r="14" fill="#5e548e" opacity="0.55"/>
+      <text x="140" y="4" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">有</text>
+
+      <line x1="62" y1="0" x2="110" y2="50" class="hum-st" stroke-width="1.4"/>
+      <circle cx="120" cy="58" r="14" fill="#5e548e" opacity="0.55"/>
+      <text x="120" y="62" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">有</text>
+    </g>
+
+    <text x="60" y="380" class="lbl-strong">무의 의미</text>
+    <text x="60" y="400" class="lbl-sm">단순한 '없는 것' X — 모든 존재를 가능하게 하는 비어 있음</text>
+    <text x="60" y="418" class="lbl-sm" fill="#5e548e" font-weight="700">→ 모든 유(有)는 무(無)에서 비롯된다</text>
+
+  </g>
+
+  <!-- Step 3 · 무위이치 -->
+  <g class="reveal" data-reveal-step="3">
+    <!-- 무위이치 -->
+    <rect x="60" y="438" width="500" height="60" rx="4" class="hum-bg2 hum-st" stroke-width="1.4"/>
+    <text x="74" y="460" class="lbl-strong" fill="#5e548e">무위이치 (無爲而治)</text>
+    <text x="74" y="478" class="lbl-xs">무위 = 도에 따라 자연스럽게 함 (소극적 X)</text>
+    <text x="74" y="492" class="lbl-xs">→ 도의 원리에 기반한 '억지로 하지 않으면서도 다스리는' 이상적 정치</text>
+  </g>
+
+  <!-- Step 4-5 · (나) 곽상 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="620" y="150" width="540" height="370" rx="6" class="hum-bg2 hum-st" stroke-width="1.5"/>
+    <rect x="620" y="150" width="540" height="36" rx="6" class="hum"/>
+    <text x="640" y="174" class="lbl-strong" fill="#f5f1e8">(나) 곽상 — 제물론 + 자생자화</text>
+
+    <!-- 만물의 평등 (원형 배치) -->
+    <g transform="translate(890, 280)">
+      <!-- 도(道) 배경 -->
+      <circle r="100" fill="none" class="hum-st" stroke-width="1.2" stroke-dasharray="3 2"/>
+      <text x="0" y="-110" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">道 안에서 평등</text>
+
+      <!-- 만물 (각자의 본성) -->
+      <circle cx="-70" cy="-30" r="20" class="hum"/>
+      <text x="-70" y="-26" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">物</text>
+      <circle cx="0" cy="-60" r="20" class="hum"/>
+      <text x="0" y="-56" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">物</text>
+      <circle cx="70" cy="-30" r="20" class="hum"/>
+      <text x="70" y="-26" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">物</text>
+      <circle cx="-70" cy="40" r="20" class="hum"/>
+      <text x="-70" y="44" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">物</text>
+      <circle cx="0" cy="70" r="20" class="hum"/>
+      <text x="0" y="74" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">物</text>
+      <circle cx="70" cy="40" r="20" class="hum"/>
+      <text x="70" y="44" text-anchor="middle" font-size="11" fill="#f5f1e8" font-weight="700">物</text>
+
+      <!-- 자체 화살표 (자생자화) -->
+      <text x="0" y="0" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">각자 自</text>
+      <text x="0" y="14" text-anchor="middle" class="lbl-xs" fill="#5e548e" font-weight="700">스스로</text>
+    </g>
+
+    <text x="640" y="380" class="lbl-strong">제물론</text>
+    <text x="640" y="400" class="lbl-sm">만물은 도 안에서 우열 없이 평등하다</text>
+    <text x="640" y="418" class="lbl-sm">절대적 위계 없는 독립적 실체</text>
+
+    <rect x="640" y="438" width="500" height="60" rx="4" class="hum-bg hum-st" stroke-width="1.4"/>
+    <text x="654" y="460" class="lbl-strong" fill="#5e548e">자생자화 (自生自化)</text>
+    <text x="654" y="478" class="lbl-xs">근원적 무에 의존 X → 각자 스스로의 원리로 생기고 변함</text>
+    <text x="654" y="492" class="lbl-xs" fill="#5e548e" font-weight="700">→ 만물의 자율성과 다양성</text>
+  </g>
+
+  <!-- Step 5 · 곽상의 왕필 비판 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="540" width="1120" height="160" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="568" class="lbl-head" fill="#a83a4a">곽상의 왕필 비판 — 일원론에 대한 다원론적 반박</text>
+
+    <g transform="translate(80, 590)">
+      <rect x="0" y="0" width="500" height="90" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">왕필 (일원론)</text>
+      <text x="14" y="44" class="lbl-sm">"유는 무에서 비롯된다"</text>
+      <text x="14" y="62" class="lbl-sm">모든 존재가 단일 근원에서 유래</text>
+      <text x="14" y="82" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 세계의 다양성·개체 자율성 간과</text>
+    </g>
+
+    <text x="600" y="640" text-anchor="middle" class="lbl-head" fill="#a83a4a">↔</text>
+
+    <g transform="translate(620, 590)">
+      <rect x="0" y="0" width="500" height="90" rx="4" class="hum-bg2 hum-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#5e548e">곽상 (다원론)</text>
+      <text x="14" y="44" class="lbl-sm">만물은 각자의 본성에 따라 독립적으로 존재</text>
+      <text x="14" y="62" class="lbl-sm">자율성과 다양성, 고유한 가치</text>
+      <text x="14" y="82" class="lbl-xs" fill="#5e548e" font-weight="700">→ 도가 철학의 독자적 체계 형성</text>
+    </g>
+  </g>
+
+  <!-- 결론 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="720" width="1120" height="180" rx="6" class="paper2 ink" stroke-width="1"/>
+    <text x="60" y="748" class="lbl-strong">두 사상의 후대 영향</text>
+
+    <g transform="translate(80, 770)">
+      <rect x="0" y="0" width="500" height="100" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong" fill="#5e548e">왕필</text>
+      <text x="14" y="44" class="lbl-sm">무위이치 → 정치 철학으로 전개</text>
+      <text x="14" y="62" class="lbl-sm">"도에 따라 자연스러운 다스림"</text>
+      <text x="14" y="84" class="lbl-xs" fill="#5e548e">→ 왕도 정치·통치 이상으로 계승</text>
+    </g>
+
+    <g transform="translate(620, 770)">
+      <rect x="0" y="0" width="500" height="100" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong" fill="#5e548e">곽상</text>
+      <text x="14" y="44" class="lbl-sm">자생자화 → 성리학의 '이(理)' 해석에 영향</text>
+      <text x="14" y="62" class="lbl-sm">존재의 자율성·다양성 강조</text>
+      <text x="14" y="84" class="lbl-xs" fill="#5e548e">→ 후대 철학에 미친 영향력</text>
+    </g>
+  </g>
+
+  <text x="1160" y="930" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 주제 통합 · 220쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="940" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="940" width="1120" height="32" rx="6" fill="#5e548e"/>
+    <text x="60" y="962" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="962" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="974" x2="1160" y2="974" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="990" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">왕필의 무</text>
+    <text x="240" y="990" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">단순한 없음이 아니라 만물의 근원이 되는 비어 있음. 모든 유는 무에서 비롯된다.</text>
+    <line x1="40" y1="1004" x2="1160" y2="1004" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1020" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">무위이치</text>
+    <text x="240" y="1020" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">도의 원리에 따라 인위적 간섭 없이 자연스럽게 다스리는 이상적 정치.</text>
+    <line x1="40" y1="1034" x2="1160" y2="1034" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1050" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">곽상의 제물론</text>
+    <text x="240" y="1050" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">만물이 도 안에서 평등하며 절대적 위계가 없다는 입장.</text>
+    <line x1="40" y1="1064" x2="1160" y2="1064" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1080" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">자생자화</text>
+    <text x="240" y="1080" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">만물이 근원적 무에 의존하지 않고 각자 스스로의 원리로 생기고 변한다는 곽상의 관점.</text>
+    <line x1="40" y1="1094" x2="1160" y2="1094" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1110" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">곽상의 왕필 비판</text>
+    <text x="240" y="1110" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">왕필의 일원론이 세계의 다양성과 개체의 자율성을 간과한다고 보아, 만물의 독립적 존재를 강조했다.</text>
+  </g>
+</svg>

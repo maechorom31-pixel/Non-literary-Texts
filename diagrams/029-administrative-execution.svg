@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1180" role="img" aria-labelledby="t029 d029">
+  <title id="t029">행정 대집행</title>
+  <desc id="d029">공법상 대체적 작위 의무를 의무자 대신 행정청이 이행하고 비용을 징수하는 행정 대집행 제도의 개념과 법적 근거에서 시작해, 세 가지 실체적 요건(공법상 의무 불이행 + 대체적 작위 의무 + 비례의 원칙), 네 단계 절차(계고→대집행 영장→실행→비용 징수), 토지·건물 인도 쟁점(원칙 대집행 불가, 점유자=철거 의무자일 때 강제 퇴거 인정), 권리 구제(행정 소송 + 집행 정지 신청), 그리고 사법 심사의 필요성까지를 차례로 시각화한다.</desc>
+
+  <defs>
+    <marker id="ar29-soc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a6f6f"/>
+    </marker>
+  </defs>
+
+  <style><![CDATA[
+    .reveal { transition: opacity .35s ease, transform .35s ease; }
+    svg[data-app] .reveal { opacity: 0; transform: translateY(6px); }
+    svg[data-app] .reveal.on { opacity: 1; transform: translateY(0); }
+    .lbl { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #4a3f33; }
+    .lbl-sm { font-family: 'Pretendard', sans-serif; font-size: 11px; fill: #7a6f5f; }
+    .lbl-xs { font-family: 'Pretendard', sans-serif; font-size: 10px; fill: #7a6f5f; }
+    .lbl-strong { font-family: 'Noto Serif KR', serif; font-size: 14px; font-weight: 600; fill: #1a1612; }
+    .lbl-title { font-family: 'Noto Serif KR', serif; font-size: 16px; font-weight: 700; fill: #1a1612; }
+    .lbl-head { font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: 700; fill: #1a1612; }
+    .ink { stroke: #1a1612; }
+    .paper { fill: #f5f1e8; }
+    .paper2 { fill: #ebe5d4; }
+    .rule { stroke: #c9bfa8; }
+    .soc { fill: #2a6f6f; }
+    .soc-st { stroke: #2a6f6f; }
+    .soc-bg { fill: rgba(42,111,111,0.08); }
+    .soc-bg2 { fill: rgba(42,111,111,0.18); }
+    .acc { fill: #a83a4a; }
+    .acc-st { stroke: #a83a4a; }
+    .acc-bg { fill: rgba(168,58,74,0.08); }
+  ]]></style>
+
+  <!-- Step 1 · 개념과 법적 근거 -->
+  <g class="reveal" data-reveal-step="1">
+    <rect x="40" y="30" width="1120" height="120" rx="6" class="paper rule" stroke-width="1"/>
+    <text x="60" y="60" class="lbl-head">행정 대집행 — 공법상 의무를 행정청이 대신 이행</text>
+    <text x="60" y="86" class="lbl-sm">의무자가 대체적 작위 의무를 불이행 → 행정청이 직접/제삼자에게 시행 → 비용을 의무자에게 징수</text>
+    <text x="60" y="108" class="lbl-sm" fill="#a83a4a" font-weight="700">법적 근거: 명령권 법 ≠ 강제 집행 근거 / 대집행을 위한 별도 법적 근거 필요</text>
+    <text x="60" y="132" class="lbl-xs">예: 불법 건축물 철거, 불법 시설물 제거, 오염 물질 제거</text>
+  </g>
+
+  <!-- Step 2 · 실체적 요건 -->
+  <g class="reveal" data-reveal-step="2">
+    <rect x="40" y="170" width="1120" height="160" rx="6" class="soc-bg soc-st" stroke-width="1.5"/>
+    <text x="60" y="198" class="lbl-head" fill="#2a6f6f">실체적 요건 (3가지 모두 충족)</text>
+
+    <g transform="translate(60, 220)">
+      <rect x="0" y="0" width="350" height="100" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong" fill="#2a6f6f">① 공법상 의무 불이행</text>
+      <text x="14" y="44" class="lbl-sm">예: 건축법 위반 → 철거 의무 (공법)</text>
+      <text x="14" y="62" class="lbl-sm" fill="#a83a4a">사법상 의무(매매 약정 철거) → 대집행 X</text>
+      <text x="14" y="84" class="lbl-xs">법률 영역의 구분이 출발점</text>
+    </g>
+
+    <g transform="translate(425, 220)">
+      <rect x="0" y="0" width="350" height="100" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong" fill="#2a6f6f">② 대체적 작위 의무</text>
+      <text x="14" y="44" class="lbl-sm">타인이 대신 이행 가능한 적극적 행위</text>
+      <text x="14" y="62" class="lbl-sm" fill="#a83a4a">부작위·비대체적 의무 → 대집행 X</text>
+      <text x="14" y="84" class="lbl-xs">단, 부작위→작위 전환 시 대집행 가능</text>
+    </g>
+
+    <g transform="translate(790, 220)">
+      <rect x="0" y="0" width="350" height="100" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong" fill="#2a6f6f">③ 비례의 원칙</text>
+      <text x="14" y="44" class="lbl-sm">다른 수단으로 이행 확보 곤란</text>
+      <text x="14" y="62" class="lbl-sm">+ 불이행 방치가 공익을 심히 해함</text>
+      <text x="14" y="84" class="lbl-xs">예외적 강제 수단으로 한정</text>
+    </g>
+  </g>
+
+  <!-- Step 3 · 4단계 절차 -->
+  <g class="reveal" data-reveal-step="3">
+    <rect x="40" y="350" width="1120" height="200" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="378" class="lbl-head">4단계 절차</text>
+
+    <g transform="translate(80, 410)">
+      <!-- 단계 1: 계고 -->
+      <rect x="0" y="0" width="240" height="100" rx="4" class="soc"/>
+      <text x="120" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">① 계고</text>
+      <text x="120" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">상당 기간 내 의무 불이행 시</text>
+      <text x="120" y="58" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">대집행 의사 사전 통지</text>
+      <text x="120" y="80" text-anchor="middle" class="lbl-xs" fill="#f5f1e8" opacity="0.85">비상시는 생략 가능</text>
+
+      <line x1="244" y1="50" x2="276" y2="50" class="soc-st" stroke-width="1.6" marker-end="url(#ar29-soc)"/>
+
+      <!-- 단계 2: 영장 통지 -->
+      <rect x="280" y="0" width="240" height="100" rx="4" class="soc"/>
+      <text x="400" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">② 대집행 영장 통지</text>
+      <text x="400" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">계고 후에도 미이행 시</text>
+      <text x="400" y="58" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">실행 시기·책임자·비용</text>
+      <text x="400" y="74" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">을 의무자에게 통지</text>
+
+      <line x1="524" y1="50" x2="556" y2="50" class="soc-st" stroke-width="1.6" marker-end="url(#ar29-soc)"/>
+
+      <!-- 단계 3: 실행 -->
+      <rect x="560" y="0" width="240" height="100" rx="4" class="soc"/>
+      <text x="680" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">③ 대집행 실행</text>
+      <text x="680" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">행정청이 직접 또는</text>
+      <text x="680" y="58" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">제삼자에게 의무 이행</text>
+
+      <line x1="804" y1="50" x2="836" y2="50" class="soc-st" stroke-width="1.6" marker-end="url(#ar29-soc)"/>
+
+      <!-- 단계 4: 비용 징수 -->
+      <rect x="840" y="0" width="240" height="100" rx="4" class="soc"/>
+      <text x="960" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">④ 비용 징수</text>
+      <text x="960" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">실행에 든 비용을</text>
+      <text x="960" y="58" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">의무자로부터 징수</text>
+    </g>
+  </g>
+
+  <!-- Step 4 · 토지·건물 인도 -->
+  <g class="reveal" data-reveal-step="4">
+    <rect x="40" y="570" width="1120" height="160" rx="6" class="acc-bg acc-st" stroke-width="1.5"/>
+    <text x="60" y="598" class="lbl-head" fill="#a83a4a">쟁점 — 토지·건물 인도가 대집행 대상이 될까?</text>
+
+    <g transform="translate(60, 620)">
+      <rect x="0" y="0" width="540" height="90" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">대법원 원칙</text>
+      <text x="14" y="44" class="lbl-sm">점유 배제·점유 이전을 목적으로 하는 인도 의무</text>
+      <text x="14" y="62" class="lbl-sm">= <tspan font-weight="700" fill="#a83a4a">비대체적 작위 의무</tspan></text>
+      <text x="14" y="80" class="lbl-xs" fill="#a83a4a" font-weight="700">→ 대집행의 대상이 될 수 없음</text>
+    </g>
+
+    <g transform="translate(620, 620)">
+      <rect x="0" y="0" width="520" height="90" rx="4" class="soc-bg soc-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#2a6f6f">예외 (후속 판결)</text>
+      <text x="14" y="44" class="lbl-sm">건물 점유자 = 철거 의무자인 경우</text>
+      <text x="14" y="62" class="lbl-sm">→ 철거 의무에 퇴거 의무도 포함</text>
+      <text x="14" y="80" class="lbl-xs" fill="#2a6f6f" font-weight="700">→ 점유 배제를 위한 강제 퇴거는 대집행 가능</text>
+    </g>
+  </g>
+
+  <!-- Step 5 · 권리 구제 -->
+  <g class="reveal" data-reveal-step="5">
+    <rect x="40" y="750" width="1120" height="160" rx="6" class="soc-bg soc-st" stroke-width="1.5"/>
+    <text x="60" y="778" class="lbl-head" fill="#2a6f6f">권리 구제 — 행정 소송 + 집행 정지 신청</text>
+
+    <g transform="translate(60, 800)">
+      <rect x="0" y="0" width="540" height="90" rx="4" class="paper rule" stroke-width="1"/>
+      <text x="14" y="22" class="lbl-strong">소송 대상</text>
+      <text x="14" y="44" class="lbl-sm">계고 / 영장 통지 / 대집행 실행 / 비용 납부 명령 모두 행정 소송 대상</text>
+      <text x="14" y="64" class="lbl-xs" fill="#a83a4a" font-weight="700">단, 실행 후에는 소송 이익 상실</text>
+    </g>
+
+    <g transform="translate(620, 800)">
+      <rect x="0" y="0" width="520" height="90" rx="4" class="paper2 soc-st" stroke-width="1.4"/>
+      <text x="14" y="22" class="lbl-strong" fill="#2a6f6f">핵심 전략</text>
+      <text x="14" y="44" class="lbl-sm" font-weight="700" fill="#2a6f6f">집행 정지 신청</text>
+      <text x="14" y="62" class="lbl-sm">→ 대집행의 실행 자체를 막아야 권리 구제 실효성 확보</text>
+    </g>
+  </g>
+
+  <!-- Step 6 · 사법 심사 -->
+  <g class="reveal" data-reveal-step="6">
+    <rect x="40" y="930" width="1120" height="60" rx="6" class="paper2 ink" stroke-width="1"/>
+    <text x="60" y="958" class="lbl-strong">사법 심사의 필요성</text>
+    <text x="60" y="980" class="lbl"><tspan font-weight="700">행정 실효성</tspan>(대집행권) ↔ <tspan font-weight="700">국민 기본권 보장 + 법치 행정</tspan>의 균형 — 재량권 남용·일탈을 통제</text>
+  </g>
+
+  <!-- 4단계 절차 시각 흐름도 (요약) -->
+  <g>
+    <rect x="40" y="1010" width="1120" height="140" rx="6" class="paper rule" stroke-width="1.2"/>
+    <text x="60" y="1038" class="lbl-strong">4단계 절차 한눈에 보기</text>
+
+    <g transform="translate(60, 1056)">
+      <rect x="0" y="0" width="240" height="60" rx="6" class="soc-bg soc-st" stroke-width="1.4"/>
+      <text x="120" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#2a6f6f">① 계고</text>
+      <text x="120" y="42" text-anchor="middle" class="lbl-xs">상당 기간 부여 + 불이행 경고</text>
+
+      <line x1="244" y1="30" x2="280" y2="30" class="soc-st" stroke-width="2" marker-end="url(#ar29-soc)"/>
+
+      <rect x="284" y="0" width="240" height="60" rx="6" class="soc-bg soc-st" stroke-width="1.4"/>
+      <text x="404" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#2a6f6f">② 대집행 영장</text>
+      <text x="404" y="42" text-anchor="middle" class="lbl-xs">실행 시기·책임자·비용 통지</text>
+
+      <line x1="528" y1="30" x2="564" y2="30" class="soc-st" stroke-width="2" marker-end="url(#ar29-soc)"/>
+
+      <rect x="568" y="0" width="240" height="60" rx="6" class="soc"/>
+      <text x="688" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#f5f1e8">③ 실행</text>
+      <text x="688" y="42" text-anchor="middle" class="lbl-xs" fill="#f5f1e8">행정청/제삼자 직접 이행</text>
+
+      <line x1="812" y1="30" x2="848" y2="30" class="soc-st" stroke-width="2" marker-end="url(#ar29-soc)"/>
+
+      <rect x="852" y="0" width="240" height="60" rx="6" class="acc-bg acc-st" stroke-width="1.4"/>
+      <text x="972" y="22" text-anchor="middle" class="lbl-sm" font-weight="700" fill="#a83a4a">④ 비용 징수</text>
+      <text x="972" y="42" text-anchor="middle" class="lbl-xs">의무자 부담 (체납 처분 가능)</text>
+
+      <text x="540" y="86" text-anchor="middle" class="lbl-xs" fill="#7a6f5f">권리 구제: 단계별 항고 소송 가능 / 단, 실행 후엔 소송 이익 상실 → 집행 정지가 핵심</text>
+    </g>
+  </g>
+
+  <text x="1160" y="1170" text-anchor="end" class="lbl-sm" fill="#7a6f5f">EBS · 사회·문화 · 118쪽</text>
+</svg>

@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1280" data-app role="img" aria-labelledby="t2 d2">
+  <title id="t2">수생 동물의 호흡 — 아가미 분류와 환수 방식</title>
+  <desc id="d2">육상과 수생 환경의 차이, 외아가미와 내아가미의 구조 비교, 라멜라의 역류 관계, 입 펌프 vs 강제 환수 방식, 관류 체계 vs 간만 환기.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f5f8fc}
+      .panel{fill:#ffffff;stroke:#bfd0e3;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#10243a}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#3a5371}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#10243a}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#10243a}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#1f5582}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#3a5371}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#42597a}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#7d97b6;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f5582"/>
+    </marker>
+    <marker id="ar2-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a83a4a"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="1280"/>
+
+  <!-- Header -->
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#1f5582"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">수생 동물의 호흡 — 아가미 분류와 환수 방식</text>
+  <text x="1136" y="80" class="sub" fill="#cfdcec" text-anchor="end">과학·기술 · 분류</text>
+
+  <!-- Scene 1: 환경의 차이 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">환경의 차이 — 육상 vs 수생</text>
+    <text x="64" y="166" class="small">두 환경은 서로 다른 호흡 과제를 던진다. 육상은 건조 위험, 수생은 산소 부족과 체온 손실.</text>
+
+    <g>
+      <rect class="panel" x="64" y="184" width="528" height="112" rx="10"/>
+      <text x="84" y="212" class="lab">육상 환경</text>
+      <line x1="84" y1="224" x2="572" y2="224" stroke="#dfe7f1" stroke-width="1"/>
+      <text x="84" y="248" class="small">· 건조한 공기 → 폐 표면이 마르기 쉬움</text>
+      <text x="84" y="270" class="small">· 탈수 위험, 기체 용해 능력 저하</text>
+      <text x="84" y="292" class="it">대처: 습한 폐 내부 + 점액으로 보호</text>
+
+      <rect class="panel" x="608" y="184" width="528" height="112" rx="10" stroke="#1f5582" stroke-width="1.6" fill="#f0f5fb"/>
+      <text x="628" y="212" class="lab" fill="#1f5582">수생 환경</text>
+      <line x1="628" y1="224" x2="1116" y2="224" stroke="#d8e3f0" stroke-width="1"/>
+      <text x="628" y="248" class="small">· 가용 산소 부족 + 수온차에 따른 가용성 변화</text>
+      <text x="628" y="270" class="small">· 근육 운동 多 + 차가운 물에 체온 손실</text>
+      <text x="628" y="292" class="it" fill="#1f5582">대처: 정교한 아가미 + 효율적 환수 방식</text>
+    </g>
+  </g>
+
+  <!-- Scene 2: 외아가미 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="346" class="num">2</text>
+    <text x="92" y="346" class="bd">외아가미 — 몸 밖으로 돌출된 형태</text>
+    <text x="64" y="372" class="small">유생기 도롱뇽·일부 무척추 동물에서 나타난다. 표면적은 넓지만 손상에 취약하고 흔드는 데 에너지가 든다.</text>
+
+    <rect class="panel" x="64" y="390" width="1072" height="170" rx="10"/>
+
+    <!-- 도롱뇽 유생 일러스트 -->
+    <g transform="translate(220,475)">
+      <ellipse cx="0" cy="0" rx="80" ry="20" fill="#bfd0e3"/>
+      <ellipse cx="-78" cy="-2" rx="22" ry="14" fill="#bfd0e3"/>
+      <circle cx="-86" cy="-4" r="3" fill="#10243a"/>
+      <path d="M 78 -10 L 116 -18 L 116 18 L 78 10 Z" fill="#bfd0e3"/>
+      <!-- 깃털 외아가미 -->
+      <g stroke="#a83a4a" stroke-width="2" fill="none">
+        <path d="M -60 -14 Q -64 -34 -62 -52"/>
+        <path d="M -64 -14 Q -72 -34 -74 -52"/>
+        <path d="M -56 -14 Q -54 -34 -50 -52"/>
+        <path d="M -52 -14 Q -45 -32 -38 -50"/>
+        <path d="M -48 -14 Q -38 -32 -28 -48"/>
+      </g>
+      <text x="-54" y="-66" text-anchor="middle" class="lab" fill="#a83a4a">외아가미</text>
+    </g>
+
+    <!-- 특징 -->
+    <text x="464" y="424" class="lab">특징</text>
+    <line x1="464" y1="436" x2="836" y2="436" stroke="#dfe7f1" stroke-width="1"/>
+    <text x="464" y="460" class="small">· 몸 밖으로 돌출 — 표면적 ↑</text>
+    <text x="464" y="482" class="small">· 다양한 형태(깃털 모양 등)</text>
+    <text x="464" y="504" class="small">· 주변 물과의 접촉 위해 흔든다</text>
+
+    <text x="864" y="424" class="lab" fill="#a83a4a">단점</text>
+    <line x1="864" y1="436" x2="1116" y2="436" stroke="#fbe6e9" stroke-width="1"/>
+    <text x="864" y="460" class="small" fill="#a83a4a">· 외부 손상에 취약</text>
+    <text x="864" y="482" class="small" fill="#a83a4a">· 흔드는 데 에너지 多</text>
+    <text x="864" y="504" class="it" fill="#a83a4a">→ 진화적 한계</text>
+
+    <text x="84" y="540" class="it">사례: 유생기 도롱뇽, 일부 무척추 동물</text>
+  </g>
+
+  <!-- Scene 3: 내아가미 + 역류 관계 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="600" class="num">3</text>
+    <text x="92" y="600" class="bd">내아가미 — 체내에 보호된 정교한 구조 + 역류 관계</text>
+    <text x="64" y="626" class="small">대부분 어류·갑각류·연체동물. 필라멘트 → 라멜라 → 모세 혈관의 위계로 구성. 물과 혈류가 반대 방향으로 흘러 산소 교환이 최대화된다.</text>
+
+    <rect class="panel" x="64" y="644" width="1072" height="298" rx="10"/>
+
+    <!-- 어류 일러스트 -->
+    <g transform="translate(180,740)">
+      <path d="M -90 0 Q -64 -34 0 -34 Q 64 -34 80 0 Q 64 34 0 34 Q -64 34 -90 0 Z" fill="#cfdcec" stroke="#1f5582" stroke-width="1.6"/>
+      <path d="M 80 -2 L 110 -22 L 110 22 L 80 2 Z" fill="#1f5582" opacity=".7"/>
+      <circle cx="-66" cy="-10" r="3" fill="#1f5582"/>
+      <circle cx="-86" cy="0" r="3.5" fill="#ffffff" stroke="#1f5582" stroke-width="1.2"/>
+      <path d="M -56 -28 Q -38 -28 -28 0 Q -38 28 -56 28" fill="none" stroke="#10243a" stroke-width="1.6" stroke-dasharray="3 2"/>
+      <text x="-44" y="-40" text-anchor="middle" class="small" fill="#10243a">덮개</text>
+      <g stroke="#1f5582" stroke-width="1.4" fill="none">
+        <line x1="-46" y1="-14" x2="-32" y2="-14"/>
+        <line x1="-46" y1="-7" x2="-32" y2="-7"/>
+        <line x1="-46" y1="0" x2="-32" y2="0"/>
+        <line x1="-46" y1="7" x2="-32" y2="7"/>
+        <line x1="-46" y1="14" x2="-32" y2="14"/>
+      </g>
+      <text x="-39" y="60" text-anchor="middle" class="small" fill="#1f5582">필라멘트</text>
+    </g>
+
+    <!-- 위계 -->
+    <text x="320" y="688" class="lab">정교한 위계 구조</text>
+    <line x1="320" y1="700" x2="540" y2="700" stroke="#dfe7f1" stroke-width="1"/>
+    <text x="320" y="724" class="small">필라멘트 (실 모양)</text>
+    <text x="320" y="746" class="small">  ↓</text>
+    <text x="320" y="768" class="small">라멜라 (납작한 판)</text>
+    <text x="320" y="790" class="small">  ↓</text>
+    <text x="320" y="812" class="small">모세 혈관 (라멜라 내부)</text>
+
+    <!-- 라멜라 역류 도식 -->
+    <g transform="translate(560,690)">
+      <text x="0" y="-2" class="lab">라멜라 단면 — 역류 관계</text>
+      <!-- 위쪽: 물 흐름 -->
+      <rect x="0" y="14" width="540" height="32" rx="4" fill="#cfdcec"/>
+      <line x1="20" y1="30" x2="514" y2="30" stroke="#1f5582" stroke-width="2.4" marker-end="url(#ar2)"/>
+      <text x="-8" y="34" class="small" fill="#1f5582" text-anchor="end">물 →</text>
+      <circle cx="40" cy="30" r="9" fill="#1f5582"/>
+      <text x="40" y="34" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">O₂</text>
+      <circle cx="160" cy="30" r="8" fill="#1f5582"/>
+      <text x="160" y="34" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">O₂</text>
+      <circle cx="280" cy="30" r="6" fill="#1f5582" opacity=".7"/>
+      <circle cx="400" cy="30" r="5" fill="#1f5582" opacity=".5"/>
+      <circle cx="500" cy="30" r="4" fill="#1f5582" opacity=".35"/>
+
+      <!-- 라멜라 막 -->
+      <line x1="0" y1="46" x2="540" y2="46" stroke="#7a8caa" stroke-width="1.2"/>
+
+      <!-- 산소 이동 (위 → 아래) -->
+      <line x1="60" y1="42" x2="60" y2="68" stroke="#5e548e" stroke-width="1.6" marker-end="url(#ar2-r)" stroke-dasharray="3 2"/>
+      <line x1="180" y1="42" x2="180" y2="68" stroke="#5e548e" stroke-width="1.6" marker-end="url(#ar2-r)" stroke-dasharray="3 2"/>
+      <line x1="300" y1="42" x2="300" y2="68" stroke="#5e548e" stroke-width="1.4" marker-end="url(#ar2-r)" stroke-dasharray="3 2" opacity=".8"/>
+      <line x1="420" y1="42" x2="420" y2="68" stroke="#5e548e" stroke-width="1.2" marker-end="url(#ar2-r)" stroke-dasharray="3 2" opacity=".55"/>
+
+      <!-- 아래쪽: 혈류 흐름 -->
+      <rect x="0" y="70" width="540" height="32" rx="4" fill="#fbe6e9"/>
+      <line x1="514" y1="86" x2="20" y2="86" stroke="#a83a4a" stroke-width="2.4" marker-end="url(#ar2-r)"/>
+      <text x="546" y="90" class="small" fill="#a83a4a">← 혈류</text>
+      <circle cx="40" cy="86" r="3" fill="#5e548e" opacity=".3"/>
+      <circle cx="160" cy="86" r="4" fill="#5e548e" opacity=".5"/>
+      <circle cx="280" cy="86" r="5" fill="#5e548e" opacity=".7"/>
+      <circle cx="400" cy="86" r="6" fill="#5e548e" opacity=".85"/>
+      <circle cx="500" cy="86" r="7" fill="#5e548e"/>
+      <text x="500" y="90" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="700">O₂</text>
+
+      <text x="0" y="130" class="it" fill="#1f5582">물과 혈액이 반대 방향 — 흐름 전 구간에서 농도 차이가 유지되어 O₂ 교환이 최대화</text>
+    </g>
+
+    <text x="84" y="916" class="small">대부분 어류, 갑각류, 연체동물</text>
+  </g>
+
+  <!-- Scene 4: 두 환수 방식 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="982" class="num">4</text>
+    <text x="92" y="982" class="bd">두 환수 방식 — 입 펌프 vs 강제 환수</text>
+    <text x="64" y="1008" class="small">환수 = 물을 흡입하고 아가미를 거쳐 내보내는 과정. 정지냐 유영이냐가 에너지 효율을 가른다.</text>
+
+    <g>
+      <rect class="panel" x="64" y="1026" width="528" height="156" rx="10"/>
+      <rect x="64" y="1026" width="528" height="34" rx="10" fill="#1f5582"/>
+      <text x="84" y="1050" class="pill">입 펌프 방식 — 정지 상태에서</text>
+      <text x="84" y="1086" class="small">① 턱 내려 입속 압력 ↓ → 흡입</text>
+      <text x="84" y="1108" class="small">② 덮개 공간 ↑ → 압력 ↓</text>
+      <text x="84" y="1130" class="small">③ 물이 아가미 통과 → 배출</text>
+      <text x="84" y="1162" class="it" fill="#a83a4a">에너지 소모 큼 (근육 활동 多)</text>
+
+      <rect class="panel" x="608" y="1026" width="528" height="156" rx="10" stroke="#1f5582" stroke-width="1.6" fill="#f0f5fb"/>
+      <rect x="608" y="1026" width="528" height="34" rx="10" fill="#1f5582"/>
+      <text x="628" y="1050" class="pill">강제 환수 방식 — 유영 또는 흐름 속에서</text>
+      <text x="628" y="1086" class="small">① 입을 벌린 채 유영하거나 정지</text>
+      <text x="628" y="1108" class="small">② 흐르는 물이 자연스럽게 유입</text>
+      <text x="628" y="1130" class="small">③ 아가미 거쳐 자동 배출</text>
+      <text x="628" y="1162" class="it" fill="#1f5582">에너지 효율 ↑ (유영 자세 유지 근육만)</text>
+    </g>
+  </g>
+
+  <!-- Scene 5: 관류 체계 vs 간만 환기 -->
+  <g class="reveal" data-reveal-step="5">
+    <text x="64" y="1212" class="num">5</text>
+    <text x="92" y="1212" class="bd">큰 그림 — 관류 체계 vs 간만 환기</text>
+
+    <g>
+      <rect x="64" y="1228" width="528" height="36" rx="8" fill="#dfeef9" stroke="#1f5582" stroke-width="1.2"/>
+      <text x="84" y="1252" class="lab" fill="#1f5582">관류 체계(어류) — 한 방향 흐름, 지속 산소 공급</text>
+
+      <rect x="608" y="1228" width="528" height="36" rx="8" fill="#fbe6e9" stroke="#a83a4a" stroke-width="1.2"/>
+      <text x="628" y="1252" class="lab" fill="#a83a4a">간만 환기(육상) — 같은 경로 왕복, 효율 ↓</text>
+    </g>
+  </g>
+
+  <text x="1140" y="1264" class="wm" text-anchor="end">EBS 2027 · 과학·기술 · 178쪽</text>
+</svg>

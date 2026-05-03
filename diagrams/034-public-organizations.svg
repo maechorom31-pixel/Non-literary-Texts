@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1420" data-app role="img" aria-labelledby="t34 d34">
+  <title id="t34">특별 공공 행정 조직 — 다층 분류</title>
+  <desc id="d34">법인격 기준(헌법상 국가 기관 vs 공법상 법인), 결합 기준(공공 조합 vs 공법상 재단), 기능 기준(규제·감시 / 서비스 제공 / 정책 집행)으로 다층 분류.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f5f9f8}
+      .panel{fill:#ffffff;stroke:#c4dcd5;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#3e5953}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a6f6f}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#3e5953}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#436963}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#7d9994;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar34" viewBox="0 0 1200 1420" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a6f6f"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="1200"/>
+
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">특별 공공 행정 조직 — 다층 분류</text>
+  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회·문화 · 분류</text>
+
+  <!-- Scene 1: 개념 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">개념 — 자율성과 전문성을 가진 공공 조직</text>
+
+    <rect class="panel" x="64" y="160" width="1072" height="86" rx="10"/>
+    <rect x="64" y="160" width="6" height="86" fill="#2a6f6f"/>
+    <text x="84" y="188" class="lab">행정의 주체</text>
+    <text x="84" y="212" class="small">국가 · 지방 자치 단체 · 공공 단체(공공 조합·공법상 재단 등)</text>
+    <text x="84" y="234" class="it" fill="#2a6f6f">특별 공공 행정 조직 = 국가 일반 행정 조직과 달리 특정 영역에서 자율성·전문성으로 운영</text>
+  </g>
+
+  <!-- Scene 2: 헌법상 국가 기관 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="290" class="num">2</text>
+    <text x="92" y="290" class="bd">분류축 ① 법인격 — 헌법상 국가 기관</text>
+
+    <rect class="panel" x="64" y="310" width="1072" height="116" rx="10" stroke="#2a6f6f" stroke-width="1.4" fill="#dff0ec"/>
+    <text x="84" y="338" class="lab" fill="#2a6f6f">헌법상 국가 기관 (법인격 ✗)</text>
+    <line x1="84" y1="350" x2="1116" y2="350" stroke="#bfd9d3" stroke-width="1"/>
+
+    <g>
+      <rect x="84" y="362" width="280" height="50" rx="8" fill="#ffffff" stroke="#2a6f6f"/>
+      <text x="224" y="392" class="lab" text-anchor="middle">선거 관리 위원회</text>
+
+      <rect x="380" y="362" width="280" height="50" rx="8" fill="#ffffff" stroke="#2a6f6f"/>
+      <text x="520" y="392" class="lab" text-anchor="middle">감사원</text>
+
+      <text x="700" y="382" class="small">· 권력 분립·견제의 헌법 원리</text>
+      <text x="700" y="402" class="small">· 헌법 개정으로만 설립·폐지</text>
+    </g>
+  </g>
+
+  <!-- Scene 3: 공법상 법인 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="466" class="num">3</text>
+    <text x="92" y="466" class="bd">분류축 ① 법인격 — 공법상 법인</text>
+
+    <rect class="panel" x="64" y="486" width="1072" height="116" rx="10" stroke="#2a6f6f" stroke-width="1.4" fill="#dff0ec"/>
+    <text x="84" y="514" class="lab" fill="#2a6f6f">공법상 법인 (법인격 ✓)</text>
+    <line x1="84" y1="526" x2="1116" y2="526" stroke="#bfd9d3" stroke-width="1"/>
+
+    <g>
+      <rect x="84" y="538" width="280" height="50" rx="8" fill="#ffffff" stroke="#2a6f6f"/>
+      <text x="224" y="568" class="lab" text-anchor="middle">한국 전력 공사</text>
+
+      <rect x="380" y="538" width="280" height="50" rx="8" fill="#ffffff" stroke="#2a6f6f"/>
+      <text x="520" y="568" class="lab" text-anchor="middle">국민 건강 보험 공단</text>
+
+      <text x="700" y="558" class="small">· 법령에 따라 법인격 부여</text>
+      <text x="700" y="578" class="small">· 권리·의무의 독립된 주체</text>
+    </g>
+  </g>
+
+  <!-- Scene 4: 공공 조합 vs 공법상 재단 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="646" class="num">4</text>
+    <text x="92" y="646" class="bd">분류축 ② 결합 형태 — 공공 조합 vs 공법상 재단</text>
+
+    <g>
+      <rect class="panel" x="64" y="666" width="528" height="156" rx="10"/>
+      <rect x="64" y="666" width="528" height="36" rx="10" fill="#2a6f6f"/>
+      <text x="84" y="690" class="pill">공공 조합 — 인적 결합</text>
+      <text x="84" y="724" class="small">· 일정 자격 구성원이 특별법으로 설립</text>
+      <text x="84" y="746" class="small">· 사단 법인과 유사 (다수의 인적 결합)</text>
+      <text x="84" y="770" class="small">· 단, 가입·탈퇴 자유롭지 않음</text>
+      <text x="84" y="794" class="it" fill="#2a6f6f">공익 목적 추구</text>
+
+      <rect class="panel" x="608" y="666" width="528" height="156" rx="10"/>
+      <rect x="608" y="666" width="528" height="36" rx="10" fill="#2a6f6f"/>
+      <text x="628" y="690" class="pill">공법상 재단 — 출연 재산</text>
+      <text x="628" y="724" class="small">· 특정 목적의 출연 재산을 기반으로 설립</text>
+      <text x="628" y="746" class="small">· 일반 재단 법인과 유사한 형태</text>
+      <text x="628" y="770" class="small">· 단, 공익적 사업 수행</text>
+      <text x="628" y="794" class="it" fill="#2a6f6f">재산이 조직의 토대</text>
+    </g>
+  </g>
+
+  <!-- Scene 5: 기능별 분류 -->
+  <g class="reveal" data-reveal-step="5">
+    <text x="64" y="866" class="num">5</text>
+    <text x="92" y="866" class="bd">분류축 ③ 기능 — 세 갈래</text>
+
+    <g>
+      <rect x="64" y="884" width="346" height="158" rx="10" fill="#dff0ec" stroke="#2a6f6f"/>
+      <circle cx="100" cy="920" r="22" fill="#2a6f6f"/>
+      <text x="100" y="926" class="pill" text-anchor="middle">규</text>
+      <text x="138" y="926" class="lab">규제·감시형</text>
+      <text x="84" y="958" class="small">공정한 경쟁 질서 유지</text>
+      <text x="84" y="980" class="small">국민 권익 보호 기능</text>
+      <text x="84" y="1014" class="it" fill="#2a6f6f">예) 공정거래위원회</text>
+
+      <rect x="424" y="884" width="346" height="158" rx="10" fill="#dff0ec" stroke="#2a6f6f"/>
+      <circle cx="460" cy="920" r="22" fill="#2a6f6f"/>
+      <text x="460" y="926" class="pill" text-anchor="middle">서</text>
+      <text x="498" y="926" class="lab">서비스 제공형</text>
+      <text x="444" y="958" class="small">의료·복지·교육 등</text>
+      <text x="444" y="980" class="small">공공 서비스 제공</text>
+      <text x="444" y="1014" class="it" fill="#2a6f6f">예) 국민 건강 보험 공단</text>
+
+      <rect x="784" y="884" width="352" height="158" rx="10" fill="#dff0ec" stroke="#2a6f6f"/>
+      <circle cx="820" cy="920" r="22" fill="#2a6f6f"/>
+      <text x="820" y="926" class="pill" text-anchor="middle">정</text>
+      <text x="858" y="926" class="lab">정책 집행형</text>
+      <text x="804" y="958" class="small">정부 정책 집행</text>
+      <text x="804" y="980" class="small">사업 추진</text>
+      <text x="804" y="1014" class="it" fill="#2a6f6f">예) 한국 전력 공사</text>
+    </g>
+  </g>
+
+  <!-- Scene 6: 공통 성격 -->
+  <g class="reveal" data-reveal-step="6">
+    <text x="64" y="1086" class="num">6</text>
+    <text x="92" y="1086" class="bd">공통의 성격 — 네 가치의 동시 추구</text>
+
+    <rect class="panel" x="64" y="1104" width="1072" height="68" rx="10" stroke="#2a6f6f" stroke-width="1.6" fill="#dff0ec"/>
+    <g>
+      <text x="160" y="1148" class="lab" fill="#2a6f6f" text-anchor="middle">공공성</text>
+      <text x="416" y="1148" class="lab" fill="#2a6f6f" text-anchor="middle">전문성</text>
+      <text x="672" y="1148" class="lab" fill="#2a6f6f" text-anchor="middle">효율성</text>
+      <text x="928" y="1148" class="lab" fill="#2a6f6f" text-anchor="middle">자율성</text>
+      <line x1="240" y1="1138" x2="320" y2="1138" stroke="#bfd9d3" stroke-width="1"/>
+      <line x1="496" y1="1138" x2="576" y2="1138" stroke="#bfd9d3" stroke-width="1"/>
+      <line x1="752" y1="1138" x2="832" y2="1138" stroke="#bfd9d3" stroke-width="1"/>
+    </g>
+  </g>
+
+  <text x="1140" y="1184" class="wm" text-anchor="end">EBS 2027 · 사회·문화 · 140쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1200" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1200" width="1120" height="32" rx="6" fill="#2a6f6f"/>
+    <text x="60" y="1222" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1222" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1234" x2="1160" y2="1234" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1250" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">특별 공공 행정 조직</text>
+    <text x="240" y="1250" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">특정 행정 영역에서 자율성·전문성을 갖고 운영되는 공공 조직.</text>
+    <line x1="40" y1="1264" x2="1160" y2="1264" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1280" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">헌법상 국가 기관</text>
+    <text x="240" y="1280" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">선거 관리 위원회·감사원처럼 권력 분립·견제 원리로 설립된 국가 기관. 법인격은 없고 헌법 개정으로만 변경된다.</text>
+    <line x1="40" y1="1294" x2="1160" y2="1294" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1310" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">공법상 법인</text>
+    <text x="240" y="1310" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">법령에 따라 법인격을 부여받은 공공 조직. 한국 전력 공사·국민 건강 보험 공단 등이 예시.</text>
+    <line x1="40" y1="1324" x2="1160" y2="1324" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1340" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">공공 조합 vs 공법상 재단</text>
+    <text x="240" y="1340" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">공공 조합은 인적 결합(가입·탈퇴 자유 X, 공익 추구), 공법상 재단은 출연 재산 기반(공익 사업).</text>
+    <line x1="40" y1="1354" x2="1160" y2="1354" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1370" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">기능별 분류</text>
+    <text x="240" y="1370" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">규제·감시형 / 서비스 제공형 / 정책 집행형.</text>
+  </g>
+</svg>

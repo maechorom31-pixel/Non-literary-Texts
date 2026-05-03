@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1270" data-app role="img" aria-labelledby="t67 d67">
+  <title id="t67">동시 다중 라운드 경매(SMRA)의 구조와 장점</title>
+  <desc id="d67">단일 자산 경매의 한계에서 출발해 여러 자산을 동시에 여러 라운드에 걸쳐 경매하며 정보 공유로 효율을 높이는 SMRA의 절차와 효과.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f5f9f8}
+      .panel{fill:#ffffff;stroke:#c4dcd5;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#3e5953}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#1d2a28}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a6f6f}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#3e5953}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#436963}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#7d9994;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar67" viewBox="0 0 1200 1270" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a6f6f"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="1080"/>
+
+  <!-- Header -->
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#2a6f6f"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">동시 다중 라운드 경매(SMRA)의 구조와 장점</text>
+  <text x="1136" y="80" class="sub" fill="#cfe5e1" text-anchor="end">사회 · 절차 · 시간 순서</text>
+
+  <!-- Scene 1: 경매 도입 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">자원 배분 수단으로서의 경매</text>
+    <text x="64" y="166" class="small">미국·뉴질랜드 등은 주파수 면허 분배에서 심사·제비뽑기의 한계를 경험한 뒤 경매로 전환했다.</text>
+
+    <g>
+      <rect x="64" y="184" width="350" height="86" rx="10" fill="#eaf3f1" stroke="#bcd4cf" stroke-width="1"/>
+      <text x="84" y="212" class="lab">심사 방식</text>
+      <text x="84" y="238" class="small">사업 계획서 평가 — 시간·비용 막대</text>
+      <text x="84" y="258" class="small">수년의 평가·이의 절차 필요</text>
+
+      <rect x="424" y="184" width="350" height="86" rx="10" fill="#eaf3f1" stroke="#bcd4cf" stroke-width="1"/>
+      <text x="444" y="212" class="lab">제비뽑기</text>
+      <text x="444" y="238" class="small">시간은 단축되었으나 투기꾼 진입</text>
+      <text x="444" y="258" class="small">전국망 사업자 형성 곤란</text>
+
+      <rect x="784" y="184" width="352" height="86" rx="10" fill="#dff0ec" stroke="#2a6f6f" stroke-width="1.6"/>
+      <text x="804" y="212" class="lab" fill="#2a6f6f">경매로 전환 (1993, 미국)</text>
+      <text x="804" y="238" class="small">효율적 분배 + 정부 수입 극대화</text>
+      <text x="804" y="258" class="small">두 목표를 동시에 추구</text>
+    </g>
+  </g>
+
+  <!-- Scene 2: 단일 경매 한계 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="316" class="num">2</text>
+    <text x="92" y="316" class="bd">단일 라운드 경매의 한계 (뉴질랜드 1989)</text>
+    <text x="64" y="342" class="small">여러 주파수에 한 번에 입찰 후 일괄 결정 — 입찰자 간 정보가 단절돼 가치를 반영하지 못한다.</text>
+
+    <rect class="panel" x="64" y="360" width="1072" height="148" rx="10"/>
+    <g>
+      <rect x="84" y="380" width="220" height="44" rx="8" fill="#eaf3f1"/>
+      <text x="194" y="408" class="lab" text-anchor="middle">주파수 A</text>
+      <rect x="318" y="380" width="220" height="44" rx="8" fill="#eaf3f1"/>
+      <text x="428" y="408" class="lab" text-anchor="middle">주파수 B</text>
+      <rect x="552" y="380" width="220" height="44" rx="8" fill="#eaf3f1"/>
+      <text x="662" y="408" class="lab" text-anchor="middle">주파수 C</text>
+      <rect x="786" y="380" width="220" height="44" rx="8" fill="#eaf3f1"/>
+      <text x="896" y="408" class="lab" text-anchor="middle">주파수 D</text>
+    </g>
+    <text x="84" y="450" class="small">· 모든 입찰자가 한 번에 입찰 → 다른 입찰자의 평가 정보를 알 수 없음</text>
+    <text x="84" y="472" class="small">· 두 번째 가격 지불 방식이지만 가치에 부합하는 적정 입찰 어려움</text>
+    <text x="84" y="494" class="small" fill="#a83a4a">· 결과: 낙찰자가 운에 좌우 → 정부 수입 극대화 실패, 자원 배분 비효율</text>
+  </g>
+
+  <!-- Scene 3: SMRA 절차 -->
+  <g class="reveal" data-reveal-step="3">
+    <text x="64" y="552" class="num">3</text>
+    <text x="92" y="552" class="bd">SMRA 절차 — 동시 진행 + 다중 라운드</text>
+    <text x="64" y="578" class="small">폴 밀그럼 등이 제안. 매 라운드 모든 주파수가 동시에 경매되며, 새 입찰이 없을 때까지 반복된다.</text>
+
+    <g>
+      <!-- 라운드 1 -->
+      <rect class="panel" x="64" y="596" width="240" height="158" rx="10"/>
+      <rect x="64" y="596" width="240" height="32" rx="10" fill="#2a6f6f"/>
+      <text x="184" y="617" class="pill" text-anchor="middle">라운드 1 — 시작가</text>
+      <text x="84" y="650" class="small">· 매우 낮은 시작가</text>
+      <text x="84" y="672" class="small">· 모든 주파수 동시 입찰</text>
+      <text x="84" y="694" class="small">· 종료 후 최고가·낙찰자 공개</text>
+      <text x="84" y="724" class="it" fill="#2a6f6f">초기 시그널 형성</text>
+
+      <line x1="312" y1="675" x2="350" y2="675" stroke="#2a6f6f" stroke-width="2.4" marker-end="url(#ar67)"/>
+
+      <!-- 라운드 2 -->
+      <rect class="panel" x="356" y="596" width="240" height="158" rx="10"/>
+      <rect x="356" y="596" width="240" height="32" rx="10" fill="#2a6f6f"/>
+      <text x="476" y="617" class="pill" text-anchor="middle">라운드 2 — 가격 상승</text>
+      <text x="376" y="650" class="small">· 직전 최고가보다 높게만 입찰</text>
+      <text x="376" y="672" class="small">· 직전 입찰 정보 반영해 전략 수정</text>
+      <text x="376" y="694" class="small">· 입찰 주파수 수 ≤ 직전 라운드</text>
+      <text x="376" y="724" class="it" fill="#2a6f6f">정보 비대칭 방지 규칙</text>
+
+      <line x1="604" y1="675" x2="642" y2="675" stroke="#2a6f6f" stroke-width="2.4" marker-end="url(#ar67)"/>
+
+      <!-- 라운드 N -->
+      <rect class="panel" x="648" y="596" width="240" height="158" rx="10"/>
+      <rect x="648" y="596" width="240" height="32" rx="10" fill="#2a6f6f"/>
+      <text x="768" y="617" class="pill" text-anchor="middle">라운드 N — 반복</text>
+      <text x="668" y="650" class="small">· 새 입찰이 들어오는 한 반복</text>
+      <text x="668" y="672" class="small">· 매 라운드 종료 후 정보 공개</text>
+      <text x="668" y="694" class="small">· 가격이 가치에 수렴</text>
+      <text x="668" y="724" class="it" fill="#2a6f6f">탐색의 균형</text>
+
+      <line x1="896" y1="675" x2="934" y2="675" stroke="#2a6f6f" stroke-width="2.4" marker-end="url(#ar67)"/>
+
+      <!-- 종료 -->
+      <rect x="940" y="596" width="196" height="158" rx="10" fill="#2a6f6f"/>
+      <text x="1038" y="630" class="lab" fill="#ffffff" text-anchor="middle">경매 종료</text>
+      <text x="1038" y="660" class="small" fill="#cfe5e1" text-anchor="middle">새 입찰 없음</text>
+      <text x="1038" y="682" class="small" fill="#cfe5e1" text-anchor="middle">⇣</text>
+      <text x="1038" y="708" class="small" fill="#cfe5e1" text-anchor="middle">최고가 입찰자 = 낙찰자</text>
+      <text x="1038" y="730" class="small" fill="#cfe5e1" text-anchor="middle">자신의 입찰가 지불</text>
+    </g>
+  </g>
+
+  <!-- Scene 4: 정보 공유 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="800" class="num">4</text>
+    <text x="92" y="800" class="bd">매 라운드의 정보 공유 효과</text>
+    <text x="64" y="826" class="small">매 라운드 종료 시 각 주파수의 최고가·낙찰자 공개 → 입찰자가 다른 주체의 평가와 자산 간 보완성을 학습.</text>
+
+    <rect class="panel" x="64" y="844" width="1072" height="116" rx="10"/>
+    <g>
+      <rect x="84" y="864" width="240" height="76" rx="8" fill="#eaf3f1"/>
+      <text x="204" y="892" class="lab" text-anchor="middle">정보 공개</text>
+      <text x="204" y="916" class="small" text-anchor="middle">최고가·낙찰자 공유</text>
+      <text x="204" y="936" class="small" text-anchor="middle">⇣ 라운드별 가격 상승 곡선</text>
+
+      <line x1="334" y1="902" x2="372" y2="902" stroke="#2a6f6f" stroke-width="2.2" marker-end="url(#ar67)"/>
+
+      <rect x="378" y="864" width="240" height="76" rx="8" fill="#eaf3f1"/>
+      <text x="498" y="892" class="lab" text-anchor="middle">전략 수정</text>
+      <text x="498" y="916" class="small" text-anchor="middle">자산 간 보완성 고려</text>
+      <text x="498" y="936" class="small" text-anchor="middle">패키지 입찰 가능</text>
+
+      <line x1="628" y1="902" x2="666" y2="902" stroke="#2a6f6f" stroke-width="2.2" marker-end="url(#ar67)"/>
+
+      <rect x="672" y="864" width="240" height="76" rx="8" fill="#eaf3f1"/>
+      <text x="792" y="892" class="lab" text-anchor="middle">탐색 — 안정 균형</text>
+      <text x="792" y="916" class="small" text-anchor="middle">운의 영향 감소</text>
+      <text x="792" y="936" class="small" text-anchor="middle">가치에 부합하는 가격</text>
+
+      <line x1="922" y1="902" x2="960" y2="902" stroke="#2a6f6f" stroke-width="2.2" marker-end="url(#ar67)"/>
+
+      <rect x="966" y="864" width="150" height="76" rx="8" fill="#2a6f6f"/>
+      <text x="1041" y="894" class="lab" fill="#ffffff" text-anchor="middle">효율적 분배</text>
+      <text x="1041" y="918" class="small" fill="#cfe5e1" text-anchor="middle">+ 수입 극대화</text>
+    </g>
+  </g>
+
+  <!-- Scene 5: 효율성과 활용 -->
+  <g class="reveal" data-reveal-step="5">
+    <text x="64" y="1000" class="num">5</text>
+    <text x="92" y="1000" class="bd">효율성 입증과 확산</text>
+    <text x="64" y="1026" class="small">2000년 영국에서 막대한 정부 수입을 올리며 표준 형태로 자리. 폴 밀그럼 등은 2020년 노벨 경제학상 수상.</text>
+  </g>
+
+  <text x="1140" y="1064" class="wm" text-anchor="end">EBS 2027 · 사회 · 286쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1080" width="1120" height="170" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#2a6f6f"/>
+    <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">4개 항목</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">단일 경매의 한계</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">자산 간 상호 보완적 가치가 반영되지 못해 비효율이 발생한다.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">동시 다중 라운드 경매</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">여러 자산을 동시에 여러 라운드에 걸쳐 경매하는 방식. SMRA로 약칭한다.</text>
+    <line x1="40" y1="1174" x2="1160" y2="1174" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1190" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">입찰자 정보 공유</text>
+    <text x="240" y="1190" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">매 라운드 후 입찰 결과가 공개되어 다른 입찰자의 평가와 자산 간 상호 보완성을 고려해 다음 라운드를 조정할 수 있다.</text>
+    <line x1="40" y1="1204" x2="1160" y2="1204" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1220" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#2a6f6f">활용 분야</text>
+    <text x="240" y="1220" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">주파수 면허, 전력 시장 등에서 자원 배분의 효율성을 높이는 데 활용된다.</text>
+  </g>
+</svg>

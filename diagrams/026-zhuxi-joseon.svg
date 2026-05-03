@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1300" data-app role="img" aria-labelledby="t26 d26">
+  <title id="t26">주희 추종의 두 갈래 — 이황 학통(모사) vs 이이 학통(구곡 경영)</title>
+  <desc id="d26">주희의 무이산·「무이도가」·「무이구곡도」가 조선으로 건너와 두 갈래(이황 학통은 그대로 모사, 이이 학통은 조선 산수에 직접 구곡 경영)로 갈라지고, 노론 계열은 구곡 경영으로 학문적 계보의 정통성을 드러내려 했다.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8f6fb}
+      .panel{fill:#ffffff;stroke:#d6cfe8;stroke-width:1.2}
+      .ti{font:600 28px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a2434}
+      .sub{font:400 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#5b5170}
+      .lab{font:600 16px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a2434}
+      .bd{font:700 18px 'Pretendard',ui-sans-serif,sans-serif;fill:#2a2434}
+      .num{font:700 20px 'Pretendard',ui-sans-serif,sans-serif;fill:#5e548e}
+      .it{font:400 14px 'Pretendard',ui-sans-serif,sans-serif;fill:#4f4664}
+      .small{font:400 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#5b5170}
+      .pill{font:600 13px 'Pretendard',ui-sans-serif,sans-serif;fill:#ffffff}
+      .wm{font:400 12px 'Pretendard',ui-sans-serif,sans-serif;fill:#9b91b1;letter-spacing:.04em}
+      .reveal{transition:opacity .35s ease, transform .35s ease}
+      svg[data-app] .reveal{opacity:0; transform:translateY(6px)}
+      svg[data-app] .reveal.on{opacity:1; transform:translateY(0)}
+    </style>
+    <marker id="ar26" viewBox="0 0 1200 1300" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5e548e"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="1080"/>
+
+  <rect x="40" y="36" width="1120" height="68" rx="10" fill="#5e548e"/>
+  <text x="64" y="80" class="ti" fill="#ffffff">주희 추종의 두 갈래 — 모사 vs 구곡 경영</text>
+  <text x="1136" y="80" class="sub" fill="#ddd5ec" text-anchor="end">인문·예술 · 분류</text>
+
+  <!-- Scene 1: 주희와 무이도가 -->
+  <g class="reveal" data-reveal-step="1">
+    <text x="64" y="140" class="num">1</text>
+    <text x="92" y="140" class="bd">출발점 — 주희와 「무이도가」</text>
+    <text x="64" y="166" class="small">성리학을 집대성한 주희가 무이산에 은거하며 무이정사를 짓고 「무이도가」를 짓다. 자연 속 심신 수양의 상징.</text>
+
+    <rect class="panel" x="64" y="184" width="1072" height="118" rx="10"/>
+    <rect x="64" y="184" width="6" height="118" fill="#5e548e"/>
+
+    <g transform="translate(96,202)">
+      <rect width="220" height="78" rx="8" fill="#ede8f6" stroke="#c8bee1"/>
+      <text x="110" y="26" class="lab" text-anchor="middle">무이산</text>
+      <text x="110" y="50" class="small" text-anchor="middle">중국, 도교의 성지</text>
+      <text x="110" y="68" class="small" text-anchor="middle">주희가 은거 후 더 유명</text>
+
+      <line x1="232" y1="40" x2="262" y2="40" stroke="#5e548e" stroke-width="2" marker-end="url(#ar26)"/>
+
+      <rect x="266" width="220" height="78" rx="8" fill="#ede8f6" stroke="#c8bee1"/>
+      <text x="376" y="26" class="lab" text-anchor="middle">무이정사</text>
+      <text x="376" y="50" class="small" text-anchor="middle">학문·후학 양성의</text>
+      <text x="376" y="68" class="small" text-anchor="middle">정사(精舍)</text>
+
+      <line x1="498" y1="40" x2="528" y2="40" stroke="#5e548e" stroke-width="2" marker-end="url(#ar26)"/>
+
+      <rect x="532" width="220" height="78" rx="8" fill="#5e548e"/>
+      <text x="642" y="26" class="lab" fill="#ffffff" text-anchor="middle">「무이도가」</text>
+      <text x="642" y="50" class="small" fill="#ddd5ec" text-anchor="middle">아홉 굽이 실경 묘사</text>
+      <text x="642" y="68" class="small" fill="#ddd5ec" text-anchor="middle">성리학적 자연관</text>
+
+      <line x1="764" y1="40" x2="794" y2="40" stroke="#5e548e" stroke-width="2" marker-end="url(#ar26)"/>
+
+      <rect x="798" width="220" height="78" rx="8" fill="#ede8f6" stroke="#c8bee1"/>
+      <text x="908" y="26" class="lab" text-anchor="middle">차운시 + 「무이구곡도」</text>
+      <text x="908" y="50" class="small" text-anchor="middle">수많은 차운시 + 구곡도</text>
+      <text x="908" y="68" class="small" text-anchor="middle">이 그려져 전파됨</text>
+    </g>
+  </g>
+
+  <!-- 분기 -->
+  <g class="reveal" data-reveal-step="2">
+    <text x="64" y="346" class="num">2</text>
+    <text x="92" y="346" class="bd">조선의 두 갈래 수용 양상</text>
+    <text x="64" y="372" class="small">사대부 사회의 문화적 유행. 단, 이황 학통과 이이 학통의 수용 방식은 뚜렷이 달랐다.</text>
+
+    <!-- 좌: 이황 -->
+    <rect class="panel" x="64" y="390" width="528" height="296" rx="12" stroke="#5e548e" stroke-width="1.6" fill="#f1ecf8"/>
+    <rect x="64" y="390" width="528" height="40" rx="12" fill="#5e548e"/>
+    <text x="84" y="416" class="lab" fill="#ffffff">이황 학통 — 모사와 존경</text>
+    <text x="572" y="416" class="small" fill="#ddd5ec" text-anchor="end">「무이도가」 = 흥의 발현·성정 도야</text>
+
+    <text x="84" y="456" class="bd">핵심 행위</text>
+    <text x="84" y="482" class="small">· 「무이도가」를 차운한 시를 짓다</text>
+    <text x="84" y="504" class="small">· 「무이구곡도」를 반복적으로 모사·소장</text>
+    <text x="84" y="526" class="small">· 강세황의 「무이구곡도」 화첩(이익의 글 첨부)</text>
+
+    <text x="84" y="556" class="bd">관점</text>
+    <text x="84" y="582" class="small">· 「무이구곡도」 = 무이산을 대신하는 시각적 이미지</text>
+    <text x="84" y="604" class="small">· 이익: “주희의 초상화와 같아서 빠짐없이 자세히 그려야”</text>
+
+    <rect x="84" y="624" width="488" height="48" rx="8" fill="#5e548e"/>
+    <text x="328" y="654" class="lab" fill="#ffffff" text-anchor="middle">전략: 원본을 충실히 베끼기 (모사)</text>
+  </g>
+
+  <g class="reveal" data-reveal-step="3">
+    <!-- 우: 이이 -->
+    <rect class="panel" x="608" y="390" width="528" height="296" rx="12" stroke="#5e548e" stroke-width="1.6" fill="#f1ecf8"/>
+    <rect x="608" y="390" width="528" height="40" rx="12" fill="#5e548e"/>
+    <text x="628" y="416" class="lab" fill="#ffffff">이이 학통 — 조선식 구곡 경영</text>
+    <text x="1116" y="416" class="small" fill="#ddd5ec" text-anchor="end">「무이도가」 = 학문 진전의 순서</text>
+
+    <text x="628" y="456" class="bd">핵심 행위</text>
+    <text x="628" y="482" class="small">· 이이가 황해도 고산에 정사 + 「고산구곡가」 작</text>
+    <text x="628" y="504" class="small">· 사후 학통이 「고산구곡도」를 그림</text>
+    <text x="628" y="526" class="small">· 빼어난 산수에 직접 정사·구곡을 설정·경영</text>
+
+    <text x="628" y="556" class="bd">관점</text>
+    <text x="628" y="582" class="small">· 동경 단계를 넘어 ‘조선 땅’에 직접 옮겨 옴</text>
+    <text x="628" y="604" class="small">· 구곡시 + 실제 경관의 구곡도</text>
+
+    <rect x="628" y="624" width="488" height="48" rx="8" fill="#5e548e"/>
+    <text x="872" y="654" class="lab" fill="#ffffff" text-anchor="middle">전략: 우리 산수에 무이를 옮겨오기 (재현·경영)</text>
+  </g>
+
+  <!-- Scene 4: 노론 계열 정통성 계보 -->
+  <g class="reveal" data-reveal-step="4">
+    <text x="64" y="730" class="num">4</text>
+    <text x="92" y="730" class="bd">노론 계열의 의도 — 학문적 계보의 정통성</text>
+    <text x="64" y="756" class="small">이이 학통 안 노론 계열은 구곡 경영을 통해 주희→이이→송시열로 이어지는 학문 계승의 정통성을 상징적으로 드러냈다.</text>
+
+    <g>
+      <rect class="panel" x="64" y="774" width="1072" height="240" rx="10"/>
+
+      <!-- 계보 트리 -->
+      <g transform="translate(120,820)">
+        <rect width="180" height="60" rx="10" fill="#5e548e"/>
+        <text x="90" y="32" class="lab" fill="#ffffff" text-anchor="middle">주희</text>
+        <text x="90" y="52" class="small" fill="#ddd5ec" text-anchor="middle">성리학 집대성</text>
+
+        <line x1="190" y1="30" x2="230" y2="30" stroke="#5e548e" stroke-width="2.4" marker-end="url(#ar26)"/>
+
+        <rect x="234" width="180" height="60" rx="10" fill="#5e548e"/>
+        <text x="324" y="32" class="lab" fill="#ffffff" text-anchor="middle">이이</text>
+        <text x="324" y="52" class="small" fill="#ddd5ec" text-anchor="middle">조선 성리학</text>
+
+        <line x1="424" y1="30" x2="464" y2="30" stroke="#5e548e" stroke-width="2.4" marker-end="url(#ar26)"/>
+
+        <rect x="468" width="180" height="60" rx="10" fill="#5e548e"/>
+        <text x="558" y="32" class="lab" fill="#ffffff" text-anchor="middle">송시열</text>
+        <text x="558" y="52" class="small" fill="#ddd5ec" text-anchor="middle">노론의 종조(宗祖)</text>
+
+        <line x1="658" y1="30" x2="698" y2="30" stroke="#5e548e" stroke-width="2.4" marker-end="url(#ar26)"/>
+
+        <rect x="702" width="220" height="60" rx="10" fill="#ede8f6" stroke="#5e548e" stroke-width="1.6"/>
+        <text x="812" y="32" class="lab" fill="#5e548e" text-anchor="middle">노론 사대부</text>
+        <text x="812" y="52" class="small" text-anchor="middle">구곡 경영의 주체</text>
+      </g>
+
+      <text x="120" y="940" class="bd">대표 사례</text>
+      <text x="120" y="964" class="small">· 김수증 (노론) — 강원 화천 곡운에 농수정 + 「곡운구곡가」 + 조세걸의 「곡운구곡도」 시화첩</text>
+      <text x="120" y="986" class="small">· 김홍도·김득신 등 9명의 「고산구곡시화도」 12폭 병풍 — 학문 계보를 시각적으로 결속</text>
+    </g>
+  </g>
+
+  <text x="1140" y="1064" class="wm" text-anchor="end">EBS 2027 · 인문·예술 · 104쪽</text>
+  <!-- FOOTER_AUTO -->
+  <g>
+    <rect x="40" y="1080" width="1120" height="200" rx="6" fill="#fdfaf2" stroke="#c9bfa8" stroke-width="1"/>
+    <rect x="40" y="1080" width="1120" height="32" rx="6" fill="#5e548e"/>
+    <text x="60" y="1102" font-family="Noto Serif KR, serif" font-size="15" font-weight="700" fill="#f5f1e8">핵심 개념 정리</text>
+    <text x="1140" y="1102" text-anchor="end" font-family="Pretendard, sans-serif" font-size="11" fill="#cfe5e1">5개 항목</text>
+    <line x1="40" y1="1114" x2="1160" y2="1114" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1130" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">주희와 「무이도가」</text>
+    <text x="240" y="1130" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">성리학을 집대성한 주희가 무이산 아홉 굽이의 실경을 묘사한 시. 조선 사대부들의 차운시와 「무이구곡도」의 출발점이 되었다.</text>
+    <line x1="40" y1="1144" x2="1160" y2="1144" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1160" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">두 갈래의 수용</text>
+    <text x="240" y="1160" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">이황 학통 = 「무이도가」 차운 + 「무이구곡도」 모사 / 이이 학통 = 조선식 구곡 경영 (정사 + 구곡시 + 구곡도).</text>
+    <line x1="40" y1="1174" x2="1160" y2="1174" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1190" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">이황 학통의 인식</text>
+    <text x="240" y="1190" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">「무이도가」를 흥의 발현·성정 도야의 시로 보고, 「무이구곡도」를 주희의 초상화처럼 정성껏 모사해 소장.</text>
+    <line x1="40" y1="1204" x2="1160" y2="1204" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1220" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">이이 학통의 인식</text>
+    <text x="240" y="1220" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">「무이도가」를 학문으로 나아가는 순서를 담은 시로 보고, 조선 빼어난 산수에 직접 정사와 구곡을 경영하며 구곡시·구곡도를 만듦.</text>
+    <line x1="40" y1="1234" x2="1160" y2="1234" stroke="#c9bfa8" stroke-width="0.5"/>
+    <text x="60" y="1250" font-family="Pretendard, sans-serif" font-size="13" font-weight="700" fill="#5e548e">노론 계열의 의도</text>
+    <text x="240" y="1250" font-family="Pretendard, sans-serif" font-size="13" fill="#4a3f33">구곡 경영을 통해 주희 → 이이 → 송시열로 이어지는 학문적 계보의 정통성을 상징적으로 드러내고 노론의 결속을 강화.</text>
+  </g>
+</svg>
