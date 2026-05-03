@@ -41,6 +41,7 @@
   // --------- 부트 ---------
   async function boot() {
     document.getElementById("app").innerHTML = renderShell();
+    initTheme();
 
     state.progress = window.Store.load();
 
@@ -106,6 +107,12 @@
       </header>
 
       <div class="hub" id="hub">
+        <div class="hub-actions">
+          <button class="btn-dash" id="btnDash" type="button">📊 학습 대시보드</button>
+          <button class="btn-dash" id="btnGallery" type="button">🖼 도식 갤러리</button>
+          <span class="hub-actions-spacer"></span>
+          <button class="btn-theme" id="btnTheme" type="button" title="다크 모드 토글">🌙</button>
+        </div>
         <div class="hub-stats" id="hubStats"></div>
         <div class="hub-section-title">영역별 필터</div>
         <div class="cat-filter" id="catFilter"></div>
@@ -115,6 +122,25 @@
           <p><strong>사용 안내</strong> · 카드를 누르면 학습 모드로 들어갑니다. 사전 예측 → 정독과 도식 확인 → 핵심 개념 회상 → 자기평가의 4단계로 진행됩니다. 자기평가 결과에 따라 다음 복습 시점이 결정됩니다.</p>
           <p><strong>진도 저장</strong> · 모든 학습 기록은 사용 중인 브라우저에 저장됩니다. 브라우저 데이터를 삭제하면 진도가 초기화됩니다.</p>
         </div>
+      </div>
+
+      <div class="dashboard" id="dashboard">
+        <button class="btn-back" id="btnDashBack" type="button">← 홈으로</button>
+        <div class="dashboard-header">
+          <span class="dashboard-title">학습 대시보드</span>
+          <span class="dashboard-sub" id="dashUpdatedAt"></span>
+        </div>
+        <div id="dashContent"></div>
+      </div>
+
+      <div class="dashboard" id="gallery">
+        <button class="btn-back" id="btnGalleryBack" type="button">← 홈으로</button>
+        <div class="dashboard-header">
+          <span class="dashboard-title">🖼 도식 갤러리</span>
+          <span class="dashboard-sub">72편 전체 시각 자료</span>
+        </div>
+        <div class="cat-filter" id="galleryFilter" style="margin-bottom:18px;"></div>
+        <div id="galleryContent"></div>
       </div>
 
       <div class="study" id="study" aria-hidden="true">
@@ -213,6 +239,26 @@
       if (zoom) {
         e.preventDefault(); e.stopPropagation();
         openLightbox();
+        return;
+      }
+      // 대시보드/갤러리 진입·복귀
+      if (e.target.closest("#btnDash"))         { openDashboard();  return; }
+      if (e.target.closest("#btnDashBack"))     { closeDashboard(); return; }
+      if (e.target.closest("#btnGallery"))      { openGallery();    return; }
+      if (e.target.closest("#btnGalleryBack"))  { closeGallery();   return; }
+      if (e.target.closest("#btnTheme"))        { toggleTheme();    return; }
+      // 대시보드 안의 항목 클릭
+      const dueItem = e.target.closest(".due-item, .note-item, .wrong-item, .gallery-item");
+      if (dueItem && dueItem.dataset.id) {
+        closeDashboard(); closeGallery();
+        openStudy(dueItem.dataset.id);
+        return;
+      }
+      // 갤러리 카테고리 칩
+      const gpill = e.target.closest("#galleryFilter .cat-pill");
+      if (gpill) {
+        state.galleryFilter = gpill.dataset.cat;
+        renderGallery();
         return;
       }
       const pill = e.target.closest(".cat-pill");
@@ -651,6 +697,226 @@
     lb.classList.remove("active");
     lb.setAttribute("aria-hidden", "true");
     $("#lightboxInner").innerHTML = "";
+  }
+
+  // --------- 다크 모드 ---------
+  const THEME_KEY = "suneung_dokseo_theme";
+  function applyTheme(theme) {
+    if (theme === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+    }
+    const btn = $("#btnTheme");
+    if (btn) btn.textContent = theme === "dark" ? "☀" : "🌙";
+  }
+  function toggleTheme() {
+    const cur = localStorage.getItem(THEME_KEY) === "dark" ? "dark" : "light";
+    const next = cur === "dark" ? "light" : "dark";
+    localStorage.setItem(THEME_KEY, next);
+    applyTheme(next);
+  }
+  function initTheme() {
+    const saved = localStorage.getItem(THEME_KEY);
+    const sysDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    applyTheme(saved || (sysDark ? "dark" : "light"));
+  }
+
+  // --------- 학습 대시보드 ---------
+  function openDashboard() {
+    $("#hub").style.display = "none";
+    $("#dashboard").classList.add("active");
+    renderDashboard();
+    window.scrollTo(0, 0);
+  }
+  function closeDashboard() {
+    $("#dashboard").classList.remove("active");
+    $("#hub").style.display = "";
+  }
+  function renderDashboard() {
+    const items = state.index.passages || [];
+    const prog = state.progress || {};
+    const intervals = window.Store.DEFAULT_INTERVAL;
+    const now = Date.now();
+    const DAY_MS = 86400000;
+
+    // 영역별 진척
+    const cats = state.index.categories;
+    const catKeys = Object.keys(cats);
+    const catStats = {};
+    catKeys.forEach(k => catStats[k] = { total: 0, mastered: 0, studying: 0, review: 0, untouched: 0 });
+    items.forEach(it => {
+      const k = it.category;
+      if (!catStats[k]) return;
+      catStats[k].total++;
+      const s = window.Store.getStatus(prog, it.id, intervals, now);
+      catStats[k][s] = (catStats[k][s] || 0) + 1;
+    });
+    let progressHtml = '';
+    catKeys.forEach(k => {
+      const c = catStats[k];
+      if (c.total === 0) return;
+      const masteredPct = Math.round((c.mastered / c.total) * 100);
+      const studyingPct = Math.round((c.studying / c.total) * 100);
+      const reviewPct = Math.round((c.review / c.total) * 100);
+      progressHtml += `
+        <div class="progress-row">
+          <div class="progress-row-label">${escapeHtml(cats[k].label)}</div>
+          <div class="progress-row-bar">
+            <div class="progress-row-fill mastered" style="width:${masteredPct}%"></div>
+          </div>
+          <div class="progress-row-num">${c.mastered}/${c.total}</div>
+        </div>
+      `;
+    });
+
+    // 복습 예정 (오늘 또는 지난 due)
+    const due = [];
+    items.forEach(it => {
+      const p = prog[it.id];
+      if (!p || !p.eval) return;
+      const days = intervals[p.eval] != null ? intervals[p.eval] : 0;
+      const dueAt = (p.evalAt || 0) + days * DAY_MS;
+      if (now >= dueAt) {
+        due.push({ it, dueAt, p });
+      }
+    });
+    due.sort((a, b) => a.dueAt - b.dueAt);
+    const dueHtml = due.length === 0
+      ? '<div class="dash-empty">오늘 복습 예정인 지문이 없어요.</div>'
+      : `<div class="due-list">${due.slice(0, 20).map(d => {
+          const cat = cats[d.it.category] || {};
+          const overdueDays = Math.floor((now - d.dueAt) / DAY_MS);
+          const when = overdueDays === 0 ? "오늘" : (overdueDays > 0 ? `${overdueDays}일 지남` : "예정");
+          return `<div class="due-item" data-id="${escapeHtml(d.it.id)}">
+            <span class="due-item-cat" style="background:${cat.color}">${escapeHtml(cat.label)}</span>
+            <span class="due-item-title">${escapeHtml(d.it.title)}</span>
+            <span class="due-item-when">${when}</span>
+          </div>`;
+        }).join('')}</div>`;
+
+    // 회상 메모 타임라인
+    const notes = [];
+    Object.keys(prog).forEach(id => {
+      const p = prog[id];
+      if (p && p.recallNote && p.recallNote.trim() && p.recallAt) {
+        const it = items.find(x => x.id === id);
+        if (it) notes.push({ it, p });
+      }
+    });
+    notes.sort((a, b) => b.p.recallAt - a.p.recallAt);
+    const notesHtml = notes.length === 0
+      ? '<div class="dash-empty">아직 회상 메모가 없어요. Step 3에서 회상한 내용을 적어 보세요.</div>'
+      : `<div class="note-timeline">${notes.slice(0, 30).map(n => {
+          const cat = cats[n.it.category] || {};
+          const when = new Date(n.p.recallAt).toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+          return `<div class="note-item" data-id="${escapeHtml(n.it.id)}" style="border-left-color:${cat.color}">
+            <div class="note-item-head">
+              <span class="note-item-title">${escapeHtml(n.it.title)}</span>
+              <span class="note-item-when">${when}</span>
+            </div>
+            <div class="note-item-body">${escapeHtml(n.p.recallNote)}</div>
+          </div>`;
+        }).join('')}</div>`;
+
+    // 오답 노트
+    const wrong = [];
+    Object.keys(prog).forEach(id => {
+      const p = prog[id];
+      if (!p || !p.examScore) return;
+      const it = items.find(x => x.id === id);
+      if (!it) return;
+      Object.keys(p.examScore).forEach(key => {
+        if (p.examScore[key] === "wrong") {
+          // key 형식: "id::qid"
+          const qid = key.split("::")[1];
+          wrong.push({ it, qid });
+        }
+      });
+    });
+    // 실제 examPoint stem을 가져오려면 passage JSON이 필요. 캐시된 currentPassage는 없을 수 있어 제목만 표기.
+    const wrongHtml = wrong.length === 0
+      ? '<div class="dash-empty">아직 틀린 문항이 없어요.</div>'
+      : `<div class="wrong-list">${wrong.slice(0, 30).map(w => {
+          return `<div class="wrong-item" data-id="${escapeHtml(w.it.id)}">
+            <div class="wrong-item-title">${escapeHtml(w.it.title)} <span style="color:var(--ink-3);font-weight:400;font-size:11px;">(${escapeHtml(w.qid)})</span></div>
+            <div class="wrong-item-stem">클릭하여 다시 풀기 → Step 3에서 문항 확인</div>
+          </div>`;
+        }).join('')}</div>`;
+
+    $("#dashUpdatedAt").textContent = `마지막 갱신 · ${new Date().toLocaleString("ko-KR", { month:"numeric", day:"numeric", hour:"2-digit", minute:"2-digit" })}`;
+
+    $("#dashContent").innerHTML = `
+      <div class="dash-grid">
+        <div class="dash-card">
+          <div class="dash-card-title">영역별 이해 완료 진척
+            <span class="dash-card-count">${items.length}편 기준</span>
+          </div>
+          ${progressHtml || '<div class="dash-empty">데이터 없음</div>'}
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">오늘 복습 예정
+            <span class="dash-card-count">${due.length}편</span>
+          </div>
+          ${dueHtml}
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">📝 회상 메모 타임라인
+            <span class="dash-card-count">${notes.length}편 기록</span>
+          </div>
+          ${notesHtml}
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">⚠ 오답 노트
+            <span class="dash-card-count">${wrong.length}건</span>
+          </div>
+          ${wrongHtml}
+        </div>
+      </div>
+    `;
+  }
+
+  // --------- 도식 갤러리 ---------
+  function openGallery() {
+    $("#hub").style.display = "none";
+    $("#gallery").classList.add("active");
+    renderGallery();
+    window.scrollTo(0, 0);
+  }
+  function closeGallery() {
+    $("#gallery").classList.remove("active");
+    $("#hub").style.display = "";
+  }
+  function renderGallery() {
+    const items = state.index.passages || [];
+    const cats = state.index.categories;
+    const catKeys = Object.keys(cats);
+    state.galleryFilter = state.galleryFilter || "all";
+    const f = state.galleryFilter;
+
+    // 필터 칩
+    const counts = { all: items.length };
+    catKeys.forEach(k => counts[k] = items.filter(it => it.category === k).length);
+    $("#galleryFilter").innerHTML =
+      `<button class="cat-pill ${f === "all" ? "active" : ""}" data-cat="all">전체 (${counts.all})</button>` +
+      catKeys.map(k => `<button class="cat-pill ${f === k ? "active" : ""}" data-cat="${k}">${escapeHtml(cats[k].label)} (${counts[k]})</button>`).join("");
+
+    const filtered = f === "all" ? items : items.filter(it => it.category === f);
+    $("#galleryContent").innerHTML = filtered.length === 0
+      ? '<div class="dash-empty">해당 영역에 도식이 없어요.</div>'
+      : `<div class="gallery-grid">${filtered.map(it => {
+          const cat = cats[it.category] || {};
+          return `<div class="gallery-item" data-id="${escapeHtml(it.id)}" style="border-color:${cat.color}">
+            <div class="gallery-item-head">
+              <span class="gallery-item-num mono-num">${String(it.order || '').padStart(2,'0')}</span>
+              <span class="gallery-item-cat" style="color:${cat.color}">${escapeHtml(cat.label)}</span>
+            </div>
+            <div class="gallery-item-title">${escapeHtml(it.title)}</div>
+            <div class="gallery-item-svg">
+              <object type="image/svg+xml" data="diagrams/${escapeHtml(it.id)}.svg" aria-label="${escapeHtml(it.title)} 도식"></object>
+            </div>
+          </div>`;
+        }).join('')}</div>`;
   }
 
   // --------- 키보드 / 해시 ---------
